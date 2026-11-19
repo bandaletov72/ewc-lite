@@ -121,7 +121,7 @@ GLightbox({selector: ".glightbox"});
 ```
 
 ```text
-[gal arrows=off numbers=on effect=fade fit=cover]/images/myfotos/[/gal]
+[gal arrows=on numbers=off effect=fade fit=cover width=50]/images/myfotos/[/gal]
 ```
 
 ### Фотогалерея [fotos]
@@ -133,7 +133,7 @@ GLightbox({selector: ".glightbox"});
 ```
 
 ```text
-[fotos columns=4 ratio=1x1 fit=cover captions=on links=off]/images/myfotos/[/fotos]
+[fotos columns=4 ratio=1x1 fit=cover captions=on links=off width=50%]/images/myfotos/[/fotos]
 ```
 
 ### Список файлов [files]
@@ -145,7 +145,7 @@ GLightbox({selector: ".glightbox"});
 ```
 
 ```text
-[files icons=on size=on order=desc download=on]/files/myfiles/[/files]
+[files icons=on size=on order=desc download=on width=33]/files/myfiles/[/files]
 ```
 
 ## Формы и обратный звонок
@@ -212,3 +212,4 @@ GLightbox({selector: ".glightbox"});
 ```text
 [wa] [yt] [ig]
 ```
+
