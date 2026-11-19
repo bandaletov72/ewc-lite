@@ -4,6 +4,40 @@
 - [Câu hỏi thường gặp của quản trị viên](vi/faq.md)
 - [Mẫu và thành phần](vi/templates.md)
 
+## Mới trong phiên bản 1.6.3
+
+### Trang chủ và chính sách bảo mật
+
+Mở “Mẫu thiết kế” để chỉnh sửa trang chủ và trang /privacy.php. Mã [page-content] hiển thị nội dung của trang chính. Trong chính sách [site-name] và [site-url] lấy tên và địa chỉ công khai từ “Cài đặt → Chung”. Hoàn thành văn bản ban đầu với thông tin về trang web của bạn và xử lý dữ liệu.
+
+### Cookie và quay lại đầu trang
+
+Ở phần chân trang, [conf-policy] cung cấp liên kết đến chính sách, [cookies] mở cài đặt và [top] cuộn lên đầu trang. Phân tích và bản đồ CMS tích hợp đang chờ thỏa thuận. Các tập lệnh được thêm vào mẫu hoặc tiêu đề dịch vụ theo cách thủ công yêu cầu cấu hình riêng.
+
+### Trình chỉnh sửa functions.php
+
+Mở “Mẫu thiết kế → Chức năng” sau tab “Tiêu đề dịch vụ”. Thêm các bao đóng vào mảng được trả về. Trong mẫu PHP của bạn, hãy gọi `translit("Москва")` hoặc `ew_call("translit", "München")`. Trong HTML chèn [func=translit value="Москва и München"]. Ví dụ tạo ra `Moskva i Muenchen`.
+
+### Chỉnh sửa mẫu chuẩn
+
+Trong trường “Mẫu thiết kế” đã chứa mã nguồn PHP và HTML được đánh dấu. Khi chỉnh sửa một mẫu tiêu chuẩn, hãy chọn “PHP tùy chỉnh”. Việc lưu sẽ tạo một phiên bản tùy chỉnh. Sử dụng các nút bên cạnh mẫu, bạn có thể hoàn tác chỉnh sửa cuối cùng hoặc khôi phục bản gốc.
+
+### Kiểm tra PHP trước khi lưu
+
+Mẫu thiết kế, mô-đun và trình soạn thảo functions.php kiểm tra cú pháp bằng lệnh `php -l`. Nếu có lỗi thì vẫn giữ nguyên phiên bản trước đó. Để chọn PHP CLI trên máy chủ, hãy sử dụng biến `SITE_PHP_LINT_BINARY`.
+
+### Tìm kiếm ngược sáng và nhỏ gọn
+
+CodeMirror được bật theo mặc định trên các bản cài đặt mới. Cài đặt này nằm trong Thư viện và Phông chữ. Trong tìm kiếm thu gọn, trường mở rộng sang trái, dấu thập xóa dòng và phím Enter bắt đầu tìm kiếm.
+
+### Menu quản trị và bảng chỉnh sửa
+
+Menu bên dưới tiêu đề bảng quản trị và bảng chỉnh sửa trên trang web hiển thị các biểu tượng có chú thích. Các biểu tượng vẫn còn trên màn hình hẹp. Chú giải công cụ mở khi di chuột và tập trung vào bàn phím trên màn hình hẹp. “Ẩn” nằm bên cạnh các hành động còn lại của trang. Công tắc Chế độ chỉnh sửa nằm ở bên phải.
+
+### Mô tả và mã của mô-đun PHP
+
+Trong "Mô-đun PHP", mô tả ngắn gọn dành cho văn bản thuần túy. Dán phần thân của hàm vào một trường riêng “Mã nguồn · PHP”.
+
 ## Mới trong phiên bản 1.6.2
 
 ### Ngôn ngữ của quản trị viên và trợ giúp

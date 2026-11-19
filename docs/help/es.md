@@ -4,6 +4,40 @@
 - [Preguntas frecuentes del administrador](es/faq.md)
 - [Plantillas y componentes](es/templates.md)
 
+## Nuevo en la versión 1.6.3
+
+### Inicio y política de privacidad
+
+Abra "Plantillas de diseño" para editar la página de inicio y la página /privacy.php. El código [page-content] muestra el contenido de la página principal. En la política [site-name] y [site-url] toman el nombre y dirección pública de “Configuración → General”. Complete el texto inicial con información sobre su sitio y procesamiento de datos.
+
+### Cookie y volver al principio
+
+En el pie de página, [conf-policy] proporciona un enlace a la política, [cookies] abre la configuración y [top] se desplaza hasta la parte superior de la página. Los análisis y los mapas CMS integrados están a la espera de un acuerdo. Los scripts agregados manualmente a plantillas o encabezados de servicios requieren su propia configuración.
+
+### Editor functions.php
+
+Abra "Plantillas de diseño → Funciones" después de la pestaña "Encabezados de servicio". Agregue cierres a la matriz devuelta. En su plantilla PHP, llame a `translit("Москва")` o `ew_call("translit", "München")`. En HTML inserte [func=translit value="Москва и München"]. El ejemplo produce `Moskva i Muenchen`.
+
+### Editar plantillas estándar
+
+En el campo "Plantillas de diseño" ya contiene el código fuente PHP y HTML resaltado. Al editar una plantilla estándar, seleccione "PHP personalizado". Al guardar se crea una versión personalizada. Usando los botones al lado de la plantilla, puede deshacer la última edición o restaurar el original.
+
+### Verificación de PHP antes de guardar
+
+Los editores de plantillas de diseño, módulos y functions.php verifican la sintaxis con el comando `php -l`. Si hay un error, se mantiene la versión anterior. Para seleccionar la CLI de PHP en el servidor, utilice la variable `SITE_PHP_LINT_BINARY`.
+
+### Retroiluminación y búsqueda compacta.
+
+CodeMirror está habilitado de forma predeterminada en instalaciones nuevas. La configuración se encuentra en "Bibliotecas y fuentes". En la búsqueda compacta, el campo se expande hacia la izquierda, la cruz borra la línea y la tecla Intro inicia la búsqueda.
+
+### Menú de administración y panel de edición
+
+El menú debajo del encabezado del panel de administración y el panel de edición del sitio muestran íconos con subtítulos. Los iconos permanecen en la pantalla estrecha. La información sobre herramientas se abre al pasar el mouse y el teclado se enfoca en una pantalla estrecha. “Ocultar” se encuentra junto al resto de acciones de la página. El interruptor del modo de edición se encuentra a la derecha.
+
+### Descripción y código del módulo PHP.
+
+En "Módulos PHP", la breve descripción es para texto sin formato. Pegue el cuerpo de la función en un campo separado “Código fuente · PHP”.
+
 ## Nuevo en la versión 1.6.2
 
 ### Idioma de administrador y ayuda.

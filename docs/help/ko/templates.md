@@ -118,6 +118,44 @@ GLightbox({selector: ".glightbox"});
 [author]
 ```
 
+### 홈 템플릿 및 정책
+
+코드 [page-content]는 주 텍스트를 템플릿 [home]에 삽입합니다. /privacy.php 페이지가 [privacy] 템플릿에서 편집되었습니다. [site-name] 및 [site-url] 대체 항목은 기본 설정에서 이름과 공개 주소를 가져옵니다.
+
+```text
+[page-content]
+```
+
+```text
+[site-name] · [site-url]
+```
+
+### 바닥글의 링크 및 설정
+
+코드 [conf-policy]는 /privacy.php에 대한 링크를 표시하고, [top]는 페이지를 맨 위로 스크롤하고, [cookies]는 동의 설정을 엽니다.
+
+```text
+[conf-policy]
+[cookies]
+[top]
+```
+
+### 일반적인 PHP 함수
+
+"디자인 템플릿 → 기능" 섹션에서 functions.php를 편집합니다. PHP 코드에서 translit() 또는 ew_call()는 등록된 함수를 호출합니다. 단축 코드 [func=translit]는 콘텐츠 및 "사용자 정의 HTML" 필드에서 사용할 수 있습니다.
+
+```text
+[func=translit value="Москва и München"]
+```
+
+```text
+$var = translit("모스크바");
+```
+
+```text
+echo ew_escape(ew_call("translit", "München"));
+```
+
 ## 회전판, 사진 갤러리 및 파일
 
 ### 회전목마 [gal]

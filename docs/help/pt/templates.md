@@ -118,6 +118,44 @@ O código [author] gera Eurowebcart CMS Light, o nome do autor Бандалет�
 [author]
 ```
 
+### Modelo e política inicial
+
+O código [page-content] insere o texto principal no template [home]. A página /privacy.php é editada no template [privacy]. As substituições [site-name] e [site-url] levam o nome e endereço público das configurações principais.
+
+```text
+[page-content]
+```
+
+```text
+[site-name] · [site-url]
+```
+
+### Links e configurações no rodapé
+
+O código [conf-policy] exibe um link para /privacy.php, [top] rola a página até o topo, [cookies] abre as configurações de consentimento.
+
+```text
+[conf-policy]
+[cookies]
+[top]
+```
+
+### Funções PHP comuns
+
+Na seção “Modelos de Design → Funções”, edite functions.php. No código PHP, translit() ou ew_call() chama uma função registrada. O código curto [func=translit] está disponível no conteúdo e no campo “HTML personalizado”.
+
+```text
+[func=translit value="Москва и München"]
+```
+
+```text
+$var = translit("Moscou");
+```
+
+```text
+echo ew_escape(ew_call("translit", "München"));
+```
+
 ## Carrossel, galeria de fotos e arquivos
 
 ### Carrossel [gal]

@@ -118,6 +118,44 @@ GLightbox({selector: ".glightbox"});
 [author]
 ```
 
+### ホームテンプレートとポリシー
+
+コード [page-content] は、メイン テキストをテンプレート [home] に挿入します。ページ /privacy.php はテンプレート [privacy] で編集されています。 [site-name] および [site-url] 置換は、メイン設定から名前とパブリック アドレスを取得します。
+
+```text
+[page-content]
+```
+
+```text
+[site-name] · [site-url]
+```
+
+### フッターのリンクと設定
+
+コード [conf-policy] は /privacy.php へのリンクを表示し、[top] はページを一番上までスクロールし、[cookies] は同意設定を開きます。
+
+```text
+[conf-policy]
+[cookies]
+[top]
+```
+
+### 一般的な PHP 関数
+
+「デザイン テンプレート → 関数」セクションで、functions.php を編集します。 PHP コードでは、translit() または ew_call() は登録された関数を呼び出します。ショート コード [func=translit] は、コンテンツと [カスタム HTML] フィールドで使用できます。
+
+```text
+[func=translit value="Москва и München"]
+```
+
+```text
+$var = translit("モスクワ");
+```
+
+```text
+echo ew_escape(ew_call("translit", "München"));
+```
+
 ## カルーセル、フォトギャラリー、ファイル
 
 ### カルーセル [gal]

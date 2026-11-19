@@ -118,6 +118,44 @@ Der Code [author] gibt Eurowebcart CMS Light, den Autorennamen Бандалет�
 [author]
 ```
 
+### Home-Vorlage und -Richtlinie
+
+Der Code [page-content] fügt den Haupttext in die Vorlage [home] ein. Die Seite /privacy.php wird in der Vorlage [privacy] bearbeitet. Die Ersetzungen [site-name] und [site-url] übernehmen den Namen und die öffentliche Adresse aus den Haupteinstellungen.
+
+```text
+[page-content]
+```
+
+```text
+[site-name] · [site-url]
+```
+
+### Links und Einstellungen im Footer
+
+Der Code [conf-policy] zeigt einen Link zu /privacy.php an, [top] scrollt die Seite nach oben, [cookies] öffnet die Einwilligungseinstellungen.
+
+```text
+[conf-policy]
+[cookies]
+[top]
+```
+
+### Allgemeine PHP-Funktionen
+
+Bearbeiten Sie im Abschnitt „Designvorlagen → Funktionen“ functions.php. Im PHP-Code ruft translit() oder ew_call() eine registrierte Funktion auf. Der Shortcode [func=translit] ist im Inhalt und im Feld „Custom HTML“ verfügbar.
+
+```text
+[func=translit value="Москва и München"]
+```
+
+```text
+$var = translit("Moskau");
+```
+
+```text
+echo ew_escape(ew_call("translit", "München"));
+```
+
 ## Karussell, Fotogalerie und Dateien
 
 ### Karussell [gal]

@@ -118,6 +118,44 @@ GLightbox({selector: ".glightbox"});
 [author]
 ```
 
+### Шаблон главной и политика
+
+Код [page-content] вставляет текст главной в шаблон [home]. Страница /privacy.php редактируется в шаблоне [privacy]. Подстановки [site-name] и [site-url] берут название и публичный адрес из основных настроек.
+
+```text
+[page-content]
+```
+
+```text
+[site-name] · [site-url]
+```
+
+### Ссылки и настройки в подвале
+
+Код [conf-policy] выводит ссылку на /privacy.php, [top] прокручивает страницу вверх, [cookies] открывает настройки согласия.
+
+```text
+[conf-policy]
+[cookies]
+[top]
+```
+
+### Общие функции PHP
+
+В разделе «Шаблоны оформления → Функции» отредактируйте functions.php. В PHP-коде translit() или ew_call() вызывает зарегистрированную функцию. Короткий код [func=translit] доступен в содержимом и в поле «Свой HTML».
+
+```text
+[func=translit value="Москва и München"]
+```
+
+```text
+$var = translit("Москва");
+```
+
+```text
+echo ew_escape(ew_call("translit", "München"));
+```
+
 ## Карусель, фотогалерея и файлы
 
 ### Карусель [gal]

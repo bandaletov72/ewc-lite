@@ -4,6 +4,40 @@
 - [Admin-FAQ](de/faq.md)
 - [Vorlagen und Komponenten](de/templates.md)
 
+## Neu in Version 1.6.3
+
+### Startseite und Datenschutzbestimmungen
+
+Öffnen Sie „Designvorlagen“, um die Startseite und die Seite /privacy.php zu bearbeiten. Der Code [page-content] zeigt den Inhalt der Hauptseite an. In der Richtlinie [site-name] und [site-url] übernehmen Sie den Namen und die öffentliche Adresse aus „Einstellungen → Allgemein“. Vervollständigen Sie den Anfangstext mit Informationen zu Ihrer Website und der Datenverarbeitung.
+
+### Cookie und zurück nach oben
+
+In der Fußzeile stellt [conf-policy] einen Link zur Richtlinie bereit, [cookies] öffnet die Einstellungen und [top] scrollt zum Seitenanfang. Analysen und integrierte CMS-Karten warten auf Zustimmung. Manuell zu Vorlagen oder Service-Headern hinzugefügte Skripte erfordern eine eigene Konfiguration.
+
+### Herausgeber functions.php
+
+Öffnen Sie „Designvorlagen → Funktionen“ nach der Registerkarte „Service-Header“. Fügen Sie dem zurückgegebenen Array Abschlüsse hinzu. Rufen Sie in Ihrer PHP-Vorlage `translit("Москва")` oder `ew_call("translit", "München")` auf. Fügen Sie im HTML [func=translit value="Москва и München"] ein. Das Beispiel erzeugt `Moskva i Muenchen`.
+
+### Bearbeiten von Standardvorlagen
+
+Im Feld „Design-Vorlagen“ ist bereits der PHP- und HTML-Quellcode mit Hervorhebung enthalten. Wählen Sie beim Bearbeiten einer Standardvorlage „Benutzerdefiniertes PHP“ aus. Beim Speichern wird eine benutzerdefinierte Version erstellt. Mit den Schaltflächen neben der Vorlage können Sie die letzte Bearbeitung rückgängig machen oder das Original wiederherstellen.
+
+### PHP-Prüfung vor dem Speichern
+
+Designvorlagen-, Modul- und functions.php-Editoren überprüfen die Syntax mit dem Befehl `php -l`. Im Fehlerfall bleibt die vorherige Version bestehen. Um die PHP-CLI auf dem Server auszuwählen, verwenden Sie die Variable `SITE_PHP_LINT_BINARY`.
+
+### Hintergrundbeleuchtung und kompakte Suche
+
+CodeMirror ist bei Neuinstallationen standardmäßig aktiviert. Die Einstellung befindet sich unter „Bibliotheken und Schriftarten“. Bei der kompakten Suche wird das Feld nach links erweitert, das Kreuz löscht die Zeile und die Eingabetaste startet die Suche.
+
+### Admin-Menü und Bearbeitungsfeld
+
+Im Menü unter der Kopfzeile des Admin-Panels und im Bearbeitungsfeld auf der Website werden Symbole mit Beschriftungen angezeigt. Symbole bleiben auf dem schmalen Bildschirm. Tooltips öffnen sich beim Hover und Tastaturfokus auf einem schmalen Bildschirm. „Ausblenden“ befindet sich neben den restlichen Seitenaktionen. Der Bearbeitungsmodus-Schalter befindet sich auf der rechten Seite.
+
+### Beschreibung und Code des PHP-Moduls
+
+In „PHP-Modulen“ handelt es sich bei der Kurzbeschreibung um Klartext. Fügen Sie den Hauptteil der Funktion in ein separates Feld „Quellcode · PHP“ ein.
+
 ## Neu in Version 1.6.2
 
 ### Sprache der Administration und Hilfe

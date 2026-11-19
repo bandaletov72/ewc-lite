@@ -118,6 +118,44 @@ The code [author] outputs Eurowebcart CMS Light, the author name Бандале�
 [author]
 ```
 
+### Home template and policy
+
+The code [page-content] inserts the main text into the template [home]. The page /privacy.php is edited in the template [privacy]. The [site-name] and [site-url] substitutions take the name and public address from the main settings.
+
+```text
+[page-content]
+```
+
+```text
+[site-name] · [site-url]
+```
+
+### Links and settings in the footer
+
+The code [conf-policy] displays a link to /privacy.php, [top] scrolls the page to the top, [cookies] opens the consent settings.
+
+```text
+[conf-policy]
+[cookies]
+[top]
+```
+
+### Common PHP Functions
+
+In the “Design Templates → Functions” section, edit functions.php. In PHP code, translit() or ew_call() calls a registered function. The short code [func=translit] is available in the content and in the “Custom HTML” field.
+
+```text
+[func=translit value="Москва и München"]
+```
+
+```text
+$var = translit("Moscow");
+```
+
+```text
+echo ew_escape(ew_call("translit", "München"));
+```
+
 ## Carousel, photo gallery and files
 
 ### Carousel [gal]

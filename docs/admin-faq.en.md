@@ -104,3 +104,37 @@ Copy the whole site directory, including hidden files, settings, pages, data blo
 
 Read the error near the form. Reopen the editor after a conflict. For write errors, check PHP permissions on the relevant directory and admin/write-lock.php. For updates, check GitHub connectivity and the PHP Zip and OpenSSL extensions.
 
+## New in version 1.6.3
+
+### Home and privacy policy
+
+Open “Design Templates” to edit the home page and /privacy.php page. The code [page-content] displays the contents of the main page. In the policy [site-name] and [site-url] take the name and public address from “Settings → General”. Complete the initial text with information about your site and data processing.
+
+### Cookie and return to top
+
+In the footer, [conf-policy] provides a link to the policy, [cookies] opens the settings, and [top] scrolls to the top of the page. Analytics and built-in CMS maps await agreement. Scripts manually added to templates or service headers require their own configuration.
+
+### Editor functions.php
+
+Open “Design Templates → Functions” after the “Service Headers” tab. Add closures to the returned array. In your PHP template, call `translit("Москва")` or `ew_call("translit", "München")`. In HTML insert [func=translit value="Москва и München"]. The example produces `Moskva i Muenchen`.
+
+### Editing standard templates
+
+In the “Design Templates” field already contains the PHP and HTML source code with highlighting. When editing a standard template, select “Custom PHP”. Saving creates a custom version. Using the buttons next to the template, you can undo the last edit or restore the original.
+
+### PHP check before saving
+
+Design template, module, and functions.php editors check the syntax with the `php -l` command. If there is an error, the previous version remains. To select the PHP CLI on the server, use the `SITE_PHP_LINT_BINARY` variable.
+
+### Backlight and compact search
+
+CodeMirror is enabled by default on new installations. The setting is located in “Libraries and Fonts”. In compact search, the field expands to the left, the cross clears the line, and the Enter key starts the search.
+
+### Admin menu and edit panel
+
+The menu under the admin panel header and the editing panel on the site show icons with captions. Icons remain on the narrow screen. Tooltips open on hover and keyboard focus on a narrow screen. “Hide” is located next to the rest of the page actions. The Edit Mode switch is located on the right.
+
+### Description and code of the PHP module
+
+In "PHP Modules" the short description is for plain text. Paste the body of the function into a separate field “Source code · PHP”.
+

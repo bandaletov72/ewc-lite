@@ -118,6 +118,44 @@ Mã [author] xuất ra Eurowebcart CMS Light, tên tác giả Бандалето
 [author]
 ```
 
+### Mẫu trang chủ và chính sách
+
+Mã [page-content] chèn văn bản chính vào mẫu [home]. Trang /privacy.php được chỉnh sửa theo mẫu [privacy]. Các thay thế [site-name] và [site-url] lấy tên và địa chỉ công khai từ cài đặt chính.
+
+```text
+[page-content]
+```
+
+```text
+[site-name] · [site-url]
+```
+
+### Liên kết và cài đặt ở chân trang
+
+Mã [conf-policy] hiển thị liên kết đến /privacy.php, [top] cuộn trang lên trên cùng, [cookies] mở cài đặt đồng ý.
+
+```text
+[conf-policy]
+[cookies]
+[top]
+```
+
+### Các hàm PHP phổ biến
+
+Trong phần “Mẫu thiết kế → Chức năng”, chỉnh sửa functions.php. Trong mã PHP, translit() hoặc ew_call() gọi một hàm đã đăng ký. Mã ngắn [func=translit] có sẵn trong nội dung và trong trường “HTML tùy chỉnh”.
+
+```text
+[func=translit value="Москва и München"]
+```
+
+```text
+$var = dịch("Moscow");
+```
+
+```text
+echo ew_escape(ew_call("translit", "München"));
+```
+
 ## Băng chuyền, thư viện ảnh và tập tin
 
 ### Băng chuyền [gal]
