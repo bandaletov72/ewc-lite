@@ -1,3 +1,23 @@
+# Français · 1.6.1
+
+## Recherche
+
+Dans les réglages généraux, désactivez la recherche ou choisissez une loupe ou un champ visible. La barre d’administration recherche aussi les réglages. L’index se met à jour après les modifications et peut être planifié pour le FTP. Les pages incluses et les blocs de données sont indexés sans exécuter les modules PHP.
+
+## Modules PHP
+
+Développez un module pour voir ses réglages et les pages qui l’utilisent. Saisissez un identifiant, un nom de fichier et le corps de la fonction. Le code [php]id[/php] reste le même après un renommage. CodeMirror active la coloration syntaxique.
+
+## Modèles et traductions
+
+Annulez jusqu’à huit modifications par modèle ou restaurez le PHP d’origine, par domaine ou pour les modèles partagés. Choisissez HTML personnalisé pour modifier un bloc, ou placez le PHP dans templates/local/. Le choix de langue reste visible et les traductions suivent la page déplacée.
+
+## Intégrations et maintenance
+
+Les réglages de CAPTCHA, cartes, téléphonie et statistiques donnent accès aux instructions officielles. Saisissez l’URL et le jeton du rappel HTTP. Les réglages d’un sous-domaine enregistré restent actifs lors du passage au domaine principal. Planifiez php update.php --scheduled toutes les 15 minutes.
+
+---
+
 # Français · 1.6.0
 
 ## Recherche et cache

@@ -1,3 +1,23 @@
+# English · 1.6.1
+
+## Search
+
+In Settings → General choose Off, Compact with a magnifying glass, or Expanded. The admin header also searches setting names. Admin edits refresh the index automatically; scheduled indexing picks up FTP changes. Text, included pages and data blocks are indexed. The indexer skips arbitrary PHP.
+
+## PHP modules
+
+Expand a module to see its settings and the pages that use it. Create a module with an ID, a file name and a PHP function body. It returns the string inserted by [php]id[/php]. You can rename the file without changing the insertion code. Enable CodeMirror under Libraries for syntax highlighting.
+
+## Templates and translations
+
+Undo up to eight changes per template or restore the original PHP template. History is separate for each domain and the shared templates. Choose Custom HTML to edit in the browser or put a PHP override in templates/local/. The language switcher stays visible while creating a translation. Saved translations move with the page.
+
+## Integrations and maintenance
+
+CAPTCHA, maps, telephony and analytics link to provider consoles or instructions. Enter a callback webhook URL and token in Integrations. A registered subdomain’s snippets follow the visitor to the main domain. Schedule php update.php --scheduled every 15 minutes on the host.
+
+---
+
 # English · 1.6.0
 
 ## Search and cache

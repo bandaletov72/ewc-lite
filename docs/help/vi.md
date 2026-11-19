@@ -1,3 +1,23 @@
+# Tiếng Việt · 1.6.1
+
+## Tìm kiếm
+
+Chọn Tắt, Thu gọn hoặc Mở rộng trong cài đặt chung. Thanh quản trị tìm tên cài đặt. Chỉ mục tự cập nhật sau khi lưu; dùng lịch cho thay đổi qua FTP. Nội dung các trang được chèn và khối dữ liệu được lập chỉ mục. PHP động không chạy.
+
+## Mô-đun PHP
+
+Mở mô-đun để xem cài đặt và trang sử dụng. Tạo bằng mã, tên tệp và thân hàm PHP. Đổi tên tệp vẫn giữ mã [php]id[/php]. Có thể bật tô sáng CodeMirror ở mục thư viện.
+
+## Mẫu và bản dịch
+
+Hoàn tác tối đa tám thay đổi cho mỗi mẫu hoặc khôi phục mẫu PHP gốc. Mỗi miền có lịch sử riêng. HTML tùy chỉnh sửa trong quản trị, PHP tùy chỉnh đặt tại templates/local/. Nút chọn ngôn ngữ có cả khi tạo bản dịch; bản dịch đã lưu di chuyển cùng trang.
+
+## Tích hợp và bảo trì
+
+Các liên kết trợ giúp trong mục CAPTCHA, bản đồ, điện thoại và phân tích dẫn tới nhà cung cấp. Có thể nhập URL và mã thông báo HTTP API. Thiết lập miền phụ vẫn có hiệu lực khi chuyển sang miền chính. Lên lịch php update.php --scheduled sau mỗi 15 phút.
+
+---
+
 # Tiếng Việt · 1.6.0
 
 ## Tìm kiếm và bộ nhớ đệm

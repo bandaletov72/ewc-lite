@@ -1,3 +1,23 @@
+# Español · 1.6.1
+
+## Búsqueda
+
+En General puedes desactivar la búsqueda o elegir lupa o campo ampliado. La cabecera de administración busca ajustes. El índice se actualiza tras editar; para FTP se puede programar. Se indexan páginas incluidas y bloques de datos sin ejecutar módulos PHP.
+
+## Módulos PHP
+
+Despliega un módulo para ver ajustes y páginas que lo usan. Indica identificador, nombre del archivo y cuerpo de función. Al renombrar el archivo se mantiene [php]id[/php]. Activa CodeMirror para resaltar sintaxis.
+
+## Plantillas y traducciones
+
+Deshaz hasta ocho cambios por plantilla o restablece el PHP original. Cada dominio tiene su propio historial. Usa HTML personalizado en la administración y templates/local/ para PHP. Puedes cambiar de idioma al crear una traducción; las traducciones guardadas se trasladan con la página.
+
+## Integraciones y mantenimiento
+
+CAPTCHA, mapas, telefonía y analítica enlazan a la documentación de sus proveedores. Configura URL y token HTTP de la devolución de llamada. Los ajustes de un subdominio registrado se mantienen al pasar al dominio principal. Ejecuta php update.php --scheduled cada 15 minutos.
+
+---
+
 # Español · 1.6.0
 
 ## Búsqueda y caché

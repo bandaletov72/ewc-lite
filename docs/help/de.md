@@ -1,3 +1,23 @@
+# Deutsch · 1.6.1
+
+## Suche
+
+Wählen Sie in den Grundeinstellungen Aus, Kompakt mit Lupe oder Erweitert. Die Adminleiste durchsucht Einstellungen. Der Index aktualisiert sich nach Änderungen; für FTP gibt es eine geplante Aktualisierung. Eingebundene Seiten und Datenblöcke werden indexiert, PHP-Module nicht ausgeführt.
+
+## PHP-Module
+
+Klappen Sie ein Modul für Einstellungen und verwendende Seiten auf. Geben Sie Modul-ID, Dateiname und PHP-Funktionsrumpf ein. Beim Umbenennen bleibt [php]id[/php] unverändert. CodeMirror lässt sich für Syntaxhervorhebung aktivieren.
+
+## Vorlagen und Übersetzungen
+
+Pro Vorlage können Sie bis zu acht Änderungen rückgängig machen oder das ursprüngliche PHP wiederherstellen. Die Historie ist je Domain getrennt. Eigenes HTML ändern Sie in der Verwaltung, PHP liegt in templates/local/. Die Sprachwahl bleibt beim Anlegen verfügbar; Übersetzungen werden mit der Seite verschoben.
+
+## Integrationen und Wartung
+
+CAPTCHA, Karten, Telefonie und Analyse verlinken die Anbieter. URL und Token der Rückruf-API sind in der Verwaltung einstellbar. Beim Wechsel auf die Hauptdomain gelten die Platzhalter der registrierten Subdomain weiter. Planen Sie php update.php --scheduled alle 15 Minuten ein.
+
+---
+
 # Deutsch · 1.6.0
 
 ## Suche und Cache
