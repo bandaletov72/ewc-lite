@@ -1,0 +1,223 @@
+# Modelos e componentes
+
+## Modelos de apresentação
+
+### Cabeçalho, menu e rodapé
+
+A página completa conecta esses blocos automaticamente. As versões gerais são editadas em “Modelos de Design” e para um domínio individual - na seção “Domínios”.
+
+```text
+[header]
+[mobile-menu]
+[menu]
+[footer]
+```
+
+### Inserindo outra página
+
+Insere o conteúdo de uma página publicada. O aninhamento máximo é de dez níveis. A repetição de uma página na mesma cadeia é ignorada.
+
+```text
+[include]/contacts/[/include]
+```
+
+### Links no cardápio
+
+A caixa de seleção “Mostrar no menu” adiciona um link para os menus padrão. Se o nome estiver vazio, o título será usado. Se você desmarcar a caixa de seleção de uma página de pasta, suas subpáginas também desaparecerão do menu.
+
+```text
+MenuVisível: 1
+Cardápio: Contatos
+```
+
+### CSS e JavaScript
+
+O código geral é editado na aba “CSS e JS”. O código da página é editado no bloco “páginas CSS e JavaScript” e incluído após o bloco geral. Cole o conteúdo CSS e JavaScript nos campos.
+
+```text
+.page-content { max-width: 72rem; }
+```
+
+```text
+document.documentElement.classList.add('custom-script-loaded');
+```
+
+### Cabeçalhos de serviço
+
+Na seção “Modelos de design → Cabeçalhos de serviço”, você pode inserir meta tags gerais e códigos de contador dentro do cabeçalho ou antes do corpo de fechamento. Canonical é adicionado automaticamente em páginas inteiras.
+
+```text
+<meta name="theme-color" content="#065f63">
+```
+
+### Ícones impressionantes de fontes
+
+Font Awesome Free 7.3.1 está conectado. O código curto funciona em blocos de conteúdo e design HTML. Estão disponíveis estilos sólidos, regulares e de marcas. Adicione texto próximo ao ícone se ele representar uma ação.
+
+```text
+[fa-icon=house] [fa-icon=regular:envelope] [fa-icon=brands:github]
+```
+
+```text
+<i class="fa-icon fa-solid fa-phone" aria-hidden="true"></i> Contato
+```
+
+### Bibliotecas e fontes
+
+As conexões são gerenciadas em “Configurações → Bibliotecas e fontes”. Para Material UI, use JavaScript modular. A fonte do Google selecionada substitui a fonte do sistema do site.
+
+```text
+<script type="module">import { Button } from "@mui/material";</script>
+```
+
+```text
+GLightbox({selector: ".glightbox"});
+```
+
+## Variáveis, submodelos e data
+
+### Variáveis ​​do site
+
+Adicione entradas em “Configurações → Geral”. Insira a chave no texto, cabeçalho, título do site ou rodapé.
+
+```text
+[city] = Moscou
+[spb] = São Petersburgo
+```
+
+```text
+Atendimento na cidade [city]
+```
+
+### Fragmentos
+
+Na seção Submodelos, especifique um nome, uma descrição e um valor. Para um domínio, seu valor é obtido primeiro e depois seu valor geral. O submodelo pode conter HTML. A marcação nos cabeçalhos é removida.
+
+```text
+[tel]
+```
+
+```text
+[title]
+```
+
+### Data e hora
+
+O fuso horário é retirado do PHP. [year] - ano, [month] - mês, [day] - dia do mês, [time] - horas e minutos, [dmY] e [date] - data DD.MM.AAAA, [datetime] - data e hora.
+
+```text
+© [year] [city]
+Data [dmY], hora [time]
+```
+
+### Nome e autor do CMS
+
+O código [author] gera Eurowebcart CMS Light, o nome do autor Бандалетов Павел e um link para GitHub. Num rodapé padrão, a assinatura aparece automaticamente. No seu próprio rodapé HTML, cole o código onde desejar.
+
+```text
+[author]
+```
+
+## Carrossel, galeria de fotos e arquivos
+
+### Carrossel [gal]
+
+Mostra fotos de uma pasta. setas e números podem ser ativados ou desativados, efeito – deslizar, desbotar ou nenhum, ajustar – conter ou cobrir.
+
+```text
+[gal]/images/myfotos/[/gal]
+```
+
+```text
+[gal arrows=on numbers=off effect=fade fit=cover width=50]/images/myfotos/[/gal]
+```
+
+### Galeria de fotos [fotos]
+
+Mostra uma grade responsiva. colunas — automático ou um número de 1 a 6, proporção — 4x3, 1x1, 16x9 ou original, ajuste — cobrir ou conter. legendas e links são ativados ou desativados.
+
+```text
+[fotos]/images/myfotos/[/fotos]
+```
+
+```text
+[fotos columns=4 ratio=1x1 fit=cover captions=on links=off width=50%]/images/myfotos/[/fotos]
+```
+
+### Lista de arquivos [files]
+
+Lista os arquivos suportados. ícones, tamanho e download aceitos ativados ou desativados, ordem – asc ou desc. Zip, pdf, xls, xlsx, doc, docx, png, gif, jpg, jpeg, mp4, mov e mp3 são permitidos.
+
+```text
+[files]/files/myfiles/[/files]
+```
+
+```text
+[files icons=on size=on order=desc download=on width=33]/files/myfiles/[/files]
+```
+
+## Formulários e retorno de chamada
+
+### Formulário [formN]
+
+Na seção “Formulários”, configure os campos, seu comprimento máximo, texto do botão e destinatário. “Usar CAPTCHA” habilita o widget Google reCAPTCHA v2 com verificação de resposta no servidor. As solicitações são enviadas via AJAX e ficam visíveis na seção Mensagens.
+
+```text
+[form1]
+[form2]
+```
+
+### Modelo de formulário de correio
+
+O assunto e o texto são armazenados separadamente para cada formulário. Em seu modelo de e-mail, insira chaves de campo entre chaves. As listas de destinatários e cópias são separadas por vírgulas.
+
+```text
+Olá {name}!
+Telefone: {phone}
+Mensagem: {message}
+```
+
+### Ligue de volta [callback]
+
+Abre um formulário com um número de telefone. O aplicativo é salvo na seção “Callbacks”. O rótulo do botão pode ser definido em código. Com o provedor “Não”, o envio para telefonia fica desabilitado.
+
+```text
+[callback]
+[callback=Вызвать мастера]
+```
+
+## Blocos de dados
+
+### Tabela e lista de telefones
+
+Crie um conjunto de dados na seção "Infoblocks". A–Z, a–z, 0–9, hífen e sublinhado são permitidos no nome do infobloco e nas chaves de coluna. Não são permitidos espaços. O modelo de tabela exibe uma tabela, telefones exibe colunas de telefone com links para chamadas. Os códigos de fechamento [iblock] e [/iblock] são suportados.
+
+```text
+[iblock=table]/data/myiblock.txt[iblock]
+[iblock=phones]/data/myiblock.txt[/iblock]
+```
+
+## Contactos e redes sociais
+
+### Bloco geral e ícones
+
+[contacts] exibe um bloco de contatos, [phones] mostra números de telefone, [soc-icons] coleta ícones de todas as redes sociais com links customizados.
+
+```text
+[contacts]
+[phones]
+[soc-icons]
+```
+
+### Redes sociais individuais
+
+Cada código exibe um link para sua rede social. Endereços e assinaturas são definidos em “Configurações → Contatos e redes sociais”.
+
+```text
+[tg] [vk] [whatsapp] [youtube] [instagram] [max]
+```
+
+```text
+[wa] [yt] [ig]
+```
+

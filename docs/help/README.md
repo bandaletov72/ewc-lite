@@ -1,4 +1,4 @@
-# Справка / Documentation
+# Eurowebcart CMS Light · Documentation
 
 - [Русский](ru.md)
 - [English](en.md)

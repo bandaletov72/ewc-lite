@@ -1,0 +1,223 @@
+# Eurowebcart CMS Light
+
+Author - Бандалетов Павел. [Original project and updates](https://github.com/bandaletov72/php-site-updates).
+
+The project is designed for PHP 7.2. No database, Composer or frontend assembly required.
+
+[Admin FAQ](faq.md) is also available in the “Help” tab.
+
+[Help for the current version in ten languages](../README.md) describes search, site editing, localization and maintenance. [Admin FAQ in English](../en/faq.md).
+
+For scheduled maintenance, add the command `php update.php --scheduled` to the hosting scheduler with a period of 15 minutes. In the Maintenance section, you can independently enable reindexing and set the check interval for signed GitHub updates.
+
+## Local launch
+
+Go to the `php-site` directory and launch the built-in PHP server.
+
+```sh
+php -S 127.0.0.1:8000 router.php
+```
+
+The site will open at the address `http://127.0.0.1:8000/`, the admin panel is located at `http://127.0.0.1:8000/admin/`.
+
+## Installation and first login
+
+On your local server, open `/admin/` and create an account. In the second step, set the site name, meta description, footer text, palette and theme mode. The logo can be downloaded immediately if you have PHP GD. The wizard will create a favicon from it. Click "Save and open admin" or continue with current settings. If you exit the wizard, it will continue the next time you log in.
+
+On the hosting, run `php admin/setup.php` from the project directory and enter the one-time code in the first step of the wizard. The code is redeemed when you create an account. Running the command again before installation replaces the previous code. Installing the update retains the previous account and settings. If the version before the update used `SITE_ADMIN_PASSWORD_HASH`, the login is saved with the login `admin` and the previous password.
+
+For the application to work, you need PHP sessions and write rights to `admin/`, `admin/write-lock.php`, `admin/inbox/`, `data/` and directories of editable pages. To create pages and directories at the root, give the PHP process write access to the project root. Use a web server with HTTPS, processing `.php` and `index.php` in the index file list. Disable directory listings. For HTTPS behind a reverse proxy, pass the PHP attribute `HTTPS` through the trusted server configuration.
+
+## Pages and menus
+
+In the admin panel, the main page is listed as `/`, the rest of the pages in the folders are listed as `/contacts/`. To create a subpage, enter, for example, `/Services-1/Repair/`. The admin panel will create the catalogs and `index.php` itself. For a separate file, enter an address like `/Services-1/About_2.php`. `A–Z`, `a–z`, `0–9`, hyphens and underscores are allowed in file and folder names. Names are entered without spaces. At root, only the main page is allowed. Service directories including `data`, `admin`, `templates`, `css` and `js` are reserved.
+
+In the list of pages, folders can be expanded. In Menu checkbox, hide, publish and delete are saved via AJAX. Hiding, publishing and deleting require confirmation. Drag the ⠿ icon to sort adjacent pages. The hidden page stops opening and disappears from the menu before publishing.
+
+In the page editor, open the “Move Page” block and specify the destination folder. For example, if you transfer `/contacts/` to `/company/`, the new address will be `/company/contacts/`. Nested pages remain at the same addresses. Update your own links and codes `[include]` that lead to the migrated page.
+
+The ↪ button next to the folder name transfers the entire directory along with pages and files. You can select another section or site root for the folder. The addresses of subpages change along with the folder address.
+
+Content can be edited in a text editor and added via FTP or SFTP. The file must be in UTF-8 without BOM. Save the PHP service block up to the line `__halt_compiler();`. In the new page file, insert this block from the example at the desired depth and check the relative path to the root `index.php`. Next come the headers, one empty line, and an HTML fragment of the page.
+
+```php
+<?php
+$pageFile = __FILE__;
+require __DIR__ . '/../index.php';
+__halt_compiler();
+Title: Контакты
+Heading: Как с нами связаться
+Description: Контактная информация
+Menu: Контакты
+MenuVisible: 1
+Order: 20
+
+<p>Укажите здесь контактную информацию.</p>
+```
+
+`Title` is required. Empty `Heading` is taken from `Title`. `Description` fills in the meta description of the page. `MenuVisible: 1` shows the link in the menu, `MenuVisible: 0` hides it. For the `index.php` folder, unchecking the checkbox also hides all subpages from the menu. If `MenuVisible` is missing, the checkbox inherits the previous rule and is considered enabled when `Menu` is filled. When the checkbox is enabled, the empty field `Menu` is replaced by the header `Title`. `Order` specifies the sequence within one level and defaults to 100.
+
+The CSS and JS tab stores common CSS and JavaScript for public pages. The page editor has a separate block “CSS and JavaScript pages”. The page code is loaded after the general one. Specify only the contents of the files, without the `<style>` and `<script>` tags. The allowed size of each field is up to 64 KiB. To link to images from CSS, you can use paths from the site root. The Help tab contains examples of available templates and components.
+
+In the “Design Templates” section you can view the sources of `header.php`, `footer.php`, `menu.php` and `mobile-menu.php` and set common HTML for each. "Service Headers" insert common meta tags, counter codes, and scripts into `<head>` or before `</body>`. On each published full page, `rel="canonical"` is formed from its regular address without query parameters.
+
+## Settings, subtemplates and domains
+
+In the “Settings” section you set the site name, default meta description, footer text and variables. In the footer text, `[year]` automatically displays the current year. Variables are written one per line, for example `[city] = Москва` and `[spb] = Санкт-Петербург`. To display a value in the site title, page content, header, or footer, insert `[city]`. In PHP templates you can use `site_escape($settings['variables']['city'] ?? '')`.
+
+System substitutions include `[year]`, `[month]`, `[day]`, `[time]` (hours and minutes), `[dmY]` and `[date]` (date DD.MM.YYYY), `[datetime]` (date and time). The PHP time zone is used.
+
+In “Basic → Site logos and icons” you can upload PNG, JPEG, GIF or WebP. Downloads are handled by PHP GD. The create favicon button makes a transparent 64×64 PNG from the selected or saved logo. The images are stored in `templates/images/branding/` and `templates/icons/branding/`.
+
+"Subtemplates" stores the name, description, and meaning of each code. For the phone, create `[tel]`. To set a tab title via a subtemplate, create `[title]` and specify it in the `Title` field on the page. After the tab title, the name of the site is displayed. Substitutions work in page text and text metadata. For the link, insert the entire `<a>` tag as a subtemplate value and place the code in the text between the tags. In metadata, HTML is converted from value to text.
+
+Add subdomains in the “Domains” section. In the admin panel of the subdomain of the same name, select “Current domain”, or open the desired domain from the general list. Local meaning takes precedence over general meaning. The public page selects values ​​by domain in its address, and internal links save it. To connect a subdomain, configure the DNS and web server on your hosting so that the domain serves the same project directory.
+
+The "Templates" button next to the domain opens the `[header]`, `[mobile-menu]`, `[menu]` and `[footer]` editor. For each block, you can set your own HTML or use the general version. General templates are configured in the same section.
+
+## Components in HTML
+
+| Code | Result |
+| --- | --- |
+| `[gal]/images/myfotos/[/gal]` | Photo carousel with smooth scrolling, arrows and swipe |
+| `[fotos]/images/myfotos/[/fotos]` | Photo gallery with links to originals |
+| `[files]/files/myfiles[/files]` | List of files with icons by extension |
+| `[include]/contacts/[/include]` | HTML of another page with its subtemplates and components |
+| `[form1]` | Form configured in the Forms section |
+| `[callback=Вызвать мастера]` | Callback request button and form |
+| `[iblock=table]/data/myiblock.txt[iblock]` | Information block table |
+| `[iblock=phones]/data/myiblock.txt[iblock]` | List of information block telephones |
+| `[phones]`, `[contacts]` | Phones or the entire configured contact block |
+| `[soc-icons]` | Icons of all social networks with customized links |
+| `[tg]`, `[vk]`, `[whatsapp]`, `[youtube]`, `[instagram]`, `[max]` | Social network link with icon and signature |
+
+Place photos in `templates/images/myfotos/` or `images/myfotos/`. The file list shows `zip`, `pdf`, `xls`, `xlsx`, `doc`, `docx`, `png`, `gif`, `jpg`, `jpeg`, `mp4`, `mov` and `mp3`. For `[include]`, up to ten nesting levels are supported. The page repeat in the current thread is skipped. Place component codes in the body of the page, on a separate line between HTML blocks.
+
+In “Settings → Contacts and social networks” set links, numbers, signatures and block title. In “Settings → Theme and Colors”, system, dark and light modes and individual palettes are available. In “Settings → Components” you set the general parameters of the carousel and photo gallery. Under the settings there are examples of inserting with selected values. Parameters in the page code override common values.
+
+In Theme & Colors, you can save a copy of the selected settings under your own name or leave the name automatic. “Apply” changes the current design. Use Default applies the saved theme and remembers it for the Reset Theme to Default command. Removing from the list preserves the current design of the site.
+
+```text
+[gal arrows=off numbers=off effect=fade fit=cover]/images/myfotos/[/gal]
+[fotos columns=4 ratio=1x1 fit=cover captions=on links=off]/images/myfotos/[/fotos]
+[files icons=on size=on order=desc download=on]/files/myfiles/[/files]
+```
+
+For `[fotos]`, the number of columns can be set manually for a wide screen or left automatically selected. On narrow screens, the grid reduces the number of columns. Available aspect ratios are 4:3, 1:1, 16:9 and original, `cover` and `contain` modes, signatures from file names and links to originals.
+
+## Forms and antispam
+
+In the “Forms” section you can edit `[form1]`, create `[form2]` and the following forms. For the form, the recipient's address, button signature and fields are specified. The field can have a maximum length. An empty value uses the default limit for the field type. When you enter `89031234567`, the phone field formats it as `+7(903)123-45-67`. The server checks the length, type, valid choices, and limits the total size of the request. Free entry fields accept plain text. HTML in messages is escaped when output, and HTML tags in new messages are rejected.
+
+The "Use CAPTCHA" checkbox enables Google reCAPTCHA v2 with the "I'm not a robot" check for the selected form. Enter the site key and secret key for the domain. The secret is stored in a protected settings file and is used only for server verification. [Server Verification Documentation](https://developers.google.com/recaptcha/docs/verify).
+
+Forms are submitted via AJAX. Applications are saved in the “Messages” section. If a recipient is specified, `mail()` is used for notifications, which requires configured mail on the hosting. In the Antispam section you can edit lists of words, expressions, IPv4 and IPv6 addresses. Links are blocked on the server. The sender's address is taken from `REMOTE_ADDR`. Behind the reverse proxy, configure the recovery of the original IP in the web server for trusted proxies.
+
+Each form has a “Mail Template” with fields “To,” “Cc (Cc),” “Email Subject,” and “Email Body.” Addresses are indicated separated by commas. Copies are sent if at least one primary recipient is specified. Field keys are inserted into the subject and text in curly braces, for example `Привет {name}!`. An empty field value is substituted as an empty string, the unknown key remains in the letter. If the subject or text is empty, the corresponding part of the standard letter is used.
+
+## Callback requests
+
+Insert `[callback]` or `[callback=Вызвать мастера]` into the HTML page. The button will open a form with a phone number. Requests are saved in the “Callbacks” section. The button signatures and the mode for transferring the request to telephony are also set there. By default, the “None” provider is selected and requests are only saved. Telephony can be enabled for manual sending from the list or for sending immediately after receiving the number.
+
+- **Zadarma.** Set the number, SIP or operator extension in the admin panel, and transfer the keys to PHP via `SITE_ZADARMA_KEY` and `SITE_ZADARMA_SECRET`. [Zadarma API documentation](https://zadarma.com/en/support/api/)
+- **HTTP API.** Specify `SITE_CALLBACK_WEBHOOK_URL` with the HTTPS address and optionally `SITE_CALLBACK_WEBHOOK_TOKEN`. The site sends a POST with JSON fields `id`, `phone`, `host`, `page`, `requested_at` and header `Idempotency-Key`. The token is transferred as Bearer. The response code 2xx transfers the request to the “Accepted by telephony” status.
+
+Give the PHP process write permission to `admin/callbacks/`. Applications use form antispam settings. Repetition to the same number is limited to one minute; up to three requests per 15 minutes are accepted via IP.
+
+## Information blocks and closed data folder
+
+In the “Infoblocks” section you can create data sets, edit and drag rows. `A–Z`, `a–z`, `0–9`, hyphen and underscore are allowed in the infoblock name and column keys. Names and keys are entered without spaces. Column names and cell values ​​can be written in Russian. The controls correspond to the column types, and saving is done via AJAX. The ☰ “Edit as text” button switches the entire information block to CSV with a delimiter `|` and a copy button. The first three lines contain the keys, names, and types of the columns. Then there are data lines. The date in CSV is `ГГГГ-ММ-ДД`, yes/no is stored as `1` or `0`.
+
+```text
+name|phone|is_open
+Название|Телефон|Открыто
+text|tel|bool
+Справочная|+7(903)123-45-67|1
+```
+
+The `phones` template uses columns of type `tel` and a text column with a title. You can place your template in `templates/local/iblock/имя.php`, where `$block['columns']` and `$block['rows']` are available.
+
+The path `/data/myiblock.txt` inside the code corresponds to the file `data/myiblock.txt.php`. This is UTF-8 text with a PHP stub that returns 404 when called directly. `router.php` closes the entire folder when running locally. `data/` has rules for Apache and IIS. For Apache, enable `data/.htaccess`. On Nginx, configure the folder to be closed in the site configuration, taking into account the prefix when installing in a subdirectory.
+
+```nginx
+location = /data { return 404; }
+location ^~ /data/ { return 404; }
+```
+
+After installation, check that a direct request to `/data/` and the infoblock file receives a 403 or 404.
+
+## Loading HTML fragments
+
+The usual address `/contacts/` opens the full page. The request `?ajax=1` returns `<main>` with H1 and processed content if there is a session key in the `X-Site-Fragment` header. Fragments are linked to the current origin. Pages and fragments with keys are served without caching.
+
+In JavaScript on a site page, use the built-in function.
+
+```js
+const html = await window.siteFetchContent('/contacts/');
+document.getElementById('content').outerHTML = html;
+```
+
+When installing in a subdirectory, pass the URL with the site prefix. The script and styles are taken from the page that inserts the fragment. Public pages remain accessible at regular addresses.
+
+## Templates and Resources
+
+In “Settings → Libraries and fonts” jQuery, Bootstrap, Font Awesome, Material UI, Alpine.js, htmx, Chart.js and GLightbox are enabled separately. Font Awesome is stored locally. The remaining libraries are downloaded by the browser from the CDN when enabled. Material UI is available in scripts `type="module"` through `import { Button } from '@mui/material'`. For icons, `[fa-icon=house]` or the usual markup `<i class="fa-solid fa-house"></i>` is suitable.
+
+10 Google fonts with Cyrillic alphabet are available. The selection replaces the site's system font. The value "System" returns the previous design. In “Settings → Theme & Colors → Saved Themes” there are five ready-made palettes with light and dark options.
+
+| Path | Purpose |
+| --- | --- |
+| `index.php` | Home page and general entry point |
+| `contacts/index.php` | Example of a page in a separate directory |
+| `admin/` | Login and page editor |
+| `app/site.php` | Reading pages, building menus and website titles in `SITE_NAME` |
+| `templates/layout.php` | General layout, tab title, metadata and content area |
+| `templates/header.php`, `menu.php`, `footer.php` | Header, menu and footer |
+| `templates/css/`, `js/`, `icons/`, `images/` | Styles, scripts, icons and images |
+| `templates/components/`, `templates/iblock/` | Component markup and infoblock templates |
+| `data/` | Information block files protected from direct HTTP access |
+
+The engine assembles a complete page from `[header]`, `[mobile-menu]`, `[menu]` and `[footer]`. These are the top bar, mobile menu, right menu and footer. They can be redefined by subtemplates of the same name in the admin panel, including separate options for subdomains. Store PHP template overrides in `templates/local/` with the same relative path, for example `templates/local/footer.php`.
+
+## Engine update
+
+The full archive is needed for a new installation. For a live site, use `php-site-update.zip`. It only contains the engine and standard templates. Saved pages, information blocks, settings, passwords, messages and user extensions are not included in the archive.
+
+Click "Update Engine" in "Settings → Updates" or run the same check from the hosting scheduler.
+
+```sh
+php update.php --github
+```
+
+The default source is `bandaletov72/php-site-updates`. For your own repository, set it to `SITE_GITHUB_REPO`. A public repository does not require a token. For a private repository, pass the variable `SITE_GITHUB_TOKEN` to the PHP process with read access to the contents. The server requires the Zip and OpenSSL PHP extensions and the ability to make HTTPS requests to GitHub.
+
+For manual installation, use ZIP.
+
+```sh
+php update.php /path/to/php-site-update.zip
+```
+
+On the old version without `update.php`, first unzip the package on top of the project, keeping the existing `.htaccess` and the files from `maintenance/`, if any. If you edited standard templates, transfer the edits to `templates/local/` before updating. The installer verifies the list and checksums of the files, and for GitHub it also verifies the signature with the trusted public key `maintenance/release-public.pem`.
+
+For the next release, change the version to `app/version.php` and build the package via `php update.php --build php-site-update.zip`. Sign the ZIP with your RSA private key with SHA‑256, and store the private key separately from the site. Then push the ZIP and `.sig` to GitHub Release with the tag `vX.Y.Z` or to `updates/vX.Y.Z/` and update `updates/latest.json` to `{"version":"X.Y.Z"}`.
+
+## Extensions
+
+Engine modules can be added to `app/extensions/` along with updates. Store your own modules in `extensions/`, outside the update package. The PHP file returns an array of definitions. A single component has `kind` equal to `single`, and a component with an argument equals `wrapped`. The engine recognizes new codes on existing pages. A component can declare a menu of options in `settings`, setting each option to `label`, `default`, and the array `options`. The values ​​are received in `$context['settings']`.
+
+```php
+<?php
+if (!defined('SITE_ROOT')) {
+    http_response_code(404);
+    exit;
+}
+
+return ['notice' => [
+    'kind' => 'wrapped',
+    'render' => static function (string $text, array $context): string {
+        return '<strong>' . site_escape($text) . '</strong>';
+    },
+]];
+```
+
+The example component is inserted as `[notice]Важное сообщение[/notice]`.

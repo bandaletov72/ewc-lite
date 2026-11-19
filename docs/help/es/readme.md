@@ -1,0 +1,223 @@
+# Eurowebcart CMS Light
+
+Autor - Бандалетов Павел. [Proyecto original y actualizaciones.](https://github.com/bandaletov72/php-site-updates).
+
+El proyecto está diseñado para PHP 7.2. No se requiere base de datos, Composer o ensamblaje de interfaz.
+
+[Preguntas frecuentes del administrador](faq.md) también está disponible en la pestaña "Ayuda".
+
+[Ayuda para la versión actual en diez idiomas](../README.md) describe la búsqueda, edición, localización y mantenimiento del sitio. [Admin FAQ in English](../en/faq.md).
+
+Para mantenimiento programado, agregue el comando `php update.php --scheduled` al programador de hosting con un período de 15 minutos. En la sección Mantenimiento, puede habilitar la reindexación de forma independiente y establecer el intervalo de verificación para las actualizaciones firmadas de GitHub.
+
+## Lanzamiento local
+
+Vaya al directorio `php-site` e inicie el servidor PHP integrado.
+
+```sh
+php -S 127.0.0.1:8000 router.php
+```
+
+El sitio se abrirá en la dirección `http://127.0.0.1:8000/`, el panel de administración está ubicado en `http://127.0.0.1:8000/admin/`.
+
+## Instalación y primer inicio de sesión
+
+En su servidor local, abra `/admin/` y cree una cuenta. En el segundo paso, configure el nombre del sitio, la meta descripción, el texto del pie de página, la paleta y el modo del tema. El logotipo se puede descargar inmediatamente si tiene PHP GD. El asistente creará un favicon a partir de él. Haga clic en "Guardar y abrir administrador" o continúe con la configuración actual. Si sale del asistente, continuará la próxima vez que inicie sesión.
+
+En el alojamiento, ejecute `php admin/setup.php` desde el directorio del proyecto e ingrese el código de un solo uso en el primer paso del asistente. El código se canjea cuando creas una cuenta. Ejecutar el comando nuevamente antes de la instalación reemplaza el código anterior. La instalación de la actualización conserva la cuenta y la configuración anteriores. Si la versión anterior a la actualización usaba `SITE_ADMIN_PASSWORD_HASH`, el inicio de sesión se guarda con el inicio de sesión `admin` y la contraseña anterior.
+
+Para que la aplicación funcione, necesita sesiones PHP y derechos de escritura para `admin/`, `admin/write-lock.php`, `admin/inbox/`, `data/` y directorios de páginas editables. Para crear páginas y directorios en la raíz, otorgue al proceso PHP acceso de escritura a la raíz del proyecto. Utilice un servidor web con HTTPS, procesando `.php` y `index.php` en la lista de archivos de índice. Deshabilitar listados de directorios. Para HTTPS detrás de un proxy inverso, pase el atributo PHP `HTTPS` a través de la configuración del servidor confiable.
+
+## Páginas y menús
+
+En el panel de administración, la página principal aparece como `/`, el resto de las páginas de las carpetas aparecen como `/contacts/`. Para crear una subpágina, ingrese, por ejemplo, `/Services-1/Repair/`. El panel de administración creará los catálogos y el propio `index.php`. Para un archivo separado, ingrese una dirección como `/Services-1/About_2.php`. `A–Z`, `a–z`, `0–9`, se permiten guiones y guiones bajos en los nombres de archivos y carpetas. Los nombres se ingresan sin espacios. En la raíz, sólo se permite la página principal. Los directorios de servicios que incluyen `data`, `admin`, `templates`, `css` y `js` están reservados.
+
+En la lista de páginas, se pueden ampliar las carpetas. En la casilla de verificación Menú, ocultar, publicar y eliminar se guardan mediante AJAX. Ocultar, publicar y eliminar requieren confirmación. Arrastra el ícono ⠿ para ordenar las páginas adyacentes. La página oculta deja de abrirse y desaparece del menú antes de publicarse.
+
+En el editor de páginas, abra el bloque "Mover página" y especifique la carpeta de destino. Por ejemplo, si transfiere `/contacts/` a `/company/`, la nueva dirección será `/company/contacts/`. Las páginas anidadas permanecen en las mismas direcciones. Actualice sus propios enlaces y códigos `[include]` que conducen a la página migrada.
+
+El botón ↪ junto al nombre de la carpeta transfiere todo el directorio junto con páginas y archivos. Puede seleccionar otra sección o raíz del sitio para la carpeta. Las direcciones de las subpáginas cambian junto con la dirección de la carpeta.
+
+El contenido se puede editar en un editor de texto y agregar a través de FTP o SFTP. El archivo debe estar en UTF-8 sin BOM. Guarde el bloque de servicio PHP hasta la línea `__halt_compiler();`. En el archivo de la nueva página, inserte este bloque del ejemplo a la profundidad deseada y verifique la ruta relativa a la raíz `index.php`. Luego vienen los encabezados, una línea vacía y un fragmento HTML de la página.
+
+```php
+<?php
+$pageFile = __FILE__;
+require __DIR__ . '/../index.php';
+__halt_compiler();
+Title: Контакты
+Heading: Как с нами связаться
+Description: Контактная информация
+Menu: Контакты
+MenuVisible: 1
+Order: 20
+
+<p>Укажите здесь контактную информацию.</p>
+```
+
+Se requiere `Title`. El `Heading` vacío se toma de `Title`. `Description` completa la meta descripción de la página. `MenuVisible: 1` muestra el enlace en el menú, `MenuVisible: 0` lo oculta. Para la carpeta `index.php`, al desmarcar la casilla de verificación también se ocultan todas las subpáginas del menú. Si falta `MenuVisible`, la casilla de verificación hereda la regla anterior y se considera habilitada cuando se completa `Menu`. Cuando la casilla de verificación está habilitada, el campo vacío `Menu` se reemplaza por el encabezado `Title`. `Order` especifica la secuencia dentro de un nivel y el valor predeterminado es 100.
+
+La pestaña CSS y JS almacena CSS y JavaScript comunes para páginas públicas. El editor de páginas tiene un bloque separado "Páginas CSS y JavaScript". El código de la página se carga después del general. Especifique sólo el contenido de los archivos, sin las etiquetas `<style>` y `<script>`. El tamaño permitido de cada campo es de hasta 64 KiB. Para vincular imágenes desde CSS, puede utilizar rutas desde la raíz del sitio. La pestaña Ayuda contiene ejemplos de plantillas y componentes disponibles.
+
+En la sección "Plantillas de diseño" puede ver las fuentes de `header.php`, `footer.php`, `menu.php` y `mobile-menu.php` y configurar HTML común para cada uno. Los "encabezados de servicio" insertan metaetiquetas, códigos de contador y scripts comunes en `<head>` o antes de `</body>`. En cada página completa publicada, `rel="canonical"` se forma a partir de su dirección habitual sin parámetros de consulta.
+
+## Configuraciones, subplantillas y dominios
+
+En la sección "Configuración", configura el nombre del sitio, la meta descripción predeterminada, el texto del pie de página y las variables. En el texto del pie de página, `[year]` muestra automáticamente el año actual. Las variables se escriben una por línea, por ejemplo `[city] = Москва` y `[spb] = Санкт-Петербург`. Para mostrar un valor en el título del sitio, contenido de la página, encabezado o pie de página, inserte `[city]`. En plantillas PHP puedes usar `site_escape($settings['variables']['city'] ?? '')`.
+
+Las sustituciones del sistema incluyen `[year]`, `[month]`, `[day]`, `[time]` (horas y minutos), `[dmY]` y `[date]` (fecha DD.MM.AAAA), `[datetime]` (fecha y hora). Se utiliza la zona horaria PHP.
+
+En “Básico → Logotipos e íconos del sitio” puede cargar PNG, JPEG, GIF o WebP. Las descargas son manejadas por PHP GD. El botón Crear favicon crea un PNG transparente de 64 × 64 a partir del logotipo seleccionado o guardado. Las imágenes se almacenan en `templates/images/branding/` y `templates/icons/branding/`.
+
+Las "Subplantillas" almacenan el nombre, la descripción y el significado de cada código. Para el teléfono, cree `[tel]`. Para establecer un título de pestaña a través de una subplantilla, cree `[title]` y especifíquelo en el campo `Title` de la página. Después del título de la pestaña, se muestra el nombre del sitio. Las sustituciones funcionan en el texto de la página y en los metadatos de texto. Para el enlace, inserte la etiqueta `<a>` completa como valor de subplantilla y coloque el código en el texto entre las etiquetas. En los metadatos, HTML se convierte de valor a texto.
+
+Agregue subdominios en la sección "Dominios". En el panel de administración del subdominio del mismo nombre, seleccione "Dominio actual" o abra el dominio deseado de la lista general. El significado local tiene prioridad sobre el significado general. La página pública selecciona valores por dominio en su dirección y los enlaces internos la guardan. Para conectar un subdominio, configure el DNS y el servidor web en su hosting para que el dominio sirva al mismo directorio del proyecto.
+
+El botón "Plantillas" al lado del dominio abre el editor `[header]`, `[mobile-menu]`, `[menu]` y `[footer]`. Para cada bloque, puedes configurar tu propio HTML o utilizar la versión general. Las plantillas generales se configuran en el mismo apartado.
+
+## Componentes en HTML
+
+| Código | Resultado |
+| --- | --- |
+| `[gal]/images/myfotos/[/gal]` | Carrusel de fotos con desplazamiento suave, flechas y deslizamiento |
+| `[fotos]/images/myfotos/[/fotos]` | Galería de fotos con enlaces a originales. |
+| `[files]/files/myfiles[/files]` | Lista de archivos con iconos por extensión |
+| `[include]/contacts/[/include]` | HTML de otra página con sus subplantillas y componentes |
+| `[form1]` | Formulario configurado en la sección Formularios |
+| `[callback=Вызвать мастера]` | Botón y formulario de solicitud de devolución de llamada |
+| `[iblock=table]/data/myiblock.txt[iblock]` | Tabla de bloques de información |
+| `[iblock=phones]/data/myiblock.txt[iblock]` | Lista de teléfonos del bloque de información |
+| `[phones]`, `[contacts]` | Teléfonos o todo el bloque de contactos configurado |
+| `[soc-icons]` | Iconos de todas las redes sociales con enlaces personalizados. |
+| `[tg]`, `[vk]`, `[whatsapp]`, `[youtube]`, `[instagram]`, `[max]` | Enlace de red social con icono y firma. |
+
+Coloque fotos en `templates/images/myfotos/` o `images/myfotos/`. La lista de archivos muestra `zip`, `pdf`, `xls`, `xlsx`, `doc`, `docx`, `png`, `gif`, `jpg`, `jpeg`, `mp4`, `mov` y `mp3`. Para `[include]`, se admiten hasta diez niveles de anidamiento. Se omite la repetición de página en el hilo actual. Coloque los códigos de los componentes en el cuerpo de la página, en una línea separada entre los bloques HTML.
+
+En “Configuración → Contactos y redes sociales” establezca enlaces, números, firmas y título del bloque. En “Configuración → Tema y colores”, están disponibles el sistema, los modos oscuro y claro y las paletas individuales. En “Configuración → Componentes” configuras los parámetros generales del carrusel y la galería de fotos. Debajo de la configuración hay ejemplos de inserción con valores seleccionados. Los parámetros en el código de la página anulan los valores comunes.
+
+En Tema y colores, puede guardar una copia de la configuración seleccionada con su propio nombre o dejar el nombre automático. “Aplicar” cambia el diseño actual. Usar predeterminado aplica el tema guardado y lo recuerda para el comando Restablecer tema a predeterminado. Al eliminarlo de la lista se conserva el diseño actual del sitio.
+
+```text
+[gal arrows=off numbers=off effect=fade fit=cover]/images/myfotos/[/gal]
+[fotos columns=4 ratio=1x1 fit=cover captions=on links=off]/images/myfotos/[/fotos]
+[files icons=on size=on order=desc download=on]/files/myfiles/[/files]
+```
+
+Para `[fotos]`, el número de columnas se puede configurar manualmente para una pantalla ancha o dejarse seleccionado automáticamente. En pantallas estrechas, la cuadrícula reduce el número de columnas. Las relaciones de aspecto disponibles son 4:3, 1:1, 16:9 y original, modos `cover` y `contain`, firmas de nombres de archivos y enlaces a originales.
+
+## Formularios y antispam
+
+En la sección “Formularios” puedes editar `[form1]`, crear `[form2]` y los siguientes formularios. Para el formulario, se especifican la dirección del destinatario, la firma del botón y los campos. El campo puede tener una longitud máxima. Un valor vacío utiliza el límite predeterminado para el tipo de campo. Cuando ingresa `89031234567`, el campo del teléfono lo formatea como `+7(903)123-45-67`. El servidor verifica la longitud, el tipo, las opciones válidas y limita el tamaño total de la solicitud. Los campos de entrada gratuitos aceptan texto sin formato. El HTML de los mensajes se escapa cuando se generan y las etiquetas HTML de los mensajes nuevos se rechazan.
+
+La casilla de verificación "Usar CAPTCHA" habilita Google reCAPTCHA v2 con la marca "No soy un robot" para el formulario seleccionado. Ingrese la clave del sitio y la clave secreta del dominio. El secreto se almacena en un archivo de configuración protegido y se utiliza únicamente para la verificación del servidor. [Documentación de verificación del servidor](https://developers.google.com/recaptcha/docs/verify).
+
+Los formularios se envían a través de AJAX. Las solicitudes se guardan en la sección "Mensajes". Si se especifica un destinatario, `mail()` se utiliza para las notificaciones, lo que requiere correo configurado en el hosting. En la sección Antispam puedes editar listas de palabras, expresiones, direcciones IPv4 e IPv6. Los enlaces están bloqueados en el servidor. La dirección del remitente se toma de `REMOTE_ADDR`. Detrás del proxy inverso, configure la recuperación de la IP original en el servidor web para servidores proxy confiables.
+
+Cada formulario tiene una "Plantilla de correo" con los campos "Para", "Cc (Cc)", "Asunto del correo electrónico" y "Cuerpo del correo electrónico". Las direcciones se indican separadas por comas. Se envían copias si se especifica al menos un destinatario principal. Las claves de campo se insertan en el asunto y el texto entre llaves, por ejemplo `Привет {name}!`. Un valor de campo vacío se sustituye por una cadena vacía, la clave desconocida permanece en la letra. Si el asunto o el texto está vacío, se utiliza la parte correspondiente de la carta estándar.
+
+## Solicitudes de llamada
+
+Inserte `[callback]` o `[callback=Вызвать мастера]` en la página HTML. El botón abrirá un formulario con un número de teléfono. Las solicitudes se guardan en la sección "Devoluciones de llamada". Allí también se configuran las firmas de los botones y el modo de transferencia de la solicitud a telefonía. De forma predeterminada, se selecciona el proveedor "Ninguno" y las solicitudes solo se guardan. La telefonía se puede habilitar para envío manual desde la lista o para envío inmediatamente después de recibir el número.
+
+- **Zadarma.** Establece el número, SIP o extensión del operador en el panel de administración y transfiere las claves a PHP a través de `SITE_ZADARMA_KEY` y `SITE_ZADARMA_SECRET`. [Documentación de la API de Zadarma](https://zadarma.com/en/support/api/)
+- **HTTP API.** Especifique `SITE_CALLBACK_WEBHOOK_URL` con la dirección HTTPS y, opcionalmente, `SITE_CALLBACK_WEBHOOK_TOKEN`. El sitio envía un POST con los campos JSON `id`, `phone`, `host`, `page`, `requested_at` y el encabezado `Idempotency-Key`. El token se transfiere como portador. El código de respuesta 2xx transfiere la solicitud al estado "Aceptada por telefonía".
+
+Otorgue permiso de escritura al proceso PHP para `admin/callbacks/`. Las aplicaciones utilizan configuraciones antispam. La repetición del mismo número está limitada a un minuto; Se aceptan hasta tres solicitudes cada 15 minutos vía IP.
+
+## Bloques de información y carpeta de datos cerrada.
+
+En la sección "Bloques de información" puede crear conjuntos de datos, editar y arrastrar filas. `A–Z`, `a–z`, `0–9`, se permiten guiones y guiones bajos en el nombre del bloque de información y las claves de columna. Los nombres y claves se ingresan sin espacios. Los nombres de las columnas y los valores de las celdas se pueden escribir en ruso. Los controles corresponden a los tipos de columnas y el guardado se realiza mediante AJAX. El botón ☰ “Editar como texto” cambia todo el bloque de información a CSV con un delimitador `|` y un botón de copiar. Las primeras tres líneas contienen las claves, los nombres y los tipos de las columnas. Luego están las líneas de datos. La fecha en CSV es `ГГГГ-ММ-ДД`, sí/no se almacena como `1` o `0`.
+
+```text
+name|phone|is_open
+Название|Телефон|Открыто
+text|tel|bool
+Справочная|+7(903)123-45-67|1
+```
+
+La plantilla `phones` utiliza columnas de tipo `tel` y una columna de texto con un título. Puede colocar su plantilla en `templates/local/iblock/имя.php`, donde están disponibles `$block['columns']` y `$block['rows']`.
+
+La ruta `/data/myiblock.txt` dentro del código corresponde al archivo `data/myiblock.txt.php`. Este es texto UTF-8 con un código auxiliar PHP que devuelve 404 cuando se llama directamente. `router.php` cierra toda la carpeta cuando se ejecuta localmente. `data/` tiene reglas para Apache e IIS. Para Apache, habilite `data/.htaccess`. En Nginx, configure la carpeta a cerrar en la configuración del sitio, teniendo en cuenta el prefijo al instalar en un subdirectorio.
+
+```nginx
+location = /data { return 404; }
+location ^~ /data/ { return 404; }
+```
+
+Después de la instalación, verifique que una solicitud directa a `/data/` y el archivo infoblock reciba un 403 o 404.
+
+## Cargando fragmentos HTML
+
+La dirección habitual `/contacts/` abre la página completa. La solicitud `?ajax=1` devuelve `<main>` con H1 y contenido procesado si hay una clave de sesión en el encabezado `X-Site-Fragment`. Los fragmentos están vinculados al origen actual. Las páginas y fragmentos con claves se entregan sin almacenamiento en caché.
+
+En JavaScript en la página de un sitio, utilice la función incorporada.
+
+```js
+const html = await window.siteFetchContent('/contacts/');
+document.getElementById('content').outerHTML = html;
+```
+
+Al instalar en un subdirectorio, pase la URL con el prefijo del sitio. El guión y los estilos se toman de la página que inserta el fragmento. Las páginas públicas siguen siendo accesibles en direcciones habituales.
+
+## Plantillas y recursos
+
+En “Configuración → Bibliotecas y fuentes”, jQuery, Bootstrap, Font Awesome, Material UI, Alpine.js, htmx, Chart.js y GLightbox se habilitan por separado. Font Awesome se almacena localmente. El navegador descarga las bibliotecas restantes desde la CDN cuando está habilitada. La interfaz de usuario del material está disponible en los scripts `type="module"` a `import { Button } from '@mui/material'`. Para iconos, es adecuado `[fa-icon=house]` o el marcado habitual `<i class="fa-solid fa-house"></i>`.
+
+Están disponibles 10 fuentes de Google con alfabeto cirílico. La selección reemplaza la fuente del sistema del sitio. El valor "Sistema" devuelve el diseño anterior. En “Configuración → Tema y colores → Temas guardados” hay cinco paletas listas para usar con opciones claras y oscuras.
+
+| Camino | Objetivo |
+| --- | --- |
+| `index.php` | Página de inicio y punto de entrada general |
+| `contacts/index.php` | Ejemplo de una página en un directorio separado |
+| `admin/` | Iniciar sesión y editar páginas |
+| `app/site.php` | Lectura de páginas, creación de menús y títulos de sitios web en `SITE_NAME` |
+| `templates/layout.php` | Diseño general, título de pestaña, metadatos y área de contenido |
+| `templates/header.php`, `menu.php`, `footer.php` | Encabezado, menú y pie de página |
+| `templates/css/`, `js/`, `icons/`, `images/` | Estilos, guiones, iconos e imágenes. |
+| `templates/components/`, `templates/iblock/` | Plantillas de marcado de componentes y bloques de información |
+| `data/` | Archivos de bloques de información protegidos del acceso HTTP directo |
+
+El motor ensambla una página completa de `[header]`, `[mobile-menu]`, `[menu]` y `[footer]`. Estos son la barra superior, el menú móvil, el menú derecho y el pie de página. Se pueden redefinir mediante subplantillas del mismo nombre en el panel de administración, incluidas opciones separadas para subdominios. Almacene las anulaciones de plantillas PHP en `templates/local/` con la misma ruta relativa, por ejemplo `templates/local/footer.php`.
+
+## Actualización del motor
+
+Se necesita el archivo completo para una nueva instalación. Para un sitio activo, utilice `php-site-update.zip`. Solo contiene el motor y las plantillas estándar. Las páginas guardadas, bloques de información, configuraciones, contraseñas, mensajes y extensiones de usuario no se incluyen en el archivo.
+
+Haga clic en "Actualizar motor" en "Configuración → Actualizaciones" o ejecute la misma verificación desde el programador de alojamiento.
+
+```sh
+php update.php --github
+```
+
+La fuente predeterminada es `bandaletov72/php-site-updates`. Para su propio repositorio, configúrelo en `SITE_GITHUB_REPO`. Un repositorio público no requiere un token. Para un repositorio privado, pase la variable `SITE_GITHUB_TOKEN` al proceso PHP con acceso de lectura a los contenidos. El servidor requiere las extensiones PHP Zip y OpenSSL y la capacidad de realizar solicitudes HTTPS a GitHub.
+
+Para la instalación manual, utilice ZIP.
+
+```sh
+php update.php /path/to/php-site-update.zip
+```
+
+En la versión anterior sin `update.php`, primero descomprima el paquete encima del proyecto, conservando el `.htaccess` existente y los archivos de `maintenance/`, si los hubiera. Si editó plantillas estándar, transfiera las ediciones a `templates/local/` antes de actualizar. El instalador verifica la lista y las sumas de verificación de los archivos y, para GitHub, también verifica la firma con la clave pública confiable `maintenance/release-public.pem`.
+
+Para la próxima versión, cambie la versión a `app/version.php` y cree el paquete mediante `php update.php --build php-site-update.zip`. Firme el ZIP con su clave privada RSA con SHA‑256 y almacene la clave privada por separado del sitio. Luego envíe el ZIP y `.sig` a GitHub Release con la etiqueta `vX.Y.Z` o `updates/vX.Y.Z/` y actualice `updates/latest.json` a `{"version":"X.Y.Z"}`.
+
+## Extensiones
+
+Se pueden agregar módulos de motor a `app/extensions/` junto con las actualizaciones. Guarde sus propios módulos en `extensions/`, fuera del paquete de actualización. El archivo PHP devuelve una serie de definiciones. Un solo componente tiene `kind` igual a `single` y un componente con un argumento es igual a `wrapped`. El motor reconoce nuevos códigos en páginas existentes. Un componente puede declarar un menú de opciones en `settings`, configurando cada opción en `label`, `default` y la matriz `options`. Los valores se reciben en `$context['settings']`.
+
+```php
+<?php
+if (!defined('SITE_ROOT')) {
+    http_response_code(404);
+    exit;
+}
+
+return ['notice' => [
+    'kind' => 'wrapped',
+    'render' => static function (string $text, array $context): string {
+        return '<strong>' . site_escape($text) . '</strong>';
+    },
+]];
+```
+
+El componente de ejemplo se inserta como `[notice]Важное сообщение[/notice]`.

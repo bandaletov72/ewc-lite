@@ -1,0 +1,106 @@
+# Câu hỏi thường gặp của quản trị viên
+
+## Cài đặt và đăng nhập
+
+### Làm cách nào để khởi chạy một trang web và mở bảng quản trị?
+
+Để khởi chạy cục bộ, hãy chạy lệnh php -S 127.0.0.1:8000 router.php trong thư mục dự án và mở http://127.0.0.1:8000/admin/. Trên máy chủ lưu trữ, trước tiên hãy chạy php admin/setup.php, sau đó nhập mã một lần nhận được vào bước đầu tiên của trình hướng dẫn trong /admin/.
+
+### Bạn có thể cấu hình những gì khi mới bắt đầu?
+
+Đầu tiên tạo tên người dùng và mật khẩu. Ở bước thứ hai, đặt tên trang web, mô tả meta mặc định, văn bản chân trang, bảng màu và chế độ chủ đề. Nếu bạn có PHP GD, bạn có thể tải xuống logo ngay lập tức và tạo một favicon từ nó. Bạn có thể bỏ qua bước thứ hai hoặc tiếp tục vào lần đăng nhập tiếp theo.
+
+## Trang và menu
+
+### Làm thế nào để tạo một trang và nhập địa chỉ nào?
+
+Đi tới Trang → Trang mới. Nhập địa chỉ, ví dụ /Services-1/Repair/ hoặc /Services-1/Price_2.php, điền tiêu đề và lưu. Đối với địa chỉ thư mục, chính công cụ sẽ tạo các thư mục và index.php. Cho phép sử dụng AZ, a-z, 0-9, dấu gạch ngang và dấu gạch dưới trong tên. Trang chính được dành riêng ở thư mục gốc và việc tạo các trang trong thư mục dịch vụ sẽ bị đóng.
+
+### Sự khác biệt giữa hộp kiểm “Trong Menu” và nút “Ẩn” là gì?
+
+Việc bỏ chọn hộp “Trong menu” sẽ xóa liên kết khỏi các menu thông thường, trong khi vẫn duy trì quyền truy cập vào địa chỉ trực tiếp. Trên trang có địa chỉ thư mục, hộp kiểm cũng kiểm soát các mục trên trang con. Nút “Ẩn” sẽ xóa liên kết và đóng địa chỉ công khai của trang cho đến khi nó được xuất bản lại.
+
+### Làm cách nào để thay đổi thứ tự các trang hoặc di chuyển toàn bộ thư mục?
+
+Kéo biểu tượng ⠿ để sắp xếp lại các trang trong cùng cấp độ. Để di chuyển một trang, hãy mở “Di chuyển trang” trong trình chỉnh sửa của trang đó. Để chuyển một thư mục cùng với các trang và tập tin đính kèm, hãy nhấp vào ↪ bên cạnh tên thư mục. Sau khi chuyển, hãy kiểm tra các liên kết thủ công và mã [include] trỏ đến địa chỉ cũ.
+
+### Tại sao các thay đổi trên trang không hiển thị ngay lập tức?
+
+Nhấp vào "Lưu" trong trình chỉnh sửa. Sau đó sử dụng liên kết "Mở trang" hoặc "Đi". Nếu liên kết đã biến mất, hãy kiểm tra xem trang đã được xuất bản chưa. Để biết những thay đổi trên tên miền phụ, hãy kiểm tra tên miền trong thanh địa chỉ.
+
+## Thiết kế và tên miền phụ
+
+### Tôi có thể thay đổi tiêu đề, chân trang, logo và favicon ở đâu?
+
+Mở Cài đặt → Chung. Trường Văn bản Chân trang hỗ trợ [year] cho năm hiện tại. Trong khối “Biểu tượng và biểu tượng trang web”, bạn có thể tải hình ảnh lên hoặc nhấp vào “Tạo biểu tượng yêu thích từ biểu tượng”. Tải và chuyển đổi yêu cầu PHP GD.
+
+### Làm cách nào để thay đổi chủ đề hoặc phông chữ rồi quay lại chủ đề hoặc phông chữ cũ?
+
+Trong Cài đặt → Chủ đề & Màu sắc, chọn chế độ và bảng màu. Lưu bảng màu hiện tại vào danh sách để bạn có thể sử dụng nó sau này. Nút "Sử dụng làm mặc định" ghi nhớ bảng màu cho lệnh "Trả chủ đề về mặc định". Phông chữ có thể được thay đổi trong phần "Thư viện và Phông chữ". Tên và mẫu trong danh sách được hiển thị bằng phông chữ thích hợp. Giá trị "Hệ thống" trả về phông chữ bình thường.
+
+### Thay đổi tiêu đề ở đâu và chèn bộ đếm, CSS hoặc JavaScript ở đâu?
+
+Các khối tiêu đề, menu di động, menu và chân trang chung được chỉnh sửa trong tab “Mẫu thiết kế”. Ở cùng một vị trí, “Tiêu đề dịch vụ” chèn HTML vào phần đầu hoặc trước thẻ nội dung đóng. Đối với CSS và JavaScript thông thường, có một tab “CSS và JS” riêng. Mã cho một trang được thêm vào trình soạn thảo của nó.
+
+### Làm cách nào để đặt số điện thoại và tiêu đề khác nhau cho tên miền phụ?
+
+Thêm tên miền phụ vào phần "Miền". Sau đó đặt một giá trị mẫu con riêng trong phần Mẫu con bằng cách chọn miền bạn muốn. Thay đổi tiêu đề và các khối khác bằng nút “Mẫu” bên cạnh tên miền. Phiên bản miền được ưu tiên hơn phiên bản chung. DNS và máy chủ web phải trỏ tên miền phụ vào thư mục của trang web đó.
+
+### Tôi có thể thay đổi liên kết đến mạng xã hội và chú thích bên cạnh chúng ở đâu?
+
+Mở “Cài đặt → Danh bạ và mạng xã hội”. Điền địa chỉ, chữ ký và số điện thoại. Mã [soc-icons] hiển thị biểu tượng của tất cả các mạng được định cấu hình. Đối với một liên kết đơn, hãy sử dụng [tg] hoặc [vk] chẳng hạn.
+
+## Các biểu mẫu và ứng dụng
+
+### Làm cách nào để thêm biểu mẫu vào một trang?
+
+Mở Biểu mẫu, định cấu hình các trường, bắt buộc, độ dài tối đa và văn bản nút. Lưu biểu mẫu và dán mã của nó, ví dụ [form1], vào HTML của trang.
+
+### Tôi có thể xem đơn đăng ký ở đâu nếu chưa nhận được thông báo qua email?
+
+Mở Tin nhắn. Các ứng dụng được lưu ở đó sau khi gửi biểu mẫu thành công. Để biết thông báo, hãy kiểm tra các địa chỉ trong trường “Tới” trong mẫu thư biểu mẫu và chức năng của chức năng mail() trên máy chủ lưu trữ.
+
+### Làm thế nào để thiết lập một lá thư và gửi bản sao?
+
+Mở biểu mẫu mong muốn và tìm khối “Mẫu thư”. Nhập địa chỉ vào trường “Tới” và “Bản sao (Cc), cách nhau bằng dấu phẩy. Trong chủ đề và nội dung, hãy sử dụng các phím trường trong dấu ngoặc nhọn, ví dụ Hello {name}! Các nút bên dưới văn bản sẽ chèn biến đã chọn. Chủ đề hoặc văn bản trống sử dụng thông báo tiêu chuẩn.
+
+### Tại sao biểu mẫu từ chối tin nhắn hoặc hỏi "Tôi không phải là người máy"?
+
+Kiểm tra các trường bắt buộc, độ dài, định dạng điện thoại và email. Các trường nhập miễn phí sử dụng văn bản thuần túy không có địa chỉ HTML hoặc trang web. Danh sách các từ và IP bị cấm nằm trong phần Chống thư rác. Hộp kiểm “Sử dụng CAPTCHA” yêu cầu khóa trang web và khóa bí mật Google reCAPTCHA v2 cho miền mong muốn.
+
+### Tôi có thể xem yêu cầu gọi lại ở đâu?
+
+Trong phần "Gọi lại". Thành phần này được thêm vào trang với mã [callback] hoặc [callback=Вызвать мастера]. Với nhà cung cấp “Không”, ứng dụng sẽ được lưu trong bảng quản trị. Khi điện thoại được cấu hình, hộp số tay hoặc tự động sẽ khả dụng.
+
+## Khối thông tin và các thành phần
+
+### Làm cách nào để tạo khối thông tin và hiển thị nó trên trang?
+
+Trong phần “Infoblocks”, nhấp vào “Infoblock mới”, định cấu hình các cột và thêm hàng. Trong tên khối thông tin và các phím cột, sử dụng A–Z, a–z, 0–9, dấu gạch ngang hoặc dấu gạch dưới không có dấu cách. Lưu và sao chép mã nhúng từ trình chỉnh sửa khối thông tin. Để biết danh sách điện thoại, hãy sử dụng mẫu điện thoại.
+
+### Làm cách nào để sao chép hoặc thay thế tất cả các hàng của khối thông tin?
+
+Mở khối thông tin và nhấp vào “Chỉnh sửa dưới dạng văn bản”. CSV sử dụng | dấu phân cách. Ba dòng đầu tiên chứa khóa, tên và loại cột. Tiếp theo là dữ liệu. Đặt trường bằng dấu phân cách, dấu ngoặc kép hoặc dấu ngắt dòng trong dấu ngoặc kép và dấu ngoặc kép bên trong.
+
+### Cần kiểm tra xem thư viện hoặc danh sách tập tin có trống không?
+
+Kiểm tra đường dẫn trong mã thành phần với thư mục trên máy chủ. Ví dụ: [fotos]/images/myfotos/[/fotos] sử dụng ảnh trong images/myfotos/ hoặc templates/images/myfotos/.. Đối với [files], hãy kiểm tra phần mở rộng của tệp. Bạn có thể tìm thấy danh sách các tiện ích mở rộng và tham số được hỗ trợ trong phần trợ giúp thành phần.
+
+### Tại sao yêu cầu có ?ajax=1 lại trả về 403?
+
+Đoạn trang yêu cầu phiên công khai và mã thông báo hợp lệ trên cùng một trang. Để tải bên trong trang web, hãy sử dụng window.siteFetchContent() để chuyển mã thông báo. Để chuyển đổi bình thường, hãy mở địa chỉ trang không có tham số ajax.
+
+## Cập nhật và sao lưu
+
+### Làm cách nào để cập nhật công cụ của một trang web đã cài đặt?
+
+Trong Cài đặt → Cập nhật, so sánh phiên bản đã cài đặt với phiên bản mới nhất từ ​​GitHub, sau đó nhấp vào Cập nhật công cụ. Nếu GitHub không khả dụng, bảng quản trị sẽ hiển thị phiên bản được kiểm tra lần cuối. Để cập nhật thủ công, hãy chuyển kho lưu trữ php-site-update.zip sang lệnh php update.php. Gói cập nhật thay thế các tệp công cụ và mẫu tiêu chuẩn. Lưu trữ các mẫu PHP của bạn trong templates/local/.
+
+### Tôi nên sao chép những gì trước khi nâng cấp hoặc di chuyển?
+
+Tạo một bản sao của toàn bộ thư mục trang web cùng với các tập tin ẩn. Các trang được đặt trong thư mục gốc và các thư mục của chúng, các khối thông tin trong tệp dữ liệu/, cài đặt và tài khoản trong admin/.. Đồng thời lưu các mẫu, hình ảnh đã tải lên, tin nhắn và yêu cầu của bạn. Bản sao bao gồm các bí mật về cấu hình, vì vậy hãy giữ nó bên ngoài thư mục công cộng.
+
+### Cần kiểm tra điều gì nếu bảng quản trị không thể lưu thay đổi?
+
+Đầu tiên hãy đọc tin nhắn bên cạnh biểu mẫu. Nếu các thay đổi xung đột, hãy sao chép các chỉnh sửa của bạn và mở lại trình chỉnh sửa. Nếu có lỗi ghi, hãy yêu cầu máy chủ lưu trữ kiểm tra quyền ghi của quy trình PHP trong thư mục và tệp admin/write-lock.php. mong muốn. Nếu cập nhật không thành công, hãy kiểm tra quyền truy cập của máy chủ vào GitHub cũng như tính khả dụng của PHP Zip và OpenSSL.
+
