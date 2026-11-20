@@ -416,3 +416,9 @@ No computador, a seta recolhe a árvore de páginas e amplia o editor. O botão 
 ## Escolher um ponto no mapa
 
 Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a por referência HTTP. Na aba Mapas da página, escolha um ponto e aplique as coordenadas. Para testes locais, indique localhost sem porta como referência HTTP, aguarde a ativação e abra a administração usando localhost.
+
+## Pesquisa no menu · 1.6.16
+
+[search] apresenta a pesquisa junto às ligações de [main-menu] no computador e dentro de [mobile-menu] no telemóvel. Selecione o modo nas configurações gerais. [search] no conteúdo tem prioridade.
+
+`[search]`

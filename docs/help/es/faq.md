@@ -298,3 +298,9 @@ En escritorio, la flecha pliega el árbol de páginas y amplía el editor. El bo
 ## Elegir un punto en el mapa
 
 Crea una clave para «JavaScript API» en la consola de Yandex Maps y restríngela por referente HTTP. En la pestaña Mapas de la página, elige un punto y aplica sus coordenadas. Para pruebas locales, configura localhost sin puerto como referente HTTP, espera la activación y abre la administración mediante localhost.
+
+## Búsqueda en el menú · 1.6.16
+
+[search] sitúa la búsqueda junto a los enlaces de [main-menu] en escritorio y dentro de [mobile-menu] en el móvil. El modo se elige en los ajustes generales. Un [search] en el contenido tiene prioridad.
+
+`[search]`

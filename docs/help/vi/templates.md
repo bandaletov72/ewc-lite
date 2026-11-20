@@ -413,3 +413,9 @@ Trên máy tính, mũi tên thu gọn cây trang và mở rộng trình sửa. N
 ## Chọn một điểm trên bản đồ
 
 Tạo khóa «JavaScript API» trong bảng điều khiển Yandex Maps và giới hạn theo HTTP Referer. Trong thẻ Bản đồ của trang, hãy chọn điểm và áp dụng tọa độ. Khi thử nghiệm cục bộ, nhập localhost không kèm cổng vào HTTP Referer, chờ khóa hoạt động rồi mở quản trị qua localhost.
+
+## Tìm kiếm trong menu · 1.6.16
+
+[search] đặt ô tìm kiếm cạnh các mục [main-menu] trên máy tính và trong [mobile-menu] trên điện thoại. Chọn chế độ trong cài đặt chung. [search] trong nội dung trang được ưu tiên.
+
+`[search]`

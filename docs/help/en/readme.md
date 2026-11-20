@@ -416,3 +416,9 @@ On desktop, the arrow in the page tree collapses it and widens the editor. The b
 ## Pick a point on a map
 
 In the Yandex Maps console create a key for the «JavaScript API» product and restrict it by HTTP Referer. With a provider enabled, open the page’s Maps tab, choose a point and apply its coordinates. For local testing, enter localhost without a port in HTTP Referer, wait for the key to be active and open the admin panel using localhost.
+
+## Search in navigation · 1.6.16
+
+[search] places search beside the desktop [main-menu] links and inside [mobile-menu] on phones. Choose the search mode in general settings. An explicit [search] in page content takes priority.
+
+`[search]`

@@ -413,3 +413,9 @@ HTML과 시각 편집기 탭에서 모드를 전환합니다. SUP, SUB, 문단 �
 ## 지도에서 지점 선택
 
 Yandex Maps 콘솔에서 «JavaScript API» 키를 만들고 HTTP Referer로 제한하세요. 페이지의 지도 탭에서 지점을 선택한 뒤 좌표를 적용하세요. 로컬 테스트에서는 HTTP Referer에 포트 없이 localhost를 입력하고 키가 활성화되면 localhost로 관리자 화면을 엽니다.
+
+## 메뉴의 검색 · 1.6.16
+
+[search]는 데스크톱 [main-menu] 링크 옆과 모바일 [mobile-menu] 안에 표시됩니다. 기본 설정에서 검색 모드를 선택합니다. 본문에 있는 [search]가 우선합니다.
+
+`[search]`

@@ -413,3 +413,9 @@ Am Desktop klappt der Pfeil den Seitenbaum ein und verbreitert den Editor. Die S
 ## Punkt auf der Karte wählen
 
 Erstellen Sie in der Yandex-Konsole einen Schlüssel für „JavaScript API“ und begrenzen Sie ihn per HTTP-Referrer. Wählen Sie in der Karten-Registerkarte der Seite einen Punkt und übernehmen Sie seine Koordinaten. Tragen Sie für lokale Tests localhost ohne Port als HTTP-Referrer ein und öffnen Sie die Verwaltung nach Aktivierung über localhost.
+
+## Suche im Menü · 1.6.16
+
+[search] steht auf dem Desktop neben den Links von [main-menu] und auf dem Handy in [mobile-menu]. Den Suchmodus wählen Sie in den allgemeinen Einstellungen. [search] im Seiteninhalt hat Vorrang.
+
+`[search]`

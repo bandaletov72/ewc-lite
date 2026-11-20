@@ -298,3 +298,9 @@ Sur ordinateur, la flèche replie l’arborescence et agrandit l’éditeur. Le 
 ## Choisir un point sur la carte
 
 Dans la console Yandex Maps, créez une clé pour « JavaScript API » et limitez-la par référent HTTP. Dans l’onglet Cartes de la page, choisissez un point puis appliquez ses coordonnées. Pour un test local, saisissez localhost sans port comme référent HTTP, attendez l’activation puis ouvrez l’administration via localhost.
+
+## Recherche dans le menu · 1.6.16
+
+[search] affiche la recherche à côté des liens [main-menu] sur ordinateur et dans [mobile-menu] sur téléphone. Le mode se choisit dans les réglages généraux. Un [search] dans la page est prioritaire.
+
+`[search]`

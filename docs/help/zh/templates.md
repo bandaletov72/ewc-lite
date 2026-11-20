@@ -413,3 +413,9 @@ HTML 和可视化编辑器模式通过选项卡切换。 SUP、SUB 和段落插�
 ## 在地图上选点
 
 在 Yandex Maps 控制台为 JavaScript API 产品创建密钥，并通过 HTTP Referer 限制访问域名。在页面的地图标签中选择地点并应用坐标。 本地测试时在 HTTP Referer 中填写不带端口的 localhost。密钥激活后，使用 localhost 打开后台。
+
+## 菜单中的搜索 · 1.6.16
+
+[search] 在桌面端与 [main-menu] 的链接并排显示，在手机端显示在 [mobile-menu] 内。搜索模式在常规设置中选择。页面正文中的 [search] 优先。
+
+`[search]`
