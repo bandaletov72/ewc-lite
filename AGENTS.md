@@ -1,6 +1,8 @@
 # Правила разработки Eurowebcart CMS Light
 
-Подтверждённая рабочая версия — [1.6.15](https://github.com/bandaletov72/php-site-updates/releases/tag/v1.6.15). Автор проекта — Бандалетов Павел.
+Подтверждённая рабочая версия — [1.6.20](https://github.com/bandaletov72/php-site-updates/releases/tag/v1.6.20). Автор проекта — Бандалетов Павел.
+
+Для задач по созданию сайтов используйте [руководство по темам и страницам](docs/agent-site-guide.md).
 
 ## Совместимость и архитектура
 
