@@ -307,3 +307,22 @@ In edit mode, infoblocks, [formX] forms, [tel] snippets and other components wit
 - Show in the main menu
 - Show in the mobile menu
 - Hide in the mobile menu
+
+## Page settings · 1.6.8
+
+Write content in Edit. Set the address, menu and publication schedule in Page settings. SEO contains titles, description, keywords and sitemap inclusion. Maps contains coordinates and tag examples. Select translations from the list above the editor.
+
+Leave dates blank for no limits. Dates use the site time zone. A hidden page must be published separately.
+
+- `[map]` — map with the current page’s location.
+- `[maps]` — map with all published pages’ locations.
+
+## Banners and image editor · 1.6.8
+
+Manage sets and slides in Components. Use photos from a folder, configure captions and buttons for links, forms or callbacks, and schedule when slides appear. Edit mode shows slide actions. The image picker browses folders, uploads, deletes and makes rotated or resized copies with GD. The Font Awesome picker shows icons and supports searching by name.
+
+```text
+[banners]
+[banners set=summer arrows=on numbers=off]
+[banners]/images/myfotos/[/banners]
+```

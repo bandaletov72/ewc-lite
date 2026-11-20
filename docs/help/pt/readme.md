@@ -307,3 +307,22 @@ No modo de edição, os blocos, formulários [formX], fragmentos [tel] e outros 
 - Mostrar no menu principal
 - Mostrar no menu móvel
 - Ocultar no menu móvel
+
+## Configurações da página · 1.6.8
+
+Escreva o conteúdo em Edição. Configure endereço, menu e calendário de publicação nas configurações da página. SEO reúne títulos, descrição, palavras-chave e inclusão no sitemap. Em Mapas estão as coordenadas e os exemplos. Escolha a tradução na lista acima do editor.
+
+Deixe as datas em branco para retirar os limites. Vale o fuso horário do site. Uma página oculta deve ser publicada separadamente.
+
+- `[map]` — mapa com o ponto da página atual.
+- `[maps]` — mapa com os pontos de todas as páginas publicadas.
+
+## Banners e editor de imagens · 1.6.8
+
+Gerencie conjuntos e slides em Componentes. Use fotos de uma pasta, adicione texto e botões para links, formulários ou chamadas de retorno e programe a exibição. O modo de edição mostra as ações do slide. O seletor permite navegar pelas pastas, enviar, excluir e criar cópias giradas ou redimensionadas com GD. Pesquise ícones do Font Awesome pelo nome.
+
+```text
+[banners]
+[banners set=summer arrows=on numbers=off]
+[banners]/images/myfotos/[/banners]
+```

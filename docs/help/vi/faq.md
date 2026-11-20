@@ -189,3 +189,22 @@ Trong chế độ sửa, khối dữ liệu, biểu mẫu [formX], đoạn mã [
 - Hiện trong menu chính
 - Hiện trong menu di động
 - Ẩn trong menu di động
+
+## Cài đặt trang · 1.6.8
+
+Soạn nội dung trong Chỉnh sửa. Đặt địa chỉ, menu và lịch xuất bản trong Cài đặt trang. SEO gồm tiêu đề, mô tả, từ khóa và mục đưa vào sitemap. Bản đồ có tọa độ và ví dụ về thẻ. Chọn bản dịch từ danh sách trên trình soạn thảo.
+
+Để trống ngày nếu không giới hạn. Ngày giờ dùng múi giờ của trang web. Trang đã ẩn phải được xuất bản riêng.
+
+- `[map]` — bản đồ với vị trí của trang hiện tại.
+- `[maps]` — bản đồ với vị trí của tất cả trang đã xuất bản.
+
+## Banner và trình sửa ảnh · 1.6.8
+
+Quản lý bộ và slide trong Thành phần. Dùng ảnh từ thư mục, thêm chú thích và nút mở liên kết, biểu mẫu hoặc gọi lại, rồi đặt lịch hiển thị. Chế độ chỉnh sửa hiển thị thao tác cho từng slide. Bộ chọn ảnh hỗ trợ duyệt thư mục, tải lên, xóa và tạo bản sao xoay hoặc đổi kích thước bằng GD. Có thể tìm biểu tượng Font Awesome theo tên.
+
+```text
+[banners]
+[banners set=summer arrows=on numbers=off]
+[banners]/images/myfotos/[/banners]
+```

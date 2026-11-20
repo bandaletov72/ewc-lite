@@ -307,3 +307,22 @@ En el modo de edición, los bloques, los formularios [formX], los fragmentos [te
 - Mostrar en el menú principal
 - Mostrar en el menú móvil
 - Ocultar en el menú móvil
+
+## Ajustes de la página · 1.6.8
+
+Escribe el contenido en Edición. Configura la dirección, el menú y el calendario de publicación en Ajustes de la página. SEO reúne títulos, descripción, palabras clave e inclusión en sitemap. Mapas contiene coordenadas y ejemplos. Elige la traducción en la lista que aparece sobre el editor.
+
+Deja las fechas vacías para eliminar los límites. Se usa la zona horaria del sitio. Las páginas ocultas se publican por separado.
+
+- `[map]` — mapa con el punto de la página actual.
+- `[maps]` — mapa con los puntos de todas las páginas publicadas.
+
+## Banners y editor de imágenes · 1.6.8
+
+Administra conjuntos y diapositivas en Componentes. Usa fotos de una carpeta, añade texto y botones para enlaces, formularios o devoluciones de llamada y programa su aparición. El modo de edición muestra acciones para cada diapositiva. El selector permite explorar carpetas, subir, eliminar y crear copias rotadas o redimensionadas con GD. Puedes buscar iconos de Font Awesome por nombre.
+
+```text
+[banners]
+[banners set=summer arrows=on numbers=off]
+[banners]/images/myfotos/[/banners]
+```

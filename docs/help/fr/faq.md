@@ -189,3 +189,22 @@ En mode édition, les blocs de données, les formulaires [formX], les fragments 
 - Afficher dans le menu principal
 - Afficher dans le menu mobile
 - Masquer dans le menu mobile
+
+## Paramètres de la page · 1.6.8
+
+Rédigez le contenu dans Édition. L’adresse, le menu et le calendrier de publication figurent dans les paramètres de la page. SEO contient les titres, la description, les mots-clés et l’inclusion dans le sitemap. Les coordonnées et exemples sont dans Cartes. Choisissez les traductions dans la liste au-dessus de l’éditeur.
+
+Laissez les dates vides pour supprimer les limites. Le fuseau horaire du site s’applique. Une page masquée doit être publiée séparément.
+
+- `[map]` — carte avec le lieu de la page actuelle.
+- `[maps]` — carte avec les lieux de toutes les pages publiées.
+
+## Bannières et éditeur d’images · 1.6.8
+
+Gérez les ensembles et diapositives dans Composants. Utilisez les photos d’un dossier, ajoutez un texte et un bouton ouvrant un lien, un formulaire ou un rappel, puis planifiez l’affichage. Des actions sont disponibles en mode édition. Le sélecteur d’images permet de parcourir les dossiers, importer, supprimer et créer des copies pivotées ou redimensionnées avec GD. Les icônes Font Awesome sont accessibles par leur nom.
+
+```text
+[banners]
+[banners set=summer arrows=on numbers=off]
+[banners]/images/myfotos/[/banners]
+```
