@@ -385,6 +385,8 @@ Ouvrez kontur-works dans Contenu → Blocs de données. Saisissez le titre, la c
 [maps source=kontur-map]
 ```
 
+« Тихий сад » est un site complet pour un studio de design paysager. Choisissez-le dans Modèles de mise en page → Thèmes de design, puis appliquez-le. Modifiez les blocs garden-projects et garden-prices et le groupe de bannières garden-cover. Ajoutez vos coordonnées et le destinataire du formulaire [form85].
+
 ### Couleurs du site · Polices
 
 Cochez les polices à activer, puis attribuez-les au texte, aux titres ou aux commandes. Votre site héberge les fichiers locaux.

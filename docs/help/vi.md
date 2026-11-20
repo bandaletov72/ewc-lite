@@ -385,6 +385,8 @@ Mở kontur-works trong Nội dung → Khối dữ liệu. Nhập tiêu đề, n
 [maps source=kontur-map]
 ```
 
+«Тихий сад» là trang web trọn bộ cho studio thiết kế cảnh quan. Chọn trong Mẫu bố cục → Giao diện thiết kế rồi áp dụng. Sửa hai khối dữ liệu garden-projects và garden-prices và bộ banner garden-cover. Thêm thông tin liên hệ và người nhận cho [form85].
+
 ### Màu trang web · Phông chữ
 
 Tích chọn phông chữ rồi gán cho văn bản, tiêu đề hoặc nút. Tệp cục bộ do chính trang web cung cấp.

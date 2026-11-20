@@ -385,6 +385,8 @@ Ein Häkchen markiert eine Theme-Datei, die Vorrang vor der CMS-Standarddatei ha
 [maps source=kontur-map]
 ```
 
+„Тихий сад“ ist eine vollständige Website für Landschaftsgestaltung. Wählen Sie das Theme unter Layoutvorlagen → Design-Themes und wenden Sie es an. Bearbeiten Sie garden-projects und garden-prices sowie das Banner-Set garden-cover. Hinterlegen Sie Ihre Kontaktdaten und einen Empfänger für [form85].
+
 ### Websitefarben · Schriften
 
 Aktivieren Sie Schriften per Kontrollkästchen und weisen Sie sie Texten, Überschriften oder Bedienelementen zu. Lokale Dateien lädt Ihre Website.

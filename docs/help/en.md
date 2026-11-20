@@ -385,6 +385,8 @@ Open kontur-works in Content → Data blocks. Set the title, category, descripti
 [maps source=kontur-map]
 ```
 
+Quiet Garden is a complete landscape design studio site. Select it under Layout templates → Design themes and choose Apply. Edit the garden-projects and garden-prices data blocks, and change the cover in the garden-cover banner set. Add your contact details and set a recipient for [form85].
+
 ### Site colors · Fonts
 
 Enable fonts with checkboxes and assign them to body text, headings or controls. Local files are served by your site.

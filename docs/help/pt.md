@@ -385,6 +385,8 @@ Abra kontur-works em Conteúdo → Blocos de dados. Indique título, categoria, 
 [maps source=kontur-map]
 ```
 
+«Тихий сад» é um site completo para um estúdio de paisagismo. Selecione-o em Modelos de design → Temas de design e clique em Aplicar. Edite os blocos garden-projects e garden-prices e o conjunto de banners garden-cover. Adicione os contactos e o destinatário de [form85].
+
 ### Cores do site · Fontes
 
 Marque as fontes a ativar e atribua-as ao texto, aos títulos ou aos controlos. O seu site aloja os ficheiros locais.
