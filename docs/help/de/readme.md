@@ -492,3 +492,29 @@ Wählen Sie Fensterbreite (width=page), Inhaltsbreite (width=content) oder die B
 `[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
 
 Das letzte Element der Brotkrumennavigation listet veröffentlichte gleichrangige Bereiche, auch wenn sie im Hauptmenü fehlen. Links verwenden die eingestellte URL.
+
+## Design-Themes · КОНТУР · 1.6.19
+
+Ein vollständiges Website-Theme wechselt Design, Seiten, Datenblöcke und Einstellungen. Andere Themes verwenden die gemeinsamen Seiten.
+
+Ein Häkchen markiert eine Theme-Datei, die Vorrang vor der CMS-Standarddatei hat. Sie kann bearbeitet oder wiederhergestellt werden.
+
+**Werkseinstellung wiederherstellen**
+
+### Portfolio
+
+Öffnen Sie kontur-works in Inhalte → Datenblöcke. Geben Sie Titel, Kategorie, Beschreibung, kommagetrennte Fotos und optional einen Link ein. Das erste Foto ist das Titelbild. Verwenden Sie dieselben Spalten für weitere Sammlungen.
+
+```text
+[portfolio]
+[iblock=portfolio limit=2]/data/kontur-works.txt[/iblock]
+[maps source=kontur-map]
+```
+
+### Websitefarben · Schriften
+
+Aktivieren Sie Schriften per Kontrollkästchen und weisen Sie sie Texten, Überschriften oder Bedienelementen zu. Lokale Dateien lädt Ihre Website.
+
+Bibliotheken → Lokal speichern
+
+Seitenvorlagen → Seite erstellen

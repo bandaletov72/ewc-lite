@@ -489,3 +489,29 @@ Choisissez la largeur de la fenêtre (width=page), du contenu (width=content) ou
 `[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
 
 Le dernier élément du fil d’Ariane liste les rubriques de même niveau publiées, y compris celles absentes du menu principal. Les liens utilisent les URL configurées.
+
+## Thèmes de design · КОНТУР · 1.6.19
+
+Un thème de site complet change le design, les pages, les blocs de données et les réglages. Les autres thèmes utilisent les pages communes.
+
+Une coche marque un fichier du thème prioritaire sur le fichier standard du CMS. Vous pouvez le modifier ou le restaurer.
+
+**Restaurer la version d’origine**
+
+### Portfolio
+
+Ouvrez kontur-works dans Contenu → Blocs de données. Saisissez le titre, la catégorie, la description, les photos séparées par des virgules et un lien facultatif. La première photo sert de couverture. Conservez les mêmes colonnes pour d’autres collections.
+
+```text
+[portfolio]
+[iblock=portfolio limit=2]/data/kontur-works.txt[/iblock]
+[maps source=kontur-map]
+```
+
+### Couleurs du site · Polices
+
+Cochez les polices à activer, puis attribuez-les au texte, aux titres ou aux commandes. Votre site héberge les fichiers locaux.
+
+Bibliothèques → Héberger localement
+
+Modèles de page → Créer une page

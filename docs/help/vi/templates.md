@@ -489,3 +489,29 @@ Có thể dùng chiều rộng cửa sổ (width=page), nội dung (width=conten
 `[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
 
 Mục cuối của đường dẫn hiển thị các chuyên mục cùng cấp đã xuất bản, kể cả mục ẩn khỏi menu chính. Liên kết dùng URL đã cấu hình.
+
+## Giao diện thiết kế · КОНТУР · 1.6.19
+
+Giao diện trọn bộ chuyển cả thiết kế, trang, khối dữ liệu và cài đặt. Các giao diện khác dùng trang chung của trang web.
+
+Dấu tích chỉ tệp giao diện được ưu tiên hơn tệp CMS mặc định. Bạn có thể chỉnh sửa hoặc khôi phục tệp.
+
+**Khôi phục bản gốc**
+
+### Danh mục dự án
+
+Mở kontur-works trong Nội dung → Khối dữ liệu. Nhập tiêu đề, nhóm, mô tả, ảnh phân tách bằng dấu phẩy và liên kết tùy chọn. Ảnh đầu tiên dùng làm ảnh bìa. Dùng cùng các cột cho bộ sưu tập khác.
+
+```text
+[portfolio]
+[iblock=portfolio limit=2]/data/kontur-works.txt[/iblock]
+[maps source=kontur-map]
+```
+
+### Màu trang web · Phông chữ
+
+Tích chọn phông chữ rồi gán cho văn bản, tiêu đề hoặc nút. Tệp cục bộ do chính trang web cung cấp.
+
+Thư viện → Lưu cục bộ
+
+Mẫu trang → Tạo trang

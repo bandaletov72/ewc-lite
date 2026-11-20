@@ -492,3 +492,29 @@ Elija el ancho de la ventana (width=page), del contenido (width=content) o del b
 `[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
 
 El último elemento de la ruta muestra las secciones hermanas publicadas, incluidas las ocultas en el menú principal. Los enlaces usan la URL configurada.
+
+## Temas de diseño · КОНТУР · 1.6.19
+
+Un tema de sitio completo cambia el diseño, las páginas, los bloques de datos y los ajustes. Los demás temas usan las páginas compartidas.
+
+Una marca indica que un archivo del tema prevalece sobre el archivo estándar del CMS. Puedes editarlo o restaurarlo.
+
+**Restaurar la versión de fábrica**
+
+### Portafolio
+
+Abre kontur-works en Contenido → Bloques de datos. Indica el título, la categoría, la descripción, fotos separadas por comas y un enlace opcional. La primera foto será la portada. Usa las mismas columnas para otras colecciones.
+
+```text
+[portfolio]
+[iblock=portfolio limit=2]/data/kontur-works.txt[/iblock]
+[maps source=kontur-map]
+```
+
+### Colores del sitio · Fuentes
+
+Marca las fuentes que quieras activar y asígnalas al texto, títulos o controles. Tu sitio aloja los archivos locales.
+
+Bibliotecas → Alojar localmente
+
+Plantillas de página → Crear página

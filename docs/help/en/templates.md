@@ -489,3 +489,29 @@ Choose viewport width (width=page), content width (width=content) or parent widt
 `[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
 
 The final breadcrumb lists published sibling sections, including sections hidden from the main menu. A configured section URL is used for its link.
+
+## Design themes · КОНТУР · 1.6.19
+
+A complete site theme switches the design, pages, data blocks, and settings. Other themes use the shared site pages.
+
+A check marks a theme file that takes precedence over the stock CMS file. You can edit or restore it.
+
+**Restore factory version**
+
+### Portfolio
+
+Open kontur-works in Content → Data blocks. Set the title, category, description, comma-separated photos and an optional link. The first photo is the cover. Use the same columns for additional collections.
+
+```text
+[portfolio]
+[iblock=portfolio limit=2]/data/kontur-works.txt[/iblock]
+[maps source=kontur-map]
+```
+
+### Site colors · Fonts
+
+Enable fonts with checkboxes and assign them to body text, headings or controls. Local files are served by your site.
+
+Libraries → Make local
+
+Page templates → Create page
