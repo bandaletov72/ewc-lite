@@ -422,3 +422,41 @@ Crea una clave para «JavaScript API» en la consola de Yandex Maps y restrínge
 [search] sitúa la búsqueda junto a los enlaces de [main-menu] en escritorio y dentro de [mobile-menu] en el móvil. El modo se elige en los ajustes generales. Un [search] en el contenido tiene prioridad.
 
 `[search]`
+
+## Búsqueda en el menú · 1.6.17
+
+[search] sitúa la búsqueda junto a los enlaces de [main-menu] en escritorio y dentro de [mobile-menu] en el móvil. El modo se elige en los ajustes generales. Un [search] en el contenido tiene prioridad. El campo de búsqueda aparece al abrir el menú móvil. [lang] muestra el selector de idioma dentro de ese menú y en el encabezado de escritorio.
+
+`[search]` · `[lang]`
+
+La parte inferior del menú móvil muestra los contactos y las redes sociales configurados.
+
+## Subtítulo del sitio
+
+El subtítulo de los ajustes generales se muestra debajo del nombre en el encabezado. En móviles, el nombre también usa un tamaño menor.
+
+## Ciudades
+
+En Ciudades, asigne un dominio registrado y configure hasta cinco teléfonos. Puede usar un código como [tel] en el campo de teléfono. [cities] muestra el selector, [phones] los números configurados y [tel], [tel2]–[tel5] los números individuales. El navegador recuerda la elección y actualiza los números sin recargar la página.
+
+`[cities]` · `[phones]` · `[tel]`
+
+## Animación al desplazarse
+
+En los ajustes generales, elija el efecto de aparición de los bloques al desplazarse. Está desactivado de forma predeterminada y respeta la opción de reducir movimiento del dispositivo.
+
+## Plantillas de página
+
+Elija una plantilla al crear una página. Rellena el contenido y los campos SEO, que después podrá editar. Añada sus propias plantillas en Plantillas de página. Los mapas, formularios y compras usan los ajustes de sus componentes.
+
+El CSS y JavaScript de la plantilla se copian a los campos de la página. Añada clases propias en HTML y defínalas en el CSS de la plantilla.
+
+### Clases reutilizables
+
+Contenedor, cuadrícula adaptable, sección destacada, tarjeta y precio destacado.
+
+`.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
+
+Las plantillas de diseño están contraídas al inicio. Pulse un título o seleccione Expandir todo. Pulse de nuevo para contraer la lista.
+
+Para cambiar el ancho del carrusel, active el modo de edición, pulse Editar componente junto a los banners y elija el ancho del bloque.

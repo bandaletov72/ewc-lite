@@ -304,3 +304,41 @@ Erstellen Sie in der Yandex-Konsole einen Schlüssel für „JavaScript API“ u
 [search] steht auf dem Desktop neben den Links von [main-menu] und auf dem Handy in [mobile-menu]. Den Suchmodus wählen Sie in den allgemeinen Einstellungen. [search] im Seiteninhalt hat Vorrang.
 
 `[search]`
+
+## Suche im Menü · 1.6.17
+
+[search] steht auf dem Desktop neben den Links von [main-menu] und auf dem Handy in [mobile-menu]. Den Suchmodus wählen Sie in den allgemeinen Einstellungen. [search] im Seiteninhalt hat Vorrang. Im mobilen Menü ist das Suchfeld sofort sichtbar. [lang] zeigt die Sprachauswahl im mobilen Menü und im Desktop-Kopfbereich.
+
+`[search]` · `[lang]`
+
+Unten im mobilen Menü erscheinen die konfigurierten Kontaktwege und sozialen Netzwerke.
+
+## Untertitel der Website
+
+Der Untertitel aus den allgemeinen Einstellungen steht in kleiner Schrift unter dem Namen im Kopfbereich. Auf Handys ist der Name ebenfalls kleiner.
+
+## Städte
+
+Unter Städte können Sie eine registrierte Domain zuordnen und bis zu fünf Telefonnummern hinterlegen. Im Nummernfeld können Sie einen Code wie [tel] verwenden. [cities] zeigt die Stadtauswahl, [phones] die hinterlegten Nummern und [tel], [tel2]–[tel5] einzelne Nummern. Der Browser speichert die Auswahl und aktualisiert die Nummern ohne Neuladen.
+
+`[cities]` · `[phones]` · `[tel]`
+
+## Animation beim Scrollen
+
+Wählen Sie in den allgemeinen Einstellungen den Effekt für Inhaltsblöcke beim Scrollen. Standardmäßig ist die Animation aus und berücksichtigt die Systemeinstellung für reduzierte Bewegung.
+
+## Seitenvorlagen
+
+Wählen Sie beim Erstellen einer Seite eine Vorlage. Sie füllt Inhalt und SEO-Felder aus, die Sie danach bearbeiten können. Eigene Vorlagen fügen Sie unter Seitenvorlagen hinzu. Karten, Formulare und Käufe verwenden ihre jeweiligen Komponenteneinstellungen.
+
+CSS und JavaScript der Vorlage werden in die Seitenfelder kopiert. Eigene HTML-Klassen können Sie im CSS der Vorlage gestalten.
+
+### Wiederverwendbare Klassen
+
+Container, responsives Raster, hervorgehobener Abschnitt, Karte und betonter Preis.
+
+`.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
+
+Die Layoutvorlagen sind anfangs eingeklappt. Öffnen Sie eine Vorlage über ihre Überschrift oder wählen Sie Alle aufklappen. Erneutes Drücken klappt die Liste ein.
+
+Um die Breite des gesamten Bannerkarussells zu ändern, aktivieren Sie den Bearbeitungsmodus, öffnen Sie Komponente bearbeiten und wählen Sie die Blockbreite.

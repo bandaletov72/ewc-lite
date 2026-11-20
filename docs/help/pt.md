@@ -296,3 +296,41 @@ Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a p
 [search] apresenta a pesquisa junto às ligações de [main-menu] no computador e dentro de [mobile-menu] no telemóvel. Selecione o modo nas configurações gerais. [search] no conteúdo tem prioridade.
 
 `[search]`
+
+## Pesquisa no menu · 1.6.17
+
+[search] apresenta a pesquisa junto às ligações de [main-menu] no computador e dentro de [mobile-menu] no telemóvel. Selecione o modo nas configurações gerais. [search] no conteúdo tem prioridade. O campo de pesquisa aparece ao abrir o menu móvel. [lang] mostra a seleção de idioma nesse menu e no cabeçalho no computador.
+
+`[search]` · `[lang]`
+
+O fundo do menu móvel mostra os contactos e as redes sociais configurados.
+
+## Subtítulo do site
+
+O subtítulo das configurações gerais aparece em tamanho menor abaixo do nome no cabeçalho. No celular, o nome também é menor.
+
+## Cidades
+
+Em Cidades, associe um domínio registado e configure até cinco números. O campo de telefone aceita códigos como [tel]. [cities] mostra o seletor, [phones] lista os números configurados e [tel], [tel2]–[tel5] mostram os números individuais. O navegador memoriza a escolha e atualiza os números sem recarregar a página.
+
+`[cities]` · `[phones]` · `[tel]`
+
+## Animação ao deslocar
+
+Nas definições gerais, escolha o efeito de entrada dos blocos ao deslocar a página. Está desativado por predefinição e respeita a opção de movimento reduzido do dispositivo.
+
+## Modelos de página
+
+Escolha um modelo ao criar uma página. O conteúdo e os campos SEO são preenchidos e podem ser editados. Adicione os seus modelos em Modelos de página. Mapas, formulários e compras utilizam as definições de cada componente.
+
+O CSS e o JavaScript do modelo são copiados para os campos da página. Adicione classes próprias em HTML e defina-as no CSS do modelo.
+
+### Classes reutilizáveis
+
+Contentor, grelha adaptável, secção em destaque, cartão e preço realçado.
+
+`.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
+
+Os modelos de layout começam recolhidos. Abra um modelo pelo título ou escolha Expandir tudo. Prima novamente para recolher a lista.
+
+Para alterar a largura do carrossel, ative o modo de edição, abra Editar componente junto dos banners e selecione a largura do bloco.

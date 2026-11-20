@@ -304,3 +304,41 @@ Dans la console Yandex Maps, créez une clé pour « JavaScript API » et limite
 [search] affiche la recherche à côté des liens [main-menu] sur ordinateur et dans [mobile-menu] sur téléphone. Le mode se choisit dans les réglages généraux. Un [search] dans la page est prioritaire.
 
 `[search]`
+
+## Recherche dans le menu · 1.6.17
+
+[search] affiche la recherche à côté des liens [main-menu] sur ordinateur et dans [mobile-menu] sur téléphone. Le mode se choisit dans les réglages généraux. Un [search] dans la page est prioritaire. Le champ de recherche est visible dès l’ouverture du menu mobile. [lang] affiche les langues dans ce menu et dans l’en-tête sur ordinateur.
+
+`[search]` · `[lang]`
+
+Le bas du menu mobile affiche les coordonnées et les réseaux sociaux configurés.
+
+## Sous-titre du site
+
+Dans les réglages généraux, renseignez le sous-titre. Il apparaît sous le nom dans l’en-tête. Sur téléphone, le nom est affiché en plus petit.
+
+## Villes
+
+Dans Villes, associez un domaine enregistré et ajoutez jusqu’à cinq numéros. Un champ de téléphone accepte un code comme [tel]. [cities] affiche le sélecteur, [phones] la liste des numéros renseignés et [tel], [tel2]–[tel5] les numéros individuels. Le navigateur mémorise le choix et actualise les numéros sans recharger la page.
+
+`[cities]` · `[phones]` · `[tel]`
+
+## Animation au défilement
+
+Dans les réglages généraux, choisissez l’effet d’apparition des blocs au défilement. L’animation est désactivée par défaut et respecte la préférence de réduction des mouvements.
+
+## Modèles de page
+
+Sélectionnez un modèle en créant une page. Il remplit le contenu et les champs SEO, que vous pourrez modifier. Ajoutez vos propres modèles dans Modèles de page. Les cartes, les formulaires et les achats utilisent les réglages de leurs composants.
+
+Le CSS et le JavaScript du modèle sont copiés dans la page. Ajoutez vos classes dans le HTML et définissez leur style dans le CSS du modèle.
+
+### Classes réutilisables
+
+Conteneur, grille adaptative, section mise en avant, carte et prix mis en valeur.
+
+`.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
+
+Les modèles sont repliés au départ. Ouvrez un modèle depuis son titre ou utilisez Tout déplier. Appuyez de nouveau pour replier la liste.
+
+Pour changer la largeur du carrousel, activez le mode édition, ouvrez Modifier le composant à côté des bannières et choisissez la largeur du bloc.

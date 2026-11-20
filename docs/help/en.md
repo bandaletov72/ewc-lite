@@ -296,3 +296,41 @@ In the Yandex Maps console create a key for the «JavaScript API» product and r
 [search] places search beside the desktop [main-menu] links and inside [mobile-menu] on phones. Choose the search mode in general settings. An explicit [search] in page content takes priority.
 
 `[search]`
+
+## Search in navigation · 1.6.17
+
+[search] places search beside the desktop [main-menu] links and inside [mobile-menu] on phones. Choose the search mode in general settings. An explicit [search] in page content takes priority. The search field is always visible inside the mobile menu. [lang] provides language links inside that menu and in the desktop header.
+
+`[search]` · `[lang]`
+
+The bottom of the mobile menu shows the channels configured in Contacts and social media.
+
+## Site subtitle
+
+Set the subtitle in General settings. It appears in smaller text below the site name in the header. The site name is smaller on phones.
+
+## Cities
+
+In Cities, assign a registered domain to a city and add up to five phone numbers. A phone field can use a snippet such as [tel]. [cities] shows the city selector, [phones] lists its configured numbers, and [tel], [tel2]–[tel5] show individual numbers. The site remembers your choice and updates the page without reloading.
+
+`[cities]` · `[phones]` · `[tel]`
+
+## Scroll animation
+
+In General settings, choose how content blocks appear when scrolling. Animation is off by default and respects the device’s reduced-motion setting.
+
+## Page templates
+
+Choose a template when creating a page. It fills in the content and SEO fields, which you can then edit. Add your own templates under Page templates. Maps, forms and purchases use their component settings.
+
+Template CSS and JavaScript are copied to the page’s asset fields. Add your own HTML classes and style them in the template’s CSS.
+
+### Reusable classes
+
+Layout wrapper, responsive grid, highlighted section, card, and emphasized price.
+
+`.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
+
+Layout templates start collapsed. Open a template by its heading or select Expand all. Press the button again to collapse the list.
+
+To resize the whole banner carousel, turn on edit mode, choose Edit component beside the banners, and select Block width.

@@ -422,3 +422,41 @@ Tạo khóa «JavaScript API» trong bảng điều khiển Yandex Maps và gi�
 [search] đặt ô tìm kiếm cạnh các mục [main-menu] trên máy tính và trong [mobile-menu] trên điện thoại. Chọn chế độ trong cài đặt chung. [search] trong nội dung trang được ưu tiên.
 
 `[search]`
+
+## Tìm kiếm trong menu · 1.6.17
+
+[search] đặt ô tìm kiếm cạnh các mục [main-menu] trên máy tính và trong [mobile-menu] trên điện thoại. Chọn chế độ trong cài đặt chung. [search] trong nội dung trang được ưu tiên. Ô tìm kiếm luôn hiển thị khi mở menu di động. [lang] đặt bộ chọn ngôn ngữ trong menu di động và phần đầu trang trên máy tính.
+
+`[search]` · `[lang]`
+
+Cuối menu di động hiển thị các kênh liên hệ và mạng xã hội đã cấu hình.
+
+## Phụ đề trang web
+
+Đặt phụ đề trong cài đặt chung. Phụ đề hiển thị nhỏ bên dưới tên trang trong phần đầu. Tên trang nhỏ hơn trên điện thoại.
+
+## Thành phố
+
+Trong mục Thành phố, gán tên miền đã đăng ký và nhập tối đa năm số điện thoại. Trường số điện thoại chấp nhận mã như [tel]. [cities] hiển thị bộ chọn, [phones] liệt kê các số đã nhập và [tel], [tel2]–[tel5] hiển thị từng số. Trình duyệt ghi nhớ lựa chọn và cập nhật số mà không tải lại trang.
+
+`[cities]` · `[phones]` · `[tel]`
+
+## Hiệu ứng khi cuộn
+
+Trong cài đặt chung, chọn hiệu ứng xuất hiện của các khối khi cuộn. Hiệu ứng mặc định tắt và tuân theo tùy chọn giảm chuyển động của thiết bị.
+
+## Mẫu trang
+
+Chọn mẫu khi tạo trang. Mẫu điền nội dung và các trường SEO để bạn chỉnh sửa. Thêm mẫu của riêng bạn trong mục Mẫu trang. Bản đồ, biểu mẫu và mua hàng dùng cài đặt của từng thành phần.
+
+CSS và JavaScript của mẫu được sao chép vào trang. Thêm lớp riêng trong HTML và định kiểu trong CSS của mẫu.
+
+### Lớp dùng chung
+
+Khung bố cục, lưới thích ứng, phần nổi bật, thẻ và giá nhấn mạnh.
+
+`.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
+
+Các mẫu bố cục được thu gọn lúc đầu. Bấm tiêu đề hoặc Mở rộng tất cả. Bấm lần nữa để thu gọn danh sách.
+
+Để đổi chiều rộng toàn bộ băng chuyền, bật chế độ sửa, mở Chỉnh sửa thành phần cạnh banner và chọn chiều rộng khối.
