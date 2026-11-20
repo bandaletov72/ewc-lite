@@ -2,7 +2,7 @@
 
 Autor - Бандалетов Павел. [Projeto original e atualizações](https://github.com/bandaletov72/php-site-updates).
 
-O projeto foi desenvolvido para PHP 7.2. Nenhum banco de dados, Composer ou montagem de frontend é necessário.
+A versão mínima do PHP é 7.2. O site e a administração suportam PHP 8.6. Use nos seus módulos e modelos a sintaxe da versão instalada no servidor.
 
 [Perguntas frequentes sobre administração](faq.md) também está disponível na aba “Ajuda”.
 
@@ -332,3 +332,38 @@ Gerencie conjuntos e slides em Componentes. Use fotos de uma pasta, adicione tex
 A aba Idiomas lista os idiomas da página. Abrir leva à versão salva. Criar tradução abre um editor vazio.
 
 Uma subseção fica dentro da seção atual, uma seção no mesmo nível fica ao lado e uma seção na raiz fica no nível superior do site.
+
+## Compatibilidade com PHP e navegação · 1.6.10
+
+A versão mínima do PHP é 7.2. O site e a administração suportam PHP 8.6. Use nos seus módulos e modelos a sintaxe da versão instalada no servidor.
+
+O item atual de [bread-crumbs] abre as seções publicadas do mesmo nível que aparecem no menu principal. A URL configurada é usada em menus, listas de seções, trilhas de navegação, resultados e sugestões de pesquisa.
+
+A lixeira remove uma linha do editor de infoblocos. Remover uma coluna apaga todos os seus valores. As alterações são gravadas ao salvar, inclusive automaticamente após a reordenação.
+
+### Cópias de segurança
+
+O ZIP privado contém páginas, mídias, blocos, configurações, modelos e módulos PHP. A conta e as solicitações ficam separadas. É necessário PHP Zip.
+
+Substituir conteúdo e configurações. Antes disso, será feita uma cópia do estado atual.
+
+### Limpar arquivos sem uso
+
+A busca encontra mídias sem referências no conteúdo salvo. Revise a lista e selecione os arquivos. Antes é criada uma cópia de segurança. Remover o código de um componente preserva sua pasta e seus arquivos.
+
+### Escolher um ponto no mapa
+
+Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a por referência HTTP. Na aba Mapas da página, escolha um ponto e aplique as coordenadas.
+
+Selecione texto para alinhar ou limpar a formatação. Clique na imagem para editá-la e arraste a imagem ou seu canto para mover ou redimensionar. Links aceitam URL, e-mail, telefone e âncora. Botões abrem URLs, formulários, retornos de chamada ou links de pagamento do fornecedor.
+
+As abas HTML e Editor visual alternam o modo. SUP, SUB e Parágrafo inserem os elementos correspondentes. Os componentes mostram seus códigos. As pastas são criadas na inserção. Os nomes aceitam letras latinas, dígitos, hífens e sublinhados. A aba Idiomas leva às configurações de idioma.
+
+```text
+[button action="url" label="Contacts" url="/contacts/"]
+[button action="form" label="Write to us" form="form1"]
+[button action="callback" label="Call me"]
+[button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
+[map]
+[maps]
+```

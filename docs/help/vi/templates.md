@@ -329,3 +329,38 @@ Quản lý bộ và slide trong Thành phần. Dùng ảnh từ thư mục, thê
 Thẻ Ngôn ngữ liệt kê các ngôn ngữ của trang. Mở đưa bạn đến bản đã lưu. Tạo bản dịch mở trình soạn thảo trống.
 
 Mục con nằm trong mục hiện tại, mục cùng cấp nằm cạnh mục đó, còn mục gốc nằm ở cấp cao nhất của trang web.
+
+## Tương thích PHP và điều hướng · 1.6.10
+
+Phiên bản PHP tối thiểu là 7.2. Trang web và khu vực quản trị hỗ trợ PHP 8.6. Hãy dùng cú pháp của phiên bản trên máy chủ cho mô-đun và mẫu riêng.
+
+Mục hiện tại của [bread-crumbs] mở danh sách các mục cùng cấp đã xuất bản và có trong menu chính. URL đã cấu hình được dùng trong menu, danh sách mục, đường dẫn điều hướng, kết quả và gợi ý tìm kiếm.
+
+Biểu tượng thùng rác xóa một hàng trong trình sửa khối dữ liệu. Xóa một cột sẽ bỏ toàn bộ giá trị của cột đó. Các thay đổi được ghi khi lưu, kể cả khi tự động lưu sau khi sắp xếp lại.
+
+### Sao lưu trang web
+
+ZIP riêng chứa trang, phương tiện, khối dữ liệu, cài đặt, mẫu và mô-đun PHP. Tài khoản quản trị và yêu cầu đến được lưu riêng. Cần PHP Zip.
+
+Thay thế nội dung và cài đặt. Hệ thống sao lưu trạng thái hiện tại trước.
+
+### Dọn tệp không sử dụng
+
+Quá trình quét tìm phương tiện chưa được tham chiếu trong nội dung đã lưu. Kiểm tra danh sách và chọn tệp cần xóa. Hệ thống sao lưu trước. Xóa mã thành phần vẫn giữ thư mục và các tệp của nó.
+
+### Chọn một điểm trên bản đồ
+
+Tạo khóa «JavaScript API» trong bảng điều khiển Yandex Maps và giới hạn theo HTTP Referer. Trong thẻ Bản đồ của trang, hãy chọn điểm và áp dụng tọa độ.
+
+Chọn văn bản để căn lề hoặc xóa định dạng. Nhấp vào ảnh để sửa thuộc tính rồi kéo ảnh để di chuyển hoặc kéo góc để đổi kích cỡ. Liên kết hỗ trợ URL, email, điện thoại và điểm neo. Nút mở URL, biểu mẫu, gọi lại hoặc liên kết thanh toán.
+
+Dùng thẻ HTML và Trình sửa trực quan để đổi chế độ. SUP, SUB và Đoạn văn chèn thẻ tương ứng. Mã hiển thị cạnh tên thành phần. Thư mục thiếu được tạo khi chèn. Tên thư mục cho phép chữ Latin, số, dấu gạch nối và gạch dưới. Thẻ Ngôn ngữ liên kết đến cài đặt ngôn ngữ.
+
+```text
+[button action="url" label="Contacts" url="/contacts/"]
+[button action="form" label="Write to us" form="form1"]
+[button action="callback" label="Call me"]
+[button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
+[map]
+[maps]
+```

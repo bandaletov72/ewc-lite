@@ -329,3 +329,38 @@ Gérez les ensembles et diapositives dans Composants. Utilisez les photos d’un
 L’onglet Langues présente les langues de la page. Ouvrir affiche la version enregistrée. Créer une traduction ouvre un éditeur vide.
 
 Une sous-section est créée dans la section active, une section de même niveau à côté, et une section racine au premier niveau du site.
+
+## Compatibilité PHP et navigation · 1.6.10
+
+La version minimale de PHP est 7.2. Le site et l’administration prennent en charge PHP 8.6. Pour les modules et modèles personnalisés, utilisez la syntaxe de la version installée sur le serveur.
+
+L’élément courant de [bread-crumbs] affiche les sections publiées du même niveau qui figurent dans le menu principal. L’URL configurée est utilisée dans les menus, listes de sections, fils d’Ariane, résultats et suggestions de recherche.
+
+La corbeille retire une ligne de l’éditeur d’infobloc. Supprimer une colonne retire toutes ses valeurs. Les changements sont enregistrés à la sauvegarde, y compris automatiquement après un réagencement.
+
+### Sauvegardes du site
+
+Le ZIP privé contient pages, médias, infoblocs, réglages, modèles et modules PHP. Le compte administrateur et les demandes sont stockés séparément. PHP Zip est requis.
+
+Remplacer le contenu et les réglages. Une copie de l’état actuel sera créée auparavant.
+
+### Nettoyer les fichiers inutilisés
+
+L’analyse cherche les médias sans référence dans le contenu enregistré. Vérifiez la liste et sélectionnez les fichiers. Une sauvegarde est créée au préalable. Supprimer un code de composant conserve son dossier et ses fichiers.
+
+### Choisir un point sur la carte
+
+Dans la console Yandex Maps, créez une clé pour « JavaScript API » et limitez-la par référent HTTP. Dans l’onglet Cartes de la page, choisissez un point puis appliquez ses coordonnées.
+
+Sélectionnez le texte à aligner ou à déformater. Cliquez sur une image pour ses réglages, déplacez-la ou redimensionnez-la depuis son coin. Un lien peut viser une URL, un courriel, un téléphone ou une ancre. Un bouton ouvre un lien, un formulaire, un rappel ou un lien de paiement du prestataire.
+
+Les onglets HTML et Éditeur visuel changent le mode. SUP, SUB et Paragraphe insèrent les éléments correspondants. Les codes figurent à côté des composants. Les dossiers manquants sont créés à l’insertion. Leurs noms acceptent lettres latines, chiffres, traits d’union et tirets bas. L’onglet Langues ouvre les réglages de langue.
+
+```text
+[button action="url" label="Contacts" url="/contacts/"]
+[button action="form" label="Write to us" form="form1"]
+[button action="callback" label="Call me"]
+[button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
+[map]
+[maps]
+```

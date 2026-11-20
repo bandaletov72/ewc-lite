@@ -329,3 +329,38 @@ Verwalten Sie Sets und Folien unter Komponenten. Verwenden Sie Fotos aus einem O
 Der Tab „Sprachen“ listet die Seitensprachen auf. „Öffnen“ führt zur gespeicherten Version. „Übersetzung erstellen“ öffnet einen leeren Editor.
 
 Ein Unterbereich entsteht im aktuellen Bereich, ein gleichrangiger Bereich daneben und ein Hauptbereich auf der obersten Ebene der Website.
+
+## PHP-Kompatibilität und Navigation · 1.6.10
+
+Die Mindestversion ist PHP 7.2. Website und Administration unterstützen PHP 8.6. Verwenden Sie in eigenen Modulen und Vorlagen die Syntax der PHP-Version Ihres Servers.
+
+Der aktuelle Eintrag in [bread-crumbs] zeigt veröffentlichte Bereiche derselben Ebene aus dem Hauptmenü. Die eingestellte Seiten-URL gilt für Menüs, Bereichslisten, Brotkrümelnavigation, Suchergebnisse und Vorschläge.
+
+Der Papierkorb entfernt eine Zeile aus dem Infoblock-Editor. Beim Entfernen einer Spalte gehen alle ihre Werte verloren. Änderungen werden beim Speichern übernommen, auch automatisch nach dem Umsortieren.
+
+### Sicherungen der Website
+
+Das private ZIP enthält Seiten, Medien, Infoblöcke, Einstellungen, eigene Vorlagen und PHP-Module. Administratorkonto und Anfragen werden separat gespeichert. PHP Zip wird benötigt.
+
+Inhalte und Einstellungen ersetzen. Zuerst wird der aktuelle Stand gesichert.
+
+### Ungenutzte Dateien bereinigen
+
+Der Scan sucht Medien ohne Verweise in gespeicherten Inhalten. Prüfen Sie die Liste und wählen Sie Dateien aus. Zuvor wird eine Sicherung erstellt. Beim Entfernen eines Komponentencodes bleiben Ordner und Dateien erhalten.
+
+### Punkt auf der Karte wählen
+
+Erstellen Sie in der Yandex-Konsole einen Schlüssel für „JavaScript API“ und begrenzen Sie ihn per HTTP-Referrer. Wählen Sie in der Karten-Registerkarte der Seite einen Punkt und übernehmen Sie seine Koordinaten.
+
+Markieren Sie Text zum Ausrichten oder zum Entfernen seiner Formatierung. Klicken Sie auf ein Bild, um Eigenschaften zu ändern. Ziehen Sie es zum Verschieben oder ziehen Sie an seiner Ecke. Links unterstützen URL, E-Mail, Telefonnummer und Anker. Schaltflächen öffnen URLs, Formulare, Rückrufe oder Zahlungslinks des Anbieters.
+
+HTML und visueller Editor wechseln den Modus per Tab. SUP, SUB und Absatz fügen die passenden Elemente ein. Komponenten zeigen ihren Einfügecode. Fehlende Medienordner werden beim Einfügen erstellt. Namen nutzen lateinische Buchstaben, Ziffern, Bindestriche und Unterstriche. Der Tab „Sprachen“ führt zu den Spracheinstellungen.
+
+```text
+[button action="url" label="Contacts" url="/contacts/"]
+[button action="form" label="Write to us" form="form1"]
+[button action="callback" label="Call me"]
+[button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
+[map]
+[maps]
+```

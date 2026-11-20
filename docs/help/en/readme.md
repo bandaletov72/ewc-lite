@@ -2,7 +2,7 @@
 
 Author - Бандалетов Павел. [Original project and updates](https://github.com/bandaletov72/php-site-updates).
 
-The project is designed for PHP 7.2. No database, Composer or frontend assembly required.
+The minimum PHP version is 7.2. The site and admin area support PHP 8.6. Use the PHP syntax available on your server when writing custom modules and templates.
 
 [Admin FAQ](faq.md) is also available in the “Help” tab.
 
@@ -332,3 +332,38 @@ Manage sets and slides in Components. Use photos from a folder, configure captio
 The Languages tab lists the page languages. Open takes you to a saved version. Create translation opens a blank translation editor.
 
 Choose where to create the section. A subsection goes inside the current section, a sibling goes beside it, and a root section goes at the top level of the site.
+
+## PHP compatibility and navigation · 1.6.10
+
+The minimum PHP version is 7.2. The site and admin area support PHP 8.6. Use the PHP syntax available on your server when writing custom modules and templates.
+
+The current [bread-crumbs] item opens a list of published sections at the same level that appear in the main menu. The page’s configured URL is used in menus, section lists, breadcrumbs, search results and suggestions.
+
+The trash icon removes a row from the infoblock editor. Removing a column removes all its values. Changes are written when the infoblock is saved, including autosave after reordering.
+
+### Site backups
+
+The private ZIP contains pages, media, infoblocks, settings, custom templates and PHP modules. The administrator account and incoming requests are stored separately. Backups require PHP Zip.
+
+Replace content and settings with this backup. A copy of the current site will be created first.
+
+### Unused file cleanup
+
+The scan finds media without references in saved content. Review the list and select the files to remove. A backup is created first. Removing a component code leaves its folder and files in place.
+
+### Pick a point on a map
+
+In the Yandex Maps console create a key for the «JavaScript API» product and restrict it by HTTP Referer. With a provider enabled, open the page’s Maps tab, choose a point and apply its coordinates.
+
+Select text in the visual editor to align it or clear formatting. Click an image to edit its properties, drag its corner to resize, or move the image in the text. Links can target URLs, emails, telephone numbers or anchors. Buttons can open a URL, form, callback or payment. Use a provider link for the displayed amount.
+
+Use the HTML and Visual Editor tabs to switch modes. SUP, SUB and Paragraph insert the matching elements. Component names show their shortcodes. Missing media folders are created during insertion. Folder names allow letters A–Z, digits, hyphens and underscores. The Languages tab links to the site language settings.
+
+```text
+[button action="url" label="Contacts" url="/contacts/"]
+[button action="form" label="Write to us" form="form1"]
+[button action="callback" label="Call me"]
+[button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
+[map]
+[maps]
+```
