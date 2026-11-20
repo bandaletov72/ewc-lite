@@ -4,6 +4,13 @@
 - [FAQ Administrateur](fr/faq.md)
 - [Modèles et composants](fr/templates.md)
 
+## Menu mobile · 1.6.7
+
+- Afficher dans le menu principal
+- Afficher dans le menu mobile
+- Masquer dans le menu mobile
+
+
 ## Modifier les données sur place · 1.6.6
 
 En mode édition, les blocs de données, les formulaires [formX], les fragments [tel] et les composants associés proposent les actions Données et Plein écran. La liste des vues affiche les modèles enregistrés. Choisissez Dossier racine pour déplacer une rubrique au premier niveau. Utilisez [list-pages] pour lister les pages publiées de la rubrique et de ses sous-dossiers. Cliquez à l’extérieur ou appuyez sur Échap pour fermer le menu des langues.

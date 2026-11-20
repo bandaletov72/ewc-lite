@@ -4,6 +4,13 @@
 - [Admin FAQ](en/faq.md)
 - [Templates and components](en/templates.md)
 
+## Mobile menu · 1.6.7
+
+- Show in the main menu
+- Show in the mobile menu
+- Hide in the mobile menu
+
+
 ## Editing component data in place · 1.6.6
 
 In edit mode, infoblocks, [formX] forms, [tel] snippets and other components with data editors offer Data and Full screen. The infoblock view dropdown lists registered display templates. Choose Root folder to move a section to the top level. Use [list-pages] for published pages in the section and all subfolders. Close the admin language menu by clicking outside or pressing Escape.

@@ -4,6 +4,13 @@
 - [Admin-FAQ](de/faq.md)
 - [Vorlagen und Komponenten](de/templates.md)
 
+## Mobilmenü · 1.6.7
+
+- Im Hauptmenü anzeigen
+- Im Mobilmenü anzeigen
+- Im Mobilmenü ausblenden
+
+
 ## Komponentendaten direkt bearbeiten · 1.6.6
 
 Im Bearbeitungsmodus bieten Infoblöcke, Formulare [formX], Textbausteine [tel] und andere Komponenten mit Dateneditor die Optionen Daten und Vollbild. Die Ansichtsliste enthält registrierte Vorlagen. Wählen Sie Stammordner für die oberste Ebene. [list-pages] listet veröffentlichte Seiten im Bereich und seinen Unterordnern. Schließen Sie das Sprachmenü durch einen Klick außerhalb oder mit Escape.
