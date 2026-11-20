@@ -1,0 +1,47 @@
+name: Publish signed CMS update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - updates/latest.json
+      - .github/workflows/publish-update.yml
+  workflow_dispatch:
+
+concurrency: publish-signed-update
+
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Verify and publish release files
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          assets=$(mktemp -d)
+          fetch_file() {
+            gh api -H 'Accept: application/vnd.github.raw+json' \
+              "repos/$GITHUB_REPOSITORY/contents/$1?ref=$GITHUB_SHA"
+          }
+          version=$(fetch_file updates/latest.json | jq -er '.version | strings')
+          [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          tag=v$version
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "$tag already published"
+            exit 0
+          fi
+          fetch_file "full/$tag/php-site.zip" > "$assets/php-site.zip"
+          fetch_file "updates/$tag/php-site-update.zip" > "$assets/php-site-update.zip"
+          fetch_file "updates/$tag/php-site-update.zip.sig" > "$assets/php-site-update.zip.sig"
+          unzip -p "$assets/php-site.zip" php-site/maintenance/release-public.pem > "$assets/key.pem"
+          echo "7d1d57014ddb4642aebf7c4dfd0593f75326933c25685957228b82e5d6143d3b  $assets/key.pem" | sha256sum -c -
+          openssl dgst -sha256 -verify "$assets/key.pem" -signature "$assets/php-site-update.zip.sig" "$assets/php-site-update.zip"
+          [[ $(unzip -p "$assets/php-site-update.zip" manifest.json | jq -er '.version') == "$version" ]]
+          gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --latest \
+            --title "Eurowebcart CMS Light $version" --notes 'Full package, update archive and signature.' \
+            "$assets/php-site.zip" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig"
