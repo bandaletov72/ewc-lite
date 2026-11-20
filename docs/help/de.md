@@ -343,7 +343,7 @@ Zuerst gilt die gespeicherte Stadt, dann die Domain-Stadt und danach der erste L
 
 Formulare, Rückrufe und neue Bestellungen gehen an die Stadtadresse oder an die Standardadresse der Website. Sind beide leer, behalten Formulare ihre eigenen Empfänger. Leere Social-Media-Links werden geerbt.
 
-Im Bearbeitungsmodus erscheint beim Überfahren einer Vorlage ein Bearbeitungslink. Bei allen installierten [php]-Komponenten öffnet Modul bearbeiten den Quellcode und die Einstellungen im Dialog. Der Folien-Editor zeigt Formularname und Code. [banners width=100] füllt als eigenständiger Block ohne Seitenleiste die Fensterbreite. Der Vorlageneditor öffnet sich in einem Dialog auf der Website.
+Im Bearbeitungsmodus erscheint beim Überfahren einer Vorlage ein Bearbeitungslink. Bei allen installierten [php]-Komponenten öffnet Modul bearbeiten den Quellcode und die Einstellungen im Dialog. Der Folien-Editor zeigt Formularname und Code. [banners width=100] füllt als eigenständiger Block ohne Seitenleiste die Fensterbreite. Der Vorlageneditor öffnet sich in einem Dialog auf der Website. Doppelklicken Sie im Bearbeitungsmodus auf einen freien Bereich der Vorlage. Der Hinweis erscheint beim Überfahren unter der Schaltfläche. Bei überlappenden Blöcken hat die spätere Vorlage Vorrang. Folie bearbeiten öffnet die gewählte Bannerfolie. Die Website-Leiste zeigt Komponenten, Vorlagen und Bausteine der aktuellen Seite. Im Seiteneditor finden Sie neben Sprachen den Reiter Seitenkomponenten mit den verfügbaren Einstellungen und Daten.
 
 Der Dateimanager prüft vor dem Löschen die Referenzen und sichert nicht leere Ordner. Banner können einen Titel und einen Untertitel haben.
 

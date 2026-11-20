@@ -343,7 +343,7 @@ Chỉ bắt buộc tên thành phố. Tên miền và số điện thoại là t
 
 Biểu mẫu, yêu cầu gọi lại và đơn mới dùng email thành phố hoặc email chung nếu bỏ trống. Khi cả hai trống, biểu mẫu dùng người nhận riêng. Liên kết mạng xã hội trống kế thừa liên kết chung.
 
-Trong chế độ sửa, di chuột lên bố cục và chọn Sửa mẫu. Với mọi thành phần [php] đã cài đặt, Sửa mô-đun mở mã và cài đặt trong hộp thoại. Trình sửa khung hiện tên và mã biểu mẫu. [banners width=100] phủ chiều rộng cửa sổ nếu là khối riêng trên trang không có thanh bên. Trình sửa bố cục mở trong hộp thoại trên trang.
+Trong chế độ sửa, di chuột lên bố cục và chọn Sửa mẫu. Với mọi thành phần [php] đã cài đặt, Sửa mô-đun mở mã và cài đặt trong hộp thoại. Trình sửa khung hiện tên và mã biểu mẫu. [banners width=100] phủ chiều rộng cửa sổ nếu là khối riêng trên trang không có thanh bên. Trình sửa bố cục mở trong hộp thoại trên trang. Trong chế độ sửa, nhấp đúp vào vùng trống của mẫu. Khi rê chuột, gợi ý hiện dưới nút sửa. Nếu các khối chồng lên nhau, mẫu đứng sau được ưu tiên. Nút Sửa slide mở slide banner đã chọn. Thanh công cụ hiển thị thành phần, bố cục và mẫu con của trang hiện tại. Trong trình sửa trang, mở Thao tác với thành phần trang bên cạnh Ngôn ngữ để chỉnh sửa tham số và dữ liệu.
 
 Trình quản lý kiểm tra thư mục và tệp trước khi xóa, đồng thời sao lưu thư mục không trống. Slide banner có thể có tiêu đề và tiêu đề phụ.
 

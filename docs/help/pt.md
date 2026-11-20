@@ -343,7 +343,7 @@ Só o nome da cidade é obrigatório. O domínio e os telefones são opcionais. 
 
 Os formulários, pedidos de chamada e novas encomendas usam o e-mail da cidade ou o do site se estiver vazio. Se ambos estiverem vazios, os formulários mantêm os seus destinatários. Os links sociais vazios são herdados.
 
-No modo de edição, passe o cursor sobre um modelo para o editar. Para qualquer componente [php] instalado, Editar módulo abre o código e as definições numa janela. O editor de diapositivos mostra o nome e o código do formulário. [banners width=100] ocupa toda a janela como bloco autónomo sem barra lateral. O editor de modelos abre numa janela modal do site.
+No modo de edição, passe o cursor sobre um modelo para o editar. Para qualquer componente [php] instalado, Editar módulo abre o código e as definições numa janela. O editor de diapositivos mostra o nome e o código do formulário. [banners width=100] ocupa toda a janela como bloco autónomo sem barra lateral. O editor de modelos abre numa janela modal do site. No modo de edição, faça duplo clique numa zona livre do modelo. A dica aparece sob o botão ao passar o cursor. Quando os blocos se sobrepõem, o modelo seguinte tem prioridade. Editar slide abre o slide selecionado. A barra do site mostra os componentes, modelos e submodelos da página atual. Na administração, abra Componentes da página junto a Idiomas para editar os parâmetros e dados disponíveis.
 
 O gestor verifica referências antes de eliminar e faz uma cópia de segurança de pastas não vazias. Cada banner pode ter título e subtítulo.
 

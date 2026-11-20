@@ -343,7 +343,7 @@ La ville mémorisée est prioritaire, puis celle du domaine et enfin la premièr
 
 Les formulaires, rappels et nouvelles commandes vont à l’adresse de la ville ou à celle du site si elle est vide. Si les deux sont vides, le formulaire garde son propre destinataire. Les liens sociaux vides héritent des réglages du site.
 
-En mode édition, survolez un modèle pour le modifier. Pour tout composant [php] installé, Modifier le module ouvre le code et les réglages dans une fenêtre. L’éditeur de diapositive affiche le nom et le code du formulaire. [banners width=100] occupe toute la fenêtre pour un bloc autonome sans barre latérale. L’éditeur de modèle s’ouvre dans une fenêtre modale sur le site.
+En mode édition, survolez un modèle pour le modifier. Pour tout composant [php] installé, Modifier le module ouvre le code et les réglages dans une fenêtre. L’éditeur de diapositive affiche le nom et le code du formulaire. [banners width=100] occupe toute la fenêtre pour un bloc autonome sans barre latérale. L’éditeur de modèle s’ouvre dans une fenêtre modale sur le site. En mode édition, double-cliquez dans une zone libre du modèle. Cette indication apparaît sous le bouton de modification au survol. En cas de chevauchement, le modèle suivant est prioritaire. Le bouton de modification de la diapositive ouvre la diapositive choisie. La barre du site affiche les composants, modèles et sous-modèles de la page active. Dans l’administration, ouvrez Composants de la page à côté de Langues pour modifier leurs paramètres et données.
 
 Le gestionnaire vérifie les références avant la suppression et sauvegarde les dossiers non vides. Une bannière peut avoir un titre et un sous-titre.
 

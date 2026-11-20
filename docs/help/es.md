@@ -343,7 +343,7 @@ Se usa la ciudad guardada, después la del dominio y por último la primera de l
 
 Formularios, solicitudes de llamada y pedidos nuevos usan el correo de la ciudad o el del sitio si queda vacío. Si ambos faltan, los formularios usan sus propios destinatarios. Los enlaces sociales vacíos se heredan del sitio.
 
-En el modo de edición, pase el cursor por una plantilla para editarla. En cualquier componente [php] instalado, Editar módulo abre el código y los ajustes en una ventana. El editor de diapositivas muestra nombre y código del formulario. [banners width=100] ocupa toda la ventana como bloque independiente sin barra lateral. El editor de plantillas se abre en una ventana modal del sitio.
+En el modo de edición, pase el cursor por una plantilla para editarla. En cualquier componente [php] instalado, Editar módulo abre el código y los ajustes en una ventana. El editor de diapositivas muestra nombre y código del formulario. [banners width=100] ocupa toda la ventana como bloque independiente sin barra lateral. El editor de plantillas se abre en una ventana modal del sitio. En modo de edición, haga doble clic en una zona libre de la plantilla. El aviso aparece debajo del botón al pasar el cursor. Si se superponen dos bloques, prevalece la plantilla posterior. Editar diapositiva abre la diapositiva seleccionada. La barra del sitio muestra los componentes, las plantillas y los fragmentos de la página actual. En el editor de páginas, abra Componentes de la página junto a Idiomas para editar los parámetros y datos disponibles.
 
 El gestor comprueba las referencias antes de eliminar y hace una copia de las carpetas no vacías. Cada banner puede tener título y subtítulo.
 

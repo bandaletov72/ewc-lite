@@ -343,7 +343,7 @@ The city selection uses the saved choice, the domain’s assigned city, then the
 
 Form messages, callbacks and new orders use the selected city’s email or the site-wide address when blank. If both settings are blank, forms keep their own recipients. Blank city social links inherit site-wide links.
 
-In edit mode, hover over a layout and choose Edit template. For any installed [php] component, Edit module opens its source and settings in a dialog. The slide editor shows the form name and code. Explicit [banners width=100] spans the viewport when inserted as a top-level block on a page with no sidebar. The layout editor opens in a dialog on the site.
+In edit mode, hover over a layout and choose Edit template. For any installed [php] component, Edit module opens its source and settings in a dialog. The slide editor shows the form name and code. Explicit [banners width=100] spans the viewport when inserted as a top-level block on a page with no sidebar. The layout editor opens in a dialog on the site. In edit mode, double-click a blank area of the template. The hint appears under Edit template on hover. When blocks overlap, the later template takes priority. Edit slide opens the selected banner slide. The site toolbar lists only the current page’s components, layouts and snippets. In the admin page editor, open Page components next to Languages to edit available component parameters and data.
 
 The file manager checks a folder and its contents for references before deletion. A backup is created for a non-empty folder. Each banner slide can have a title and subtitle.
 
