@@ -22,7 +22,7 @@ Al desmarcar la casilla "En el menú", se elimina el enlace de los menús habitu
 
 ### ¿Cómo puedo cambiar el orden de las páginas o mover una carpeta completa?
 
-Arrastra el ícono ⠿ para reorganizar las páginas dentro del mismo nivel. Para mover una página, abra "Mover página" en su editor. Para transferir una carpeta junto con sus páginas y archivos adjuntos, haga clic en ↪ junto al nombre de la carpeta. Después de la transferencia, verifique los enlaces del manual y los códigos [include] que apuntaban a las direcciones anteriores.
+Arrastra el control ⠿ para ordenar páginas del mismo nivel. Mueve una página desde sus ajustes. El icono de la carpeta abre el selector de sección superior. Elige otra sección o la raíz y pulsa Mover carpeta. Las páginas y archivos se mueven con ella. Revisa los enlaces antiguos y los códigos [include].
 
 ### ¿Por qué los cambios de página no son visibles inmediatamente?
 
@@ -248,4 +248,29 @@ Las pestañas HTML y Editor visual cambian el modo. SUP, SUB y Párrafo insertan
 [button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
 [map]
 [maps]
+```
+
+## Venta · 1.6.11
+
+Configura precio y pago en Venta, con valores opcionales por idioma. Inserta [item-price] y [item-buy-button]. El pedido se registra antes del pago. Los estados se pueden enviar por correo y SMS de Zadarma.
+
+Pedido recibido · Pago aceptado · Enviado · Cerrado · Cancelado
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Selecciona un archivo o URL para insertar una imagen. Haz clic en la imagen para ajustar tamaño, alineación, cuatro márgenes y CSS. Su alineación es independiente del texto. HTML muestra los bloques en líneas separadas. [list-pages] está en Componentes. El logotipo utiliza los colores del tema.
+
+## Gráfico del bloque de datos
+
+En el editor de páginas, abre el selector de componentes y elige una tabla o un gráfico. Activa Chart.js para los gráficos, elige una columna de etiquetas y selecciona columnas de tipo Número o Precio. Los gráficos circulares, de anillo y de área polar usan una serie no negativa. Si se desactiva la biblioteca, se muestra la tabla.
+
+Los formularios, plantillas, fragmentos guardados y componentes registrados aparecen al volver a abrir el editor. El ID de un conjunto nuevo admite A–Z, a–z, guiones y guiones bajos. Al subir imágenes a una carpeta [banners], aparece un enlace para editar cada diapositiva. En modo de edición, se abre la diapositiva elegida en una ventana con un enlace a los ajustes predeterminados. Junto a Guardar, el gestor de carruseles, galerías y listas permite subir, eliminar, ordenar y crear subcarpetas (A–Z, a–z, 0–9, - y _). Los colores se ven en muestras cuadradas.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
 ```

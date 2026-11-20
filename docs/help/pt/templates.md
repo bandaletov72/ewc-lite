@@ -364,3 +364,28 @@ As abas HTML e Editor visual alternam o modo. SUP, SUB e Parágrafo inserem os e
 [map]
 [maps]
 ```
+
+## Venda · 1.6.11
+
+Defina preço e pagamento na aba Venda, com valores opcionais por idioma. Insira [item-price] e [item-buy-button]. O pedido é registrado antes do pagamento. Os status podem ser enviados por email e SMS Zadarma.
+
+Pedido recebido · Pagamento aceito · Enviado · Encerrado · Cancelado
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Selecione um arquivo ou URL para inserir uma imagem. Clique na imagem para ajustar tamanho, alinhamento, quatro margens e CSS. O alinhamento da imagem é independente do texto. Em HTML, os blocos ficam em linhas separadas. [list-pages] está em Componentes. O logotipo usa as cores do tema.
+
+## Gráfico do bloco de dados
+
+No editor da página, abra a inserção de componentes e escolha uma tabela ou um gráfico. Para gráficos, ative o Chart.js, escolha a coluna de rótulos e colunas do tipo Número ou Preço. Pizza, rosca e área polar usam uma série não negativa. Com a biblioteca desativada, a tabela é exibida.
+
+Formulários, modelos, trechos salvos e componentes registrados aparecem ao reabrir o editor. O ID de um novo conjunto aceita A–Z, a–z, hífens e sublinhados. Após enviar imagens para uma pasta [banners], aparece um link para editar o slide ao lado de cada arquivo. No modo de edição, a janela exibe o slide escolhido e oferece um link para as configurações padrão. Ao lado de Salvar, o gerenciador de carrosséis, galerias e listas permite enviar, excluir, ordenar e criar subpastas (A–Z, a–z, 0–9, - e _). As cores aparecem em quadrados.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
+```

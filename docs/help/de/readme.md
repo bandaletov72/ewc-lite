@@ -36,7 +36,7 @@ In der Seitenliste können Ordner erweitert werden. Im Menü-Kontrollkästchen w
 
 Öffnen Sie im Seiteneditor den Block „Seite verschieben“ und geben Sie den Zielordner an. Wenn Sie beispielsweise `/contacts/` an `/company/` übertragen, lautet die neue Adresse `/company/contacts/`. Verschachtelte Seiten bleiben an denselben Adressen. Aktualisieren Sie Ihre eigenen Links und Codes `[include]`, die zur migrierten Seite führen.
 
-Der ↪-Button neben dem Ordnernamen überträgt das gesamte Verzeichnis samt Seiten und Dateien. Sie können einen anderen Abschnitt oder Site-Stamm für den Ordner auswählen. Die Adressen der Unterseiten ändern sich zusammen mit der Ordneradresse.
+Ziehen Sie am Griff ⠿, um Seiten derselben Ebene zu sortieren. Eine einzelne Seite verschieben Sie in den Seiteneinstellungen. Das Symbol am Ordner öffnet die Auswahl des übergeordneten Bereichs. Wählen Sie einen Bereich oder die oberste Ebene und klicken Sie auf „Ordner verschieben“. Seiten und Dateien werden mitverschoben. Prüfen Sie alte Links und [include]-Codes.
 
 Inhalte können in einem Texteditor bearbeitet und über FTP oder SFTP hinzugefügt werden. Die Datei muss im UTF-8-Format ohne Stückliste vorliegen. Speichern Sie den PHP-Serviceblock bis zur Zeile `__halt_compiler();`. Fügen Sie in der neuen Auslagerungsdatei diesen Block aus dem Beispiel in der gewünschten Tiefe ein und überprüfen Sie den relativen Pfad zum Stammverzeichnis `index.php`. Als nächstes folgen die Kopfzeilen, eine Leerzeile und ein HTML-Fragment der Seite.
 
@@ -366,4 +366,29 @@ HTML und visueller Editor wechseln den Modus per Tab. SUP, SUB und Absatz fügen
 [button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
 [map]
 [maps]
+```
+
+## Verkauf · 1.6.11
+
+Legen Sie Preis und Zahlungsmethode im Verkaufstab fest, optional pro Sprache. Fügen Sie [item-price] und [item-buy-button] ein. Die Bestellung wird vor dem Checkout registriert. Statusmeldungen können per E-Mail und Zadarma-SMS gesendet werden.
+
+Eingegangen · Zahlung angenommen · Versandt · Abgeschlossen · Storniert
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Wählen Sie eine Datei oder URL für ein Bild aus. Klicken Sie auf das Bild für Größe, Ausrichtung, vier Außenabstände und CSS. Die Bildausrichtung ist unabhängig vom Text. In HTML stehen Blöcke in eigenen Zeilen. [list-pages] steht in der Komponentenliste. Das CMS-Logo verwendet die Farben des aktiven Designs.
+
+## Diagramm aus Datenblock
+
+Öffnen Sie im Seiteneditor die Komponentenauswahl und wählen Sie Tabelle oder Diagramm. Aktivieren Sie Chart.js für Diagramme. Wählen Sie eine Beschriftungsspalte und Spalten vom Typ Zahl oder Preis. Kreis-, Ring- und Polarflächendiagramme verwenden eine nichtnegative Datenreihe. Ohne Bibliothek erscheint die Tabelle.
+
+Beim erneuten Öffnen des Editors erscheinen gespeicherte Formulare, Vorlagen, Textbausteine und registrierte Komponenten. Die ID eines neuen Banner-Sets erlaubt A–Z, a–z, Bindestriche und Unterstriche. Nach dem Hochladen in einen [banners]-Ordner erscheint neben jeder Datei ein Link zur Folienbearbeitung. Im Bearbeitungsmodus öffnet sich nur die gewählte Folie im Dialog. Die Standardeinstellungen sind separat verlinkt. Neben Speichern öffnen Karussell, Galerie und Dateiliste einen Dateimanager zum Hochladen, Löschen, Sortieren und Anlegen von Unterordnern (A–Z, a–z, 0–9, - und _). Folienfarben werden als Quadrate angezeigt.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
 ```

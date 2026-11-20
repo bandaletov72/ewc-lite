@@ -36,7 +36,7 @@ En la lista de páginas, se pueden ampliar las carpetas. En la casilla de verifi
 
 En el editor de páginas, abra el bloque "Mover página" y especifique la carpeta de destino. Por ejemplo, si transfiere `/contacts/` a `/company/`, la nueva dirección será `/company/contacts/`. Las páginas anidadas permanecen en las mismas direcciones. Actualice sus propios enlaces y códigos `[include]` que conducen a la página migrada.
 
-El botón ↪ junto al nombre de la carpeta transfiere todo el directorio junto con páginas y archivos. Puede seleccionar otra sección o raíz del sitio para la carpeta. Las direcciones de las subpáginas cambian junto con la dirección de la carpeta.
+Arrastra el control ⠿ para ordenar páginas del mismo nivel. Mueve una página desde sus ajustes. El icono de la carpeta abre el selector de sección superior. Elige otra sección o la raíz y pulsa Mover carpeta. Las páginas y archivos se mueven con ella. Revisa los enlaces antiguos y los códigos [include].
 
 El contenido se puede editar en un editor de texto y agregar a través de FTP o SFTP. El archivo debe estar en UTF-8 sin BOM. Guarde el bloque de servicio PHP hasta la línea `__halt_compiler();`. En el archivo de la nueva página, inserte este bloque del ejemplo a la profundidad deseada y verifique la ruta relativa a la raíz `index.php`. Luego vienen los encabezados, una línea vacía y un fragmento HTML de la página.
 
@@ -366,4 +366,29 @@ Las pestañas HTML y Editor visual cambian el modo. SUP, SUB y Párrafo insertan
 [button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
 [map]
 [maps]
+```
+
+## Venta · 1.6.11
+
+Configura precio y pago en Venta, con valores opcionales por idioma. Inserta [item-price] y [item-buy-button]. El pedido se registra antes del pago. Los estados se pueden enviar por correo y SMS de Zadarma.
+
+Pedido recibido · Pago aceptado · Enviado · Cerrado · Cancelado
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Selecciona un archivo o URL para insertar una imagen. Haz clic en la imagen para ajustar tamaño, alineación, cuatro márgenes y CSS. Su alineación es independiente del texto. HTML muestra los bloques en líneas separadas. [list-pages] está en Componentes. El logotipo utiliza los colores del tema.
+
+## Gráfico del bloque de datos
+
+En el editor de páginas, abre el selector de componentes y elige una tabla o un gráfico. Activa Chart.js para los gráficos, elige una columna de etiquetas y selecciona columnas de tipo Número o Precio. Los gráficos circulares, de anillo y de área polar usan una serie no negativa. Si se desactiva la biblioteca, se muestra la tabla.
+
+Los formularios, plantillas, fragmentos guardados y componentes registrados aparecen al volver a abrir el editor. El ID de un conjunto nuevo admite A–Z, a–z, guiones y guiones bajos. Al subir imágenes a una carpeta [banners], aparece un enlace para editar cada diapositiva. En modo de edición, se abre la diapositiva elegida en una ventana con un enlace a los ajustes predeterminados. Junto a Guardar, el gestor de carruseles, galerías y listas permite subir, eliminar, ordenar y crear subcarpetas (A–Z, a–z, 0–9, - y _). Los colores se ven en muestras cuadradas.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
 ```

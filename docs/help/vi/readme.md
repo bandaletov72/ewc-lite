@@ -36,7 +36,7 @@ Trong danh sách các trang, các thư mục có thể được mở rộng. Tro
 
 Trong trình chỉnh sửa trang, hãy mở khối “Di chuyển trang” và chỉ định thư mục đích. Ví dụ: nếu bạn chuyển `/contacts/` sang `/company/`, địa chỉ mới sẽ là `/company/contacts/`. Các trang lồng nhau vẫn ở cùng một địa chỉ. Cập nhật các liên kết và mã `[include]` của riêng bạn dẫn đến trang được di chuyển.
 
-Nút ↪ bên cạnh tên thư mục sẽ chuyển toàn bộ thư mục cùng với các trang và tệp. Bạn có thể chọn một phần khác hoặc trang gốc cho thư mục. Địa chỉ của các trang con thay đổi cùng với địa chỉ thư mục.
+Kéo tay nắm ⠿ để sắp xếp các trang cùng cấp. Di chuyển một trang trong cài đặt của trang. Biểu tượng cạnh thư mục mở bộ chọn mục cha. Chọn mục khác hoặc cấp gốc rồi bấm Di chuyển thư mục. Các trang và tệp được chuyển cùng thư mục. Kiểm tra liên kết cũ và mã [include].
 
 Nội dung có thể được chỉnh sửa trong trình soạn thảo văn bản và được thêm qua FTP hoặc SFTP. Tệp phải ở dạng UTF-8 không có BOM. Lưu khối dịch vụ PHP đến dòng `__halt_compiler();`. Trong tệp trang mới, chèn khối này từ ví dụ ở độ sâu mong muốn và kiểm tra đường dẫn tương đối đến thư mục gốc `index.php`. Tiếp theo là các tiêu đề, một dòng trống và một đoạn HTML của trang.
 
@@ -366,4 +366,29 @@ Dùng thẻ HTML và Trình sửa trực quan để đổi chế độ. SUP, SUB
 [button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
 [map]
 [maps]
+```
+
+## Bán hàng · 1.6.11
+
+Đặt giá và cách thanh toán trong thẻ Bán hàng, có thể thay riêng từng ngôn ngữ. Chèn [item-price] và [item-buy-button]. Đơn được ghi trước khi thanh toán. Thông báo trạng thái có thể gửi qua email hoặc SMS Zadarma.
+
+Đã tiếp nhận · Đã nhận thanh toán · Đã gửi · Đã đóng · Đã hủy
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Chọn tệp hoặc URL để chèn ảnh. Nhấp ảnh để chỉnh kích thước, căn lề, bốn lề ngoài và CSS. Căn ảnh độc lập với văn bản. HTML hiển thị các khối trên từng dòng. [list-pages] nằm trong danh sách thành phần. Logo CMS dùng màu của chủ đề.
+
+## Biểu đồ từ khối dữ liệu
+
+Trong trình sửa trang, mở mục chèn thành phần và chọn bảng hoặc biểu đồ. Để vẽ biểu đồ, bật Chart.js, chọn cột nhãn và các cột kiểu số hoặc giá. Biểu đồ tròn, vành khuyên và vùng cực dùng một chuỗi không âm. Khi thư viện bị tắt, trang hiển thị bảng.
+
+Biểu mẫu, mẫu, đoạn mã đã lưu và thành phần đã đăng ký tự xuất hiện khi mở lại trình sửa. ID bộ banner mới dùng A–Z, a–z, dấu gạch nối và gạch dưới. Sau khi tải ảnh vào thư mục [banners], liên kết sửa slide xuất hiện cạnh mỗi tệp. Ở chế độ sửa, cửa sổ chỉ mở slide đã chọn và có liên kết riêng đến cài đặt mặc định. Trình quản lý tệp cạnh nút Lưu của băng chuyền, thư viện ảnh và danh sách tệp cho phép tải lên, xóa, sắp xếp và tạo thư mục con (A–Z, a–z, 0–9, - và _). Màu slide hiển thị trong ô vuông.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
 ```

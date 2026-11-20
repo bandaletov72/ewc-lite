@@ -22,7 +22,7 @@ Durch Deaktivieren des Kontrollkästchens „Im Menü“ wird der Link aus den r
 
 ### Wie kann ich die Reihenfolge der Seiten ändern oder einen ganzen Ordner verschieben?
 
-Ziehen Sie das ⠿-Symbol, um Seiten innerhalb derselben Ebene neu anzuordnen. Um eine Seite zu verschieben, öffnen Sie „Seite verschieben“ in ihrem Editor. Um einen Ordner zusammen mit den angehängten Seiten und Dateien zu übertragen, klicken Sie auf ↪ neben dem Ordnernamen. Überprüfen Sie nach der Übertragung die manuellen Links und [include]-Codes, die auf die alten Adressen verweisen.
+Ziehen Sie am Griff ⠿, um Seiten derselben Ebene zu sortieren. Eine einzelne Seite verschieben Sie in den Seiteneinstellungen. Das Symbol am Ordner öffnet die Auswahl des übergeordneten Bereichs. Wählen Sie einen Bereich oder die oberste Ebene und klicken Sie auf „Ordner verschieben“. Seiten und Dateien werden mitverschoben. Prüfen Sie alte Links und [include]-Codes.
 
 ### Warum sind Seitenänderungen nicht sofort sichtbar?
 
@@ -248,4 +248,29 @@ HTML und visueller Editor wechseln den Modus per Tab. SUP, SUB und Absatz fügen
 [button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
 [map]
 [maps]
+```
+
+## Verkauf · 1.6.11
+
+Legen Sie Preis und Zahlungsmethode im Verkaufstab fest, optional pro Sprache. Fügen Sie [item-price] und [item-buy-button] ein. Die Bestellung wird vor dem Checkout registriert. Statusmeldungen können per E-Mail und Zadarma-SMS gesendet werden.
+
+Eingegangen · Zahlung angenommen · Versandt · Abgeschlossen · Storniert
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Wählen Sie eine Datei oder URL für ein Bild aus. Klicken Sie auf das Bild für Größe, Ausrichtung, vier Außenabstände und CSS. Die Bildausrichtung ist unabhängig vom Text. In HTML stehen Blöcke in eigenen Zeilen. [list-pages] steht in der Komponentenliste. Das CMS-Logo verwendet die Farben des aktiven Designs.
+
+## Diagramm aus Datenblock
+
+Öffnen Sie im Seiteneditor die Komponentenauswahl und wählen Sie Tabelle oder Diagramm. Aktivieren Sie Chart.js für Diagramme. Wählen Sie eine Beschriftungsspalte und Spalten vom Typ Zahl oder Preis. Kreis-, Ring- und Polarflächendiagramme verwenden eine nichtnegative Datenreihe. Ohne Bibliothek erscheint die Tabelle.
+
+Beim erneuten Öffnen des Editors erscheinen gespeicherte Formulare, Vorlagen, Textbausteine und registrierte Komponenten. Die ID eines neuen Banner-Sets erlaubt A–Z, a–z, Bindestriche und Unterstriche. Nach dem Hochladen in einen [banners]-Ordner erscheint neben jeder Datei ein Link zur Folienbearbeitung. Im Bearbeitungsmodus öffnet sich nur die gewählte Folie im Dialog. Die Standardeinstellungen sind separat verlinkt. Neben Speichern öffnen Karussell, Galerie und Dateiliste einen Dateimanager zum Hochladen, Löschen, Sortieren und Anlegen von Unterordnern (A–Z, a–z, 0–9, - und _). Folienfarben werden als Quadrate angezeigt.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
 ```

@@ -36,7 +36,7 @@ Na lista de páginas, as pastas podem ser expandidas. Na caixa de seleção Menu
 
 No editor de páginas, abra o bloco “Mover página” e especifique a pasta de destino. Por exemplo, se você transferir `/contacts/` para `/company/`, o novo endereço será `/company/contacts/`. As páginas aninhadas permanecem nos mesmos endereços. Atualize seus próprios links e códigos `[include]` que levam à página migrada.
 
-O botão ↪ próximo ao nome da pasta transfere todo o diretório junto com páginas e arquivos. Você pode selecionar outra seção ou raiz do site para a pasta. Os endereços das subpáginas mudam junto com o endereço da pasta.
+Arraste a alça ⠿ para ordenar páginas no mesmo nível. Mova uma página em suas configurações. O ícone da pasta abre a seleção da seção superior. Escolha outra seção ou a raiz e clique em Mover pasta. As páginas e os arquivos vão junto. Confira links antigos e códigos [include].
 
 O conteúdo pode ser editado em um editor de texto e adicionado via FTP ou SFTP. O arquivo deve estar em UTF-8 sem BOM. Salve o bloco de serviço PHP até a linha `__halt_compiler();`. No novo arquivo de paginação, insira este bloco do exemplo na profundidade desejada e verifique o caminho relativo à raiz `index.php`. Em seguida vêm os cabeçalhos, uma linha vazia e um fragmento HTML da página.
 
@@ -366,4 +366,29 @@ As abas HTML e Editor visual alternam o modo. SUP, SUB e Parágrafo inserem os e
 [button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
 [map]
 [maps]
+```
+
+## Venda · 1.6.11
+
+Defina preço e pagamento na aba Venda, com valores opcionais por idioma. Insira [item-price] e [item-buy-button]. O pedido é registrado antes do pagamento. Os status podem ser enviados por email e SMS Zadarma.
+
+Pedido recebido · Pagamento aceito · Enviado · Encerrado · Cancelado
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Selecione um arquivo ou URL para inserir uma imagem. Clique na imagem para ajustar tamanho, alinhamento, quatro margens e CSS. O alinhamento da imagem é independente do texto. Em HTML, os blocos ficam em linhas separadas. [list-pages] está em Componentes. O logotipo usa as cores do tema.
+
+## Gráfico do bloco de dados
+
+No editor da página, abra a inserção de componentes e escolha uma tabela ou um gráfico. Para gráficos, ative o Chart.js, escolha a coluna de rótulos e colunas do tipo Número ou Preço. Pizza, rosca e área polar usam uma série não negativa. Com a biblioteca desativada, a tabela é exibida.
+
+Formulários, modelos, trechos salvos e componentes registrados aparecem ao reabrir o editor. O ID de um novo conjunto aceita A–Z, a–z, hífens e sublinhados. Após enviar imagens para uma pasta [banners], aparece um link para editar o slide ao lado de cada arquivo. No modo de edição, a janela exibe o slide escolhido e oferece um link para as configurações padrão. Ao lado de Salvar, o gerenciador de carrosséis, galerias e listas permite enviar, excluir, ordenar e criar subpastas (A–Z, a–z, 0–9, - e _). As cores aparecem em quadrados.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
 ```

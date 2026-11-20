@@ -10,3 +10,4 @@
 - [Español](es.md)
 - [Português](pt.md)
 - [한국어](ko.md)
+- [简体中文](zh.md)

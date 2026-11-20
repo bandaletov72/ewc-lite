@@ -241,3 +241,28 @@ Dùng thẻ HTML và Trình sửa trực quan để đổi chế độ. SUP, SUB
 [map]
 [maps]
 ```
+
+## Bán hàng · 1.6.11
+
+Đặt giá và cách thanh toán trong thẻ Bán hàng, có thể thay riêng từng ngôn ngữ. Chèn [item-price] và [item-buy-button]. Đơn được ghi trước khi thanh toán. Thông báo trạng thái có thể gửi qua email hoặc SMS Zadarma.
+
+Đã tiếp nhận · Đã nhận thanh toán · Đã gửi · Đã đóng · Đã hủy
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Chọn tệp hoặc URL để chèn ảnh. Nhấp ảnh để chỉnh kích thước, căn lề, bốn lề ngoài và CSS. Căn ảnh độc lập với văn bản. HTML hiển thị các khối trên từng dòng. [list-pages] nằm trong danh sách thành phần. Logo CMS dùng màu của chủ đề.
+
+## Biểu đồ từ khối dữ liệu
+
+Trong trình sửa trang, mở mục chèn thành phần và chọn bảng hoặc biểu đồ. Để vẽ biểu đồ, bật Chart.js, chọn cột nhãn và các cột kiểu số hoặc giá. Biểu đồ tròn, vành khuyên và vùng cực dùng một chuỗi không âm. Khi thư viện bị tắt, trang hiển thị bảng.
+
+Biểu mẫu, mẫu, đoạn mã đã lưu và thành phần đã đăng ký tự xuất hiện khi mở lại trình sửa. ID bộ banner mới dùng A–Z, a–z, dấu gạch nối và gạch dưới. Sau khi tải ảnh vào thư mục [banners], liên kết sửa slide xuất hiện cạnh mỗi tệp. Ở chế độ sửa, cửa sổ chỉ mở slide đã chọn và có liên kết riêng đến cài đặt mặc định. Trình quản lý tệp cạnh nút Lưu của băng chuyền, thư viện ảnh và danh sách tệp cho phép tải lên, xóa, sắp xếp và tạo thư mục con (A–Z, a–z, 0–9, - và _). Màu slide hiển thị trong ô vuông.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
+```
