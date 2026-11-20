@@ -286,3 +286,7 @@ En escritorio, el logotipo aparece junto a Eurowebcart CMS y Light con la versi�
 ## Información de PHP
 
 En Mantenimiento, phpinfo() muestra la versión, los módulos y la configuración de PHP a administradores autenticados. Oculta variables de entorno y de la solicitud. Ajusta error_reporting en los ajustes generales. Se usa el valor del servidor por defecto.
+
+## Ocultar el árbol de páginas · 1.6.14
+
+En escritorio, la flecha pliega el árbol de páginas y amplía el editor. El botón encima del editor lo restaura. El navegador recuerda la elección.

@@ -278,3 +278,7 @@ Sur ordinateur, Eurowebcart CMS et Light accompagnent le logo avec la version in
 ## Informations PHP
 
 Dans Maintenance, phpinfo() présente la version, les modules et la configuration PHP aux administrateurs connectés. Les variables d’environnement et de requête sont masquées. Réglez error_reporting dans les paramètres généraux. La valeur du serveur s’applique par défaut.
+
+## Masquer l’arborescence · 1.6.14
+
+Sur ordinateur, la flèche replie l’arborescence et agrandit l’éditeur. Le bouton au-dessus de l’éditeur la rétablit. Le navigateur mémorise votre choix.

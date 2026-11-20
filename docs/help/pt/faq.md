@@ -286,3 +286,7 @@ No computador, Eurowebcart CMS e Light com a versão instalada aparecem junto do
 ## Informações do PHP
 
 Em Manutenção, phpinfo() mostra a versão, os módulos e a configuração do PHP a administradores autenticados. As variáveis de ambiente e de requisição são ocultadas. Ajuste error_reporting nas configurações gerais. O padrão é o nível do servidor.
+
+## Ocultar a árvore de páginas · 1.6.14
+
+No computador, a seta recolhe a árvore de páginas e amplia o editor. O botão acima do editor restaura a árvore. O navegador guarda a escolha.

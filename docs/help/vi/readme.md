@@ -404,3 +404,7 @@ Trên máy tính, bên cạnh logo có Eurowebcart CMS và Light kèm phiên b�
 ## Thông tin PHP
 
 Trong Bảo trì, phpinfo() hiển thị phiên bản, mô-đun và cấu hình PHP cho quản trị viên đã đăng nhập. Biến môi trường và yêu cầu được ẩn. Đặt error_reporting ở cài đặt chung. Mặc định dùng mức của máy chủ.
+
+## Ẩn cây trang · 1.6.14
+
+Trên máy tính, mũi tên thu gọn cây trang và mở rộng trình sửa. Nút phía trên trình sửa khôi phục cây trang. Trình duyệt ghi nhớ lựa chọn.

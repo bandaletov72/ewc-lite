@@ -404,3 +404,7 @@ Auf dem Desktop stehen Eurowebcart CMS und Light mit der installierten Version n
 ## PHP-Informationen
 
 Unter Wartung zeigt phpinfo() angemeldeten Administratoren die PHP-Version, Module und Konfiguration. Umgebungs- und Anfragevariablen bleiben verborgen. error_reporting steht in den allgemeinen Einstellungen. Standardmäßig gilt die Servereinstellung.
+
+## Seitenbaum ausblenden · 1.6.14
+
+Am Desktop klappt der Pfeil den Seitenbaum ein und verbreitert den Editor. Die Schaltfläche über dem Editor blendet ihn wieder ein. Der Browser merkt sich die Auswahl.

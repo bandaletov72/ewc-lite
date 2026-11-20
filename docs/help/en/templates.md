@@ -401,3 +401,7 @@ On desktop, the logo is paired with Eurowebcart CMS and Light, followed by the i
 ## PHP information
 
 In Maintenance, phpinfo() shows the PHP version, modules and configuration to signed-in administrators. Environment and request variables are omitted. Set error_reporting in Settings → General. The server default applies initially.
+
+## Hide page tree · 1.6.14
+
+On desktop, the arrow in the page tree collapses it and widens the editor. The button above the editor restores it. The browser remembers your choice.
