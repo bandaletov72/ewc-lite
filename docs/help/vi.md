@@ -4,6 +4,11 @@
 - [Câu hỏi thường gặp của quản trị viên](vi/faq.md)
 - [Mẫu và thành phần](vi/templates.md)
 
+## Sửa dữ liệu ngay trên trang · 1.6.6
+
+Trong chế độ sửa, khối dữ liệu, biểu mẫu [formX], đoạn mã [tel] và các thành phần có trình sửa cho phép mở hộp thoại hoặc toàn màn hình. Danh sách kiểu hiển thị chứa các mẫu đã đăng ký. Chọn thư mục gốc để chuyển mục lên cấp cao nhất. Dùng [list-pages] để liệt kê các trang đã xuất bản trong mục và các thư mục con. Đóng menu ngôn ngữ bằng cách bấm bên ngoài hoặc nhấn Escape.
+
+
 ## Tệp cấu hình, bản đồ và mẫu · 1.6.5
 
 Vào Bảo trì → Tệp cấu hình để sửa .htaccess, robots.txt và sitemap.xml. Sơ đồ XML chỉ dùng các trang đã xuất bản và được đánh dấu. Có thể khôi phục phiên bản .htaccess trước đó.

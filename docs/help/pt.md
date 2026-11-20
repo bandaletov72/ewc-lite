@@ -4,6 +4,11 @@
 - [Perguntas frequentes sobre administração](pt/faq.md)
 - [Modelos e componentes](pt/templates.md)
 
+## Editar dados na própria página · 1.6.6
+
+No modo de edição, os blocos, formulários [formX], fragmentos [tel] e outros componentes com editor oferecem Dados e Ecrã inteiro. A lista de vistas contém os modelos registados. Escolha Pasta raiz para mover a secção para o nível superior. Use [list-pages] para listar as páginas publicadas na secção e nas subpastas. Feche o menu de idiomas clicando fora ou premindo Escape.
+
+
 ## Ficheiros de configuração, mapas e modelos · 1.6.5
 
 Abra Manutenção → Ficheiros de configuração para editar .htaccess, robots.txt e sitemap.xml. O gerador usa as páginas publicadas assinaladas para inclusão. A versão anterior de .htaccess pode ser recuperada.

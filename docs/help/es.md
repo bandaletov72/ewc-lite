@@ -4,6 +4,11 @@
 - [Preguntas frecuentes del administrador](es/faq.md)
 - [Plantillas y componentes](es/templates.md)
 
+## Editar datos desde la página · 1.6.6
+
+En el modo de edición, los bloques, los formularios [formX], los fragmentos [tel] y otros componentes con editor ofrecen Datos y Pantalla completa. La lista de vistas contiene las plantillas registradas. Elige Carpeta raíz para mover una sección al nivel superior. Usa [list-pages] para listar las páginas publicadas de la sección y sus subcarpetas. Cierra el menú de idioma haciendo clic fuera o pulsando Escape.
+
+
 ## Archivos de configuración, mapas y plantillas · 1.6.5
 
 Abre Mantenimiento → Archivos de configuración para editar .htaccess, robots.txt y sitemap.xml. El generador utiliza las páginas publicadas marcadas para el mapa del sitio. Puedes recuperar la versión anterior de .htaccess.

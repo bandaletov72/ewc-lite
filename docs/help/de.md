@@ -4,6 +4,11 @@
 - [Admin-FAQ](de/faq.md)
 - [Vorlagen und Komponenten](de/templates.md)
 
+## Komponentendaten direkt bearbeiten · 1.6.6
+
+Im Bearbeitungsmodus bieten Infoblöcke, Formulare [formX], Textbausteine [tel] und andere Komponenten mit Dateneditor die Optionen Daten und Vollbild. Die Ansichtsliste enthält registrierte Vorlagen. Wählen Sie Stammordner für die oberste Ebene. [list-pages] listet veröffentlichte Seiten im Bereich und seinen Unterordnern. Schließen Sie das Sprachmenü durch einen Klick außerhalb oder mit Escape.
+
+
 ## Konfigurationsdateien, Karten und Vorlagen · 1.6.5
 
 Unter Wartung → Konfigurationsdateien bearbeiten Sie .htaccess, robots.txt und sitemap.xml. Die Sitemap enthält angekreuzte veröffentlichte Seiten. Die vorige .htaccess-Version ist wiederherstellbar.

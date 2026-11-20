@@ -297,3 +297,7 @@ Pulsa el nombre de una carpeta para gestionar la sección a la derecha. Elige la
 ```php
 $var = translit("Москва"); // Moskva
 ```
+
+## Editar datos desde la página · 1.6.6
+
+En el modo de edición, los bloques, los formularios [formX], los fragmentos [tel] y otros componentes con editor ofrecen Datos y Pantalla completa. La lista de vistas contiene las plantillas registradas. Elige Carpeta raíz para mover una sección al nivel superior. Usa [list-pages] para listar las páginas publicadas de la sección y sus subcarpetas. Cierra el menú de idioma haciendo clic fuera o pulsando Escape.

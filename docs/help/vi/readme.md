@@ -297,3 +297,7 @@ Bấm tên thư mục để quản lý ở bên phải. Chọn mục cha, cấu 
 ```php
 $var = translit("Москва"); // Moskva
 ```
+
+## Sửa dữ liệu ngay trên trang · 1.6.6
+
+Trong chế độ sửa, khối dữ liệu, biểu mẫu [formX], đoạn mã [tel] và các thành phần có trình sửa cho phép mở hộp thoại hoặc toàn màn hình. Danh sách kiểu hiển thị chứa các mẫu đã đăng ký. Chọn thư mục gốc để chuyển mục lên cấp cao nhất. Dùng [list-pages] để liệt kê các trang đã xuất bản trong mục và các thư mục con. Đóng menu ngôn ngữ bằng cách bấm bên ngoài hoặc nhấn Escape.

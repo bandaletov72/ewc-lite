@@ -4,6 +4,11 @@
 - [Admin FAQ](en/faq.md)
 - [Templates and components](en/templates.md)
 
+## Editing component data in place · 1.6.6
+
+In edit mode, infoblocks, [formX] forms, [tel] snippets and other components with data editors offer Data and Full screen. The infoblock view dropdown lists registered display templates. Choose Root folder to move a section to the top level. Use [list-pages] for published pages in the section and all subfolders. Close the admin language menu by clicking outside or pressing Escape.
+
+
 ## Service files, maps and templates · 1.6.5
 
 Open Maintenance → Service files to edit .htaccess, robots.txt and sitemap.xml. Sitemap generation uses published pages with Include in the sitemap checked. The previous .htaccess version is available.

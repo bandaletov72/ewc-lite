@@ -179,3 +179,7 @@ Clique no nome da pasta para gerir a secção à direita. Escolha a secção sup
 ```php
 $var = translit("Москва"); // Moskva
 ```
+
+## Editar dados na própria página · 1.6.6
+
+No modo de edição, os blocos, formulários [formX], fragmentos [tel] e outros componentes com editor oferecem Dados e Ecrã inteiro. A lista de vistas contém os modelos registados. Escolha Pasta raiz para mover a secção para o nível superior. Use [list-pages] para listar as páginas publicadas na secção e nas subpastas. Feche o menu de idiomas clicando fora ou premindo Escape.
