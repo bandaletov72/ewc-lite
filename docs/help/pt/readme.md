@@ -392,3 +392,7 @@ Formulários, modelos, trechos salvos e componentes registrados aparecem ao reab
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## Cabeçalho e rodapé da administração · 1.6.12
+
+No computador, Eurowebcart CMS e Light com a versão instalada aparecem junto do logotipo. No celular, o símbolo fica na mesma linha que os botões. O rodapé contém o endereço do repositório. Verifique atualizações cumulativas nas configurações.

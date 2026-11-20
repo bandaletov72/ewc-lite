@@ -274,3 +274,7 @@ Saved forms, templates, snippets and registered components appear automatically 
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## Admin header and footer · 1.6.12
+
+On desktop, the logo is paired with Eurowebcart CMS and Light, followed by the installed version. On phones, the symbol shares a row with the controls. The footer links to the repository. Check for the latest cumulative release in Settings → Updates.

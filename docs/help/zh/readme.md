@@ -392,3 +392,7 @@ HTML 和可视化编辑器模式通过选项卡切换。 SUP、SUB 和段落插�
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## 后台页眉和页脚 · 1.6.12
+
+桌面端的标志旁显示 Eurowebcart CMS、Light 和已安装的版本。手机端的标志与操作按钮排在同一行。页脚显示仓库地址，可在“设置 → 更新”中检查累积版本。

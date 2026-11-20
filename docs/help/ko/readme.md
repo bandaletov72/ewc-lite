@@ -392,3 +392,7 @@ HTML과 시각 편집기 탭에서 모드를 전환합니다. SUP, SUB, 문단 �
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## 관리자 머리글 및 바닥글 · 1.6.12
+
+데스크톱에서는 로고 옆에 Eurowebcart CMS와 Light, 설치 버전이 표시됩니다. 휴대폰에서는 로고와 버튼이 같은 줄에 있습니다. 바닥글에 저장소 주소가 있으며 설정에서 누적 업데이트를 확인할 수 있습니다.

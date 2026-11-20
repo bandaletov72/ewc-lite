@@ -392,3 +392,7 @@ Les formulaires, modèles, fragments enregistrés et composants déclarés appar
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## En-tête et pied de page de l’administration · 1.6.12
+
+Sur ordinateur, Eurowebcart CMS et Light accompagnent le logo avec la version installée. Sur téléphone, le symbole s’aligne avec les boutons. Le pied de page affiche l’adresse du dépôt. Les paramètres permettent de vérifier la mise à jour cumulative.

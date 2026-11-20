@@ -266,3 +266,7 @@ CodeMirror увімкнено за замовчуванням на новій у
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## Шапка й підвал адмінки · 1.6.12
+
+На комп’ютері біля логотипа є назва Eurowebcart CMS і Light з установленою версією. На телефоні знак стоїть в одному ряду з кнопками. У підвалі є адреса репозиторію. Кумулятивне оновлення можна перевірити в налаштуваннях.

@@ -274,3 +274,7 @@ Los formularios, plantillas, fragmentos guardados y componentes registrados apar
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## Encabezado y pie de la administración · 1.6.12
+
+En escritorio, el logotipo aparece junto a Eurowebcart CMS y Light con la versión instalada. En teléfonos, el símbolo comparte fila con los botones. El pie enlaza al repositorio. En Ajustes se puede comprobar la actualización acumulativa.

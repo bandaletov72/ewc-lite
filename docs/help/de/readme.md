@@ -392,3 +392,7 @@ Beim erneuten Öffnen des Editors erscheinen gespeicherte Formulare, Vorlagen, T
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## Kopf- und Fußzeile der Verwaltung · 1.6.12
+
+Auf dem Desktop stehen Eurowebcart CMS und Light mit der installierten Version neben dem Logo. Auf dem Handy stehen Logo und Schaltflächen in einer Zeile. Die Fußzeile verlinkt das Repository. Kumulative Updates lassen sich in den Einstellungen prüfen.

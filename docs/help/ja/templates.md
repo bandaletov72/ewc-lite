@@ -389,3 +389,7 @@ HTML タブとビジュアルエディタータブでモードを切り替えま
 [iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
 [banners set=summer-promo]
 ```
+
+## 管理画面のヘッダーとフッター · 1.6.12
+
+デスクトップではロゴの横に Eurowebcart CMS と Light、およびインストール済みのバージョンが表示されます。スマートフォンではロゴが操作ボタンと同じ行に並びます。フッターにリポジトリへのリンクがあり、設定の更新画面で累積版を確認できます。
