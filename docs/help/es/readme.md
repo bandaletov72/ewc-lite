@@ -396,3 +396,11 @@ Los formularios, plantillas, fragmentos guardados y componentes registrados apar
 ## Encabezado y pie de la administración · 1.6.12
 
 En escritorio, el logotipo aparece junto a Eurowebcart CMS y Light con la versión instalada. En teléfonos, el símbolo comparte fila con los botones. El pie enlaza al repositorio. En Ajustes se puede comprobar la actualización acumulativa.
+
+## Encabezado y pie de la administración · 1.6.13
+
+En escritorio, el logotipo aparece junto a Eurowebcart CMS y Light con la versión instalada. En teléfonos, el símbolo comparte fila con los botones. El pie enlaza al repositorio. En Ajustes se puede comprobar la actualización acumulativa. La etiqueta predeterminada Inicio de la lista sigue el idioma de administración. El logotipo del pie muestra Eurowebcart CMS y LIGHT en dos líneas.
+
+## Información de PHP
+
+En Mantenimiento, phpinfo() muestra la versión, los módulos y la configuración de PHP a administradores autenticados. Oculta variables de entorno y de la solicitud. Ajusta error_reporting en los ajustes generales. Se usa el valor del servidor por defecto.

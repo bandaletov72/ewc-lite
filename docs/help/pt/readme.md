@@ -396,3 +396,11 @@ Formulários, modelos, trechos salvos e componentes registrados aparecem ao reab
 ## Cabeçalho e rodapé da administração · 1.6.12
 
 No computador, Eurowebcart CMS e Light com a versão instalada aparecem junto do logotipo. No celular, o símbolo fica na mesma linha que os botões. O rodapé contém o endereço do repositório. Verifique atualizações cumulativas nas configurações.
+
+## Cabeçalho e rodapé da administração · 1.6.13
+
+No computador, Eurowebcart CMS e Light com a versão instalada aparecem junto do logotipo. No celular, o símbolo fica na mesma linha que os botões. O rodapé contém o endereço do repositório. Verifique atualizações cumulativas nas configurações. O nome padrão Página inicial na lista segue o idioma da administração. O logotipo do rodapé mostra Eurowebcart CMS e LIGHT em duas linhas.
+
+## Informações do PHP
+
+Em Manutenção, phpinfo() mostra a versão, os módulos e a configuração do PHP a administradores autenticados. As variáveis de ambiente e de requisição são ocultadas. Ajuste error_reporting nas configurações gerais. O padrão é o nível do servidor.

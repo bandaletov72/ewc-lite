@@ -270,3 +270,11 @@ Beim erneuten Öffnen des Editors erscheinen gespeicherte Formulare, Vorlagen, T
 ## Kopf- und Fußzeile der Verwaltung · 1.6.12
 
 Auf dem Desktop stehen Eurowebcart CMS und Light mit der installierten Version neben dem Logo. Auf dem Handy stehen Logo und Schaltflächen in einer Zeile. Die Fußzeile verlinkt das Repository. Kumulative Updates lassen sich in den Einstellungen prüfen.
+
+## Kopf- und Fußzeile der Verwaltung · 1.6.13
+
+Auf dem Desktop stehen Eurowebcart CMS und Light mit der installierten Version neben dem Logo. Auf dem Handy stehen Logo und Schaltflächen in einer Zeile. Die Fußzeile verlinkt das Repository. Kumulative Updates lassen sich in den Einstellungen prüfen. Die Standardbezeichnung Startseite in der Seitenliste folgt der Verwaltungssprache. Im Fußzeilenlogo stehen Eurowebcart CMS und LIGHT auf zwei Zeilen.
+
+## PHP-Informationen
+
+Unter Wartung zeigt phpinfo() angemeldeten Administratoren die PHP-Version, Module und Konfiguration. Umgebungs- und Anfragevariablen bleiben verborgen. error_reporting steht in den allgemeinen Einstellungen. Standardmäßig gilt die Servereinstellung.

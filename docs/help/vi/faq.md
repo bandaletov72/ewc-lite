@@ -278,3 +278,11 @@ Biểu mẫu, mẫu, đoạn mã đã lưu và thành phần đã đăng ký t�
 ## Đầu trang và chân trang quản trị · 1.6.12
 
 Trên máy tính, bên cạnh logo có Eurowebcart CMS và Light kèm phiên bản đã cài. Trên điện thoại, biểu tượng nằm cùng hàng với các nút. Chân trang liên kết đến kho mã. Kiểm tra bản cập nhật tích lũy trong phần Cài đặt.
+
+## Đầu trang và chân trang quản trị · 1.6.13
+
+Trên máy tính, bên cạnh logo có Eurowebcart CMS và Light kèm phiên bản đã cài. Trên điện thoại, biểu tượng nằm cùng hàng với các nút. Chân trang liên kết đến kho mã. Kiểm tra bản cập nhật tích lũy trong phần Cài đặt. Tên Trang chủ mặc định trong danh sách trang theo ngôn ngữ quản trị. Logo chân trang có hai dòng: Eurowebcart CMS và LIGHT.
+
+## Thông tin PHP
+
+Trong Bảo trì, phpinfo() hiển thị phiên bản, mô-đun và cấu hình PHP cho quản trị viên đã đăng nhập. Biến môi trường và yêu cầu được ẩn. Đặt error_reporting ở cài đặt chung. Mặc định dùng mức của máy chủ.
