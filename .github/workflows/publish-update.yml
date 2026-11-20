@@ -24,9 +24,11 @@ jobs:
         run: |
           set -euo pipefail
           assets=$(mktemp -d)
+          snapshot=$(mktemp -d)
+          git -C "$snapshot" init --quiet
+          git -C "$snapshot" fetch --quiet --no-tags --depth=1 "https://github.com/$GITHUB_REPOSITORY.git" "$GITHUB_SHA"
           fetch_file() {
-            gh api -H 'Accept: application/vnd.github.raw+json' \
-              "repos/$GITHUB_REPOSITORY/contents/$1?ref=$GITHUB_SHA"
+            git -C "$snapshot" show "FETCH_HEAD:$1"
           }
           version=$(fetch_file updates/latest.json | jq -er '.version | strings')
           [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
