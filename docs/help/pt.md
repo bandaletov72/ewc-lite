@@ -334,3 +334,35 @@ Contentor, grelha adaptável, secção em destaque, cartão e preço realçado.
 Os modelos de layout começam recolhidos. Abra um modelo pelo título ou escolha Expandir tudo. Prima novamente para recolher a lista.
 
 Para alterar a largura do carrossel, ative o modo de edição, abra Editar componente junto dos banners e selecione a largura do bloco.
+
+## Cidades · Telefone · 1.6.18
+
+Só o nome da cidade é obrigatório. O domínio e os telefones são opcionais. Use + e o indicativo do país, por exemplo +7 (900) 000-00-00. Pode usar um código como [tel] como alternativa.
+
+É usada a cidade memorizada, depois a cidade do domínio e por fim a primeira da lista. Sem cidades, são apresentados os telefones gerais.
+
+Os formulários, pedidos de chamada e novas encomendas usam o e-mail da cidade ou o do site se estiver vazio. Se ambos estiverem vazios, os formulários mantêm os seus destinatários. Os links sociais vazios são herdados.
+
+No modo de edição, passe o cursor sobre um modelo para o editar. Para qualquer componente [php] instalado, Editar módulo abre o código e as definições numa janela. O editor de diapositivos mostra o nome e o código do formulário. [banners width=100] ocupa toda a janela como bloco autónomo sem barra lateral. O editor de modelos abre numa janela modal do site.
+
+O gestor verifica referências antes de eliminar e faz uma cópia de segurança de pastas não vazias. Cada banner pode ter título e subtítulo.
+
+O telefone é verificado durante a introdução. Nos números russos, o 8 inicial passa a +7. Após o envio, o formulário é ocultado e a confirmação surge ao reabrir a janela.
+
+O indicativo escolhido é acrescentado a números sem +. Os números com + mantêm o indicativo introduzido.
+
+## Temas de design
+
+Copie o ficheiro para o tema e guarde. Ficheiros em falta usam a versão fornecida. Alterações, novos códigos, histórico e definições de domínio ficam no tema ativo. Use css/theme.css e js/theme.js para estilos e scripts adicionais.
+
+`templates/themes/demo/header.php` · `templates/themes/demo/components/banners.php`
+
+Os idiomas ficam no fundo do menu móvel. No computador, o globo fica junto à pesquisa no menu abaixo do cabeçalho.
+
+Galerias, banners e listas procuram primeiro no tema ativo e, se faltar a pasta, nos ficheiros comuns. Pastas novas, carregamentos, logótipos e favicons ficam no tema. A cópia de segurança inclui a pasta e as definições do tema.
+
+Escolha a largura da janela (width=page), do conteúdo (width=content) ou do bloco principal (width=parent). height define a altura no computador e mobile-height no telemóvel. auto mantém o tamanho natural.
+
+`[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
+
+O último item do percurso mostra as secções publicadas do mesmo nível, incluindo as ocultas no menu principal. Os links usam o URL configurado.

@@ -342,3 +342,35 @@ Contenedor, cuadrícula adaptable, sección destacada, tarjeta y precio destacad
 Las plantillas de diseño están contraídas al inicio. Pulse un título o seleccione Expandir todo. Pulse de nuevo para contraer la lista.
 
 Para cambiar el ancho del carrusel, active el modo de edición, pulse Editar componente junto a los banners y elija el ancho del bloque.
+
+## Ciudades · Teléfono · 1.6.18
+
+Solo es obligatorio el nombre de la ciudad. El dominio y los teléfonos son opcionales. Introduzca + y el prefijo de país, por ejemplo +7 (900) 000-00-00. Puede usar un código como [tel] en lugar del número.
+
+Se usa la ciudad guardada, después la del dominio y por último la primera de la lista. Sin ciudades, se muestran los teléfonos generales.
+
+Formularios, solicitudes de llamada y pedidos nuevos usan el correo de la ciudad o el del sitio si queda vacío. Si ambos faltan, los formularios usan sus propios destinatarios. Los enlaces sociales vacíos se heredan del sitio.
+
+En el modo de edición, pase el cursor por una plantilla para editarla. En cualquier componente [php] instalado, Editar módulo abre el código y los ajustes en una ventana. El editor de diapositivas muestra nombre y código del formulario. [banners width=100] ocupa toda la ventana como bloque independiente sin barra lateral. El editor de plantillas se abre en una ventana modal del sitio.
+
+El gestor comprueba las referencias antes de eliminar y hace una copia de las carpetas no vacías. Cada banner puede tener título y subtítulo.
+
+El teléfono se comprueba al escribir. En números rusos, el 8 inicial se convierte en +7. Tras el envío se oculta el formulario y al volver a abrirlo se muestra la confirmación.
+
+El prefijo elegido se añade a los números sin +. Los números que empiezan por + conservan su prefijo.
+
+## Temas de diseño
+
+Copie el archivo al tema y guárdelo. Los archivos ausentes usan la versión incluida. Los cambios, códigos nuevos, historial y ajustes de dominio se guardan en el tema activo. Use css/theme.css y js/theme.js para estilos y scripts adicionales.
+
+`templates/themes/demo/header.php` · `templates/themes/demo/components/banners.php`
+
+Los idiomas están al final del menú móvil. En escritorio, el globo está junto a la búsqueda en el menú bajo el encabezado.
+
+Galerías, banners y archivos buscan primero en el tema activo y usan los archivos comunes si falta la carpeta. Las carpetas nuevas, subidas, logotipos y favicons se guardan en el tema. La copia incluye el tema y sus ajustes.
+
+Elija el ancho de la ventana (width=page), del contenido (width=content) o del bloque padre (width=parent). height ajusta la altura en escritorio y mobile-height en móvil. auto conserva el tamaño natural.
+
+`[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
+
+El último elemento de la ruta muestra las secciones hermanas publicadas, incluidas las ocultas en el menú principal. Los enlaces usan la URL configurada.

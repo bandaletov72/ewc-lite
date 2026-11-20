@@ -342,3 +342,35 @@ Khung bố cục, lưới thích ứng, phần nổi bật, thẻ và giá nhấ
 Các mẫu bố cục được thu gọn lúc đầu. Bấm tiêu đề hoặc Mở rộng tất cả. Bấm lần nữa để thu gọn danh sách.
 
 Để đổi chiều rộng toàn bộ băng chuyền, bật chế độ sửa, mở Chỉnh sửa thành phần cạnh banner và chọn chiều rộng khối.
+
+## Thành phố · Điện thoại · 1.6.18
+
+Chỉ bắt buộc tên thành phố. Tên miền và số điện thoại là tùy chọn. Nhập dấu + và mã quốc gia, ví dụ +7 (900) 000-00-00. Có thể dùng mã như [tel] thay cho số.
+
+Ưu tiên thành phố đã lưu, thành phố của tên miền, rồi thành phố đầu tiên. Khi không có thành phố, trang dùng số điện thoại chung.
+
+Biểu mẫu, yêu cầu gọi lại và đơn mới dùng email thành phố hoặc email chung nếu bỏ trống. Khi cả hai trống, biểu mẫu dùng người nhận riêng. Liên kết mạng xã hội trống kế thừa liên kết chung.
+
+Trong chế độ sửa, di chuột lên bố cục và chọn Sửa mẫu. Với mọi thành phần [php] đã cài đặt, Sửa mô-đun mở mã và cài đặt trong hộp thoại. Trình sửa khung hiện tên và mã biểu mẫu. [banners width=100] phủ chiều rộng cửa sổ nếu là khối riêng trên trang không có thanh bên. Trình sửa bố cục mở trong hộp thoại trên trang.
+
+Trình quản lý kiểm tra thư mục và tệp trước khi xóa, đồng thời sao lưu thư mục không trống. Slide banner có thể có tiêu đề và tiêu đề phụ.
+
+Số điện thoại được kiểm tra khi nhập. Số Nga bắt đầu bằng 8 được đổi thành +7. Sau khi gửi thành công, biểu mẫu được ẩn và khi mở lại sẽ thấy xác nhận.
+
+Mã quốc gia đã chọn được thêm vào số không có +. Số bắt đầu bằng + giữ mã quốc tế đã nhập.
+
+## Giao diện thiết kế
+
+Sao chép tệp vào giao diện và lưu. Tệp còn thiếu dùng bản mặc định. Thay đổi, mã bố cục mới, lịch sử và cài đặt tên miền thuộc giao diện đang dùng. Dùng css/theme.css và js/theme.js để thêm kiểu và mã.
+
+`templates/themes/demo/header.php` · `templates/themes/demo/components/banners.php`
+
+Ngôn ngữ nằm cuối menu di động. Trên máy tính, nút quả địa cầu nằm cạnh tìm kiếm trong menu dưới đầu trang.
+
+Thư viện ảnh, banner và danh sách tệp ưu tiên thư mục giao diện đang dùng. Nếu không có thì dùng tệp chung. Thư mục mới, tệp tải lên, logo và favicon được lưu trong giao diện. Bản sao lưu bao gồm giao diện và cài đặt.
+
+Có thể dùng chiều rộng cửa sổ (width=page), nội dung (width=content) hoặc khối cha (width=parent). height dành cho máy tính và mobile-height dành cho điện thoại. auto giữ kích thước tự nhiên.
+
+`[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
+
+Mục cuối của đường dẫn hiển thị các chuyên mục cùng cấp đã xuất bản, kể cả mục ẩn khỏi menu chính. Liên kết dùng URL đã cấu hình.

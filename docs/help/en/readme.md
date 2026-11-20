@@ -460,3 +460,35 @@ Layout wrapper, responsive grid, highlighted section, card, and emphasized price
 Layout templates start collapsed. Open a template by its heading or select Expand all. Press the button again to collapse the list.
 
 To resize the whole banner carousel, turn on edit mode, choose Edit component beside the banners, and select Block width.
+
+## Cities · Phone · 1.6.18
+
+Only the city name is required. The domain and phone fields are optional. For a phone number, include + and the country code, for example +7 (900) 000-00-00. A snippet such as [tel] can stand in for a number.
+
+The city selection uses the saved choice, the domain’s assigned city, then the first city in the list. With no cities, the site shows the general phone numbers.
+
+Form messages, callbacks and new orders use the selected city’s email or the site-wide address when blank. If both settings are blank, forms keep their own recipients. Blank city social links inherit site-wide links.
+
+In edit mode, hover over a layout and choose Edit template. For any installed [php] component, Edit module opens its source and settings in a dialog. The slide editor shows the form name and code. Explicit [banners width=100] spans the viewport when inserted as a top-level block on a page with no sidebar. The layout editor opens in a dialog on the site.
+
+The file manager checks a folder and its contents for references before deletion. A backup is created for a non-empty folder. Each banner slide can have a title and subtitle.
+
+Phone numbers are checked as you type. A Russian number starting with 8 changes to +7. After successful submission the form is hidden, and reopening the dialog shows the confirmation.
+
+The selected country code is added to numbers without +. Numbers that start with + keep their international calling code.
+
+## Design themes
+
+Copy a file into the theme and save it. Missing files use the stock distribution. Changes, new layout shortcodes, history and domain-specific layout settings belong to the active theme only. Use css/theme.css and js/theme.js for extra styles and scripts.
+
+`templates/themes/demo/header.php` · `templates/themes/demo/components/banners.php`
+
+Languages sit at the bottom of the mobile drawer. On desktop, the globe switch sits next to search in the menu below the header.
+
+Galleries, banners and file lists look in the active theme first and use shared files if the folder is missing. New folders, uploads, logos and favicons go into the theme. Backups include the theme directory and its settings.
+
+Choose viewport width (width=page), content width (width=content) or parent width (width=parent). Set height for desktop and mobile-height for phones. Use auto to keep the natural size.
+
+`[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
+
+The final breadcrumb lists published sibling sections, including sections hidden from the main menu. A configured section URL is used for its link.

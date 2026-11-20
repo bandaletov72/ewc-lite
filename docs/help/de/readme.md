@@ -460,3 +460,35 @@ Container, responsives Raster, hervorgehobener Abschnitt, Karte und betonter Pre
 Die Layoutvorlagen sind anfangs eingeklappt. Öffnen Sie eine Vorlage über ihre Überschrift oder wählen Sie Alle aufklappen. Erneutes Drücken klappt die Liste ein.
 
 Um die Breite des gesamten Bannerkarussells zu ändern, aktivieren Sie den Bearbeitungsmodus, öffnen Sie Komponente bearbeiten und wählen Sie die Blockbreite.
+
+## Städte · Telefon · 1.6.18
+
+Nur der Stadtname ist erforderlich. Domain und Telefonnummern sind optional. Geben Sie + und die Landesvorwahl an, zum Beispiel +7 (900) 000-00-00. Sie können auch einen Code wie [tel] verwenden.
+
+Zuerst gilt die gespeicherte Stadt, dann die Domain-Stadt und danach der erste Listeneintrag. Ohne Städte werden die allgemeinen Telefonnummern angezeigt.
+
+Formulare, Rückrufe und neue Bestellungen gehen an die Stadtadresse oder an die Standardadresse der Website. Sind beide leer, behalten Formulare ihre eigenen Empfänger. Leere Social-Media-Links werden geerbt.
+
+Im Bearbeitungsmodus erscheint beim Überfahren einer Vorlage ein Bearbeitungslink. Bei allen installierten [php]-Komponenten öffnet Modul bearbeiten den Quellcode und die Einstellungen im Dialog. Der Folien-Editor zeigt Formularname und Code. [banners width=100] füllt als eigenständiger Block ohne Seitenleiste die Fensterbreite. Der Vorlageneditor öffnet sich in einem Dialog auf der Website.
+
+Der Dateimanager prüft vor dem Löschen die Referenzen und sichert nicht leere Ordner. Banner können einen Titel und einen Untertitel haben.
+
+Die Telefonnummer wird bei der Eingabe geprüft. Bei russischen Nummern wird eine führende 8 zu +7. Nach dem Senden wird das Formular ausgeblendet und beim erneuten Öffnen erscheint die Bestätigung.
+
+Bei Nummern ohne + wird die gewählte Ländervorwahl ergänzt. Nummern mit + behalten ihre Vorwahl.
+
+## Design-Themes
+
+Kopieren Sie die Datei in das Theme und speichern Sie sie. Fehlende Dateien kommen aus dem Standardpaket. Änderungen, neue Layoutcodes, Verlauf und Domain-Einstellungen bleiben im aktiven Theme. Zusätzliche Stile und Skripte stehen in css/theme.css und js/theme.js.
+
+`templates/themes/demo/header.php` · `templates/themes/demo/components/banners.php`
+
+Die Sprachen stehen unten im mobilen Menü. Am Desktop steht der Globus neben der Suche im Menü unter dem Kopfbereich.
+
+Galerien, Banner und Dateilisten suchen zuerst im aktiven Theme und verwenden sonst gemeinsame Dateien. Neue Ordner, Uploads, Logos und Favicons landen im Theme. Die Sicherung umfasst Theme-Ordner und Einstellungen.
+
+Wählen Sie Fensterbreite (width=page), Inhaltsbreite (width=content) oder die Breite des übergeordneten Blocks (width=parent). height gilt am Desktop, mobile-height am Handy. auto behält die natürliche Größe.
+
+`[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
+
+Das letzte Element der Brotkrumennavigation listet veröffentlichte gleichrangige Bereiche, auch wenn sie im Hauptmenü fehlen. Links verwenden die eingestellte URL.

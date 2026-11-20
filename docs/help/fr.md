@@ -334,3 +334,35 @@ Conteneur, grille adaptative, section mise en avant, carte et prix mis en valeur
 Les modèles sont repliés au départ. Ouvrez un modèle depuis son titre ou utilisez Tout déplier. Appuyez de nouveau pour replier la liste.
 
 Pour changer la largeur du carrousel, activez le mode édition, ouvrez Modifier le composant à côté des bannières et choisissez la largeur du bloc.
+
+## Villes · Téléphone · 1.6.18
+
+Seul le nom de la ville est obligatoire. Le domaine et les téléphones sont facultatifs. Saisissez + et l’indicatif international, par exemple +7 (900) 000-00-00. Un code comme [tel] peut remplacer le numéro.
+
+La ville mémorisée est prioritaire, puis celle du domaine et enfin la première de la liste. Si la liste est vide, les téléphones généraux s’affichent.
+
+Les formulaires, rappels et nouvelles commandes vont à l’adresse de la ville ou à celle du site si elle est vide. Si les deux sont vides, le formulaire garde son propre destinataire. Les liens sociaux vides héritent des réglages du site.
+
+En mode édition, survolez un modèle pour le modifier. Pour tout composant [php] installé, Modifier le module ouvre le code et les réglages dans une fenêtre. L’éditeur de diapositive affiche le nom et le code du formulaire. [banners width=100] occupe toute la fenêtre pour un bloc autonome sans barre latérale. L’éditeur de modèle s’ouvre dans une fenêtre modale sur le site.
+
+Le gestionnaire vérifie les références avant la suppression et sauvegarde les dossiers non vides. Une bannière peut avoir un titre et un sous-titre.
+
+Le numéro est vérifié pendant la saisie. Un numéro russe commençant par 8 passe à +7. Le formulaire disparaît après l’envoi et la confirmation reste visible en rouvrant la fenêtre.
+
+L’indicatif du pays choisi est ajouté aux numéros sans +. Les numéros commençant par + gardent leur indicatif.
+
+## Thèmes de design
+
+Copiez le fichier dans le thème, puis enregistrez-le. Les fichiers absents utilisent la version fournie. Les modifications, nouveaux codes, historiques et réglages de domaine restent dans le thème actif. Ajoutez styles et scripts dans css/theme.css et js/theme.js.
+
+`templates/themes/demo/header.php` · `templates/themes/demo/components/banners.php`
+
+Les langues figurent au bas du menu mobile. Sur ordinateur, le globe est à côté de la recherche dans le menu sous l’en-tête.
+
+Les galeries, bannières et listes cherchent d’abord dans le thème actif, puis dans les fichiers communs. Les nouveaux dossiers, fichiers envoyés, logos et favicons vont dans le thème. La sauvegarde conserve le thème et ses réglages.
+
+Choisissez la largeur de la fenêtre (width=page), du contenu (width=content) ou du bloc parent (width=parent). height règle la hauteur sur ordinateur et mobile-height sur mobile. auto conserve la taille naturelle.
+
+`[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
+
+Le dernier élément du fil d’Ariane liste les rubriques de même niveau publiées, y compris celles absentes du menu principal. Les liens utilisent les URL configurées.
