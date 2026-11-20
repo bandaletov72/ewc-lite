@@ -387,7 +387,7 @@ Ein Häkchen markiert eine Theme-Datei, die Vorrang vor der CMS-Standarddatei ha
 
 „Тихий сад“ ist eine vollständige Website für Landschaftsgestaltung. Wählen Sie das Theme unter Layoutvorlagen → Design-Themes und wenden Sie es an. Bearbeiten Sie garden-projects und garden-prices sowie das Banner-Set garden-cover. Hinterlegen Sie Ihre Kontaktdaten und einen Empfänger für [form85].
 
-Das Theme Dezinfektori umfasst 32 Leistungen, die Anfrage [form86] und das Bewertungsformular [form87]. Öffnen Sie die Nachricht. Mit Einwilligung übernehmen Sie Name, Text und Bewertung in dez-reviews und schalten den Eintrag frei.
+Das Theme Dezinfektori umfasst 32 Leistungen, die Anfrage [form86] und das Bewertungsformular [form87]. Öffnen Sie die Nachricht. Mit Einwilligung übernehmen Sie Name, Text und Bewertung in dez-reviews und schalten den Eintrag frei. Die Leistungsseiten enthalten Erläuterungen zu Schäden, Vorher-nachher-Bilder und fiktive Einsatzgeschichten. Die Blöcke lassen sich unter Seiten bearbeiten.
 
 ```text
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]

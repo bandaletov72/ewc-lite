@@ -387,7 +387,7 @@ Yandex Maps 콘솔에서 «JavaScript API» 키를 만들고 HTTP Referer로 제
 
 «Тихий сад»는 조경 디자인 스튜디오용 완성형 사이트입니다. 레이아웃 템플릿 → 디자인 테마에서 선택한 후 적용합니다. garden-projects 및 garden-prices 데이터 블록과 garden-cover 배너 세트를 편집하세요. 연락처와 [form85]의 수신자를 설정합니다.
 
-Dezinfektori 테마에는 32개 서비스, 문의 양식 [form86], 후기 양식 [form87]이 있습니다. 메시지에서 후기를 열고 작성자의 동의를 받은 경우 이름, 본문, 평점을 dez-reviews에 기록한 뒤 게시합니다.
+Dezinfektori 테마에는 32개 서비스, 문의 양식 [form86], 후기 양식 [form87]이 있습니다. 메시지에서 후기를 열고 작성자의 동의를 받은 경우 이름, 본문, 평점을 dez-reviews에 기록한 뒤 게시합니다. 서비스 페이지에는 피해 설명, 전후 이미지, 창작 현장 이야기가 있습니다. 페이지 메뉴에서 블록을 편집할 수 있습니다.
 
 ```text
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]

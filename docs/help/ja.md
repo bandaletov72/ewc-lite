@@ -387,7 +387,7 @@ Yandex Maps のコンソールで「JavaScript API」のキーを作成し、HTT
 
 「Тихий сад」はランドスケープデザイン事務所向けの完成サイトです。レイアウトテンプレートからデザインテーマを開き、選択して適用します。作品と価格は garden-projects と garden-prices、表紙は garden-cover のバナーセットで編集します。連絡先と [form85] の送信先を設定してください。
 
-Dezinfektori テーマには 32 のサービス、依頼フォーム [form86]、レビューフォーム [form87] が含まれます。メッセージで投稿を開き、投稿者の同意があれば名前・本文・評価を dez-reviews に登録して公開します。
+Dezinfektori テーマには 32 のサービス、依頼フォーム [form86]、レビューフォーム [form87] が含まれます。メッセージで投稿を開き、投稿者の同意があれば名前・本文・評価を dez-reviews に登録して公開します。 サービスページには被害の解説、前後のイラスト、創作エピソードがあります。これらは「ページ」で編集できます。
 
 ```text
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
