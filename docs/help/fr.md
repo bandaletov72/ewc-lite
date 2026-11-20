@@ -282,3 +282,11 @@ Dans Maintenance, phpinfo() présente la version, les modules et la configuratio
 ## Masquer l’arborescence · 1.6.14
 
 Sur ordinateur, la flèche replie l’arborescence et agrandit l’éditeur. Le bouton au-dessus de l’éditeur la rétablit. Le navigateur mémorise votre choix.
+
+## Masquer l’arborescence · 1.6.15
+
+Sur ordinateur, la flèche replie l’arborescence et agrandit l’éditeur. Le bouton au-dessus de l’éditeur la rétablit. Le navigateur mémorise votre choix.
+
+## Choisir un point sur la carte
+
+Dans la console Yandex Maps, créez une clé pour « JavaScript API » et limitez-la par référent HTTP. Dans l’onglet Cartes de la page, choisissez un point puis appliquez ses coordonnées. Pour un test local, saisissez localhost sans port comme référent HTTP, attendez l’activation puis ouvrez l’administration via localhost.

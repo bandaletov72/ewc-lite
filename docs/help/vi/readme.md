@@ -408,3 +408,11 @@ Trong Bảo trì, phpinfo() hiển thị phiên bản, mô-đun và cấu hình 
 ## Ẩn cây trang · 1.6.14
 
 Trên máy tính, mũi tên thu gọn cây trang và mở rộng trình sửa. Nút phía trên trình sửa khôi phục cây trang. Trình duyệt ghi nhớ lựa chọn.
+
+## Ẩn cây trang · 1.6.15
+
+Trên máy tính, mũi tên thu gọn cây trang và mở rộng trình sửa. Nút phía trên trình sửa khôi phục cây trang. Trình duyệt ghi nhớ lựa chọn.
+
+## Chọn một điểm trên bản đồ
+
+Tạo khóa «JavaScript API» trong bảng điều khiển Yandex Maps và giới hạn theo HTTP Referer. Trong thẻ Bản đồ của trang, hãy chọn điểm và áp dụng tọa độ. Khi thử nghiệm cục bộ, nhập localhost không kèm cổng vào HTTP Referer, chờ khóa hoạt động rồi mở quản trị qua localhost.

@@ -405,3 +405,11 @@ Unter Wartung zeigt phpinfo() angemeldeten Administratoren die PHP-Version, Modu
 ## Seitenbaum ausblenden · 1.6.14
 
 Am Desktop klappt der Pfeil den Seitenbaum ein und verbreitert den Editor. Die Schaltfläche über dem Editor blendet ihn wieder ein. Der Browser merkt sich die Auswahl.
+
+## Seitenbaum ausblenden · 1.6.15
+
+Am Desktop klappt der Pfeil den Seitenbaum ein und verbreitert den Editor. Die Schaltfläche über dem Editor blendet ihn wieder ein. Der Browser merkt sich die Auswahl.
+
+## Punkt auf der Karte wählen
+
+Erstellen Sie in der Yandex-Konsole einen Schlüssel für „JavaScript API“ und begrenzen Sie ihn per HTTP-Referrer. Wählen Sie in der Karten-Registerkarte der Seite einen Punkt und übernehmen Sie seine Koordinaten. Tragen Sie für lokale Tests localhost ohne Port als HTTP-Referrer ein und öffnen Sie die Verwaltung nach Aktivierung über localhost.

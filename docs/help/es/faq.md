@@ -290,3 +290,11 @@ En Mantenimiento, phpinfo() muestra la versión, los módulos y la configuració
 ## Ocultar el árbol de páginas · 1.6.14
 
 En escritorio, la flecha pliega el árbol de páginas y amplía el editor. El botón encima del editor lo restaura. El navegador recuerda la elección.
+
+## Ocultar el árbol de páginas · 1.6.15
+
+En escritorio, la flecha pliega el árbol de páginas y amplía el editor. El botón encima del editor lo restaura. El navegador recuerda la elección.
+
+## Elegir un punto en el mapa
+
+Crea una clave para «JavaScript API» en la consola de Yandex Maps y restríngela por referente HTTP. En la pestaña Mapas de la página, elige un punto y aplica sus coordenadas. Para pruebas locales, configura localhost sin puerto como referente HTTP, espera la activación y abre la administración mediante localhost.

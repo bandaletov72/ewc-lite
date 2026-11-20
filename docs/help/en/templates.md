@@ -405,3 +405,11 @@ In Maintenance, phpinfo() shows the PHP version, modules and configuration to si
 ## Hide page tree · 1.6.14
 
 On desktop, the arrow in the page tree collapses it and widens the editor. The button above the editor restores it. The browser remembers your choice.
+
+## Hide page tree · 1.6.15
+
+On desktop, the arrow in the page tree collapses it and widens the editor. The button above the editor restores it. The browser remembers your choice.
+
+## Pick a point on a map
+
+In the Yandex Maps console create a key for the «JavaScript API» product and restrict it by HTTP Referer. With a provider enabled, open the page’s Maps tab, choose a point and apply its coordinates. For local testing, enter localhost without a port in HTTP Referer, wait for the key to be active and open the admin panel using localhost.

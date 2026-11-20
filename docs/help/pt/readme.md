@@ -408,3 +408,11 @@ Em Manutenção, phpinfo() mostra a versão, os módulos e a configuração do P
 ## Ocultar a árvore de páginas · 1.6.14
 
 No computador, a seta recolhe a árvore de páginas e amplia o editor. O botão acima do editor restaura a árvore. O navegador guarda a escolha.
+
+## Ocultar a árvore de páginas · 1.6.15
+
+No computador, a seta recolhe a árvore de páginas e amplia o editor. O botão acima do editor restaura a árvore. O navegador guarda a escolha.
+
+## Escolher um ponto no mapa
+
+Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a por referência HTTP. Na aba Mapas da página, escolha um ponto e aplique as coordenadas. Para testes locais, indique localhost sem porta como referência HTTP, aguarde a ativação e abra a administração usando localhost.
