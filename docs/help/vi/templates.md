@@ -307,7 +307,7 @@ Trong chế độ sửa, khối dữ liệu, biểu mẫu [formX], đoạn mã [
 
 ## Cài đặt trang · 1.6.8
 
-Soạn nội dung trong Chỉnh sửa. Đặt địa chỉ, menu và lịch xuất bản trong Cài đặt trang. SEO gồm tiêu đề, mô tả, từ khóa và mục đưa vào sitemap. Bản đồ có tọa độ và ví dụ về thẻ. Chọn bản dịch từ danh sách trên trình soạn thảo.
+Soạn nội dung trong Chỉnh sửa. Đặt địa chỉ, menu và lịch xuất bản trong Cài đặt trang. SEO gồm tiêu đề, mô tả, từ khóa và mục đưa vào sitemap. Bản đồ có tọa độ và ví dụ về thẻ.
 
 Để trống ngày nếu không giới hạn. Ngày giờ dùng múi giờ của trang web. Trang đã ẩn phải được xuất bản riêng.
 
@@ -323,3 +323,9 @@ Quản lý bộ và slide trong Thành phần. Dùng ảnh từ thư mục, thê
 [banners set=summer arrows=on numbers=off]
 [banners]/images/myfotos/[/banners]
 ```
+
+## Ngôn ngữ · 1.6.9
+
+Thẻ Ngôn ngữ liệt kê các ngôn ngữ của trang. Mở đưa bạn đến bản đã lưu. Tạo bản dịch mở trình soạn thảo trống.
+
+Mục con nằm trong mục hiện tại, mục cùng cấp nằm cạnh mục đó, còn mục gốc nằm ở cấp cao nhất của trang web.

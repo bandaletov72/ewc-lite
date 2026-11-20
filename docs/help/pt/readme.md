@@ -310,7 +310,7 @@ No modo de edição, os blocos, formulários [formX], fragmentos [tel] e outros 
 
 ## Configurações da página · 1.6.8
 
-Escreva o conteúdo em Edição. Configure endereço, menu e calendário de publicação nas configurações da página. SEO reúne títulos, descrição, palavras-chave e inclusão no sitemap. Em Mapas estão as coordenadas e os exemplos. Escolha a tradução na lista acima do editor.
+Escreva o conteúdo em Edição. Configure endereço, menu e calendário de publicação nas configurações da página. SEO reúne títulos, descrição, palavras-chave e inclusão no sitemap. Em Mapas estão as coordenadas e os exemplos.
 
 Deixe as datas em branco para retirar os limites. Vale o fuso horário do site. Uma página oculta deve ser publicada separadamente.
 
@@ -326,3 +326,9 @@ Gerencie conjuntos e slides em Componentes. Use fotos de uma pasta, adicione tex
 [banners set=summer arrows=on numbers=off]
 [banners]/images/myfotos/[/banners]
 ```
+
+## Idiomas · 1.6.9
+
+A aba Idiomas lista os idiomas da página. Abrir leva à versão salva. Criar tradução abre um editor vazio.
+
+Uma subseção fica dentro da seção atual, uma seção no mesmo nível fica ao lado e uma seção na raiz fica no nível superior do site.

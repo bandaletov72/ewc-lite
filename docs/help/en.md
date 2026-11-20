@@ -184,7 +184,7 @@ Use PHP modules to edit a registered module’s label, description and availabil
 
 ## Page settings · 1.6.8
 
-Write content in Edit. Set the address, menu and publication schedule in Page settings. SEO contains titles, description, keywords and sitemap inclusion. Maps contains coordinates and tag examples. Select translations from the list above the editor.
+Write content in Edit. Set the address, menu and publication schedule in Page settings. SEO contains titles, description, keywords and sitemap inclusion. Maps contains coordinates and tag examples.
 
 Leave dates blank for no limits. Dates use the site time zone. A hidden page must be published separately.
 
@@ -200,3 +200,9 @@ Manage sets and slides in Components. Use photos from a folder, configure captio
 [banners set=summer arrows=on numbers=off]
 [banners]/images/myfotos/[/banners]
 ```
+
+## Languages · 1.6.9
+
+The Languages tab lists the page languages. Open takes you to a saved version. Create translation opens a blank translation editor.
+
+Choose where to create the section. A subsection goes inside the current section, a sibling goes beside it, and a root section goes at the top level of the site.

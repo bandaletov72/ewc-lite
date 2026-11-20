@@ -192,7 +192,7 @@ Im Bearbeitungsmodus bieten Infoblöcke, Formulare [formX], Textbausteine [tel] 
 
 ## Seiteneinstellungen · 1.6.8
 
-Erstellen Sie Inhalte unter „Bearbeiten“. Adresse, Menü und Veröffentlichungszeit stehen in den Seiteneinstellungen. SEO enthält Titel, Beschreibung, Schlüsselwörter und die Aufnahme in die Sitemap. Unter „Karten“ stehen Koordinaten und Beispiele. Wählen Sie Übersetzungen in der Liste über dem Editor aus.
+Erstellen Sie Inhalte unter „Bearbeiten“. Adresse, Menü und Veröffentlichungszeit stehen in den Seiteneinstellungen. SEO enthält Titel, Beschreibung, Schlüsselwörter und die Aufnahme in die Sitemap. Unter „Karten“ stehen Koordinaten und Beispiele.
 
 Leere Datumsfelder bedeuten keine Einschränkung. Es gilt die Zeitzone der Website. Verborgene Seiten müssen separat veröffentlicht werden.
 
@@ -208,3 +208,9 @@ Verwalten Sie Sets und Folien unter Komponenten. Verwenden Sie Fotos aus einem O
 [banners set=summer arrows=on numbers=off]
 [banners]/images/myfotos/[/banners]
 ```
+
+## Sprachen · 1.6.9
+
+Der Tab „Sprachen“ listet die Seitensprachen auf. „Öffnen“ führt zur gespeicherten Version. „Übersetzung erstellen“ öffnet einen leeren Editor.
+
+Ein Unterbereich entsteht im aktuellen Bereich, ein gleichrangiger Bereich daneben und ein Hauptbereich auf der obersten Ebene der Website.

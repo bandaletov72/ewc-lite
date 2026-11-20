@@ -192,7 +192,7 @@ En mode édition, les blocs de données, les formulaires [formX], les fragments 
 
 ## Paramètres de la page · 1.6.8
 
-Rédigez le contenu dans Édition. L’adresse, le menu et le calendrier de publication figurent dans les paramètres de la page. SEO contient les titres, la description, les mots-clés et l’inclusion dans le sitemap. Les coordonnées et exemples sont dans Cartes. Choisissez les traductions dans la liste au-dessus de l’éditeur.
+Rédigez le contenu dans Édition. L’adresse, le menu et le calendrier de publication figurent dans les paramètres de la page. SEO contient les titres, la description, les mots-clés et l’inclusion dans le sitemap. Les coordonnées et exemples sont dans Cartes.
 
 Laissez les dates vides pour supprimer les limites. Le fuseau horaire du site s’applique. Une page masquée doit être publiée séparément.
 
@@ -208,3 +208,9 @@ Gérez les ensembles et diapositives dans Composants. Utilisez les photos d’un
 [banners set=summer arrows=on numbers=off]
 [banners]/images/myfotos/[/banners]
 ```
+
+## Langues · 1.6.9
+
+L’onglet Langues présente les langues de la page. Ouvrir affiche la version enregistrée. Créer une traduction ouvre un éditeur vide.
+
+Une sous-section est créée dans la section active, une section de même niveau à côté, et une section racine au premier niveau du site.
