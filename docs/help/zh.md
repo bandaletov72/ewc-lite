@@ -387,6 +387,12 @@ HTML 和可视化编辑器模式通过选项卡切换。 SUP、SUB 和段落插�
 
 “Тихий сад”是景观设计工作室的完整站点。在布局模板 → 设计主题中选择并应用该主题。编辑 garden-projects 和 garden-prices 数据块以及 garden-cover 横幅组，并填写联系信息和表单 [form85] 的收件人。
 
+Dezinfektori 主题提供 32 项服务、咨询表单 [form86] 与评价表单 [form87]。在消息中打开评价。经作者同意后，将姓名、内容和评分复制到 dez-reviews，并启用发布。
+
+```text
+[iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
+```
+
 ### 网站配色 · 字体
 
 勾选启用字体，然后分配给正文、标题或界面控件。本地文件由网站自身提供。

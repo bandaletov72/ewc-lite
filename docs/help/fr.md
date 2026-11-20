@@ -387,6 +387,12 @@ Ouvrez kontur-works dans Contenu → Blocs de données. Saisissez le titre, la c
 
 « Тихий сад » est un site complet pour un studio de design paysager. Choisissez-le dans Modèles de mise en page → Thèmes de design, puis appliquez-le. Modifiez les blocs garden-projects et garden-prices et le groupe de bannières garden-cover. Ajoutez vos coordonnées et le destinataire du formulaire [form85].
 
+Le thème Dezinfektori comprend 32 services, le formulaire [form86] et le formulaire d’avis [form87]. Ouvrez l’avis dans Messages. Avec l’accord de l’auteur, copiez le nom, le texte et la note dans dez-reviews, puis activez la publication.
+
+```text
+[iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
+```
+
 ### Couleurs du site · Polices
 
 Cochez les polices à activer, puis attribuez-les au texte, aux titres ou aux commandes. Votre site héberge les fichiers locaux.

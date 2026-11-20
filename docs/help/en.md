@@ -387,6 +387,12 @@ Open kontur-works in Content → Data blocks. Set the title, category, descripti
 
 Quiet Garden is a complete landscape design studio site. Select it under Layout templates → Design themes and choose Apply. Edit the garden-projects and garden-prices data blocks, and change the cover in the garden-cover banner set. Add your contact details and set a recipient for [form85].
 
+The Dezinfektori theme includes 32 services, the inquiry form [form86], and the feedback form [form87]. Open the submission in Messages. With consent, copy the name, text, and rating to dez-reviews and enable publication.
+
+```text
+[iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
+```
+
 ### Site colors · Fonts
 
 Enable fonts with checkboxes and assign them to body text, headings or controls. Local files are served by your site.

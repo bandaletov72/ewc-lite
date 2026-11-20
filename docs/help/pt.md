@@ -387,6 +387,12 @@ Abra kontur-works em Conteúdo → Blocos de dados. Indique título, categoria, 
 
 «Тихий сад» é um site completo para um estúdio de paisagismo. Selecione-o em Modelos de design → Temas de design e clique em Aplicar. Edite os blocos garden-projects e garden-prices e o conjunto de banners garden-cover. Adicione os contactos e o destinatário de [form85].
 
+O tema Dezinfektori inclui 32 serviços, pedidos [form86] e o formulário de avaliação [form87]. Abra a mensagem recebida. Com a autorização do autor, copie o nome, o texto e a avaliação para dez-reviews e ative a publicação.
+
+```text
+[iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
+```
+
 ### Cores do site · Fontes
 
 Marque as fontes a ativar e atribua-as ao texto, aos títulos ou aos controlos. O seu site aloja os ficheiros locais.

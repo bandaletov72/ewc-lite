@@ -387,6 +387,12 @@ Mở kontur-works trong Nội dung → Khối dữ liệu. Nhập tiêu đề, n
 
 «Тихий сад» là trang web trọn bộ cho studio thiết kế cảnh quan. Chọn trong Mẫu bố cục → Giao diện thiết kế rồi áp dụng. Sửa hai khối dữ liệu garden-projects và garden-prices và bộ banner garden-cover. Thêm thông tin liên hệ và người nhận cho [form85].
 
+Giao diện Dezinfektori có 32 dịch vụ, biểu mẫu yêu cầu [form86] và đánh giá [form87]. Mở phản hồi trong Tin nhắn. Nếu được tác giả đồng ý, chép tên, nội dung và điểm vào dez-reviews rồi bật xuất bản.
+
+```text
+[iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
+```
+
 ### Màu trang web · Phông chữ
 
 Tích chọn phông chữ rồi gán cho văn bản, tiêu đề hoặc nút. Tệp cục bộ do chính trang web cung cấp.
