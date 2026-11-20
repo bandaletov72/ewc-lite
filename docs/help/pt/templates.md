@@ -120,7 +120,7 @@ O código [author] gera Eurowebcart CMS Light, o nome do autor Бандалет�
 
 ### Modelo e política inicial
 
-O código [page-content] insere o texto principal no template [home]. A página /privacy.php é editada no template [privacy]. As substituições [site-name] e [site-url] levam o nome e endereço público das configurações principais.
+[page-content] insere o conteúdo da página inicial em [home]. Abra /privacy/ em Páginas para editar a política. [site-name] e [site-url] vêm das definições gerais.
 
 ```text
 [page-content]
@@ -132,10 +132,10 @@ O código [page-content] insere o texto principal no template [home]. A página 
 
 ### Links e configurações no rodapé
 
-O código [conf-policy] exibe um link para /privacy.php, [top] rola a página até o topo, [cookies] abre as configurações de consentimento.
+[privacy] liga a /privacy/, [top] regressa ao topo e [cookies] abre as definições de consentimento.
 
 ```text
-[conf-policy]
+[privacy]
 [cookies]
 [top]
 ```
@@ -259,3 +259,16 @@ Cada código exibe um link para sua rede social. Endereços e assinaturas são d
 [wa] [yt] [ig]
 ```
 
+## Botões no cabeçalho da administração · 1.6.4
+
+O globo abre o site e a seta termina a sessão. No telemóvel, só aparecem os ícones. Passe o cursor ou utilize o teclado para ver os respetivos rótulos.
+
+Conteúdo, Formulários e pedidos, e Site e serviços abrem diretamente. Os separadores da secção escolhida aparecem abaixo do menu principal.
+
+Insira [bread-crumbs] ou [search] no HTML da página inicial (index.php) ou de um modelo. Cada bloco aparece uma vez na posição escolhida. As definições do caminho de navegação e da pesquisa continuam ativas. [privacy] liga a /privacy/. Edite a política em Páginas.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

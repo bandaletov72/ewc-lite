@@ -256,3 +256,16 @@ O menu sob o cabeçalho do painel de administração e o painel de edição do s
 
 Em "Módulos PHP" a breve descrição é para texto simples. Cole o corpo da função em um campo separado “Código fonte · PHP”.
 
+## Botões no cabeçalho da administração · 1.6.4
+
+O globo abre o site e a seta termina a sessão. No telemóvel, só aparecem os ícones. Passe o cursor ou utilize o teclado para ver os respetivos rótulos.
+
+Conteúdo, Formulários e pedidos, e Site e serviços abrem diretamente. Os separadores da secção escolhida aparecem abaixo do menu principal.
+
+Insira [bread-crumbs] ou [search] no HTML da página inicial (index.php) ou de um modelo. Cada bloco aparece uma vez na posição escolhida. As definições do caminho de navegação e da pesquisa continuam ativas. [privacy] liga a /privacy/. Edite a política em Páginas.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

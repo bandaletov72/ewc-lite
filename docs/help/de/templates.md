@@ -120,7 +120,7 @@ Der Code [author] gibt Eurowebcart CMS Light, den Autorennamen Бандалет�
 
 ### Home-Vorlage und -Richtlinie
 
-Der Code [page-content] fügt den Haupttext in die Vorlage [home] ein. Die Seite /privacy.php wird in der Vorlage [privacy] bearbeitet. Die Ersetzungen [site-name] und [site-url] übernehmen den Namen und die öffentliche Adresse aus den Haupteinstellungen.
+[page-content] fügt den Inhalt der Startseite in [home] ein. Öffnen Sie /privacy/ unter Seiten, um den Text zu bearbeiten. [site-name] und [site-url] stammen aus den allgemeinen Einstellungen.
 
 ```text
 [page-content]
@@ -132,10 +132,10 @@ Der Code [page-content] fügt den Haupttext in die Vorlage [home] ein. Die Seite
 
 ### Links und Einstellungen im Footer
 
-Der Code [conf-policy] zeigt einen Link zu /privacy.php an, [top] scrollt die Seite nach oben, [cookies] öffnet die Einwilligungseinstellungen.
+[privacy] verweist auf /privacy/, [top] scrollt nach oben und [cookies] öffnet die Einwilligungseinstellungen.
 
 ```text
-[conf-policy]
+[privacy]
 [cookies]
 [top]
 ```
@@ -259,3 +259,16 @@ Jeder Code zeigt einen Link zu seinem sozialen Netzwerk an. Adressen und Signatu
 [wa] [yt] [ig]
 ```
 
+## Schaltflächen im Kopfbereich der Verwaltung · 1.6.4
+
+Der Globus öffnet die Website, der Pfeil meldet Sie ab. Auf Mobilgeräten sind nur die Symbole zu sehen. Fahren Sie mit der Maus darüber oder fokussieren Sie die Schaltflächen per Tastatur, um die Beschriftung zu sehen.
+
+Inhalte, Formulare und Anfragen sowie Website und Dienste öffnen sich direkt. Unter dem Hauptmenü erscheinen die Registerkarten des gewählten Bereichs.
+
+Fügen Sie [bread-crumbs] oder [search] in das HTML der Startseite (index.php) oder einer Vorlage ein. Jeder Block erscheint einmal an der gewählten Stelle. Die Einstellungen für Brotkrümelnavigation und Suche gelten weiterhin. [privacy] verweist auf /privacy/. Bearbeiten Sie die Datenschutzerklärung unter Seiten.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

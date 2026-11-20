@@ -120,7 +120,7 @@ Le code [author] génère Eurowebcart CMS Light, le nom de l'auteur Бандал
 
 ### Modèle et politique d'accueil
 
-Le code [page-content] insère le texte principal dans le modèle [home]. La page /privacy.php est éditée dans le modèle [privacy]. Les substitutions [site-name] et [site-url] prennent le nom et l'adresse publique des paramètres principaux.
+[page-content] insère le contenu de l’accueil dans [home]. Ouvrez /privacy/ dans Pages pour modifier la politique. [site-name] et [site-url] proviennent des paramètres généraux.
 
 ```text
 [page-content]
@@ -132,10 +132,10 @@ Le code [page-content] insère le texte principal dans le modèle [home]. La pag
 
 ### Liens et paramètres dans le pied de page
 
-Le code [conf-policy] affiche un lien vers /privacy.php, [top] fait défiler la page vers le haut, [cookies] ouvre les paramètres de consentement.
+[privacy] renvoie vers /privacy/, [top] remonte en haut de la page et [cookies] ouvre les paramètres de consentement.
 
 ```text
-[conf-policy]
+[privacy]
 [cookies]
 [top]
 ```
@@ -259,3 +259,16 @@ Chaque code affiche un lien vers son réseau social. Les adresses et signatures 
 [wa] [yt] [ig]
 ```
 
+## Boutons de l’en-tête d’administration · 1.6.4
+
+Le globe ouvre le site et la flèche ferme la session. Sur mobile, seules les icônes sont visibles. Survolez les boutons ou sélectionnez-les au clavier pour afficher leur libellé.
+
+Les rubriques Contenu, Formulaires et demandes, et Site et services s’ouvrent directement. Les onglets de la rubrique choisie apparaissent sous le menu principal.
+
+Insérez [bread-crumbs] ou [search] dans le HTML de la page d’accueil (index.php) ou du modèle. Chaque bloc apparaît une seule fois à l’emplacement choisi. Les réglages du fil d’Ariane et de la recherche s’appliquent. [privacy] renvoie vers /privacy/. Modifiez la politique dans la rubrique Pages.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

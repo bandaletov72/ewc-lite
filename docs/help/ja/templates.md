@@ -120,7 +120,7 @@ GLightbox({selector: ".glightbox"});
 
 ### ホームテンプレートとポリシー
 
-コード [page-content] は、メイン テキストをテンプレート [home] に挿入します。ページ /privacy.php はテンプレート [privacy] で編集されています。 [site-name] および [site-url] 置換は、メイン設定から名前とパブリック アドレスを取得します。
+[page-content] はホームページの内容を [home] に挿入します。ポリシーは「ページ」の /privacy/ で編集できます。[site-name] と [site-url] は基本設定から取得します。
 
 ```text
 [page-content]
@@ -132,10 +132,10 @@ GLightbox({selector: ".glightbox"});
 
 ### フッターのリンクと設定
 
-コード [conf-policy] は /privacy.php へのリンクを表示し、[top] はページを一番上までスクロールし、[cookies] は同意設定を開きます。
+[privacy] は /privacy/ へのリンク、[top] は先頭へのスクロール、[cookies] は同意設定を開きます。
 
 ```text
-[conf-policy]
+[privacy]
 [cookies]
 [top]
 ```
@@ -259,3 +259,16 @@ echo ew_escape(ew_call("translit", "München"));
 [wa] [yt] [ig]
 ```
 
+## 管理画面のヘッダーボタン · 1.6.4
+
+地球のアイコンでサイトを開き、矢印のアイコンでログアウトします。スマートフォンではアイコンのみ表示されます。マウスを乗せるか、キーボードでフォーカスするとラベルを確認できます。
+
+「コンテンツ」「フォームとリクエスト」「サイトとサービス」を選ぶと、各セクションが直接開きます。メインメニューの下に選択したセクションのタブが表示されます。
+
+ホームページ（index.php）またはテンプレートのHTMLに [bread-crumbs] や [search] を追加すると、指定した位置に一度だけ表示されます。パンくずリストと検索の設定も適用されます。[privacy] は /privacy/ へのリンクです。ポリシーは「ページ」で編集できます。
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

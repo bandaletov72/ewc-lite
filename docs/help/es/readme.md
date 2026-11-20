@@ -256,3 +256,16 @@ El menú debajo del encabezado del panel de administración y el panel de edici�
 
 En "Módulos PHP", la breve descripción es para texto sin formato. Pegue el cuerpo de la función en un campo separado “Código fuente · PHP”.
 
+## Botones de la cabecera de administración · 1.6.4
+
+El globo abre el sitio y la flecha cierra la sesión. En el móvil solo se muestran los iconos. Pasa el cursor o enfoca los botones con el teclado para ver sus etiquetas.
+
+Contenido, Formularios y solicitudes, y Sitio y servicios se abren directamente. Las pestañas de la sección elegida aparecen debajo del menú principal.
+
+Inserta [bread-crumbs] o [search] en el HTML de la página de inicio (index.php) o de una plantilla. Cada bloque aparece una vez donde lo coloques. Se mantienen los ajustes de navegación y búsqueda. [privacy] enlaza a /privacy/. Edita la política en Páginas.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

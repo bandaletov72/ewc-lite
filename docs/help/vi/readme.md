@@ -256,3 +256,16 @@ Menu bên dưới tiêu đề bảng quản trị và bảng chỉnh sửa trên
 
 Trong "Mô-đun PHP", mô tả ngắn gọn dành cho văn bản thuần túy. Dán phần thân của hàm vào một trường riêng “Mã nguồn · PHP”.
 
+## Các nút trên thanh quản trị · 1.6.4
+
+Biểu tượng quả địa cầu mở trang web, còn mũi tên dùng để đăng xuất. Trên điện thoại chỉ hiện biểu tượng. Di chuột hoặc dùng bàn phím để xem nhãn.
+
+Nội dung, Biểu mẫu và yêu cầu, và Trang web và dịch vụ mở trực tiếp. Các thẻ của mục đã chọn xuất hiện bên dưới menu chính.
+
+Chèn [bread-crumbs] hoặc [search] vào HTML của trang chủ (index.php) hoặc mẫu. Mỗi khối xuất hiện một lần tại vị trí đã chọn. Cài đặt đường dẫn điều hướng và tìm kiếm vẫn được áp dụng. [privacy] liên kết đến /privacy/. Chỉnh sửa chính sách trong mục Trang.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

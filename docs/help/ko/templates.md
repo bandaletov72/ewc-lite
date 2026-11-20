@@ -120,7 +120,7 @@ GLightbox({selector: ".glightbox"});
 
 ### 홈 템플릿 및 정책
 
-코드 [page-content]는 주 텍스트를 템플릿 [home]에 삽입합니다. /privacy.php 페이지가 [privacy] 템플릿에서 편집되었습니다. [site-name] 및 [site-url] 대체 항목은 기본 설정에서 이름과 공개 주소를 가져옵니다.
+[page-content]는 홈 화면 내용을 [home]에 넣습니다. 페이지 메뉴에서 /privacy/를 열어 정책을 편집할 수 있습니다. [site-name]과 [site-url]은 기본 설정에서 가져옵니다.
 
 ```text
 [page-content]
@@ -132,10 +132,10 @@ GLightbox({selector: ".glightbox"});
 
 ### 바닥글의 링크 및 설정
 
-코드 [conf-policy]는 /privacy.php에 대한 링크를 표시하고, [top]는 페이지를 맨 위로 스크롤하고, [cookies]는 동의 설정을 엽니다.
+[privacy]는 /privacy/로 연결되고 [top]은 맨 위로 이동하며 [cookies]는 동의 설정을 엽니다.
 
 ```text
-[conf-policy]
+[privacy]
 [cookies]
 [top]
 ```
@@ -259,3 +259,16 @@ echo ew_escape(ew_call("translit", "München"));
 [wa] [yt] [ig]
 ```
 
+## 관리자 화면 상단 버튼 · 1.6.4
+
+지구본 아이콘은 사이트를 열고 화살표 아이콘은 로그아웃합니다. 휴대전화에서는 아이콘만 표시됩니다. 마우스를 올리거나 키보드로 초점을 맞추면 이름을 볼 수 있습니다.
+
+콘텐츠, 양식 및 요청, 사이트 및 서비스는 바로 열립니다. 기본 메뉴 아래에 선택한 섹션의 탭이 표시됩니다.
+
+홈 화면(index.php)이나 템플릿의 HTML에 [bread-crumbs] 또는 [search]를 넣으면 지정한 위치에 한 번씩 표시됩니다. 탐색 경로와 검색 설정이 적용됩니다. [privacy]는 /privacy/로 연결됩니다. 정책 문구는 페이지 메뉴에서 편집할 수 있습니다.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

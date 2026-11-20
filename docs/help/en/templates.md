@@ -120,7 +120,7 @@ The code [author] outputs Eurowebcart CMS Light, the author name Бандале�
 
 ### Home template and policy
 
-The code [page-content] inserts the main text into the template [home]. The page /privacy.php is edited in the template [privacy]. The [site-name] and [site-url] substitutions take the name and public address from the main settings.
+[page-content] inserts the home page content into [home]. Open /privacy/ under Pages to edit the policy. [site-name] and [site-url] come from the general settings.
 
 ```text
 [page-content]
@@ -132,10 +132,10 @@ The code [page-content] inserts the main text into the template [home]. The page
 
 ### Links and settings in the footer
 
-The code [conf-policy] displays a link to /privacy.php, [top] scrolls the page to the top, [cookies] opens the consent settings.
+[privacy] links to /privacy/, [top] scrolls to the top, and [cookies] opens consent settings.
 
 ```text
-[conf-policy]
+[privacy]
 [cookies]
 [top]
 ```
@@ -259,3 +259,16 @@ Each code displays a link to its social network. Addresses and signatures are se
 [wa] [yt] [ig]
 ```
 
+## Admin header buttons · 1.6.4
+
+The globe opens the site and the arrow signs you out. On mobile, these buttons show icons only. Hover or focus with the keyboard to see their labels.
+
+Content, Forms and Requests, and Site and Services open directly. The selected section shows its own tabs under the main menu.
+
+Insert [bread-crumbs] or [search] in the HTML of the home page (index.php) or a layout template. Each block appears once at its chosen position. The breadcrumb and search settings still apply. [privacy] links to /privacy/. Edit the policy under Pages.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

@@ -256,3 +256,16 @@ Im Menü unter der Kopfzeile des Admin-Panels und im Bearbeitungsfeld auf der We
 
 In „PHP-Modulen“ handelt es sich bei der Kurzbeschreibung um Klartext. Fügen Sie den Hauptteil der Funktion in ein separates Feld „Quellcode · PHP“ ein.
 
+## Schaltflächen im Kopfbereich der Verwaltung · 1.6.4
+
+Der Globus öffnet die Website, der Pfeil meldet Sie ab. Auf Mobilgeräten sind nur die Symbole zu sehen. Fahren Sie mit der Maus darüber oder fokussieren Sie die Schaltflächen per Tastatur, um die Beschriftung zu sehen.
+
+Inhalte, Formulare und Anfragen sowie Website und Dienste öffnen sich direkt. Unter dem Hauptmenü erscheinen die Registerkarten des gewählten Bereichs.
+
+Fügen Sie [bread-crumbs] oder [search] in das HTML der Startseite (index.php) oder einer Vorlage ein. Jeder Block erscheint einmal an der gewählten Stelle. Die Einstellungen für Brotkrümelnavigation und Suche gelten weiterhin. [privacy] verweist auf /privacy/. Bearbeiten Sie die Datenschutzerklärung unter Seiten.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```

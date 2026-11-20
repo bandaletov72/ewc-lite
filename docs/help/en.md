@@ -4,6 +4,21 @@
 - [Admin FAQ](en/faq.md)
 - [Templates and components](en/templates.md)
 
+## Admin header buttons · 1.6.4
+
+The globe opens the site and the arrow signs you out. On mobile, these buttons show icons only. Hover or focus with the keyboard to see their labels.
+
+Content, Forms and Requests, and Site and Services open directly. The selected section shows its own tabs under the main menu.
+
+Insert [bread-crumbs] or [search] in the HTML of the home page (index.php) or a layout template. Each block appears once at its chosen position. The breadcrumb and search settings still apply. [privacy] links to /privacy/. Edit the policy under Pages.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```
+
+
 ## New in version 1.6.3
 
 ### Home and privacy policy
@@ -125,4 +140,3 @@ Use PHP modules to edit a registered module’s label, description and availabil
 ```text
 [php]server-date[/php]
 ```
-

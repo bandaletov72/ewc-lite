@@ -4,6 +4,21 @@
 - [FAQ Administrateur](fr/faq.md)
 - [Modèles et composants](fr/templates.md)
 
+## Boutons de l’en-tête d’administration · 1.6.4
+
+Le globe ouvre le site et la flèche ferme la session. Sur mobile, seules les icônes sont visibles. Survolez les boutons ou sélectionnez-les au clavier pour afficher leur libellé.
+
+Les rubriques Contenu, Formulaires et demandes, et Site et services s’ouvrent directement. Les onglets de la rubrique choisie apparaissent sous le menu principal.
+
+Insérez [bread-crumbs] ou [search] dans le HTML de la page d’accueil (index.php) ou du modèle. Chaque bloc apparaît une seule fois à l’emplacement choisi. Les réglages du fil d’Ariane et de la recherche s’appliquent. [privacy] renvoie vers /privacy/. Modifiez la politique dans la rubrique Pages.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```
+
+
 ## Nouveau dans la version 1.6.3
 
 ### Politique d'accueil et de confidentialité
@@ -125,4 +140,3 @@ Dans Modules PHP, choisissez le nom, la description et la disponibilité. server
 ```text
 [php]server-date[/php]
 ```
-

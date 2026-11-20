@@ -120,7 +120,7 @@ Mã [author] xuất ra Eurowebcart CMS Light, tên tác giả Бандалето
 
 ### Mẫu trang chủ và chính sách
 
-Mã [page-content] chèn văn bản chính vào mẫu [home]. Trang /privacy.php được chỉnh sửa theo mẫu [privacy]. Các thay thế [site-name] và [site-url] lấy tên và địa chỉ công khai từ cài đặt chính.
+[page-content] chèn nội dung trang chủ vào [home]. Mở /privacy/ trong mục Trang để sửa chính sách. [site-name] và [site-url] lấy từ cài đặt chung.
 
 ```text
 [page-content]
@@ -132,10 +132,10 @@ Mã [page-content] chèn văn bản chính vào mẫu [home]. Trang /privacy.php
 
 ### Liên kết và cài đặt ở chân trang
 
-Mã [conf-policy] hiển thị liên kết đến /privacy.php, [top] cuộn trang lên trên cùng, [cookies] mở cài đặt đồng ý.
+[privacy] liên kết đến /privacy/, [top] cuộn lên đầu trang, và [cookies] mở cài đặt về sự đồng ý.
 
 ```text
-[conf-policy]
+[privacy]
 [cookies]
 [top]
 ```
@@ -259,3 +259,16 @@ Mỗi mã hiển thị một liên kết đến mạng xã hội của nó. Đ�
 [wa] [yt] [ig]
 ```
 
+## Các nút trên thanh quản trị · 1.6.4
+
+Biểu tượng quả địa cầu mở trang web, còn mũi tên dùng để đăng xuất. Trên điện thoại chỉ hiện biểu tượng. Di chuột hoặc dùng bàn phím để xem nhãn.
+
+Nội dung, Biểu mẫu và yêu cầu, và Trang web và dịch vụ mở trực tiếp. Các thẻ của mục đã chọn xuất hiện bên dưới menu chính.
+
+Chèn [bread-crumbs] hoặc [search] vào HTML của trang chủ (index.php) hoặc mẫu. Mỗi khối xuất hiện một lần tại vị trí đã chọn. Cài đặt đường dẫn điều hướng và tìm kiếm vẫn được áp dụng. [privacy] liên kết đến /privacy/. Chỉnh sửa chính sách trong mục Trang.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```
