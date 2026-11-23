@@ -536,3 +536,7 @@ Arraste o limite direito do cabeçalho ou use as setas para a esquerda e para a 
 Selecione «Mapa das páginas da secção» ou insira `[maplist]`. O mapa mostra as páginas publicadas com coordenadas da secção e das suas subsecções. Na página inicial abrange todo o site. Cada janela mostra o título, o ícone, a imagem em toda a largura, o anúncio e um link. Configure o mapa em Integrações.
 
 `[maplist]/sample/[/maplist]` mostra o mapa da secção selecionada. `[points]/sample/[/points]` lista as páginas com coordenadas. Clique numa linha para abrir o mapa do ponto abaixo. `[points display=modal]/sample/[/points]` abre-o numa janela modal.
+
+A opção de inclusão em sitemap.xml está no separador SEO. Nas definições da página, ative «Expandir o ramo do menu». As subpáginas visíveis abrem ao passar o cursor ou ao tocar na seta no telemóvel.
+
+Insira `[route]` numa página com coordenadas. O link usa o fornecedor de mapas escolhido nas integrações. Use provider=yandex ou provider=google para o escolher explicitamente. Se os mapas estiverem desativados, é usado o Yandex.

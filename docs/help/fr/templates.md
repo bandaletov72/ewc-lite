@@ -536,3 +536,7 @@ Faites glisser le bord droit de l’en-tête ou utilisez les flèches gauche et 
 Choisissez « Carte des pages de la section » dans les composants ou insérez `[maplist]`. La carte affiche les pages publiées avec des coordonnées dans la section et ses sous-sections. Sur l’accueil, elle couvre tout le site. Chaque fenêtre affiche le titre, l’icône, l’image sur toute la largeur, le texte de l’annonce et un lien. Configurez la carte dans les intégrations.
 
 `[maplist]/sample/[/maplist]` affiche la carte de la section choisie. `[points]/sample/[/points]` liste les pages géolocalisées. Cliquez sur une ligne pour afficher la carte du point en dessous. `[points display=modal]/sample/[/points]` l’ouvre dans une fenêtre modale.
+
+L’option d’inclusion dans sitemap.xml se trouve dans l’onglet SEO. Activez « Déployer la branche du menu » dans les paramètres de la page. Les sous-pages visibles s’affichent au survol ou après un appui sur la flèche sur mobile.
+
+Insérez `[route]` sur une page avec des coordonnées. Le lien utilise le service de cartes choisi dans les intégrations. provider=yandex ou provider=google force le service. Si les cartes sont désactivées, Yandex est utilisé par défaut.
