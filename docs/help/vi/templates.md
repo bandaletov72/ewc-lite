@@ -515,3 +515,12 @@ Tích chọn phông chữ rồi gán cho văn bản, tiêu đề hoặc nút. T�
 Thư viện → Lưu cục bộ
 
 Mẫu trang → Tạo trang
+
+## Tóm tắt
+
+Tóm tắt xuất hiện trong danh sách trang và kết quả tìm kiếm. Danh sách ưu tiên ảnh nếu có. Menu hiển thị biểu tượng trước tên trang.
+
+Trong trình soạn thảo, chọn «Chèn danh sách…». Chọn mục hiện tại để chèn `[list-pages]` hoặc bấm «Chèn» bên cạnh thư mục. `[dir]/sample/[/dir]` liệt kê các trang đã xuất bản trong /sample/ và các mục con. `[dir]/[/dir]` bắt đầu từ thư mục gốc.
+
+
+Nhập tên trong bộ chọn biểu tượng. Ví dụ, home cũng tìm các biểu tượng có tên chứa house.

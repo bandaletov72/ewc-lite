@@ -515,3 +515,12 @@ Marca las fuentes que quieras activar y asígnalas al texto, títulos o controle
 Bibliotecas → Alojar localmente
 
 Plantillas de página → Crear página
+
+## Anuncio
+
+El anuncio aparece en las listas de páginas y en los resultados de búsqueda. En las listas, la imagen tiene prioridad sobre el icono. Los menús muestran el icono antes del nombre de la página.
+
+Pulsa «Insertar lista…» en el editor. Elige la sección actual para `[list-pages]` o pulsa «Insertar» junto a una carpeta. `[dir]/sample/[/dir]` muestra las páginas publicadas en /sample/ y sus subsecciones. `[dir]/[/dir]` empieza en la raíz.
+
+
+Escribe un nombre en el selector de iconos. Por ejemplo, home también encuentra iconos con house en el nombre.

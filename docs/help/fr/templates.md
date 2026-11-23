@@ -515,3 +515,12 @@ Cochez les polices à activer, puis attribuez-les au texte, aux titres ou aux co
 Bibliothèques → Héberger localement
 
 Modèles de page → Créer une page
+
+## Annonce
+
+L’annonce apparaît dans les listes de pages et les résultats de recherche. Les listes privilégient l’image si elle est définie. Dans les menus, l’icône précède le nom de la page.
+
+Dans l’éditeur, cliquez sur « Insérer une liste… ». Choisissez la section actuelle pour `[list-pages]`, ou cliquez sur « Insérer » à côté d’un dossier. `[dir]/sample/[/dir]` liste les pages publiées dans /sample/ et ses sous-sections. `[dir]/[/dir]` commence à la racine.
+
+
+Saisissez un nom dans le sélecteur d’icônes. Par exemple, home trouve aussi les icônes nommées house.

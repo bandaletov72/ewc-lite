@@ -515,3 +515,12 @@ Aktivieren Sie Schriften per Kontrollkästchen und weisen Sie sie Texten, Übers
 Bibliotheken → Lokal speichern
 
 Seitenvorlagen → Seite erstellen
+
+## Ankündigung
+
+Die Ankündigung erscheint in Seitenlisten und Suchergebnissen. Listen zeigen das Bild, falls vorhanden, sonst das Symbol. Im Menü steht das Symbol vor dem Seitennamen.
+
+Klicken Sie im Editor auf „Seitenliste einfügen…“. Wählen Sie den aktuellen Abschnitt für `[list-pages]` oder klicken Sie neben einem Ordner auf „Einfügen“. `[dir]/sample/[/dir]` listet veröffentlichte Seiten in /sample/ und seinen Unterabschnitten auf. `[dir]/[/dir]` beginnt im Stammverzeichnis.
+
+
+Geben Sie einen Namen in die Symbolsuche ein. Home findet auch Symbole mit house im Namen.

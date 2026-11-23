@@ -515,3 +515,12 @@ Marque as fontes a ativar e atribua-as ao texto, aos títulos ou aos controlos. 
 Bibliotecas → Hospedar localmente
 
 Modelos de página → Criar página
+
+## Anúncio
+
+O anúncio aparece nas listas de páginas e nos resultados da pesquisa. Nas listas, a imagem tem prioridade sobre o ícone. Nos menus, o ícone aparece antes do nome da página.
+
+No editor, clique em «Inserir lista…». Escolha a secção atual para `[list-pages]` ou clique em «Inserir» junto de uma pasta. `[dir]/sample/[/dir]` lista as páginas publicadas em /sample/ e nas suas subsecções. `[dir]/[/dir]` começa na raiz.
+
+
+Introduza um nome no seletor de ícones. Por exemplo, home também encontra ícones com house no nome.

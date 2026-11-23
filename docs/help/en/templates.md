@@ -515,3 +515,12 @@ Enable fonts with checkboxes and assign them to body text, headings or controls.
 Libraries → Make local
 
 Page templates → Create page
+
+## Announcement
+
+The announcement appears in page lists and search results. Lists show the image when set, or the icon otherwise. Menus display the icon before the page name.
+
+Click “Insert page list…” in the editor. Choose the current section for `[list-pages]`, or click Insert next to a folder. `[dir]/sample/[/dir]` lists published pages in /sample/ and its subsections. `[dir]/[/dir]` lists pages from the root.
+
+
+Type a name in the icon picker. For example, home also finds icons named house.
