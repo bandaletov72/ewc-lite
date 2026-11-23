@@ -1,4 +1,4 @@
-# Deutsch · Eurowebcart CMS Light
+# Deutsch · Eurowebcart CMS Lite
 
 - [Management](de/readme.md)
 - [Admin-FAQ](de/faq.md)
@@ -102,7 +102,7 @@ Aktivieren Sie in den regionalen Einstellungen die gewünschten Sprachen. Das Sp
 
 ### Kellerdekoration
 
-Der Code [author] zeigt die Signatur Eurowebcart CMS Light, den Autorennamen Бандалетов Павел und einen Link zu GitHub an. Um auszuwählen, wo Ihre Signatur in Ihrer benutzerdefinierten HTML-Fußzeile platziert werden soll, fügen Sie [author] in die entsprechende Zeile ein.
+Der Code [author] zeigt die Signatur Eurowebcart CMS Lite, den Autorennamen Бандалетов Павел und einen Link zu GitHub an. Um auszuwählen, wo Ihre Signatur in Ihrer benutzerdefinierten HTML-Fußzeile platziert werden soll, fügen Sie [author] in die entsprechende Zeile ein.
 
 ### Hintergrundbeleuchtung im Bearbeitungsmodus
 

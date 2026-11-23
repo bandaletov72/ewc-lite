@@ -45,5 +45,5 @@ jobs:
           openssl dgst -sha256 -verify "$assets/key.pem" -signature "$assets/php-site-update.zip.sig" "$assets/php-site-update.zip"
           [[ $(unzip -p "$assets/php-site-update.zip" manifest.json | jq -er '.version') == "$version" ]]
           gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --latest \
-            --title "Eurowebcart CMS Light $version" --notes 'Full package, update archive and signature.' \
+            --title "Eurowebcart CMS Lite $version" --notes 'Full package, update archive and signature.' \
             "$assets/php-site.zip" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig"

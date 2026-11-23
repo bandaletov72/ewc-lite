@@ -1,4 +1,4 @@
-# Eurowebcart CMS Light
+# Eurowebcart CMS Lite
 
 作者 - Бандалетов Павел。 [原始项目和更新](https://github.com/bandaletov72/php-site-updates)。
 

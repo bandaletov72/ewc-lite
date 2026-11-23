@@ -112,7 +112,7 @@ GLightbox({selector: ".glightbox"});
 
 ### CMS 이름 및 작성자
 
-코드 [author]는 Eurowebcart CMS Light, 작성자 이름 Бандалетов Павел 및 GitHub에 대한 링크를 출력합니다. 표준 바닥글에는 서명이 자동으로 나타납니다. 자신의 HTML 바닥글에서 원하는 위치에 코드를 붙여넣습니다.
+코드 [author]는 Eurowebcart CMS Lite, 작성자 이름 Бандалетов Павел 및 GitHub에 대한 링크를 출력합니다. 표준 바닥글에는 서명이 자동으로 나타납니다. 자신의 HTML 바닥글에서 원하는 위치에 코드를 붙여넣습니다.
 
 ```text
 [author]

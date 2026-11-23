@@ -1,4 +1,4 @@
-# Правила разработки Eurowebcart CMS Light
+# Правила разработки Eurowebcart CMS Lite
 
 Подтверждённая рабочая версия — [1.6.20](https://github.com/bandaletov72/php-site-updates/releases/tag/v1.6.20). Автор проекта — Бандалетов Павел.
 

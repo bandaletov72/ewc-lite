@@ -1,4 +1,4 @@
-# Tiếng Việt · Eurowebcart CMS Light
+# Tiếng Việt · Eurowebcart CMS Lite
 
 - [Sự quản lý](vi/readme.md)
 - [Câu hỏi thường gặp của quản trị viên](vi/faq.md)
@@ -102,7 +102,7 @@ Trong cài đặt khu vực, hãy bật ngôn ngữ mong muốn. Menu chọn ng�
 
 ### Trang trí tầng hầm
 
-Mã [author] hiển thị chữ ký Eurowebcart CMS Light, tên tác giả Бандалетов Павел và liên kết tới GitHub. Để chọn vị trí đặt chữ ký của bạn trong chân trang HTML tùy chỉnh, hãy dán [author] vào dòng thích hợp.
+Mã [author] hiển thị chữ ký Eurowebcart CMS Lite, tên tác giả Бандалетов Павел và liên kết tới GitHub. Để chọn vị trí đặt chữ ký của bạn trong chân trang HTML tùy chỉnh, hãy dán [author] vào dòng thích hợp.
 
 ### Đèn nền ở chế độ chỉnh sửa
 

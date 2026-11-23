@@ -112,7 +112,7 @@ Ngày [dmY], thời gian [time]
 
 ### Tên và tác giả CMS
 
-Mã [author] xuất ra Eurowebcart CMS Light, tên tác giả Бандалетов Павел và liên kết tới GitHub. Trong chân trang tiêu chuẩn, chữ ký sẽ tự động xuất hiện. Trong phần chân trang HTML của riêng bạn, hãy dán mã vào nơi bạn muốn.
+Mã [author] xuất ra Eurowebcart CMS Lite, tên tác giả Бандалетов Павел và liên kết tới GitHub. Trong chân trang tiêu chuẩn, chữ ký sẽ tự động xuất hiện. Trong phần chân trang HTML của riêng bạn, hãy dán mã vào nơi bạn muốn.
 
 ```text
 [author]

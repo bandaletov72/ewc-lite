@@ -1,4 +1,4 @@
-# 日本語 · Eurowebcart CMS Light
+# 日本語 · Eurowebcart CMS Lite
 
 - [管理](ja/readme.md)
 - [管理者向けよくある質問](ja/faq.md)
@@ -102,7 +102,7 @@ CodeMirror は、新規インストールではデフォルトで有効になり
 
 ### 地下室の装飾
 
-コード [author] には、署名 Eurowebcart CMS Light、作成者名 Бандалетов Павел、および GitHub へのリンクが表示されます。カスタム HTML フッター内の署名を配置する場所を選択するには、適切な行に [author] を貼り付けます。
+コード [author] には、署名 Eurowebcart CMS Lite、作成者名 Бандалетов Павел、および GitHub へのリンクが表示されます。カスタム HTML フッター内の署名を配置する場所を選択するには、適切な行に [author] を貼り付けます。
 
 ### 編集モードのバックライト
 

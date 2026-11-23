@@ -1,4 +1,4 @@
-# Português · Eurowebcart CMS Light
+# Português · Eurowebcart CMS Lite
 
 - [Gerenciamento](pt/readme.md)
 - [Perguntas frequentes sobre administração](pt/faq.md)
@@ -102,7 +102,7 @@ Nas configurações regionais, habilite os idiomas desejados. O menu de seleçã
 
 ### Decoração de porão
 
-O código [author] exibe a assinatura Eurowebcart CMS Light, o nome do autor Бандалетов Павел e um link para GitHub. Para escolher onde colocar sua assinatura no rodapé HTML personalizado, cole [author] na linha apropriada.
+O código [author] exibe a assinatura Eurowebcart CMS Lite, o nome do autor Бандалетов Павел e um link para GitHub. Para escolher onde colocar sua assinatura no rodapé HTML personalizado, cole [author] na linha apropriada.
 
 ### Luz de fundo no modo de edição
 

@@ -112,7 +112,7 @@ GLightbox({selector: ".glightbox"});
 
 ### CMS 名称和作者
 
-代码 [author] 输出 Eurowebcart CMS Light、作者姓名 Бандалетов Павел 以及 GitHub 的链接。在标准页脚中，签名会自动出现。在您自己的 HTML 页脚中，将代码粘贴到您想要的位置。
+代码 [author] 输出 Eurowebcart CMS Lite、作者姓名 Бандалетов Павел 以及 GitHub 的链接。在标准页脚中，签名会自动出现。在您自己的 HTML 页脚中，将代码粘贴到您想要的位置。
 
 ```text
 [author]

@@ -1,4 +1,4 @@
-# Eurowebcart CMS Light · Documentation
+# Eurowebcart CMS Lite · Documentation
 
 - [Русский](ru.md)
 - [English](en.md)

@@ -112,7 +112,7 @@ Date [dmY], time [time]
 
 ### CMS name and author
 
-The code [author] outputs Eurowebcart CMS Light, the author name Бандалетов Павел, and a link to GitHub. In a standard footer, the signature appears automatically. In your own HTML footer, paste the code where you want it.
+The code [author] outputs Eurowebcart CMS Lite, the author name Бандалетов Павел, and a link to GitHub. In a standard footer, the signature appears automatically. In your own HTML footer, paste the code where you want it.
 
 ```text
 [author]

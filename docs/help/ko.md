@@ -1,4 +1,4 @@
-# 한국어 · Eurowebcart CMS Light
+# 한국어 · Eurowebcart CMS Lite
 
 - [관리](ko/readme.md)
 - [관리자 FAQ](ko/faq.md)
@@ -102,7 +102,7 @@ CodeMirror는 새로 설치 시 기본적으로 활성화됩니다. 설정은 "�
 
 ### 지하 장식
 
-코드 [author]는 서명 Eurowebcart CMS Light, 작성자 이름 Бандалетов Павел 및 GitHub에 대한 링크를 표시합니다. 사용자 정의 HTML 바닥글에 서명을 넣을 위치를 선택하려면 [author]를 해당 줄에 붙여넣으세요.
+코드 [author]는 서명 Eurowebcart CMS Lite, 작성자 이름 Бандалетов Павел 및 GitHub에 대한 링크를 표시합니다. 사용자 정의 HTML 바닥글에 서명을 넣을 위치를 선택하려면 [author]를 해당 줄에 붙여넣으세요.
 
 ### 편집 모드의 백라이트
 

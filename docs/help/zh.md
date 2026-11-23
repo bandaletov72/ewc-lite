@@ -1,4 +1,4 @@
-# Eurowebcart CMS Light · 简体中文
+# Eurowebcart CMS Lite · 简体中文
 
 - [说明书](zh/readme.md)
 - [管理员常见问题解答](zh/faq.md)
@@ -102,7 +102,7 @@ $var = translit("Москва"); // Moskva
 
 ### 地下室装修
 
-代码 [author] 显示签名 Eurowebcart CMS Light、作者姓名 Бандалетов Павел 以及 GitHub 的链接。要选择在自定义 HTML 页脚中放置签名的位置，请将 [author] 粘贴到相应的行中。
+代码 [author] 显示签名 Eurowebcart CMS Lite、作者姓名 Бандалетов Павел 以及 GitHub 的链接。要选择在自定义 HTML 页脚中放置签名的位置，请将 [author] 粘贴到相应的行中。
 
 ### 编辑模式下背光
 

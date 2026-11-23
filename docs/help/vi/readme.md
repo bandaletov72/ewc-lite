@@ -1,4 +1,4 @@
-# Eurowebcart CMS Light
+# Eurowebcart CMS Lite
 
 Tác giả - Бандалетов Павел. [Dự án gốc và cập nhật](https://github.com/bandaletov72/php-site-updates).
 

@@ -112,7 +112,7 @@ Data [dmY], hora [time]
 
 ### Nome e autor do CMS
 
-O código [author] gera Eurowebcart CMS Light, o nome do autor Бандалетов Павел e um link para GitHub. Num rodapé padrão, a assinatura aparece automaticamente. No seu próprio rodapé HTML, cole o código onde desejar.
+O código [author] gera Eurowebcart CMS Lite, o nome do autor Бандалетов Павел e um link para GitHub. Num rodapé padrão, a assinatura aparece automaticamente. No seu próprio rodapé HTML, cole o código onde desejar.
 
 ```text
 [author]

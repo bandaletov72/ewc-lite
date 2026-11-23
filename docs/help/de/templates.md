@@ -112,7 +112,7 @@ Datum [dmY], Uhrzeit [time]
 
 ### CMS-Name und Autor
 
-Der Code [author] gibt Eurowebcart CMS Light, den Autorennamen Бандалетов Павел und einen Link zu GitHub aus. In einer Standardfußzeile erscheint die Signatur automatisch. Fügen Sie in Ihrer eigenen HTML-Fußzeile den Code an der gewünschten Stelle ein.
+Der Code [author] gibt Eurowebcart CMS Lite, den Autorennamen Бандалетов Павел und einen Link zu GitHub aus. In einer Standardfußzeile erscheint die Signatur automatisch. Fügen Sie in Ihrer eigenen HTML-Fußzeile den Code an der gewünschten Stelle ein.
 
 ```text
 [author]

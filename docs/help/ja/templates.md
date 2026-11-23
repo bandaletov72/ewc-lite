@@ -112,7 +112,7 @@ GLightbox({selector: ".glightbox"});
 
 ### CMS 名と作成者
 
-コード [author] は、Eurowebcart CMS Light、作成者名 Бандалетов Павел、および GitHub へのリンクを出力します。標準のフッターでは、署名は自動的に表示されます。独自の HTML フッター内の、必要な場所にコードを貼り付けます。
+コード [author] は、Eurowebcart CMS Lite、作成者名 Бандалетов Павел、および GitHub へのリンクを出力します。標準のフッターでは、署名は自動的に表示されます。独自の HTML フッター内の、必要な場所にコードを貼り付けます。
 
 ```text
 [author]

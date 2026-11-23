@@ -1,4 +1,4 @@
-# Français · Eurowebcart CMS Light
+# Français · Eurowebcart CMS Lite
 
 - [Gestion](fr/readme.md)
 - [FAQ Administrateur](fr/faq.md)
@@ -102,7 +102,7 @@ Dans les paramètres régionaux, activez les langues souhaitées. Le menu de sé
 
 ### Décoration du sous-sol
 
-Le code [author] affiche la signature Eurowebcart CMS Light, le nom de l'auteur Бандалетов Павел et un lien vers GitHub. Pour choisir où placer votre signature dans votre pied de page HTML personnalisé, collez [author] dans la ligne appropriée.
+Le code [author] affiche la signature Eurowebcart CMS Lite, le nom de l'auteur Бандалетов Павел et un lien vers GitHub. Pour choisir où placer votre signature dans votre pied de page HTML personnalisé, collez [author] dans la ligne appropriée.
 
 ### Rétroéclairage en mode édition
 
