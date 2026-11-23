@@ -530,3 +530,9 @@ Abre Componentes de la página → [banners] → Diapositivas del banner para a�
 Los campos de la tabla se alinean arriba. Arrastra la esquina de un campo multilínea para cambiar su ancho y alto.
 
 Para cambiar el ancho de una columna, arrastra el borde derecho de la cabecera o usa las flechas izquierda y derecha.
+
+## Mapa de páginas de la sección · `[maplist]`
+
+Selecciona «Mapa de páginas de la sección» o inserta `[maplist]`. El mapa muestra las páginas publicadas con coordenadas de la sección y sus subsecciones. En la portada abarca todo el sitio. Cada ventana muestra el título, el icono, la imagen a todo lo ancho, el anuncio y un enlace. Configura el mapa en Integraciones.
+
+`[maplist]/sample/[/maplist]` muestra el mapa de la sección elegida. `[points]/sample/[/points]` lista las páginas con coordenadas. Pulsa una fila para ver el mapa del punto debajo. `[points display=modal]/sample/[/points]` lo abre en una ventana modal.

@@ -530,3 +530,9 @@ Open Page components → [banners] → Banner slides to add, edit or reorder sli
 Data table cells align at the top. Drag the corner of a multiline field to change its width and height.
 
 Drag the right edge of the header to resize a column, or use the left and right arrow keys.
+
+## Section page map · `[maplist]`
+
+Select Section page map in the component picker or insert `[maplist]`. It maps published pages with coordinates in the current section and its subsections. On the home page, it covers the whole site. Each popup shows the title, icon, full-width announcement image, announcement text and a link button. Configure maps in Integrations.
+
+`[maplist]/sample/[/maplist]` maps the chosen section. `[points]/sample/[/points]` lists pages with coordinates. Select a row to show the map for that point beneath it. Use `[points display=modal]/sample/[/points]` to open the map in a modal.

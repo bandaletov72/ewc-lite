@@ -530,3 +530,9 @@ Geben Sie einen Namen in die Symbolsuche ein. Home findet auch Symbole mit house
 Die Felder einer Datenzeile sind oben ausgerichtet. Ziehen Sie an der Ecke eines mehrzeiligen Feldes, um Breite und Höhe zu ändern.
 
 Ziehen Sie den rechten Rand der Überschrift oder verwenden Sie die Pfeiltasten links und rechts, um die Spaltenbreite zu ändern.
+
+## Karte der Abschnittsseiten · `[maplist]`
+
+Wählen Sie „Karte der Abschnittsseiten“ oder fügen Sie `[maplist]` ein. Die Karte zeigt veröffentlichte Seiten mit Koordinaten im aktuellen Abschnitt und seinen Unterabschnitten. Auf der Startseite umfasst sie die ganze Website. Das Kartenfenster zeigt Titel, Symbol, ein Bild über die ganze Breite, Ankündigung und Link. Richten Sie die Karte unter Integrationen ein.
+
+`[maplist]/sample/[/maplist]` zeigt die Karte des gewählten Abschnitts. `[points]/sample/[/points]` listet Seiten mit Koordinaten. Ein Klick öffnet die Karte des Punkts unter der Zeile. `[points display=modal]/sample/[/points]` öffnet sie in einem Dialog.

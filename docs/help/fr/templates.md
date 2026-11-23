@@ -530,3 +530,9 @@ Ouvrez Composants de la page → [banners] → Diapositives de la bannière pour
 Les champs du tableau sont alignés en haut. Faites glisser le coin d’un champ multiligne pour modifier sa largeur et sa hauteur.
 
 Faites glisser le bord droit de l’en-tête ou utilisez les flèches gauche et droite pour redimensionner une colonne.
+
+## Carte des pages de la section · `[maplist]`
+
+Choisissez « Carte des pages de la section » dans les composants ou insérez `[maplist]`. La carte affiche les pages publiées avec des coordonnées dans la section et ses sous-sections. Sur l’accueil, elle couvre tout le site. Chaque fenêtre affiche le titre, l’icône, l’image sur toute la largeur, le texte de l’annonce et un lien. Configurez la carte dans les intégrations.
+
+`[maplist]/sample/[/maplist]` affiche la carte de la section choisie. `[points]/sample/[/points]` liste les pages géolocalisées. Cliquez sur une ligne pour afficher la carte du point en dessous. `[points display=modal]/sample/[/points]` l’ouvre dans une fenêtre modale.

@@ -530,3 +530,9 @@ Abra Componentes da página → [banners] → Slides do banner para adicionar, e
 Os campos da tabela são alinhados no topo. Arraste o canto de um campo multilinha para alterar a largura e a altura.
 
 Arraste o limite direito do cabeçalho ou use as setas para a esquerda e para a direita para redimensionar a coluna.
+
+## Mapa das páginas da secção · `[maplist]`
+
+Selecione «Mapa das páginas da secção» ou insira `[maplist]`. O mapa mostra as páginas publicadas com coordenadas da secção e das suas subsecções. Na página inicial abrange todo o site. Cada janela mostra o título, o ícone, a imagem em toda a largura, o anúncio e um link. Configure o mapa em Integrações.
+
+`[maplist]/sample/[/maplist]` mostra o mapa da secção selecionada. `[points]/sample/[/points]` lista as páginas com coordenadas. Clique numa linha para abrir o mapa do ponto abaixo. `[points display=modal]/sample/[/points]` abre-o numa janela modal.

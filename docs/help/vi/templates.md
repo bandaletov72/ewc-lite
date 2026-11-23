@@ -530,3 +530,9 @@ Mở Thành phần trang → [banners] → Các slide banner để thêm, sửa 
 Các trường trong hàng được căn trên. Kéo góc của trường nhiều dòng để đổi chiều rộng và chiều cao.
 
 Kéo cạnh phải của tiêu đề hoặc dùng phím mũi tên trái và phải để đổi độ rộng cột.
+
+## Bản đồ các trang trong mục · `[maplist]`
+
+Chọn «Bản đồ các trang trong mục» hoặc chèn `[maplist]`. Bản đồ hiển thị các trang đã xuất bản có tọa độ trong mục hiện tại và mục con. Trên trang chủ, bản đồ bao phủ toàn bộ trang web. Cửa sổ điểm hiển thị tiêu đề, biểu tượng, ảnh toàn chiều rộng, tóm tắt và liên kết. Hãy cấu hình bản đồ trong phần tích hợp.
+
+`[maplist]/sample/[/maplist]` hiển thị bản đồ của mục đã chọn. `[points]/sample/[/points]` liệt kê các trang có tọa độ. Bấm vào một dòng để mở bản đồ điểm ngay bên dưới. `[points display=modal]/sample/[/points]` mở bản đồ trong hộp thoại.
