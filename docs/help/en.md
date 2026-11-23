@@ -231,7 +231,7 @@ In the Yandex Maps console create a key for the «JavaScript API» product and r
 
 Select text in the visual editor to align it or clear formatting. Click an image to edit its properties, drag its corner to resize, or move the image in the text. Links can target URLs, emails, telephone numbers or anchors. Buttons can open a URL, form, callback or payment. Use a provider link for the displayed amount.
 
-Use the HTML and Visual Editor tabs to switch modes. SUP, SUB and Paragraph insert the matching elements. Component names show their shortcodes. Missing media folders are created during insertion. Folder names allow letters A–Z, digits, hyphens and underscores. The Languages tab links to the site language settings.
+Use the HTML and Visual Editor tabs to switch modes. SUP, SUB and Paragraph insert the matching elements. Component names show their shortcodes. Missing media folders are created during insertion. Folder names allow letters A–Z, digits, hyphens and underscores. The Languages tab links to the site language settings. Insertion panels open above the editing area. Select Close at the top of the panel or press Esc to close it and clear the active toolbar button. The toolbar arrows undo and redo up to 10 recent text edits through the server. The clock icon loads the last saved text. Leaving the page with unsaved changes requires confirmation. The Save icon before the arrows lights up when there are unsaved changes. Select a fragment and open Text styling. Set the size, text color or background color, or choose a font enabled in the site settings.
 
 ```text
 [button action="url" label="Contacts" url="/contacts/"]

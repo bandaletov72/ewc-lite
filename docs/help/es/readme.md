@@ -357,7 +357,7 @@ Crea una clave para «JavaScript API» en la consola de Yandex Maps y restrínge
 
 Selecciona texto para alinearlo o quitar el formato. Haz clic en una imagen para editarla y arrastra la imagen o su esquina para moverla o cambiar su tamaño. Los enlaces admiten URL, correo, teléfono y ancla. Los botones abren URL, formularios, devoluciones de llamada o enlaces de pago del proveedor.
 
-Las pestañas HTML y Editor visual cambian el modo. SUP, SUB y Párrafo insertan los elementos correspondientes. Junto a cada componente aparece su código. Las carpetas se crean al insertar. Sus nombres admiten letras latinas, cifras, guiones y guiones bajos. La pestaña Idiomas enlaza con los ajustes de idioma.
+Las pestañas HTML y Editor visual cambian el modo. SUP, SUB y Párrafo insertan los elementos correspondientes. Junto a cada componente aparece su código. Las carpetas se crean al insertar. Sus nombres admiten letras latinas, cifras, guiones y guiones bajos. La pestaña Idiomas enlaza con los ajustes de idioma. Los paneles de inserción se abren encima del área de edición. Pulsa «Cerrar» en la parte superior o Esc para cerrar el panel y desactivar el botón. Las flechas de la barra de herramientas deshacen y rehacen hasta diez cambios de texto a través del servidor. El icono del reloj carga el último texto guardado. Si hay cambios pendientes, se pide confirmación al salir. El icono Guardar, antes de las flechas, se resalta cuando hay cambios sin guardar. Selecciona un fragmento y abre Estilo del texto. Ajusta el tamaño, el color del texto o del fondo, o elige una fuente habilitada en los ajustes del sitio.
 
 ```text
 [button action="url" label="Contacts" url="/contacts/"]

@@ -357,7 +357,7 @@ Dans la console Yandex Maps, créez une clé pour « JavaScript API » et limite
 
 Sélectionnez le texte à aligner ou à déformater. Cliquez sur une image pour ses réglages, déplacez-la ou redimensionnez-la depuis son coin. Un lien peut viser une URL, un courriel, un téléphone ou une ancre. Un bouton ouvre un lien, un formulaire, un rappel ou un lien de paiement du prestataire.
 
-Les onglets HTML et Éditeur visuel changent le mode. SUP, SUB et Paragraphe insèrent les éléments correspondants. Les codes figurent à côté des composants. Les dossiers manquants sont créés à l’insertion. Leurs noms acceptent lettres latines, chiffres, traits d’union et tirets bas. L’onglet Langues ouvre les réglages de langue.
+Les onglets HTML et Éditeur visuel changent le mode. SUP, SUB et Paragraphe insèrent les éléments correspondants. Les codes figurent à côté des composants. Les dossiers manquants sont créés à l’insertion. Leurs noms acceptent lettres latines, chiffres, traits d’union et tirets bas. L’onglet Langues ouvre les réglages de langue. Les panneaux d’insertion s’ouvrent au-dessus de la zone d’édition. Cliquez sur « Fermer » en haut du panneau ou appuyez sur Échap pour le fermer et désactiver le bouton. Les flèches de la barre d’outils annulent et rétablissent jusqu’à 10 modifications de texte via le serveur. L’icône d’horloge charge le dernier texte enregistré. Confirmez avant de quitter la page si des modifications restent à enregistrer. L’icône Enregistrer avant les flèches s’allume en présence de modifications non enregistrées. Sélectionnez un passage et ouvrez Style du texte. Choisissez la taille, la couleur du texte, la couleur du fond ou une police activée dans les paramètres du site.
 
 ```text
 [button action="url" label="Contacts" url="/contacts/"]

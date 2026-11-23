@@ -354,7 +354,7 @@ Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a p
 
 Selecione texto para alinhar ou limpar a formatação. Clique na imagem para editá-la e arraste a imagem ou seu canto para mover ou redimensionar. Links aceitam URL, e-mail, telefone e âncora. Botões abrem URLs, formulários, retornos de chamada ou links de pagamento do fornecedor.
 
-As abas HTML e Editor visual alternam o modo. SUP, SUB e Parágrafo inserem os elementos correspondentes. Os componentes mostram seus códigos. As pastas são criadas na inserção. Os nomes aceitam letras latinas, dígitos, hífens e sublinhados. A aba Idiomas leva às configurações de idioma.
+As abas HTML e Editor visual alternam o modo. SUP, SUB e Parágrafo inserem os elementos correspondentes. Os componentes mostram seus códigos. As pastas são criadas na inserção. Os nomes aceitam letras latinas, dígitos, hífens e sublinhados. A aba Idiomas leva às configurações de idioma. Os painéis de inserção abrem acima da área de edição. Clique em «Fechar» no topo ou pressione Esc para fechar o painel e desativar o botão. As setas da barra de ferramentas desfazem e refazem até dez edições de texto através do servidor. O ícone do relógio carrega o último texto salvo. Ao sair com alterações pendentes, é preciso confirmar. O ícone Salvar, antes das setas, fica destacado quando há alterações não salvas. Selecione um trecho e abra Estilo do texto. Defina o tamanho, a cor do texto ou do fundo, ou escolha uma fonte ativada nas configurações do site.
 
 ```text
 [button action="url" label="Contacts" url="/contacts/"]
@@ -551,4 +551,4 @@ Os campos são comuns e os valores são guardados por página. Insira [u-ID] ou 
 
 Selecione PHP personalizado. Os pontos estão em $context['pointItems'] e os campos em $point['customFields'].
 
-Em Componentes da página, o código curto é só de leitura e pode ser copiado. Altere os parâmetros nos campos do componente. Ao guardar a página, também são guardadas as alterações aos componentes. Em [route], escolha o fornecedor e o texto do botão. Se estiver vazio, aparece «Obter direções». Em [map], escolha o fornecedor e o modo. A opção predefinida usa as definições dos mapas.
+Em Componentes da página, o código curto é só de leitura e pode ser copiado. Clique em Copiar ao lado do código. O lápis ao lado do botão abre o código para edição manual. Altere os parâmetros nos campos do componente. Ao guardar a página, também são guardadas as alterações aos componentes. Em [route], escolha o fornecedor e o texto do botão. Se estiver vazio, aparece «Obter direções». Em [map], escolha o fornecedor e o modo. A opção predefinida usa as definições dos mapas.

@@ -357,7 +357,7 @@ Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a p
 
 Selecione texto para alinhar ou limpar a formatação. Clique na imagem para editá-la e arraste a imagem ou seu canto para mover ou redimensionar. Links aceitam URL, e-mail, telefone e âncora. Botões abrem URLs, formulários, retornos de chamada ou links de pagamento do fornecedor.
 
-As abas HTML e Editor visual alternam o modo. SUP, SUB e Parágrafo inserem os elementos correspondentes. Os componentes mostram seus códigos. As pastas são criadas na inserção. Os nomes aceitam letras latinas, dígitos, hífens e sublinhados. A aba Idiomas leva às configurações de idioma.
+As abas HTML e Editor visual alternam o modo. SUP, SUB e Parágrafo inserem os elementos correspondentes. Os componentes mostram seus códigos. As pastas são criadas na inserção. Os nomes aceitam letras latinas, dígitos, hífens e sublinhados. A aba Idiomas leva às configurações de idioma. Os painéis de inserção abrem acima da área de edição. Clique em «Fechar» no topo ou pressione Esc para fechar o painel e desativar o botão. As setas da barra de ferramentas desfazem e refazem até dez edições de texto através do servidor. O ícone do relógio carrega o último texto salvo. Ao sair com alterações pendentes, é preciso confirmar. O ícone Salvar, antes das setas, fica destacado quando há alterações não salvas. Selecione um trecho e abra Estilo do texto. Defina o tamanho, a cor do texto ou do fundo, ou escolha uma fonte ativada nas configurações do site.
 
 ```text
 [button action="url" label="Contacts" url="/contacts/"]

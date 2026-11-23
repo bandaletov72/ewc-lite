@@ -239,7 +239,7 @@ Tạo khóa «JavaScript API» trong bảng điều khiển Yandex Maps và gi�
 
 Chọn văn bản để căn lề hoặc xóa định dạng. Nhấp vào ảnh để sửa thuộc tính rồi kéo ảnh để di chuyển hoặc kéo góc để đổi kích cỡ. Liên kết hỗ trợ URL, email, điện thoại và điểm neo. Nút mở URL, biểu mẫu, gọi lại hoặc liên kết thanh toán.
 
-Dùng thẻ HTML và Trình sửa trực quan để đổi chế độ. SUP, SUB và Đoạn văn chèn thẻ tương ứng. Mã hiển thị cạnh tên thành phần. Thư mục thiếu được tạo khi chèn. Tên thư mục cho phép chữ Latin, số, dấu gạch nối và gạch dưới. Thẻ Ngôn ngữ liên kết đến cài đặt ngôn ngữ.
+Dùng thẻ HTML và Trình sửa trực quan để đổi chế độ. SUP, SUB và Đoạn văn chèn thẻ tương ứng. Mã hiển thị cạnh tên thành phần. Thư mục thiếu được tạo khi chèn. Tên thư mục cho phép chữ Latin, số, dấu gạch nối và gạch dưới. Thẻ Ngôn ngữ liên kết đến cài đặt ngôn ngữ. Bảng chèn mở phía trên vùng chỉnh sửa. Nhấn «Đóng» ở đầu bảng hoặc phím Esc để đóng bảng và bỏ chọn nút. Các nút mũi tên trên thanh công cụ cho phép hoàn tác và làm lại tối đa 10 lần sửa văn bản gần đây qua máy chủ. Biểu tượng đồng hồ tải văn bản đã lưu gần nhất. Khi rời trang có thay đổi chưa lưu, bạn sẽ được yêu cầu xác nhận. Biểu tượng Lưu trước các nút mũi tên sẽ sáng khi có thay đổi chưa lưu. Chọn đoạn văn bản rồi mở Định dạng văn bản. Chọn cỡ chữ, màu chữ, màu nền hoặc phông chữ đã bật trong cài đặt trang.
 
 ```text
 [button action="url" label="Contacts" url="/contacts/"]
