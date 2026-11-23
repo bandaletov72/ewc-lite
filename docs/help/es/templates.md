@@ -535,7 +535,7 @@ Para cambiar el ancho de una columna, arrastra el borde derecho de la cabecera o
 
 Selecciona «Mapa de páginas de la sección» o inserta `[maplist]`. El mapa muestra las páginas publicadas con coordenadas de la sección y sus subsecciones. En la portada abarca todo el sitio. Cada ventana muestra el título, el icono, la imagen a todo lo ancho, el anuncio y un enlace. Configura el mapa en Integraciones.
 
-`[maplist]/sample/[/maplist]` muestra el mapa de la sección elegida. `[points]/sample/[/points]` lista las páginas con coordenadas. Pulsa una fila para ver el mapa del punto debajo. `[points display=modal]/sample/[/points]` lo abre en una ventana modal.
+`[maplist]/sample/[/maplist]` muestra el mapa de la sección elegida. `[points]/sample/[/points]` lista las páginas con coordenadas como fichas con título, imagen, anuncio y un botón de enlace.
 
 La opción para incluir la página en sitemap.xml está en la pestaña SEO. Activa «Desplegar la rama del menú» en los ajustes de página. Las subpáginas visibles aparecen al pasar el cursor o al pulsar la flecha en el móvil.
 
