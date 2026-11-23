@@ -540,3 +540,13 @@ Chọn «Bản đồ các trang trong mục» hoặc chèn `[maplist]`. Bản đ
 Tùy chọn đưa trang vào sitemap.xml nằm trong tab SEO. Bật «Mở rộng nhánh menu» trong cài đặt trang. Các trang con hiển thị trong menu sẽ mở khi di chuột hoặc chạm vào mũi tên trên điện thoại.
 
 Chèn `[route]` trên trang có tọa độ. Liên kết dùng dịch vụ bản đồ đã chọn trong phần tích hợp. Dùng provider=yandex hoặc provider=google để chọn trực tiếp. Nếu bản đồ bị tắt, mặc định dùng Yandex.
+
+## Trường tùy chỉnh
+
+Dùng 1–64 chữ cái Latinh, chữ số, dấu gạch nối hoặc dấu gạch dưới. Điền hàng mới rồi lưu.
+
+Trường dùng chung, giá trị lưu riêng cho từng trang. Chèn [u-ID] hoặc chọn trường trong trình chỉnh sửa.
+
+## Mẫu danh sách điểm
+
+Chọn PHP tùy chỉnh. Các điểm nằm trong $context['pointItems'] và trường tùy chỉnh trong $point['customFields'].

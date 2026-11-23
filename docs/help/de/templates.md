@@ -540,3 +540,13 @@ Wählen Sie „Karte der Abschnittsseiten“ oder fügen Sie `[maplist]` ein. Di
 Die Einstellung zur Sitemap befindet sich im SEO-Tab und gilt bei der Erzeugung von sitemap.xml. Aktivieren Sie in den Seiteneinstellungen „Menüzweig ausklappen“. Im Menü sichtbare Unterseiten öffnen sich beim Überfahren oder durch Tippen auf den Pfeil.
 
 Fügen Sie `[route]` auf einer Seite mit Koordinaten ein. Der Link verwendet den Anbieter aus den Integrationen. Mit provider=yandex oder provider=google wählen Sie ihn direkt. Sind Karten deaktiviert, wird standardmäßig Yandex verwendet.
+
+## Benutzerdefinierte Felder
+
+Verwenden Sie 1–64 lateinische Buchstaben, Ziffern, Bindestriche oder Unterstriche. Füllen Sie die neue Zeile aus und speichern Sie die Einstellungen.
+
+Felder gelten für alle Seiten. Werte werden pro Seite gespeichert. Fügen Sie [u-ID] ein oder wählen Sie ein Feld im Editor.
+
+## Vorlage der Punktliste
+
+Wählen Sie eigenes PHP. Die Punkte stehen in $context['pointItems'], benutzerdefinierte Felder in $point['customFields'].

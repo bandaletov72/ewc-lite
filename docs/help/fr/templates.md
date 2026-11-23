@@ -540,3 +540,13 @@ Choisissez « Carte des pages de la section » dans les composants ou insérez `
 L’option d’inclusion dans sitemap.xml se trouve dans l’onglet SEO. Activez « Déployer la branche du menu » dans les paramètres de la page. Les sous-pages visibles s’affichent au survol ou après un appui sur la flèche sur mobile.
 
 Insérez `[route]` sur une page avec des coordonnées. Le lien utilise le service de cartes choisi dans les intégrations. provider=yandex ou provider=google force le service. Si les cartes sont désactivées, Yandex est utilisé par défaut.
+
+## Champs personnalisés
+
+Utilisez 1 à 64 lettres latines, chiffres, tirets ou traits de soulignement. Renseignez la nouvelle ligne et enregistrez.
+
+Les champs sont communs et leurs valeurs propres à chaque page. Insérez [u-ID] ou choisissez un champ dans l’éditeur.
+
+## Modèle de liste des points
+
+Choisissez votre propre PHP. Les points sont dans $context['pointItems'] et les champs dans $point['customFields'].

@@ -540,3 +540,13 @@ Select Section page map in the component picker or insert `[maplist]`. It maps p
 The SEO tab contains Include in sitemap, which applies when generating sitemap.xml. In Page settings, enable Expand menu branch to show an arrow beside the section. Subpages visible in the menu open on hover or when tapping the arrow on mobile.
 
 Insert `[route]` on a page with coordinates. The link uses the maps provider selected in Integrations. Set provider=yandex or provider=google to override it. If maps are disabled, Yandex is used by default.
+
+## Custom fields
+
+Use 1–64 letters A–Z, digits, hyphens or underscores. Complete the new row and save the field settings to add a field to every page.
+
+Definitions are shared across pages. Values are saved per page. Insert [u-ID] manually or choose a field from Custom fields in the editor.
+
+## Point list template
+
+Choose Custom PHP to edit the [points] HTML. $context['pointItems'] contains the points. Each has title, url, image, announcement, labelHtml, lat, lng, routeUrl, routeLabel, pageButtonLabel and customFields. For example, $point['customFields']['stand']['value'] contains the value of stand.

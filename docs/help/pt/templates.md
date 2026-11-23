@@ -540,3 +540,13 @@ Selecione «Mapa das páginas da secção» ou insira `[maplist]`. O mapa mostra
 A opção de inclusão em sitemap.xml está no separador SEO. Nas definições da página, ative «Expandir o ramo do menu». As subpáginas visíveis abrem ao passar o cursor ou ao tocar na seta no telemóvel.
 
 Insira `[route]` numa página com coordenadas. O link usa o fornecedor de mapas escolhido nas integrações. Use provider=yandex ou provider=google para o escolher explicitamente. Se os mapas estiverem desativados, é usado o Yandex.
+
+## Campos personalizados
+
+Use 1 a 64 letras latinas, algarismos, hífens ou sublinhados. Preencha a nova linha e guarde as definições.
+
+Os campos são comuns e os valores são guardados por página. Insira [u-ID] ou selecione o campo no editor.
+
+## Modelo da lista de pontos
+
+Selecione PHP personalizado. Os pontos estão em $context['pointItems'] e os campos em $point['customFields'].

@@ -540,3 +540,13 @@ Selecciona «Mapa de páginas de la sección» o inserta `[maplist]`. El mapa mu
 La opción para incluir la página en sitemap.xml está en la pestaña SEO. Activa «Desplegar la rama del menú» en los ajustes de página. Las subpáginas visibles aparecen al pasar el cursor o al pulsar la flecha en el móvil.
 
 Inserta `[route]` en una página con coordenadas. El enlace usa el proveedor de mapas elegido en Integraciones. Usa provider=yandex o provider=google para elegirlo. Si los mapas están desactivados, se usa Yandex.
+
+## Campos personalizados
+
+Usa de 1 a 64 letras latinas, dígitos, guiones o guiones bajos. Completa la fila nueva y guarda los ajustes.
+
+Los campos son comunes y sus valores se guardan por página. Inserta [u-ID] o elige un campo en el editor.
+
+## Plantilla de la lista de puntos
+
+Elige PHP personalizado. Los puntos están en $context['pointItems'] y los campos personalizados en $point['customFields'].
