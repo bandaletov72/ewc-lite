@@ -524,3 +524,9 @@ No editor, clique em «Inserir lista…». Escolha a secção atual para `[list-
 
 
 Introduza um nome no seletor de ícones. Por exemplo, home também encontra ícones com house no nome.
+
+Abra Componentes da página → [banners] → Slides do banner para adicionar, editar ou reordenar os slides do conjunto. Editar componente abre as opções do bloco.
+
+Os campos da tabela são alinhados no topo. Arraste o canto de um campo multilinha para alterar a largura e a altura.
+
+Arraste o limite direito do cabeçalho ou use as setas para a esquerda e para a direita para redimensionar a coluna.

@@ -524,3 +524,9 @@ Klicken Sie im Editor auf „Seitenliste einfügen…“. Wählen Sie den aktuel
 
 
 Geben Sie einen Namen in die Symbolsuche ein. Home findet auch Symbole mit house im Namen.
+
+Öffnen Sie Seitenkomponenten → [banners] → Bannerfolien, um Folien zu bearbeiten, hinzuzufügen oder umzusortieren. Komponente bearbeiten öffnet die Blockoptionen.
+
+Die Felder einer Datenzeile sind oben ausgerichtet. Ziehen Sie an der Ecke eines mehrzeiligen Feldes, um Breite und Höhe zu ändern.
+
+Ziehen Sie den rechten Rand der Überschrift oder verwenden Sie die Pfeiltasten links und rechts, um die Spaltenbreite zu ändern.

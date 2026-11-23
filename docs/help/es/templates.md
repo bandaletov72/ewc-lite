@@ -524,3 +524,9 @@ Pulsa «Insertar lista…» en el editor. Elige la sección actual para `[list-p
 
 
 Escribe un nombre en el selector de iconos. Por ejemplo, home también encuentra iconos con house en el nombre.
+
+Abre Componentes de la página → [banners] → Diapositivas del banner para añadir, editar o reordenar las diapositivas del conjunto. Editar componente abre las opciones del bloque.
+
+Los campos de la tabla se alinean arriba. Arrastra la esquina de un campo multilínea para cambiar su ancho y alto.
+
+Para cambiar el ancho de una columna, arrastra el borde derecho de la cabecera o usa las flechas izquierda y derecha.

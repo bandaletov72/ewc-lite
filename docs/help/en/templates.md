@@ -524,3 +524,9 @@ Click “Insert page list…” in the editor. Choose the current section for `[
 
 
 Type a name in the icon picker. For example, home also finds icons named house.
+
+Open Page components → [banners] → Banner slides to add, edit or reorder slides in that set. Edit component opens the block options.
+
+Data table cells align at the top. Drag the corner of a multiline field to change its width and height.
+
+Drag the right edge of the header to resize a column, or use the left and right arrow keys.

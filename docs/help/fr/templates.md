@@ -524,3 +524,9 @@ Dans l’éditeur, cliquez sur « Insérer une liste… ». Choisissez la sectio
 
 
 Saisissez un nom dans le sélecteur d’icônes. Par exemple, home trouve aussi les icônes nommées house.
+
+Ouvrez Composants de la page → [banners] → Diapositives de la bannière pour modifier, ajouter ou réordonner les diapositives du groupe. Modifier le composant ouvre les options du bloc.
+
+Les champs du tableau sont alignés en haut. Faites glisser le coin d’un champ multiligne pour modifier sa largeur et sa hauteur.
+
+Faites glisser le bord droit de l’en-tête ou utilisez les flèches gauche et droite pour redimensionner une colonne.

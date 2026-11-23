@@ -524,3 +524,9 @@ Trong trình soạn thảo, chọn «Chèn danh sách…». Chọn mục hiện 
 
 
 Nhập tên trong bộ chọn biểu tượng. Ví dụ, home cũng tìm các biểu tượng có tên chứa house.
+
+Mở Thành phần trang → [banners] → Các slide banner để thêm, sửa hoặc sắp xếp các slide trong bộ. Chỉnh sửa thành phần mở tùy chọn khối.
+
+Các trường trong hàng được căn trên. Kéo góc của trường nhiều dòng để đổi chiều rộng và chiều cao.
+
+Kéo cạnh phải của tiêu đề hoặc dùng phím mũi tên trái và phải để đổi độ rộng cột.
