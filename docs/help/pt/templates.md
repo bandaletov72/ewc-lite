@@ -550,3 +550,5 @@ Os campos são comuns e os valores são guardados por página. Insira [u-ID] ou 
 ## Modelo da lista de pontos
 
 Selecione PHP personalizado. Os pontos estão em $context['pointItems'] e os campos em $point['customFields'].
+
+Em Componentes da página, o código curto é só de leitura e pode ser copiado. Altere os parâmetros nos campos do componente. Ao guardar a página, também são guardadas as alterações aos componentes. Em [route], escolha o fornecedor e o texto do botão. Se estiver vazio, aparece «Obter direções». Em [map], escolha o fornecedor e o modo. A opção predefinida usa as definições dos mapas.

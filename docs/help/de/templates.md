@@ -550,3 +550,5 @@ Felder gelten für alle Seiten. Werte werden pro Seite gespeichert. Fügen Sie [
 ## Vorlage der Punktliste
 
 Wählen Sie eigenes PHP. Die Punkte stehen in $context['pointItems'], benutzerdefinierte Felder in $point['customFields'].
+
+Unter Seitenkomponenten können Sie den schreibgeschützten Shortcode kopieren. Ändern Sie die Einstellungen in den Feldern der Komponente. Beim Speichern der Seite werden auch die Komponentenänderungen gespeichert. Für [route] können Sie Anbieter und Schaltflächentext wählen. Ist der Text leer, wird „Route planen“ angezeigt. Für [map] können Sie Anbieter und Kartenmodus wählen. Standard übernimmt die Karteneinstellungen.

@@ -550,3 +550,5 @@ Les champs sont communs et leurs valeurs propres à chaque page. Insérez [u-ID]
 ## Modèle de liste des points
 
 Choisissez votre propre PHP. Les points sont dans $context['pointItems'] et les champs dans $point['customFields'].
+
+Dans Composants de la page, vous pouvez copier le code court en lecture seule. Modifiez les paramètres dans les champs du composant. Enregistrer la page enregistre aussi ces modifications. Pour [route], choisissez le fournisseur et le texte du bouton. Si le texte est vide, « Calculer l’itinéraire » s’affiche. Pour [map], choisissez le fournisseur et le mode. Par défaut, les réglages des cartes s’appliquent.

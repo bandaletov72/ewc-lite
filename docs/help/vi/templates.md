@@ -550,3 +550,5 @@ Trường dùng chung, giá trị lưu riêng cho từng trang. Chèn [u-ID] ho�
 ## Mẫu danh sách điểm
 
 Chọn PHP tùy chỉnh. Các điểm nằm trong $context['pointItems'] và trường tùy chỉnh trong $point['customFields'].
+
+Trong Thành phần trang, bạn có thể sao chép mã ngắn chỉ đọc. Đổi cài đặt bằng các trường của thành phần. Khi lưu trang, các thay đổi của thành phần cũng được lưu. Với [route], chọn dịch vụ và nội dung nút. Nếu để trống, nút hiển thị «Chỉ đường». Với [map], chọn dịch vụ và chế độ. Mặc định lấy từ cài đặt bản đồ.

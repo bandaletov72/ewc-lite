@@ -550,3 +550,5 @@ Definitions are shared across pages. Values are saved per page. Insert [u-ID] ma
 ## Point list template
 
 Choose Custom PHP to edit the [points] HTML. $context['pointItems'] contains the points. Each has title, url, image, announcement, labelHtml, lat, lng, routeUrl, routeLabel, pageButtonLabel and customFields. For example, $point['customFields']['stand']['value'] contains the value of stand.
+
+In Page components, you can copy the read-only shortcode. Change settings using the component fields. Saving the page also saves edited component settings. For [route], choose a provider and set a button label. An empty label displays “Get directions”. For [map], choose a provider and map mode. Default uses the map integration settings.
