@@ -535,7 +535,7 @@ Kéo cạnh phải của tiêu đề hoặc dùng phím mũi tên trái và ph�
 
 Chọn «Bản đồ các trang trong mục» hoặc chèn `[maplist]`. Bản đồ hiển thị các trang đã xuất bản có tọa độ trong mục hiện tại và mục con. Trên trang chủ, bản đồ bao phủ toàn bộ trang web. Cửa sổ điểm hiển thị tiêu đề, biểu tượng, ảnh toàn chiều rộng, tóm tắt và liên kết. Hãy cấu hình bản đồ trong phần tích hợp.
 
-`[maplist]/sample/[/maplist]` hiển thị bản đồ của mục đã chọn. `[points]/sample/[/points]` liệt kê các trang có tọa độ dưới dạng thẻ gồm tiêu đề, ảnh, tóm tắt và nút mở trang.
+`[maplist]/sample/[/maplist]` hiển thị bản đồ của mục đã chọn. `[points]/sample/[/points]` liệt kê các trang có tọa độ dưới dạng thẻ gồm tiêu đề, ảnh, tóm tắt và nút mở trang. Nút «Mở chỉ đường» sử dụng tọa độ của điểm và dịch vụ bản đồ đã chọn trong phần tích hợp.
 
 Tùy chọn đưa trang vào sitemap.xml nằm trong tab SEO. Bật «Mở rộng nhánh menu» trong cài đặt trang. Các trang con hiển thị trong menu sẽ mở khi di chuột hoặc chạm vào mũi tên trên điện thoại.
 

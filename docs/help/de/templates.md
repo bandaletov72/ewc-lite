@@ -535,7 +535,7 @@ Ziehen Sie den rechten Rand der Überschrift oder verwenden Sie die Pfeiltasten 
 
 Wählen Sie „Karte der Abschnittsseiten“ oder fügen Sie `[maplist]` ein. Die Karte zeigt veröffentlichte Seiten mit Koordinaten im aktuellen Abschnitt und seinen Unterabschnitten. Auf der Startseite umfasst sie die ganze Website. Das Kartenfenster zeigt Titel, Symbol, ein Bild über die ganze Breite, Ankündigung und Link. Richten Sie die Karte unter Integrationen ein.
 
-`[maplist]/sample/[/maplist]` zeigt die Karte des gewählten Abschnitts. `[points]/sample/[/points]` listet Seiten mit Koordinaten als Karten mit Titel, Bild, Ankündigung und Link zur Seite auf.
+`[maplist]/sample/[/maplist]` zeigt die Karte des gewählten Abschnitts. `[points]/sample/[/points]` listet Seiten mit Koordinaten als Karten mit Titel, Bild, Ankündigung und Link zur Seite auf. Die Schaltfläche „Route öffnen“ verwendet die Koordinaten des Punkts und den unter Integrationen gewählten Kartendienst.
 
 Die Einstellung zur Sitemap befindet sich im SEO-Tab und gilt bei der Erzeugung von sitemap.xml. Aktivieren Sie in den Seiteneinstellungen „Menüzweig ausklappen“. Im Menü sichtbare Unterseiten öffnen sich beim Überfahren oder durch Tippen auf den Pfeil.
 

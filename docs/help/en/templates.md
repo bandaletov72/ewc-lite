@@ -535,7 +535,7 @@ Drag the right edge of the header to resize a column, or use the left and right 
 
 Select Section page map in the component picker or insert `[maplist]`. It maps published pages with coordinates in the current section and its subsections. On the home page, it covers the whole site. Each popup shows the title, icon, full-width announcement image, announcement text and a link button. Configure maps in Integrations.
 
-`[maplist]/sample/[/maplist]` maps the chosen section. `[points]/sample/[/points]` lists pages with coordinates as cards with a title, announcement image, text, and a button linking to the page.
+`[maplist]/sample/[/maplist]` maps the chosen section. `[points]/sample/[/points]` lists pages with coordinates as cards with a title, announcement image, text, and a button linking to the page. The Open directions button uses the coordinates of that point and the maps provider selected in Integrations.
 
 The SEO tab contains Include in sitemap, which applies when generating sitemap.xml. In Page settings, enable Expand menu branch to show an arrow beside the section. Subpages visible in the menu open on hover or when tapping the arrow on mobile.
 
