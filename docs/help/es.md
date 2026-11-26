@@ -425,7 +425,7 @@ Introduce el valor de la página actual en la fila nueva y guárdalo junto con l
 
 ## Reseñas
 
-Inserta el código en el editor de páginas. Los visitantes escriben su nombre, una reseña y una nota de 0 a 5 estrellas. En Reseñas puedes aprobar, rechazar, editar o eliminar reseñas. Cargar más añade las diez siguientes.
+Inserta el código en el editor de páginas. Los visitantes escriben su nombre, una reseña y una nota de 1 a 5 estrellas. En Reseñas puedes aprobar, rechazar, editar o eliminar reseñas. Cargar más añade las diez siguientes.
 
 Escribe una ruta como /contacts/ o deja el campo vacío para mostrar todas las reseñas. El formulario registra la página desde la que se envió. Solo se publican las reseñas aprobadas. CAPTCHA usa la configuración general del CMS.
 

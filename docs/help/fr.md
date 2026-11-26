@@ -425,7 +425,7 @@ Saisissez dans la nouvelle ligne la valeur pour la page en cours et enregistrez-
 
 ## Avis
 
-Insérez le code dans l’éditeur de page. Les visiteurs saisissent leur nom, rédigent un avis et attribuent de 0 à 5 étoiles. La rubrique Avis permet d’approuver, de refuser, de modifier ou de supprimer un avis. Le bouton de chargement ajoute les dix suivants.
+Insérez le code dans l’éditeur de page. Les visiteurs saisissent leur nom, rédigent un avis et attribuent de 1 à 5 étoiles. La rubrique Avis permet d’approuver, de refuser, de modifier ou de supprimer un avis. Le bouton de chargement ajoute les dix suivants.
 
 Saisissez un chemin comme /contacts/ ou laissez le champ vide pour afficher tous les avis. Le formulaire enregistre sa page d’origine. Seuls les avis approuvés sont visibles. Le CAPTCHA utilise les réglages généraux du CMS.
 

@@ -425,7 +425,7 @@ Nhập giá trị cho trang hiện tại trong dòng mới và lưu cùng thiế
 
 ## Đánh giá
 
-Chèn mã trong trình sửa trang. Khách nhập tên, viết đánh giá và chọn từ 0 đến 5 sao. Trong mục Đánh giá, bạn có thể duyệt, từ chối, sửa hoặc xóa đánh giá. Tải thêm sẽ hiển thị 10 đánh giá tiếp theo.
+Chèn mã trong trình sửa trang. Khách nhập tên, viết đánh giá và chọn từ 1 đến 5 sao. Trong mục Đánh giá, bạn có thể duyệt, từ chối, sửa hoặc xóa đánh giá. Tải thêm sẽ hiển thị 10 đánh giá tiếp theo.
 
 Nhập đường dẫn như /contacts/ hoặc để trống để hiện tất cả. Biểu mẫu lưu trang gửi đánh giá. Trang web chỉ hiện đánh giá đã duyệt. CAPTCHA dùng cài đặt chung của CMS.
 

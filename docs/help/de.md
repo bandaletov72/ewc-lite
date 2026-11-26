@@ -425,7 +425,7 @@ Geben Sie in der neuen Zeile den Wert für die aktuelle Seite ein und speichern 
 
 ## Bewertungen
 
-Fügen Sie den Code im Seiteneditor ein. Besucher geben einen Namen und eine Bewertung mit 0 bis 5 Sternen ab. Im Bereich Bewertungen können Sie Beiträge freigeben, ablehnen, bearbeiten oder löschen. „Mehr laden“ fügt die nächsten zehn hinzu.
+Fügen Sie den Code im Seiteneditor ein. Besucher geben einen Namen und eine Bewertung mit 1 bis 5 Sternen ab. Im Bereich Bewertungen können Sie Beiträge freigeben, ablehnen, bearbeiten oder löschen. „Mehr laden“ fügt die nächsten zehn hinzu.
 
 Geben Sie einen Pfad wie /contacts/ ein oder lassen Sie das Feld für alle Bewertungen leer. Das Formular speichert die Seite, von der es gesendet wurde. Nur freigegebene Bewertungen erscheinen auf der Website. CAPTCHA verwendet die allgemeinen CMS-Einstellungen.
 

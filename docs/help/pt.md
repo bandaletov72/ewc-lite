@@ -425,7 +425,7 @@ Informe o valor da página atual na nova linha e salve-o com os ajustes do campo
 
 ## Avaliações
 
-Insira o código no editor da página. Os visitantes indicam o nome, escrevem a avaliação e atribuem de 0 a 5 estrelas. Na seção Avaliações, você pode aprovar, rejeitar, editar ou excluir avaliações. Carregar mais adiciona as dez seguintes.
+Insira o código no editor da página. Os visitantes indicam o nome, escrevem a avaliação e atribuem de 1 a 5 estrelas. Na seção Avaliações, você pode aprovar, rejeitar, editar ou excluir avaliações. Carregar mais adiciona as dez seguintes.
 
 Digite um caminho como /contacts/ ou deixe o campo vazio para mostrar todas as avaliações. O formulário registra a página de origem. Apenas avaliações aprovadas aparecem no site. O CAPTCHA usa as configurações gerais do CMS.
 

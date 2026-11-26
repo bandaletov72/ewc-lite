@@ -425,7 +425,7 @@ Enter a value for the current page in the new row and save it with the field set
 
 ## Reviews
 
-Insert the code in the page editor. Visitors enter a name, write a review and choose a rating from 0 to 5 stars. In Forms and requests → Reviews, approve, reject, edit or delete a review. Load more adds the next ten reviews.
+Insert the code in the page editor. Visitors enter a name, write a review and choose a rating from 1 to 5 stars. In Forms and requests → Reviews, approve, reject, edit or delete a review. Load more adds the next ten reviews.
 
 Enter a path such as /contacts/, or leave it blank to show all reviews. The form records the page it was submitted from. Only approved reviews appear on the site. CAPTCHA uses the general CMS settings.
 
