@@ -452,3 +452,7 @@ Applying the design and adding missing navigation pages. Existing pages and sett
 In edit mode, hover over a snippet value and select Edit subtemplate. Save and close the dialog to see the updated page.
 
 Edit component on [reviews] opens review settings and moderation in a dialog.
+
+**Reviews per batch · Load more button text**
+
+The batch size applies to the first load and to each button press. Leave the text blank to use the default label in the page language.

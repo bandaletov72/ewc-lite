@@ -448,3 +448,7 @@ Nút Viết đánh giá mở biểu mẫu.
 Trong chế độ chỉnh sửa, di chuột qua giá trị của mẫu con rồi mở trình chỉnh sửa. Lưu và đóng hộp thoại để xem trang đã cập nhật.
 
 Nút chỉnh sửa [reviews] mở phần cài đặt và kiểm duyệt đánh giá trong hộp thoại.
+
+**Số đánh giá mỗi lần tải · Nội dung nút «Tải thêm»**
+
+Số lượng này áp dụng khi tải lần đầu và mỗi lần bấm nút. Để trống nội dung để dùng nhãn mặc định theo ngôn ngữ của trang.

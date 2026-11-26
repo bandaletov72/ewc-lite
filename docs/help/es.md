@@ -448,3 +448,7 @@ Se aplica el diseño y se añaden las páginas de navegación faltantes. Se cons
 En el modo de edición, pasa el cursor sobre el valor de un fragmento y abre su editor. Guarda y cierra el cuadro de diálogo para ver los cambios en la página.
 
 El botón de edición de [reviews] abre los ajustes y la moderación de reseñas en un cuadro de diálogo.
+
+**Reseñas por lote · Texto del botón «Cargar más»**
+
+El tamaño del lote se aplica a la primera carga y a cada clic. Deja el texto vacío para usar la etiqueta predeterminada en el idioma de la página.

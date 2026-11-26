@@ -448,3 +448,7 @@ Application du design et ajout des pages de navigation manquantes. Les pages et 
 En mode édition, survolez la valeur du sous-modèle et ouvrez son éditeur. Enregistrez et fermez la fenêtre pour voir la page mise à jour.
 
 Le bouton de modification de [reviews] ouvre les réglages et la modération des avis dans une fenêtre.
+
+**Avis par lot · Texte du bouton « Charger plus »**
+
+La taille du lot vaut pour le premier chargement et pour chaque clic. Laissez le texte vide pour utiliser le libellé par défaut dans la langue de la page.

@@ -448,3 +448,7 @@ Design wird angewendet und fehlende Menüseiten werden ergänzt. Bestehende Seit
 Zeigen Sie im Bearbeitungsmodus auf den Wert einer Untervorlage und klicken Sie auf „Untervorlage bearbeiten“. Speichern und schließen Sie den Dialog, um die Änderung auf der Seite zu sehen.
 
 Bei [reviews] öffnet die Bearbeitungsschaltfläche die Einstellungen und Moderation der Bewertungen in einem Dialog.
+
+**Bewertungen pro Ladevorgang · Text der Schaltfläche „Mehr laden“**
+
+Die Anzahl gilt beim ersten Laden und bei jedem Klick. Lassen Sie den Text leer, um die Standardbeschriftung in der Seitensprache zu verwenden.

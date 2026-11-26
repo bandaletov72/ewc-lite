@@ -448,3 +448,7 @@ O design é aplicado e as páginas de navegação em falta são adicionadas. As 
 No modo de edição, passe o cursor sobre o valor de um submodelo e abra o editor. Guarde e feche a janela para ver a página atualizada.
 
 O botão de edição de [reviews] abre as configurações e a moderação de avaliações numa janela.
+
+**Avaliações por lote · Texto do botão «Carregar mais»**
+
+O tamanho do lote aplica-se ao primeiro carregamento e a cada clique. Deixe o texto em branco para usar o rótulo padrão no idioma da página.
