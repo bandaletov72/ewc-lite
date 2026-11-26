@@ -103,7 +103,8 @@ jobs:
             mkdir -p "full/$tag" "updates/$tag"
             cp "$assets/php-site.zip" "$assets/php-site.zip.sig" "full/$tag/"
             cp "$assets/php-site-update.zip" "$assets/marketplace.zip" "$assets/marketplace.zip.sig" "updates/$tag/"
-            git add -- "full/$tag" "updates/$tag"
+            jq '{version: .shopVersion, tag: ("v" + .version), notes: (.notes // "")}' updates/release.json > updates/shop-latest.json
+            git add -- "full/$tag" "updates/$tag" updates/shop-latest.json
           fi
           cp "$assets/php-site-update.zip.sig" "$signature"
           python3 - "$assets/php-site-update.zip" <<'PYTHON'
