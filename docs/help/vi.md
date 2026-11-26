@@ -275,6 +275,8 @@ Biểu mẫu, mẫu, đoạn mã đã lưu và thành phần đã đăng ký t�
 [banners set=summer-promo]
 ```
 
+Cột Nút mở biểu mẫu thêm nút Đặt dịch vụ vào các hàng được cấu hình. Chọn tên biểu mẫu trong danh sách. Với CSV, nhập mã biểu mẫu như form86.
+
 Kiểu Thẻ ẩn thêm bộ lọc phía trên bảng. Nhập một hoặc nhiều thẻ phân tách bằng dấu phẩy trong mỗi ô. TẤT CẢ hiển thị mọi hàng.
 
 ## Đầu trang và chân trang quản trị · 1.6.12

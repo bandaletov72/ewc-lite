@@ -275,6 +275,8 @@ Los formularios, plantillas, fragmentos guardados y componentes registrados apar
 [banners set=summer-promo]
 ```
 
+La columna Botón de formulario muestra un botón Solicitar en cada fila configurada. Elige el formulario por nombre. En CSV, escribe su código, por ejemplo form86.
+
 El tipo «Etiqueta oculta» añade filtros encima de la tabla. Escribe una o varias etiquetas separadas por comas en cada celda. «TODO» muestra todas las filas.
 
 ## Encabezado y pie de la administración · 1.6.12

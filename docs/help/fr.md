@@ -275,6 +275,8 @@ Les formulaires, modèles, fragments enregistrés et composants déclarés appar
 [banners set=summer-promo]
 ```
 
+La colonne Bouton de formulaire affiche un bouton Commander dans chaque ligne configurée. Choisissez le formulaire par son nom. En CSV, indiquez son code, par exemple form86.
+
 Le type « Tag masqué » ajoute des filtres au-dessus du tableau. Saisissez un ou plusieurs tags séparés par des virgules dans une cellule. « TOUT » affiche toutes les lignes.
 
 ## En-tête et pied de page de l’administration · 1.6.12

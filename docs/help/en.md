@@ -275,6 +275,8 @@ Saved forms, templates, snippets and registered components appear automatically 
 [banners set=summer-promo]
 ```
 
+The Form button column displays an Order button in each configured row. Choose a form by name in the dropdown. For CSV use a form code such as form86.
+
 The Hidden tag type adds filters above the table. Enter one or more comma-separated tags in each cell. ALL shows every row.
 
 ## Admin header and footer · 1.6.12

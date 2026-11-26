@@ -275,6 +275,8 @@ Formulários, modelos, trechos salvos e componentes registrados aparecem ao reab
 [banners set=summer-promo]
 ```
 
+A coluna Botão de formulário exibe um botão Pedir em cada linha configurada. Escolha o formulário pelo nome. Em CSV, use o código do formulário, como form86.
+
 O tipo «Etiqueta oculta» adiciona filtros acima da tabela. Insira uma ou mais etiquetas separadas por vírgulas numa célula. «TODOS» mostra todas as linhas.
 
 ## Cabeçalho e rodapé da administração · 1.6.12
