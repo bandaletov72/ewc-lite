@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "themes": {
+    "forno-pizza": {
+      "name": "Форно Пицца",
+      "version": "1.0.0",
+      "description": "Терракотовая тема доставки пиццы с меню, страницей доставки и витриной.",
+      "site": true,
+      "storefront": true,
+      "siteShop": true,
+      "accent": "#a82d20",
+      "sha256": "b96b80a53a1810f92c1ada181d83175d4ff3ce0e35f1ba1e8dbfc7d713d198c9"
+    },
+    "flor-atelier": {
+      "name": "Флор Ателье",
+      "version": "1.0.0",
+      "description": "Цветочное ателье с галереей букетов и страницей о студии.",
+      "site": true,
+      "storefront": false,
+      "siteShop": false,
+      "accent": "#8a315e",
+      "sha256": "71071cc032d1795446373b84ee6d464f1f7c2ba71c669e9252ec24f1b5d8db8c"
+    },
+    "sever-trail": {
+      "name": "Северный маршрут",
+      "version": "1.0.0",
+      "description": "Контрастная тема для туристического магазина с подборкой снаряжения.",
+      "site": true,
+      "storefront": true,
+      "siteShop": true,
+      "accent": "#385822",
+      "sha256": "d0be542a6ee97f3307af4075f497032ab3fa4450700fc2ef2fe0d2c75b3f2a5a"
+    }
+  }
+}
