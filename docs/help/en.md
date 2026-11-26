@@ -432,3 +432,5 @@ Enter a path such as /contacts/, or leave it blank to show all reviews. The form
 ```text
 [reviews]
 ```
+
+The Leave a review button opens the review form.

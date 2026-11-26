@@ -432,3 +432,5 @@ Escribe una ruta como /contacts/ o deja el campo vacío para mostrar todas las r
 ```text
 [reviews]
 ```
+
+El botón Dejar una reseña abre el formulario.

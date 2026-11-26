@@ -432,3 +432,5 @@ Nhập đường dẫn như /contacts/ hoặc để trống để hiện tất c
 ```text
 [reviews]
 ```
+
+Nút Viết đánh giá mở biểu mẫu.

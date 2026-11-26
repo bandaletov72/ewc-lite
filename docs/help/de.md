@@ -432,3 +432,5 @@ Geben Sie einen Pfad wie /contacts/ ein oder lassen Sie das Feld für alle Bewer
 ```text
 [reviews]
 ```
+
+Die Schaltfläche Bewertung schreiben öffnet das Formular.

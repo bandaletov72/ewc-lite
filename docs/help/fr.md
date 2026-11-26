@@ -432,3 +432,5 @@ Saisissez un chemin comme /contacts/ ou laissez le champ vide pour afficher tous
 ```text
 [reviews]
 ```
+
+Le bouton Laisser un avis ouvre le formulaire.

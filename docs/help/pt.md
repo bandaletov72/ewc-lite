@@ -432,3 +432,5 @@ Digite um caminho como /contacts/ ou deixe o campo vazio para mostrar todas as a
 ```text
 [reviews]
 ```
+
+O botão Deixar uma avaliação abre o formulário.
