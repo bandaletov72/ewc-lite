@@ -275,6 +275,8 @@ Biểu mẫu, mẫu, đoạn mã đã lưu và thành phần đã đăng ký t�
 [banners set=summer-promo]
 ```
 
+Kiểu Thẻ ẩn thêm bộ lọc phía trên bảng. Nhập một hoặc nhiều thẻ phân tách bằng dấu phẩy trong mỗi ô. TẤT CẢ hiển thị mọi hàng.
+
 ## Đầu trang và chân trang quản trị · 1.6.12
 
 Trên máy tính, bên cạnh logo có Eurowebcart CMS và Light kèm phiên bản đã cài. Trên điện thoại, biểu tượng nằm cùng hàng với các nút. Chân trang liên kết đến kho mã. Kiểm tra bản cập nhật tích lũy trong phần Cài đặt.

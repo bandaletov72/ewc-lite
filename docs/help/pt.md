@@ -275,6 +275,8 @@ Formulários, modelos, trechos salvos e componentes registrados aparecem ao reab
 [banners set=summer-promo]
 ```
 
+O tipo «Etiqueta oculta» adiciona filtros acima da tabela. Insira uma ou mais etiquetas separadas por vírgulas numa célula. «TODOS» mostra todas as linhas.
+
 ## Cabeçalho e rodapé da administração · 1.6.12
 
 No computador, Eurowebcart CMS e Light com a versão instalada aparecem junto do logotipo. No celular, o símbolo fica na mesma linha que os botões. O rodapé contém o endereço do repositório. Verifique atualizações cumulativas nas configurações.

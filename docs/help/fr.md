@@ -275,6 +275,8 @@ Les formulaires, modèles, fragments enregistrés et composants déclarés appar
 [banners set=summer-promo]
 ```
 
+Le type « Tag masqué » ajoute des filtres au-dessus du tableau. Saisissez un ou plusieurs tags séparés par des virgules dans une cellule. « TOUT » affiche toutes les lignes.
+
 ## En-tête et pied de page de l’administration · 1.6.12
 
 Sur ordinateur, Eurowebcart CMS et Light accompagnent le logo avec la version installée. Sur téléphone, le symbole s’aligne avec les boutons. Le pied de page affiche l’adresse du dépôt. Les paramètres permettent de vérifier la mise à jour cumulative.

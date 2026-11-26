@@ -275,6 +275,8 @@ Beim erneuten Öffnen des Editors erscheinen gespeicherte Formulare, Vorlagen, T
 [banners set=summer-promo]
 ```
 
+Der Typ „Verstecktes Tag“ fügt Filter oberhalb der Tabelle hinzu. Geben Sie pro Zelle ein oder mehrere durch Kommas getrennte Tags ein. „ALLE“ zeigt alle Zeilen.
+
 ## Kopf- und Fußzeile der Verwaltung · 1.6.12
 
 Auf dem Desktop stehen Eurowebcart CMS und Light mit der installierten Version neben dem Logo. Auf dem Handy stehen Logo und Schaltflächen in einer Zeile. Die Fußzeile verlinkt das Repository. Kumulative Updates lassen sich in den Einstellungen prüfen.

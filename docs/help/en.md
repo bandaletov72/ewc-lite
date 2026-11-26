@@ -275,6 +275,8 @@ Saved forms, templates, snippets and registered components appear automatically 
 [banners set=summer-promo]
 ```
 
+The Hidden tag type adds filters above the table. Enter one or more comma-separated tags in each cell. ALL shows every row.
+
 ## Admin header and footer · 1.6.12
 
 On desktop, the logo is paired with Eurowebcart CMS and Light, followed by the installed version. On phones, the symbol shares a row with the controls. The footer links to the repository. Check for the latest cumulative release in Settings → Updates.

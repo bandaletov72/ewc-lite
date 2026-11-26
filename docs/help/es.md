@@ -275,6 +275,8 @@ Los formularios, plantillas, fragmentos guardados y componentes registrados apar
 [banners set=summer-promo]
 ```
 
+El tipo «Etiqueta oculta» añade filtros encima de la tabla. Escribe una o varias etiquetas separadas por comas en cada celda. «TODO» muestra todas las filas.
+
 ## Encabezado y pie de la administración · 1.6.12
 
 En escritorio, el logotipo aparece junto a Eurowebcart CMS y Light con la versión instalada. En teléfonos, el símbolo comparte fila con los botones. El pie enlaza al repositorio. En Ajustes se puede comprobar la actualización acumulativa.
