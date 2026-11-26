@@ -446,3 +446,5 @@ Under Maintenance, Rebuild index reports the number of processed pages and shows
 **Design and add missing pages**
 
 Applying the design and adding missing navigation pages. Existing pages and settings are kept.
+
+**100% · Done**

@@ -442,3 +442,5 @@ Téléchargement de l’archive de mise à jour. Téléchargement de la signatur
 **Design et ajout des pages manquantes**
 
 Application du design et ajout des pages de navigation manquantes. Les pages et réglages existants sont conservés.
+
+**100% · Terminé**

@@ -442,3 +442,5 @@ Updatearchiv wird heruntergeladen. Signatur wird heruntergeladen. Signatur und P
 **Design und fehlende Seiten hinzufügen**
 
 Design wird angewendet und fehlende Menüseiten werden ergänzt. Bestehende Seiten und Einstellungen bleiben erhalten.
+
+**100% · Fertig**

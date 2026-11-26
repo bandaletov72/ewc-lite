@@ -442,3 +442,5 @@ Baixando o arquivo de atualização. Baixando a assinatura. Verificando a assina
 **Design e adição das páginas em falta**
 
 O design é aplicado e as páginas de navegação em falta são adicionadas. As páginas e configurações existentes são mantidas.
+
+**100% · Concluído**
