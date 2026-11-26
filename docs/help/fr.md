@@ -403,6 +403,8 @@ Le thème Dezinfektori comprend 32 services, le formulaire [form86] et le formul
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
 ```
 
+Chaque page du catalogue propose un formulaire d’avis. Après approbation dans Avis, il apparaît sur sa page d’origine.
+
 ### Couleurs du site · Polices
 
 Cochez les polices à activer, puis attribuez-les au texte, aux titres ou aux commandes. Votre site héberge les fichiers locaux.

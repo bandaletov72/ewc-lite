@@ -403,6 +403,8 @@ Das Theme Dezinfektori umfasst 32 Leistungen, die Anfrage [form86] und das Bewer
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
 ```
 
+Jede Katalogseite hat ein Bewertungsformular. Nach der Freigabe im Bereich Bewertungen erscheint der Beitrag auf seiner Ursprungsseite.
+
 ### Websitefarben · Schriften
 
 Aktivieren Sie Schriften per Kontrollkästchen und weisen Sie sie Texten, Überschriften oder Bedienelementen zu. Lokale Dateien lädt Ihre Website.
