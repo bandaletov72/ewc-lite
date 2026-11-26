@@ -456,3 +456,5 @@ Edit component on [reviews] opens review settings and moderation in a dialog.
 **Reviews per batch · Load more button text**
 
 The batch size applies to the first load and to each button press. Leave the text blank to use the default label in the page language.
+
+Use Data to open the [iblock] editor. Other components use Settings.

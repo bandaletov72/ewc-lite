@@ -452,3 +452,5 @@ Bei [reviews] öffnet die Bearbeitungsschaltfläche die Einstellungen und Modera
 **Bewertungen pro Ladevorgang · Text der Schaltfläche „Mehr laden“**
 
 Die Anzahl gilt beim ersten Laden und bei jedem Klick. Lassen Sie den Text leer, um die Standardbeschriftung in der Seitensprache zu verwenden.
+
+Den Editor für [iblock] öffnen Sie über „Daten“. Bei anderen Komponenten heißt die Schaltfläche „Einstellungen“.

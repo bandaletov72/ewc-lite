@@ -452,3 +452,5 @@ El botón de edición de [reviews] abre los ajustes y la moderación de reseñas
 **Reseñas por lote · Texto del botón «Cargar más»**
 
 El tamaño del lote se aplica a la primera carga y a cada clic. Deja el texto vacío para usar la etiqueta predeterminada en el idioma de la página.
+
+El botón «Datos» abre el editor de [iblock]. Para los demás componentes, usa «Configuración».

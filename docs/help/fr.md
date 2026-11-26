@@ -452,3 +452,5 @@ Le bouton de modification de [reviews] ouvre les réglages et la modération des
 **Avis par lot · Texte du bouton « Charger plus »**
 
 La taille du lot vaut pour le premier chargement et pour chaque clic. Laissez le texte vide pour utiliser le libellé par défaut dans la langue de la page.
+
+Le bouton « Données » ouvre l’éditeur de [iblock]. Pour les autres composants, utilisez « Paramètres ».

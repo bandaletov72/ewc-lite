@@ -452,3 +452,5 @@ Nút chỉnh sửa [reviews] mở phần cài đặt và kiểm duyệt đánh g
 **Số đánh giá mỗi lần tải · Nội dung nút «Tải thêm»**
 
 Số lượng này áp dụng khi tải lần đầu và mỗi lần bấm nút. Để trống nội dung để dùng nhãn mặc định theo ngôn ngữ của trang.
+
+Nút «Dữ liệu» mở trình chỉnh sửa [iblock]. Các thành phần khác dùng nút «Cài đặt».
