@@ -434,3 +434,11 @@ Enter a path such as /contacts/, or leave it blank to show all reviews. The form
 ```
 
 The Leave a review button opens the review form.
+
+## Update progress · Indexing progress
+
+Under Settings → Updates, the progress bar tracks the update ZIP and signature downloads, verification, and installation. The CMS keeps existing pages and settings and creates temporary rollback copies of the files being replaced.
+
+Under Design Themes → Update theme, the log shows the selected mode. When replacing bundled pages, the CMS creates and verifies a backup of pages, settings, and media. Find the archive named in the log under Maintenance.
+
+Under Maintenance, Rebuild index reports the number of processed pages and shows when the search index is being saved.

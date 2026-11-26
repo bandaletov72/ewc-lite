@@ -434,3 +434,7 @@ Saisissez un chemin comme /contacts/ ou laissez le champ vide pour afficher tous
 ```
 
 Le bouton Laisser un avis ouvre le formulaire.
+
+## Progression de la mise à jour · Progression de l’indexation
+
+Téléchargement de l’archive de mise à jour. Téléchargement de la signature. Vérification de la signature et des sommes de contrôle de l’archive. Les pages, les paramètres et les fichiers utilisateur sont conservés. Préparation des fichiers et des copies temporaires de restauration. Utilisation des modèles, styles et scripts fournis avec le CMS. Les pages et paramètres actuels sont conservés. Utilisation du design et des pages fournis avec le thème. Les paramètres et les autres pages sont conservés. Sauvegarde des pages, paramètres et médias. Vérification de la sauvegarde. Sauvegarde enregistrée dans Maintenance. Collecte des pages. Traitement des pages et de leurs traductions. Enregistrement de l’index de recherche.
