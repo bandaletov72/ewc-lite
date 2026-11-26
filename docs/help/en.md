@@ -281,11 +281,11 @@ The Hidden tag type adds filters above the table. Enter one or more comma-separa
 
 ## Admin header and footer · 1.6.12
 
-On desktop, the logo is paired with Eurowebcart CMS and Light, followed by the installed version. On phones, the symbol shares a row with the controls. The footer links to the repository. Check for the latest cumulative release in Settings → Updates.
+On desktop, the logo is paired with Eurowebcart CMS and Light, followed by the installed version. On phones, the symbol shares a row with the controls. The footer links to the repository. Check for the latest cumulative release in Updates.
 
 ## Admin header and footer · 1.6.13
 
-On desktop, the logo is paired with Eurowebcart CMS and Light, followed by the installed version. On phones, the symbol shares a row with the controls. The footer links to the repository. Check for the latest cumulative release in Settings → Updates. The standard Home label in the page list follows the admin language. The footer logo has two lines: Eurowebcart CMS and LIGHT.
+On desktop, the logo is paired with Eurowebcart CMS and Light, followed by the installed version. On phones, the symbol shares a row with the controls. The footer links to the repository. Check for the latest cumulative release in Updates. The standard Home label in the page list follows the admin language. The footer logo has two lines: Eurowebcart CMS and LIGHT.
 
 ## PHP information
 
@@ -437,7 +437,7 @@ The Leave a review button opens the review form.
 
 ## Update progress · Indexing progress
 
-Under Settings → Updates, the progress bar tracks the update ZIP and signature downloads, verification, and installation. The CMS keeps existing pages and settings and creates temporary rollback copies of the files being replaced.
+Under Updates, the progress bar tracks the update ZIP and signature downloads, verification, and installation. The CMS keeps existing pages and settings and creates temporary rollback copies of the files being replaced.
 
 Under Design Themes → Update theme, the log shows the selected mode. When replacing bundled pages, the CMS creates and verifies a backup of pages, settings, and media. Find the archive named in the log under Maintenance.
 
@@ -478,3 +478,10 @@ Address `[address]` · Public email `[email]` · Opening hours `[hours]`
 City contact details appear in the header. Empty fields use the shared snippet values.
 
 The installed and GitHub filter versions appear beside the update button.
+
+## Updates · Backups
+
+The red badge counts available engine, active theme, and spam filter updates. Choose days and a time window for automatic updates. Automatic theme updates apply design files only. A red exclamation mark indicates there is no backup less than a month old. Run the scheduler command every 15 minutes. `php update.php --scheduled`
+
+- Layout templates → Snippets
+- Cities and domains

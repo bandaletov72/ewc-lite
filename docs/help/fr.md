@@ -474,3 +474,10 @@ Adresse `[address]` · E-mail public `[email]` · Horaires `[hours]`
 Les coordonnées de la ville apparaissent dans l’en-tête. Les champs vides utilisent les valeurs communes.
 
 Les versions installée et GitHub des filtres figurent près du bouton de mise à jour.
+
+## Mises à jour · Sauvegardes
+
+Le badge rouge compte les mises à jour du CMS, du thème actif et des filtres antispam. Choisissez les jours et la plage horaire des mises à jour automatiques. La mise à jour automatique d’un thème applique uniquement son apparence. Le point d’exclamation indique qu’aucune sauvegarde ne date de moins d’un mois. Exécutez la commande toutes les 15 minutes. `php update.php --scheduled`
+
+- Modèles de mise en page → Fragments
+- Villes et domaines

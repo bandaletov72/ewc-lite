@@ -474,3 +474,10 @@ Adresse `[address]` · Öffentliche E-Mail `[email]` · Öffnungszeiten `[hours]
 Die Kontaktdaten der Stadt erscheinen im Kopfbereich. Leere Felder verwenden gemeinsame Vorlagenwerte.
 
 Neben der Schaltfläche stehen die installierte Filterversion und die GitHub-Version.
+
+## Updates · Sicherungen
+
+Die rote Zahl zählt verfügbare Updates für das CMS, das aktive Theme und die Spamfilter. Für automatische Updates Tage und Zeitfenster auswählen. Automatische Theme-Updates ändern nur das Design. Ein Ausrufezeichen weist darauf hin, dass keine Sicherung jünger als ein Monat ist. Den Befehl alle 15 Minuten ausführen. `php update.php --scheduled`
+
+- Layoutvorlagen → Textbausteine
+- Städte und Domains

@@ -474,3 +474,10 @@ Dirección `[address]` · Correo público `[email]` · Horario `[hours]`
 Los datos de la ciudad se muestran en la cabecera. Los campos vacíos usan los valores compartidos.
 
 Junto al botón se muestran la versión instalada y la de GitHub.
+
+## Actualizaciones · Copias de seguridad
+
+El indicador rojo cuenta las actualizaciones del CMS, el tema activo y los filtros antispam. Selecciona días y horario para las actualizaciones automáticas. Los temas se actualizan automáticamente solo en su diseño. El signo de exclamación indica que no hay una copia de hace menos de un mes. Ejecuta el comando cada 15 minutos. `php update.php --scheduled`
+
+- Plantillas de diseño → Fragmentos
+- Ciudades y dominios

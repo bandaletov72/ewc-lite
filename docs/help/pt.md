@@ -474,3 +474,10 @@ Morada `[address]` · E-mail público `[email]` · Horário de funcionamento `[h
 Os contactos da cidade aparecem no cabeçalho. Campos vazios usam os valores dos submodelos partilhados.
 
 As versões instalada e do GitHub aparecem ao lado do botão de atualização.
+
+## Atualizações · Cópias de segurança
+
+O número vermelho exibe as atualizações disponíveis para o CMS, o tema ativo e os filtros antispam. Selecione os dias e horários das atualizações automáticas. O tema atualiza automaticamente apenas o design. A exclamação indica que não há cópia com menos de um mês. Execute o comando a cada 15 minutos. `php update.php --scheduled`
+
+- Modelos de apresentação → Fragmentos
+- Cidades e domínios

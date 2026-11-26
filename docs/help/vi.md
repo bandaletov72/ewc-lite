@@ -474,3 +474,10 @@ Tự động duyệt đánh giá
 Thông tin liên hệ của thành phố hiển thị ở đầu trang. Các ô trống dùng giá trị mẫu con dùng chung.
 
 Phiên bản đã cài đặt và phiên bản GitHub hiển thị cạnh nút cập nhật.
+
+## Cập nhật · Bản sao lưu
+
+Số màu đỏ đếm các bản cập nhật CMS, giao diện đang dùng và bộ lọc spam. Chọn ngày và khung giờ cập nhật tự động. Tự động cập nhật giao diện chỉ áp dụng phần thiết kế. Dấu chấm than báo không có bản sao lưu trong vòng một tháng. Chạy lệnh mỗi 15 phút. `php update.php --scheduled`
+
+- Mẫu bố cục → Đoạn mẫu
+- Thành phố và tên miền
