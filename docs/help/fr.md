@@ -1,5 +1,13 @@
 # Français · Eurowebcart CMS Lite
 
+## Premiers pas avec la version 1.6.58
+
+- Activez un site complet dans Modèles de design → Thèmes. Les couleurs et les polices ont leurs propres onglets. Plusieurs familles peuvent être activées et stockées localement.
+- Activez les bibliothèques dans Paramètres → Bibliothèques et enregistrez localement les ressources nécessaires. Font Awesome est inclus.
+- En mode édition, double-cliquez sur le contenu pour ouvrir l’éditeur en fenêtre modale. Double-cliquez sur le H1 standard pour accéder à son champ dans SEO.
+- Les définitions des champs sont communes et les valeurs propres à chaque page. La valeur de la page ouverte peut être enregistrée à la création du champ. La saisie s’adapte au type choisi.
+- Pour un nouveau domaine, créez un ZIP complet avec le thème actif et testez une installation vierge. Pour un site existant, effectuez une sauvegarde et utilisez une mise à jour signée.
+
 - [Gestion](fr/readme.md)
 - [FAQ Administrateur](fr/faq.md)
 - [Modèles et composants](fr/templates.md)
@@ -331,6 +339,8 @@ Conteneur, grille adaptative, section mise en avant, carte et prix mis en valeur
 
 `.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
 
+Choisissez « Modifier » pour modifier un modèle. « Enregistrer le modèle » applique les modifications aux nouvelles pages. « Dupliquer » crée un modèle distinct. Dans l’éditeur de page, vous pouvez ouvrir le modèle sélectionné ou en créer un à partir de la page enregistrée. Dans le formulaire du modèle, choisissez « Insérer une icône » et recherchez-la par nom. Vous pouvez aussi saisir un code comme `[fa-icon=house]`.
+
 Les modèles sont repliés au départ. Ouvrez un modèle depuis son titre ou utilisez Tout déplier. Appuyez de nouveau pour replier la liste.
 
 Pour changer la largeur du carrousel, activez le mode édition, ouvrez Modifier le composant à côté des bannières et choisissez la largeur du bloc.
@@ -343,7 +353,7 @@ La ville mémorisée est prioritaire, puis celle du domaine et enfin la premièr
 
 Les formulaires, rappels et nouvelles commandes vont à l’adresse de la ville ou à celle du site si elle est vide. Si les deux sont vides, le formulaire garde son propre destinataire. Les liens sociaux vides héritent des réglages du site.
 
-En mode édition, survolez un modèle pour le modifier. Pour tout composant [php] installé, Modifier le module ouvre le code et les réglages dans une fenêtre. L’éditeur de diapositive affiche le nom et le code du formulaire. [banners width=100] occupe toute la fenêtre pour un bloc autonome sans barre latérale. L’éditeur de modèle s’ouvre dans une fenêtre modale sur le site. En mode édition, double-cliquez dans une zone libre du modèle. Cette indication apparaît sous le bouton de modification au survol. En cas de chevauchement, le modèle suivant est prioritaire. Le bouton de modification de la diapositive ouvre la diapositive choisie. La barre du site affiche les composants, modèles et sous-modèles de la page active. Dans l’administration, ouvrez Composants de la page à côté de Langues pour modifier leurs paramètres et données.
+En mode édition, survolez un modèle pour le modifier. Pour tout composant [php] installé, Modifier le module ouvre le code et les réglages dans une fenêtre. L’éditeur de diapositive affiche le nom et le code du formulaire. [banners width=100] occupe toute la fenêtre pour un bloc autonome sans barre latérale. L’éditeur de modèle s’ouvre dans une fenêtre modale sur le site. En mode édition, double-cliquez dans une zone libre du modèle. Cette indication apparaît sous le bouton de modification au survol. En cas de chevauchement, le modèle suivant est prioritaire. Le bouton de modification de la diapositive ouvre la diapositive choisie. La barre du site affiche les composants, modèles et sous-modèles de la page active. Dans l’administration, ouvrez Composants de la page à côté de Langues pour modifier leurs paramètres et données. Double-cliquez sur le contenu pour ouvrir l’éditeur de la page en cours. L’éditeur s’ouvre dans une fenêtre au-dessus du site. Après l’enregistrement, fermez-la pour voir les modifications sur la page. Double-cliquez sur le titre H1 pour accéder directement à son champ dans l’onglet SEO.
 
 Le gestionnaire vérifie les références avant la suppression et sauvegarde les dossiers non vides. Une bannière peut avoir un titre et un sous-titre.
 
@@ -400,3 +410,17 @@ Cochez les polices à activer, puis attribuez-les au texte, aux titres ou aux co
 Bibliothèques → Héberger localement
 
 Modèles de page → Créer une page
+
+## Champs personnalisés
+
+Saisissez dans la nouvelle ligne la valeur pour la page en cours et enregistrez-la avec les réglages du champ.
+
+## Avis
+
+Insérez le code dans l’éditeur de page. Les visiteurs saisissent leur nom, rédigent un avis et attribuent de 0 à 5 étoiles. La rubrique Avis permet d’approuver, de refuser, de modifier ou de supprimer un avis. Le bouton de chargement ajoute les dix suivants.
+
+Saisissez un chemin comme /contacts/ ou laissez le champ vide pour afficher tous les avis. Le formulaire enregistre sa page d’origine. Seuls les avis approuvés sont visibles. Le CAPTCHA utilise les réglages généraux du CMS.
+
+```text
+[reviews]
+```

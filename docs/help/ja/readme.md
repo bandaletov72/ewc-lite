@@ -1,6 +1,6 @@
 # Eurowebcart CMS Lite
 
-作者 - Бандалетов Павел。 [オリジナルプロジェクトとアップデート](https://github.com/bandaletov72/php-site-updates)。
+作者 - Бандалетов Павел。 [オリジナルプロジェクトとアップデート](https://github.com/bandaletov72/ewc-lite)。
 
 PHP の最低バージョンは 7.2 です。サイトと管理画面は PHP 8.6 に対応しています。独自のモジュールやテンプレートでは、サーバーの PHP バージョンに対応する構文を使用してください。
 
@@ -189,7 +189,7 @@ document.getElementById('content').outerHTML = html;
 php update.php --github
 ```
 
-デフォルトのソースは `bandaletov72/php-site-updates` です。独自のリポジトリの場合は、`SITE_GITHUB_REPO` に設定します。パブリック リポジトリにはトークンは必要ありません。プライベート リポジトリの場合は、コンテンツへの読み取りアクセス権を持つ変数 `SITE_GITHUB_TOKEN` を PHP プロセスに渡します。サーバーには、Zip および OpenSSL PHP 拡張機能と、GitHub への HTTPS リクエストを行う機能が必要です。
+デフォルトのソースは `bandaletov72/ewc-lite` です。独自のリポジトリの場合は、`SITE_GITHUB_REPO` に設定します。パブリック リポジトリにはトークンは必要ありません。プライベート リポジトリの場合は、コンテンツへの読み取りアクセス権を持つ変数 `SITE_GITHUB_TOKEN` を PHP プロセスに渡します。サーバーには、Zip および OpenSSL PHP 拡張機能と、GitHub への HTTPS リクエストを行う機能が必要です。
 
 手動インストールの場合は、ZIP を使用します。
 

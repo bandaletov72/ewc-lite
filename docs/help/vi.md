@@ -1,5 +1,13 @@
 # Tiếng Việt · Eurowebcart CMS Lite
 
+## Bắt đầu với 1.6.58
+
+- Kích hoạt trang web hoàn chỉnh trong Mẫu thiết kế → Giao diện. Màu và phông chữ có thẻ riêng. Có thể bật nhiều phông chữ và lưu bản sao cục bộ.
+- Bật thư viện trong Cài đặt → Thư viện và lưu tài nguyên cần thiết cục bộ. Font Awesome được đóng gói sẵn.
+- Trong chế độ chỉnh sửa, nhấp đúp vào nội dung để mở trình chỉnh sửa trong hộp thoại. Nhấp đúp vào H1 mặc định để mở trường trong thẻ SEO.
+- Định nghĩa trường được dùng chung, giá trị lưu riêng theo trang. Khi tạo trường có thể nhập giá trị cho trang đang mở. Ô nhập thay đổi theo kiểu trường.
+- Với tên miền mới, tạo ZIP đầy đủ có giao diện hoạt động rồi thử cài đặt sạch. Với trang web hiện có, sao lưu và dùng bản cập nhật đã ký.
+
 - [Sự quản lý](vi/readme.md)
 - [Câu hỏi thường gặp của quản trị viên](vi/faq.md)
 - [Mẫu và thành phần](vi/templates.md)
@@ -331,6 +339,8 @@ Khung bố cục, lưới thích ứng, phần nổi bật, thẻ và giá nhấ
 
 `.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
 
+Chọn “Chỉnh sửa” để sửa mẫu. “Lưu mẫu” áp dụng thay đổi cho các trang mới. “Tạo bản sao” tạo một mẫu riêng. Trong trình chỉnh sửa, bạn có thể mở mẫu đã chọn hoặc tạo mẫu mới từ trang đã lưu. Trong biểu mẫu mẫu trang, chọn “Chèn biểu tượng” và tìm theo tên. Bạn cũng có thể nhập mã như `[fa-icon=house]`.
+
 Các mẫu bố cục được thu gọn lúc đầu. Bấm tiêu đề hoặc Mở rộng tất cả. Bấm lần nữa để thu gọn danh sách.
 
 Để đổi chiều rộng toàn bộ băng chuyền, bật chế độ sửa, mở Chỉnh sửa thành phần cạnh banner và chọn chiều rộng khối.
@@ -343,7 +353,7 @@ Chỉ bắt buộc tên thành phố. Tên miền và số điện thoại là t
 
 Biểu mẫu, yêu cầu gọi lại và đơn mới dùng email thành phố hoặc email chung nếu bỏ trống. Khi cả hai trống, biểu mẫu dùng người nhận riêng. Liên kết mạng xã hội trống kế thừa liên kết chung.
 
-Trong chế độ sửa, di chuột lên bố cục và chọn Sửa mẫu. Với mọi thành phần [php] đã cài đặt, Sửa mô-đun mở mã và cài đặt trong hộp thoại. Trình sửa khung hiện tên và mã biểu mẫu. [banners width=100] phủ chiều rộng cửa sổ nếu là khối riêng trên trang không có thanh bên. Trình sửa bố cục mở trong hộp thoại trên trang. Trong chế độ sửa, nhấp đúp vào vùng trống của mẫu. Khi rê chuột, gợi ý hiện dưới nút sửa. Nếu các khối chồng lên nhau, mẫu đứng sau được ưu tiên. Nút Sửa slide mở slide banner đã chọn. Thanh công cụ hiển thị thành phần, bố cục và mẫu con của trang hiện tại. Trong trình sửa trang, mở Thao tác với thành phần trang bên cạnh Ngôn ngữ để chỉnh sửa tham số và dữ liệu.
+Trong chế độ sửa, di chuột lên bố cục và chọn Sửa mẫu. Với mọi thành phần [php] đã cài đặt, Sửa mô-đun mở mã và cài đặt trong hộp thoại. Trình sửa khung hiện tên và mã biểu mẫu. [banners width=100] phủ chiều rộng cửa sổ nếu là khối riêng trên trang không có thanh bên. Trình sửa bố cục mở trong hộp thoại trên trang. Trong chế độ sửa, nhấp đúp vào vùng trống của mẫu. Khi rê chuột, gợi ý hiện dưới nút sửa. Nếu các khối chồng lên nhau, mẫu đứng sau được ưu tiên. Nút Sửa slide mở slide banner đã chọn. Thanh công cụ hiển thị thành phần, bố cục và mẫu con của trang hiện tại. Trong trình sửa trang, mở Thao tác với thành phần trang bên cạnh Ngôn ngữ để chỉnh sửa tham số và dữ liệu. Nhấp đúp vào nội dung để mở trình chỉnh sửa trang hiện tại. Trình chỉnh sửa mở trong hộp thoại trên trang web. Sau khi lưu, hãy đóng hộp thoại để xem thay đổi trên trang. Nhấp đúp vào tiêu đề H1 để mở ngay trường tương ứng trong thẻ SEO.
 
 Trình quản lý kiểm tra thư mục và tệp trước khi xóa, đồng thời sao lưu thư mục không trống. Slide banner có thể có tiêu đề và tiêu đề phụ.
 
@@ -400,3 +410,17 @@ Tích chọn phông chữ rồi gán cho văn bản, tiêu đề hoặc nút. T�
 Thư viện → Lưu cục bộ
 
 Mẫu trang → Tạo trang
+
+## Trường tùy chỉnh
+
+Nhập giá trị cho trang hiện tại trong dòng mới và lưu cùng thiết lập trường.
+
+## Đánh giá
+
+Chèn mã trong trình sửa trang. Khách nhập tên, viết đánh giá và chọn từ 0 đến 5 sao. Trong mục Đánh giá, bạn có thể duyệt, từ chối, sửa hoặc xóa đánh giá. Tải thêm sẽ hiển thị 10 đánh giá tiếp theo.
+
+Nhập đường dẫn như /contacts/ hoặc để trống để hiện tất cả. Biểu mẫu lưu trang gửi đánh giá. Trang web chỉ hiện đánh giá đã duyệt. CAPTCHA dùng cài đặt chung của CMS.
+
+```text
+[reviews]
+```

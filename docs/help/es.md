@@ -1,5 +1,13 @@
 # Español · Eurowebcart CMS Lite
 
+## Primeros pasos en 1.6.58
+
+- Activa un sitio completo en Plantillas de diseño → Temas. Los colores y las fuentes tienen pestañas propias. Puedes activar varias familias y guardarlas localmente.
+- Activa las bibliotecas en Configuración → Bibliotecas y guarda los recursos que necesites en local. Font Awesome está incluido.
+- En modo de edición, un doble clic sobre el contenido abre el editor en una ventana modal. Un doble clic sobre el H1 estándar abre su campo en SEO.
+- Las definiciones de campos son comunes y los valores se guardan por página. Puedes asignar un valor a la página abierta al crear el campo. El control se adapta al tipo.
+- Para un dominio nuevo, crea un ZIP completo con el tema activo y prueba una instalación limpia. En un sitio existente, haz una copia de seguridad y usa una actualización firmada.
+
 - [Gestión](es/readme.md)
 - [Preguntas frecuentes del administrador](es/faq.md)
 - [Plantillas y componentes](es/templates.md)
@@ -331,6 +339,8 @@ Contenedor, cuadrícula adaptable, sección destacada, tarjeta y precio destacad
 
 `.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
 
+Elige «Editar» para modificar una plantilla. «Guardar plantilla» aplica los cambios al crear nuevas páginas. «Duplicar» crea una plantilla independiente. En el editor puedes abrir la plantilla seleccionada o crear otra a partir de la página guardada. En el formulario de la plantilla, elige «Insertar icono» y busca por nombre. También puedes introducir un código como `[fa-icon=house]`.
+
 Las plantillas de diseño están contraídas al inicio. Pulse un título o seleccione Expandir todo. Pulse de nuevo para contraer la lista.
 
 Para cambiar el ancho del carrusel, active el modo de edición, pulse Editar componente junto a los banners y elija el ancho del bloque.
@@ -343,7 +353,7 @@ Se usa la ciudad guardada, después la del dominio y por último la primera de l
 
 Formularios, solicitudes de llamada y pedidos nuevos usan el correo de la ciudad o el del sitio si queda vacío. Si ambos faltan, los formularios usan sus propios destinatarios. Los enlaces sociales vacíos se heredan del sitio.
 
-En el modo de edición, pase el cursor por una plantilla para editarla. En cualquier componente [php] instalado, Editar módulo abre el código y los ajustes en una ventana. El editor de diapositivas muestra nombre y código del formulario. [banners width=100] ocupa toda la ventana como bloque independiente sin barra lateral. El editor de plantillas se abre en una ventana modal del sitio. En modo de edición, haga doble clic en una zona libre de la plantilla. El aviso aparece debajo del botón al pasar el cursor. Si se superponen dos bloques, prevalece la plantilla posterior. Editar diapositiva abre la diapositiva seleccionada. La barra del sitio muestra los componentes, las plantillas y los fragmentos de la página actual. En el editor de páginas, abra Componentes de la página junto a Idiomas para editar los parámetros y datos disponibles.
+En el modo de edición, pase el cursor por una plantilla para editarla. En cualquier componente [php] instalado, Editar módulo abre el código y los ajustes en una ventana. El editor de diapositivas muestra nombre y código del formulario. [banners width=100] ocupa toda la ventana como bloque independiente sin barra lateral. El editor de plantillas se abre en una ventana modal del sitio. En modo de edición, haga doble clic en una zona libre de la plantilla. El aviso aparece debajo del botón al pasar el cursor. Si se superponen dos bloques, prevalece la plantilla posterior. Editar diapositiva abre la diapositiva seleccionada. La barra del sitio muestra los componentes, las plantillas y los fragmentos de la página actual. En el editor de páginas, abra Componentes de la página junto a Idiomas para editar los parámetros y datos disponibles. Haz doble clic en el contenido para abrir el editor de la página actual. El editor se abre en una ventana sobre el sitio. Tras guardar, ciérrala para ver los cambios en la página. Haz doble clic en el encabezado H1 para ir a su campo en la pestaña SEO.
 
 El gestor comprueba las referencias antes de eliminar y hace una copia de las carpetas no vacías. Cada banner puede tener título y subtítulo.
 
@@ -400,3 +410,17 @@ Marca las fuentes que quieras activar y asígnalas al texto, títulos o controle
 Bibliotecas → Alojar localmente
 
 Plantillas de página → Crear página
+
+## Campos personalizados
+
+Introduce el valor de la página actual en la fila nueva y guárdalo junto con los ajustes del campo.
+
+## Reseñas
+
+Inserta el código en el editor de páginas. Los visitantes escriben su nombre, una reseña y una nota de 0 a 5 estrellas. En Reseñas puedes aprobar, rechazar, editar o eliminar reseñas. Cargar más añade las diez siguientes.
+
+Escribe una ruta como /contacts/ o deja el campo vacío para mostrar todas las reseñas. El formulario registra la página desde la que se envió. Solo se publican las reseñas aprobadas. CAPTCHA usa la configuración general del CMS.
+
+```text
+[reviews]
+```

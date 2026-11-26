@@ -1,6 +1,6 @@
 # Eurowebcart CMS Lite
 
-Author - Бандалетов Павел. [Original project and updates](https://github.com/bandaletov72/php-site-updates).
+Author - Бандалетов Павел. [Original project and updates](https://github.com/bandaletov72/ewc-lite).
 
 The minimum PHP version is 7.2. The site and admin area support PHP 8.6. Use the PHP syntax available on your server when writing custom modules and templates.
 
@@ -189,7 +189,7 @@ Click "Update Engine" in "Settings → Updates" or run the same check from the h
 php update.php --github
 ```
 
-The default source is `bandaletov72/php-site-updates`. For your own repository, set it to `SITE_GITHUB_REPO`. A public repository does not require a token. For a private repository, pass the variable `SITE_GITHUB_TOKEN` to the PHP process with read access to the contents. The server requires the Zip and OpenSSL PHP extensions and the ability to make HTTPS requests to GitHub.
+The default source is `bandaletov72/ewc-lite`. For your own repository, set it to `SITE_GITHUB_REPO`. A public repository does not require a token. For a private repository, pass the variable `SITE_GITHUB_TOKEN` to the PHP process with read access to the contents. The server requires the Zip and OpenSSL PHP extensions and the ability to make HTTPS requests to GitHub.
 
 For manual installation, use ZIP.
 

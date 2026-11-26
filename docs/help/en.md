@@ -1,5 +1,13 @@
 # English · Eurowebcart CMS Lite
 
+## Start here in 1.6.58
+
+- Activate a complete site under Design templates → Design themes. Site colors and fonts have separate tabs. You can enable multiple font families and store local copies.
+- Enable libraries under Settings → Libraries and save local copies where needed. Font Awesome is bundled.
+- In edit mode, double-click page content to open the editor over the site. Double-click the standard H1 to open its field on the SEO tab.
+- Custom field definitions are shared and values are per page. You can set a value for the open page when creating a field. The control adapts to the selected type.
+- For a new domain, build a full ZIP with the active theme and verify a clean installation. For an existing site, make a backup and use a signed update.
+
 - [Management](en/readme.md)
 - [Admin FAQ](en/faq.md)
 - [Templates and components](en/templates.md)
@@ -331,6 +339,8 @@ Layout wrapper, responsive grid, highlighted section, card, and emphasized price
 
 `.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
 
+Choose “Edit” to change a template. “Save template” applies your changes when you create new pages. “Duplicate” creates a separate template. In the page editor you can open the selected template or create one from the saved page. In the template form, choose “Insert icon” and search by name. You can also enter a code such as `[fa-icon=house]`.
+
 Layout templates start collapsed. Open a template by its heading or select Expand all. Press the button again to collapse the list.
 
 To resize the whole banner carousel, turn on edit mode, choose Edit component beside the banners, and select Block width.
@@ -343,7 +353,7 @@ The city selection uses the saved choice, the domain’s assigned city, then the
 
 Form messages, callbacks and new orders use the selected city’s email or the site-wide address when blank. If both settings are blank, forms keep their own recipients. Blank city social links inherit site-wide links.
 
-In edit mode, hover over a layout and choose Edit template. For any installed [php] component, Edit module opens its source and settings in a dialog. The slide editor shows the form name and code. Explicit [banners width=100] spans the viewport when inserted as a top-level block on a page with no sidebar. The layout editor opens in a dialog on the site. In edit mode, double-click a blank area of the template. The hint appears under Edit template on hover. When blocks overlap, the later template takes priority. Edit slide opens the selected banner slide. The site toolbar lists only the current page’s components, layouts and snippets. In the admin page editor, open Page components next to Languages to edit available component parameters and data.
+In edit mode, hover over a layout and choose Edit template. For any installed [php] component, Edit module opens its source and settings in a dialog. The slide editor shows the form name and code. Explicit [banners width=100] spans the viewport when inserted as a top-level block on a page with no sidebar. The layout editor opens in a dialog on the site. In edit mode, double-click a blank area of the template. The hint appears under Edit template on hover. When blocks overlap, the later template takes priority. Edit slide opens the selected banner slide. The site toolbar lists only the current page’s components, layouts and snippets. In the admin page editor, open Page components next to Languages to edit available component parameters and data. Double-click the page content to open the current page editor. The editor opens in a dialog over the site. After saving, close the dialog to see your changes on the page. Double-click the H1 heading to focus its field on the SEO tab.
 
 The file manager checks a folder and its contents for references before deletion. A backup is created for a non-empty folder. Each banner slide can have a title and subtitle.
 
@@ -400,3 +410,17 @@ Enable fonts with checkboxes and assign them to body text, headings or controls.
 Libraries → Make local
 
 Page templates → Create page
+
+## Custom fields
+
+Enter a value for the current page in the new row and save it with the field settings.
+
+## Reviews
+
+Insert the code in the page editor. Visitors enter a name, write a review and choose a rating from 0 to 5 stars. In Forms and requests → Reviews, approve, reject, edit or delete a review. Load more adds the next ten reviews.
+
+Enter a path such as /contacts/, or leave it blank to show all reviews. The form records the page it was submitted from. Only approved reviews appear on the site. CAPTCHA uses the general CMS settings.
+
+```text
+[reviews]
+```

@@ -1,5 +1,13 @@
 # Português · Eurowebcart CMS Lite
 
+## Primeiros passos no 1.6.58
+
+- Ative um site completo em Modelos de design → Temas. Cores e fontes têm abas próprias. É possível ativar várias famílias e salvá-las localmente.
+- Ative bibliotecas em Configurações → Bibliotecas e salve localmente os recursos necessários. Font Awesome já vem incluído.
+- No modo de edição, clique duas vezes no conteúdo para abrir o editor em um modal. Clique duas vezes no H1 padrão para abrir seu campo na aba SEO.
+- As definições são compartilhadas e os valores são por página. Ao criar um campo, você pode definir o valor da página aberta. O controle de entrada acompanha o tipo.
+- Para um domínio novo, gere um ZIP completo com o tema ativo e teste uma instalação limpa. Em um site existente, faça backup e use uma atualização assinada.
+
 - [Gerenciamento](pt/readme.md)
 - [Perguntas frequentes sobre administração](pt/faq.md)
 - [Modelos e componentes](pt/templates.md)
@@ -331,6 +339,8 @@ Contentor, grelha adaptável, secção em destaque, cartão e preço realçado.
 
 `.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
 
+Use «Editar» para alterar um modelo. «Salvar modelo» aplica as alterações às novas páginas. «Duplicar» cria um modelo separado. No editor, você pode abrir o modelo selecionado ou criar outro a partir da página salva. No formulário do modelo, escolha «Inserir ícone» e pesquise pelo nome. Você também pode inserir um código como `[fa-icon=house]`.
+
 Os modelos de layout começam recolhidos. Abra um modelo pelo título ou escolha Expandir tudo. Prima novamente para recolher a lista.
 
 Para alterar a largura do carrossel, ative o modo de edição, abra Editar componente junto dos banners e selecione a largura do bloco.
@@ -343,7 +353,7 @@ Só o nome da cidade é obrigatório. O domínio e os telefones são opcionais. 
 
 Os formulários, pedidos de chamada e novas encomendas usam o e-mail da cidade ou o do site se estiver vazio. Se ambos estiverem vazios, os formulários mantêm os seus destinatários. Os links sociais vazios são herdados.
 
-No modo de edição, passe o cursor sobre um modelo para o editar. Para qualquer componente [php] instalado, Editar módulo abre o código e as definições numa janela. O editor de diapositivos mostra o nome e o código do formulário. [banners width=100] ocupa toda a janela como bloco autónomo sem barra lateral. O editor de modelos abre numa janela modal do site. No modo de edição, faça duplo clique numa zona livre do modelo. A dica aparece sob o botão ao passar o cursor. Quando os blocos se sobrepõem, o modelo seguinte tem prioridade. Editar slide abre o slide selecionado. A barra do site mostra os componentes, modelos e submodelos da página atual. Na administração, abra Componentes da página junto a Idiomas para editar os parâmetros e dados disponíveis.
+No modo de edição, passe o cursor sobre um modelo para o editar. Para qualquer componente [php] instalado, Editar módulo abre o código e as definições numa janela. O editor de diapositivos mostra o nome e o código do formulário. [banners width=100] ocupa toda a janela como bloco autónomo sem barra lateral. O editor de modelos abre numa janela modal do site. No modo de edição, faça duplo clique numa zona livre do modelo. A dica aparece sob o botão ao passar o cursor. Quando os blocos se sobrepõem, o modelo seguinte tem prioridade. Editar slide abre o slide selecionado. A barra do site mostra os componentes, modelos e submodelos da página atual. Na administração, abra Componentes da página junto a Idiomas para editar os parâmetros e dados disponíveis. Clique duas vezes no conteúdo para abrir o editor da página atual. O editor abre em uma janela sobre o site. Depois de salvar, feche a janela para ver as alterações na página. Clique duas vezes no título H1 para ir diretamente ao campo na aba SEO.
 
 O gestor verifica referências antes de eliminar e faz uma cópia de segurança de pastas não vazias. Cada banner pode ter título e subtítulo.
 
@@ -400,3 +410,17 @@ Marque as fontes a ativar e atribua-as ao texto, aos títulos ou aos controlos. 
 Bibliotecas → Hospedar localmente
 
 Modelos de página → Criar página
+
+## Campos personalizados
+
+Informe o valor da página atual na nova linha e salve-o com os ajustes do campo.
+
+## Avaliações
+
+Insira o código no editor da página. Os visitantes indicam o nome, escrevem a avaliação e atribuem de 0 a 5 estrelas. Na seção Avaliações, você pode aprovar, rejeitar, editar ou excluir avaliações. Carregar mais adiciona as dez seguintes.
+
+Digite um caminho como /contacts/ ou deixe o campo vazio para mostrar todas as avaliações. O formulário registra a página de origem. Apenas avaliações aprovadas aparecem no site. O CAPTCHA usa as configurações gerais do CMS.
+
+```text
+[reviews]
+```

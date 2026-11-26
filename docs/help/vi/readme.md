@@ -1,6 +1,6 @@
 # Eurowebcart CMS Lite
 
-Tác giả - Бандалетов Павел. [Dự án gốc và cập nhật](https://github.com/bandaletov72/php-site-updates).
+Tác giả - Бандалетов Павел. [Dự án gốc và cập nhật](https://github.com/bandaletov72/ewc-lite).
 
 Phiên bản PHP tối thiểu là 7.2. Trang web và khu vực quản trị hỗ trợ PHP 8.6. Hãy dùng cú pháp của phiên bản trên máy chủ cho mô-đun và mẫu riêng.
 
@@ -189,7 +189,7 @@ Nhấp vào "Cập nhật công cụ" trong "Cài đặt → Cập nhật" hoặ
 php update.php --github
 ```
 
-Nguồn mặc định là `bandaletov72/php-site-updates`. Đối với kho lưu trữ của riêng bạn, hãy đặt nó thành `SITE_GITHUB_REPO`. Kho lưu trữ công cộng không yêu cầu mã thông báo. Đối với kho lưu trữ riêng, chuyển biến `SITE_GITHUB_TOKEN` cho quy trình PHP với quyền truy cập đọc nội dung. Máy chủ yêu cầu các tiện ích mở rộng Zip và OpenSSL PHP cũng như khả năng thực hiện các yêu cầu HTTPS tới GitHub.
+Nguồn mặc định là `bandaletov72/ewc-lite`. Đối với kho lưu trữ của riêng bạn, hãy đặt nó thành `SITE_GITHUB_REPO`. Kho lưu trữ công cộng không yêu cầu mã thông báo. Đối với kho lưu trữ riêng, chuyển biến `SITE_GITHUB_TOKEN` cho quy trình PHP với quyền truy cập đọc nội dung. Máy chủ yêu cầu các tiện ích mở rộng Zip và OpenSSL PHP cũng như khả năng thực hiện các yêu cầu HTTPS tới GitHub.
 
 Để cài đặt thủ công, hãy sử dụng ZIP.
 

@@ -1,5 +1,13 @@
 # Deutsch · Eurowebcart CMS Lite
 
+## Erste Schritte mit 1.6.58
+
+- Aktivieren Sie eine vollständige Website unter Designvorlagen → Design-Themes. Farben und Schriften haben eigene Tabs. Mehrere Schriftfamilien lassen sich aktivieren und lokal speichern.
+- Aktivieren Sie Bibliotheken unter Einstellungen → Bibliotheken und speichern Sie benötigte Ressourcen lokal. Font Awesome ist enthalten.
+- Im Bearbeitungsmodus öffnet ein Doppelklick auf den Inhalt den Editor im Dialog. Ein Doppelklick auf die Standard-H1 öffnet ihr Feld im SEO-Tab.
+- Felddefinitionen gelten gemeinsam, Werte je Seite. Beim Anlegen lässt sich der Wert für die geöffnete Seite eingeben. Das Eingabeelement passt sich dem Typ an.
+- Erstellen Sie für eine neue Domain eine vollständige ZIP-Datei mit aktivem Theme und testen Sie eine Neuinstallation. Sichern Sie bestehende Websites und verwenden Sie ein signiertes Update.
+
 - [Management](de/readme.md)
 - [Admin-FAQ](de/faq.md)
 - [Vorlagen und Komponenten](de/templates.md)
@@ -331,6 +339,8 @@ Container, responsives Raster, hervorgehobener Abschnitt, Karte und betonter Pre
 
 `.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
 
+Wählen Sie „Bearbeiten“, um eine Vorlage zu ändern. „Vorlage speichern“ übernimmt die Änderungen für neue Seiten. „Duplizieren“ erstellt eine separate Vorlage. Im Seiteneditor können Sie die ausgewählte Vorlage öffnen oder aus der gespeicherten Seite eine Vorlage erstellen. Wählen Sie im Vorlagenformular „Symbol einfügen“ und suchen Sie nach dem Namen. Sie können auch einen Code wie `[fa-icon=house]` eingeben.
+
 Die Layoutvorlagen sind anfangs eingeklappt. Öffnen Sie eine Vorlage über ihre Überschrift oder wählen Sie Alle aufklappen. Erneutes Drücken klappt die Liste ein.
 
 Um die Breite des gesamten Bannerkarussells zu ändern, aktivieren Sie den Bearbeitungsmodus, öffnen Sie Komponente bearbeiten und wählen Sie die Blockbreite.
@@ -343,7 +353,7 @@ Zuerst gilt die gespeicherte Stadt, dann die Domain-Stadt und danach der erste L
 
 Formulare, Rückrufe und neue Bestellungen gehen an die Stadtadresse oder an die Standardadresse der Website. Sind beide leer, behalten Formulare ihre eigenen Empfänger. Leere Social-Media-Links werden geerbt.
 
-Im Bearbeitungsmodus erscheint beim Überfahren einer Vorlage ein Bearbeitungslink. Bei allen installierten [php]-Komponenten öffnet Modul bearbeiten den Quellcode und die Einstellungen im Dialog. Der Folien-Editor zeigt Formularname und Code. [banners width=100] füllt als eigenständiger Block ohne Seitenleiste die Fensterbreite. Der Vorlageneditor öffnet sich in einem Dialog auf der Website. Doppelklicken Sie im Bearbeitungsmodus auf einen freien Bereich der Vorlage. Der Hinweis erscheint beim Überfahren unter der Schaltfläche. Bei überlappenden Blöcken hat die spätere Vorlage Vorrang. Folie bearbeiten öffnet die gewählte Bannerfolie. Die Website-Leiste zeigt Komponenten, Vorlagen und Bausteine der aktuellen Seite. Im Seiteneditor finden Sie neben Sprachen den Reiter Seitenkomponenten mit den verfügbaren Einstellungen und Daten.
+Im Bearbeitungsmodus erscheint beim Überfahren einer Vorlage ein Bearbeitungslink. Bei allen installierten [php]-Komponenten öffnet Modul bearbeiten den Quellcode und die Einstellungen im Dialog. Der Folien-Editor zeigt Formularname und Code. [banners width=100] füllt als eigenständiger Block ohne Seitenleiste die Fensterbreite. Der Vorlageneditor öffnet sich in einem Dialog auf der Website. Doppelklicken Sie im Bearbeitungsmodus auf einen freien Bereich der Vorlage. Der Hinweis erscheint beim Überfahren unter der Schaltfläche. Bei überlappenden Blöcken hat die spätere Vorlage Vorrang. Folie bearbeiten öffnet die gewählte Bannerfolie. Die Website-Leiste zeigt Komponenten, Vorlagen und Bausteine der aktuellen Seite. Im Seiteneditor finden Sie neben Sprachen den Reiter Seitenkomponenten mit den verfügbaren Einstellungen und Daten. Doppelklicken Sie auf den Seiteninhalt, um die aktuelle Seite zu bearbeiten. Der Editor öffnet sich in einem Dialog über der Website. Schließen Sie ihn nach dem Speichern, um die Änderungen auf der Seite zu sehen. Doppelklicken Sie auf die H1-Überschrift, um ihr Feld im SEO-Tab zu öffnen.
 
 Der Dateimanager prüft vor dem Löschen die Referenzen und sichert nicht leere Ordner. Banner können einen Titel und einen Untertitel haben.
 
@@ -400,3 +410,17 @@ Aktivieren Sie Schriften per Kontrollkästchen und weisen Sie sie Texten, Übers
 Bibliotheken → Lokal speichern
 
 Seitenvorlagen → Seite erstellen
+
+## Benutzerdefinierte Felder
+
+Geben Sie in der neuen Zeile den Wert für die aktuelle Seite ein und speichern Sie ihn mit den Feldeinstellungen.
+
+## Bewertungen
+
+Fügen Sie den Code im Seiteneditor ein. Besucher geben einen Namen und eine Bewertung mit 0 bis 5 Sternen ab. Im Bereich Bewertungen können Sie Beiträge freigeben, ablehnen, bearbeiten oder löschen. „Mehr laden“ fügt die nächsten zehn hinzu.
+
+Geben Sie einen Pfad wie /contacts/ ein oder lassen Sie das Feld für alle Bewertungen leer. Das Formular speichert die Seite, von der es gesendet wurde. Nur freigegebene Bewertungen erscheinen auf der Website. CAPTCHA verwendet die allgemeinen CMS-Einstellungen.
+
+```text
+[reviews]
+```

@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - updates/latest.json
+      - updates/release.json
       - .github/workflows/publish-update.yml
   workflow_dispatch:
 
@@ -17,33 +17,79 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Verify and publish release files
+      - name: Prepare release archives
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          assets=$(mktemp -d)
-          snapshot=$(mktemp -d)
+          assets="$RUNNER_TEMP/cms-assets"
+          snapshot="$RUNNER_TEMP/cms-snapshot"
+          mkdir "$assets" "$snapshot"
           git -C "$snapshot" init --quiet
-          git -C "$snapshot" fetch --quiet --no-tags --depth=1 "https://github.com/$GITHUB_REPOSITORY.git" "$GITHUB_SHA"
-          fetch_file() {
-            git -C "$snapshot" show "FETCH_HEAD:$1"
-          }
-          version=$(fetch_file updates/latest.json | jq -er '.version | strings')
-          [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          git -C "$snapshot" remote add origin "https://github.com/$GITHUB_REPOSITORY.git"
+          git -C "$snapshot" fetch --quiet --no-tags --depth=1 origin "$GITHUB_SHA"
+          git -C "$snapshot" checkout --quiet --detach FETCH_HEAD
+          cd "$snapshot"
+          version=$(jq -er '.version | strings' updates/release.json)
+          latest=$(jq -er '.version | strings' updates/latest.json)
+          [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && $latest =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          [[ $(printf '%s\n' "$latest" "$version" | sort -V | tail -n 1) == "$version" ]]
           tag=v$version
-          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            echo "$tag already published"
-            exit 0
+          cp "full/$tag/php-site.zip" "updates/$tag/php-site-update.zip" "$assets/"
+          signature="updates/$tag/php-site-update.zip.sig"
+          if [[ -f "$signature" ]]; then
+            cp "$signature" "$assets/"
           fi
-          fetch_file "full/$tag/php-site.zip" > "$assets/php-site.zip"
-          fetch_file "updates/$tag/php-site-update.zip" > "$assets/php-site-update.zip"
-          fetch_file "updates/$tag/php-site-update.zip.sig" > "$assets/php-site-update.zip.sig"
-          unzip -p "$assets/php-site.zip" php-site/maintenance/release-public.pem > "$assets/key.pem"
-          echo "7d1d57014ddb4642aebf7c4dfd0593f75326933c25685957228b82e5d6143d3b  $assets/key.pem" | sha256sum -c -
-          openssl dgst -sha256 -verify "$assets/key.pem" -signature "$assets/php-site-update.zip.sig" "$assets/php-site-update.zip"
+          unzip -tq "$assets/php-site.zip"
+          unzip -tq "$assets/php-site-update.zip"
+          unzip -p "$assets/php-site.zip" php-site/maintenance/release-public.pem > "$assets/public.pem"
+          echo "7d1d57014ddb4642aebf7c4dfd0593f75326933c25685957228b82e5d6143d3b  $assets/public.pem" | sha256sum -c -
           [[ $(unzip -p "$assets/php-site-update.zip" manifest.json | jq -er '.version') == "$version" ]]
-          gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --latest \
-            --title "Eurowebcart CMS Lite $version" --notes 'Full package, update archive and signature.' \
-            "$assets/php-site.zip" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig"
+          printf 'CMS_RELEASE_VERSION=%s\n' "$version" >> "$GITHUB_ENV"
+
+      - name: Sign and verify the update
+        shell: bash
+        env:
+          RELEASE_SIGNING_KEY: ${{ secrets.RELEASE_SIGNING_KEY }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/cms-assets"
+          if [[ ! -f php-site-update.zip.sig ]]; then
+            if [[ -z "$RELEASE_SIGNING_KEY" ]]; then
+              echo "::error::Missing repository secret RELEASE_SIGNING_KEY"
+              exit 1
+            fi
+            umask 077
+            key=$(mktemp)
+            trap 'rm -f "$key"' EXIT
+            printf '%s\n' "$RELEASE_SIGNING_KEY" > "$key"
+            unset RELEASE_SIGNING_KEY
+            openssl dgst -sha256 -sign "$key" -passin pass: -out php-site-update.zip.sig php-site-update.zip
+          fi
+          openssl dgst -sha256 -verify public.pem -signature php-site-update.zip.sig php-site-update.zip
+
+      - name: Publish GitHub Release and the fallback update
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          assets="$RUNNER_TEMP/cms-assets"
+          cd "$RUNNER_TEMP/cms-snapshot"
+          tag=v$CMS_RELEASE_VERSION
+          signature="updates/$tag/php-site-update.zip.sig"
+          cp "$assets/php-site-update.zip.sig" "$signature"
+          printf '{"version":"%s"}\n' "$CMS_RELEASE_VERSION" > updates/latest.json
+          git add -- "$signature" updates/latest.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -m "Publish signed CMS update $tag"
+            gh auth setup-git --hostname github.com
+            git push origin HEAD:refs/heads/main
+          fi
+          if ! gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$(git rev-parse HEAD)" --latest \
+              --title "Eurowebcart CMS Lite $CMS_RELEASE_VERSION" --notes 'Full package, update archive and signature.' \
+              "$assets/php-site.zip" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig"
+          fi
