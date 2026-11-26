@@ -454,3 +454,5 @@ Le bouton de modification de [reviews] ouvre les réglages et la modération des
 La taille du lot vaut pour le premier chargement et pour chaque clic. Laissez le texte vide pour utiliser le libellé par défaut dans la langue de la page.
 
 Le bouton « Données » ouvre l’éditeur de [iblock]. Pour les autres composants, utilisez « Paramètres ».
+
+Si l’éditeur ne se charge pas dans la fenêtre, cliquez sur « Réessayer » ou ouvrez-le en plein écran.

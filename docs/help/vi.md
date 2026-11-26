@@ -454,3 +454,5 @@ Nút chỉnh sửa [reviews] mở phần cài đặt và kiểm duyệt đánh g
 Số lượng này áp dụng khi tải lần đầu và mỗi lần bấm nút. Để trống nội dung để dùng nhãn mặc định theo ngôn ngữ của trang.
 
 Nút «Dữ liệu» mở trình chỉnh sửa [iblock]. Các thành phần khác dùng nút «Cài đặt».
+
+Nếu trình chỉnh sửa trong hộp thoại không tải được, hãy chọn «Thử lại» hoặc mở toàn màn hình.

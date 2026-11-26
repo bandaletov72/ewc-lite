@@ -454,3 +454,5 @@ O botão de edição de [reviews] abre as configurações e a moderação de ava
 O tamanho do lote aplica-se ao primeiro carregamento e a cada clique. Deixe o texto em branco para usar o rótulo padrão no idioma da página.
 
 O botão «Dados» abre o editor de [iblock]. Nos restantes componentes, utilize «Definições».
+
+Se o editor não carregar na janela, selecione «Tentar novamente» ou abra-o em ecrã inteiro.

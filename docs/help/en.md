@@ -458,3 +458,5 @@ Edit component on [reviews] opens review settings and moderation in a dialog.
 The batch size applies to the first load and to each button press. Leave the text blank to use the default label in the page language.
 
 Use Data to open the [iblock] editor. Other components use Settings.
+
+If the editor fails to load in the dialog, select Retry or use Full screen to open it separately.
