@@ -1,0 +1,2407 @@
+{
+    "schema": 1,
+    "currency": "RUB",
+    "counts": {
+        "products": 43,
+        "offers": 49,
+        "categories": 7
+    },
+    "tables": {
+        "categories": [
+            {
+                "id": "tools",
+                "parent_id": "",
+                "slug": "instrumenty",
+                "name": "Инструменты",
+                "sort": "1",
+                "descendants": "1",
+                "description": "Демонстрационный раздел"
+            },
+            {
+                "id": "power",
+                "parent_id": "tools",
+                "slug": "elektroinstrumenty",
+                "name": "Электроинструменты",
+                "sort": "1",
+                "descendants": "1",
+                "description": ""
+            },
+            {
+                "id": "drills",
+                "parent_id": "power",
+                "slug": "dreli",
+                "name": "Дрели и шуруповёрты",
+                "sort": "1",
+                "descendants": "1",
+                "description": ""
+            },
+            {
+                "id": "cordless",
+                "parent_id": "drills",
+                "slug": "akkumulyatornye",
+                "name": "Аккумуляторные",
+                "sort": "1",
+                "descendants": "1",
+                "description": ""
+            },
+            {
+                "id": "saws",
+                "parent_id": "power",
+                "slug": "pily",
+                "name": "Пилы",
+                "sort": "2",
+                "descendants": "1",
+                "description": ""
+            },
+            {
+                "id": "garden",
+                "parent_id": "",
+                "slug": "sad",
+                "name": "Сад и дача",
+                "sort": "2",
+                "descendants": "1",
+                "description": ""
+            },
+            {
+                "id": "sale",
+                "parent_id": "",
+                "slug": "akcii",
+                "name": "Акции",
+                "sort": "3",
+                "descendants": "1",
+                "description": ""
+            }
+        ],
+        "products": [
+            {
+                "id": "p1",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-1",
+                "name": "Аккумуляторная дрель Bosch 1",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p01.jpg",
+                "created": "2026-11-02",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p2",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-2",
+                "name": "Аккумуляторная дрель Makita 2",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p02.jpg",
+                "created": "2026-11-03",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p3",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-3",
+                "name": "Аккумуляторная дрель Интерскол 3",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p03.jpg",
+                "created": "2026-11-04",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p4",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-4",
+                "name": "Аккумуляторная дрель DeWalt 4",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p04.jpg",
+                "created": "2026-11-05",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p5",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-5",
+                "name": "Аккумуляторная дрель Bosch 5",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p05.jpg",
+                "created": "2026-11-06",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p6",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-6",
+                "name": "Аккумуляторная дрель Makita 6",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p06.jpg",
+                "created": "2026-11-07",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p7",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-7",
+                "name": "Аккумуляторная дрель Интерскол 7",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p07.jpg",
+                "created": "2026-11-08",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p8",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-8",
+                "name": "Аккумуляторная дрель DeWalt 8",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p08.jpg",
+                "created": "2026-11-09",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p9",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-9",
+                "name": "Аккумуляторная дрель Bosch 9",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p09.jpg",
+                "created": "2026-11-10",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p10",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-10",
+                "name": "Аккумуляторная дрель Makita 10",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p10.jpg",
+                "created": "2026-11-11",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p11",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-11",
+                "name": "Аккумуляторная дрель Интерскол 11",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p11.jpg",
+                "created": "2026-11-12",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p12",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-12",
+                "name": "Аккумуляторная дрель DeWalt 12",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p12.jpg",
+                "created": "2026-11-13",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p13",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-13",
+                "name": "Аккумуляторная дрель Bosch 13",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p13.jpg",
+                "created": "2026-11-14",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p14",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-14",
+                "name": "Аккумуляторная дрель Makita 14",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p14.jpg",
+                "created": "2026-11-15",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p15",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-15",
+                "name": "Аккумуляторная дрель Интерскол 15",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p15.jpg",
+                "created": "2026-11-16",
+                "type": "physical",
+                "active": "0"
+            },
+            {
+                "id": "p16",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-16",
+                "name": "Аккумуляторная дрель DeWalt 16",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p16.jpg",
+                "created": "2026-11-17",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p17",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-17",
+                "name": "Аккумуляторная дрель Bosch 17",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p17.jpg",
+                "created": "2026-11-18",
+                "type": "physical",
+                "active": "0"
+            },
+            {
+                "id": "p18",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-18",
+                "name": "Аккумуляторная дрель Makita 18",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p18.jpg",
+                "created": "2026-11-19",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p19",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-19",
+                "name": "Аккумуляторная дрель Интерскол 19",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p19.jpg",
+                "created": "2026-11-20",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p20",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-20",
+                "name": "Аккумуляторная дрель DeWalt 20",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p20.jpg",
+                "created": "2026-11-21",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p21",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-21",
+                "name": "Аккумуляторная дрель Bosch 21",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p21.jpg",
+                "created": "2026-11-22",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p22",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-22",
+                "name": "Аккумуляторная дрель Makita 22",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p22.jpg",
+                "created": "2026-11-23",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p23",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-23",
+                "name": "Аккумуляторная дрель Интерскол 23",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p23.jpg",
+                "created": "2026-11-24",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p24",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-24",
+                "name": "Аккумуляторная дрель DeWalt 24",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p24.jpg",
+                "created": "2026-11-25",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p25",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-25",
+                "name": "Аккумуляторная дрель Bosch 25",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p25.jpg",
+                "created": "2026-11-01",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p26",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-26",
+                "name": "Аккумуляторная дрель Makita 26",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p26.jpg",
+                "created": "2026-11-02",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p27",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-27",
+                "name": "Аккумуляторная дрель Интерскол 27",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p27.jpg",
+                "created": "2026-11-03",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p28",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-28",
+                "name": "Аккумуляторная дрель DeWalt 28",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p28.jpg",
+                "created": "2026-11-04",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p29",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-29",
+                "name": "Аккумуляторная дрель Bosch 29",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p29.jpg",
+                "created": "2026-11-05",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p30",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-30",
+                "name": "Аккумуляторная дрель Makita 30",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p30.jpg",
+                "created": "2026-11-06",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p31",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-31",
+                "name": "Аккумуляторная дрель Интерскол 31",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p31.jpg",
+                "created": "2026-11-07",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p32",
+                "category_id": "cordless",
+                "slug": "akkumulyatornaya-drel-32",
+                "name": "Аккумуляторная дрель DeWalt 32",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p32.jpg",
+                "created": "2026-11-08",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p33",
+                "category_id": "saws",
+                "slug": "tovar-33",
+                "name": "Циркулярная пила Bosch 33",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p33.jpg",
+                "created": "2026-11-09",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p34",
+                "category_id": "saws",
+                "slug": "tovar-34",
+                "name": "Циркулярная пила Makita 34",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p34.jpg",
+                "created": "2026-11-10",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p35",
+                "category_id": "saws",
+                "slug": "tovar-35",
+                "name": "Циркулярная пила Интерскол 35",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p35.jpg",
+                "created": "2026-11-11",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p36",
+                "category_id": "saws",
+                "slug": "tovar-36",
+                "name": "Циркулярная пила DeWalt 36",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p36.jpg",
+                "created": "2026-11-12",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p37",
+                "category_id": "saws",
+                "slug": "tovar-37",
+                "name": "Циркулярная пила Bosch 37",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p37.jpg",
+                "created": "2026-11-13",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p38",
+                "category_id": "saws",
+                "slug": "tovar-38",
+                "name": "Циркулярная пила Makita 38",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p38.jpg",
+                "created": "2026-11-14",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p39",
+                "category_id": "garden",
+                "slug": "tovar-39",
+                "name": "Садовый набор Интерскол 39",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p39.jpg",
+                "created": "2026-11-15",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p40",
+                "category_id": "garden",
+                "slug": "tovar-40",
+                "name": "Садовый набор DeWalt 40",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p40.jpg",
+                "created": "2026-11-16",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p41",
+                "category_id": "garden",
+                "slug": "tovar-41",
+                "name": "Садовый набор Bosch 41",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p41.jpg",
+                "created": "2026-11-17",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p42",
+                "category_id": "garden",
+                "slug": "tovar-42",
+                "name": "Садовый набор Makita 42",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p42.jpg",
+                "created": "2026-11-18",
+                "type": "physical",
+                "active": "1"
+            },
+            {
+                "id": "p43",
+                "category_id": "garden",
+                "slug": "tovar-43",
+                "name": "Набор для дома Интерскол 43",
+                "summary": "Демонстрационная карточка",
+                "description": "<p><strong>Полное описание</strong> товара для проверки редактора. Магазин работает на [site-name].</p>",
+                "image": "demo-photo-p43.jpg",
+                "created": "2026-11-19",
+                "type": "kit",
+                "active": "1"
+            }
+        ],
+        "offers": [
+            {
+                "id": "o1",
+                "product_id": "p1",
+                "sku": "DEMO-001",
+                "variant": "Стандарт",
+                "price_minor": "271300",
+                "stock": "16",
+                "active": "1"
+            },
+            {
+                "id": "o1-plus",
+                "product_id": "p1",
+                "sku": "DEMO-001-PLUS",
+                "variant": "18 В",
+                "price_minor": "411300",
+                "stock": "10",
+                "active": "1"
+            },
+            {
+                "id": "o2",
+                "product_id": "p2",
+                "sku": "DEMO-002",
+                "variant": "Стандарт",
+                "price_minor": "283600",
+                "stock": "17",
+                "active": "1"
+            },
+            {
+                "id": "o2-plus",
+                "product_id": "p2",
+                "sku": "DEMO-002-PLUS",
+                "variant": "18 В",
+                "price_minor": "423600",
+                "stock": "10",
+                "active": "1"
+            },
+            {
+                "id": "o3",
+                "product_id": "p3",
+                "sku": "DEMO-003",
+                "variant": "Стандарт",
+                "price_minor": "295900",
+                "stock": "18",
+                "active": "1"
+            },
+            {
+                "id": "o3-plus",
+                "product_id": "p3",
+                "sku": "DEMO-003-PLUS",
+                "variant": "18 В",
+                "price_minor": "435900",
+                "stock": "10",
+                "active": "1"
+            },
+            {
+                "id": "o4",
+                "product_id": "p4",
+                "sku": "DEMO-004",
+                "variant": "Стандарт",
+                "price_minor": "308200",
+                "stock": "19",
+                "active": "1"
+            },
+            {
+                "id": "o4-plus",
+                "product_id": "p4",
+                "sku": "DEMO-004-PLUS",
+                "variant": "18 В",
+                "price_minor": "448200",
+                "stock": "10",
+                "active": "1"
+            },
+            {
+                "id": "o5",
+                "product_id": "p5",
+                "sku": "DEMO-005",
+                "variant": "Стандарт",
+                "price_minor": "320500",
+                "stock": "20",
+                "active": "1"
+            },
+            {
+                "id": "o5-plus",
+                "product_id": "p5",
+                "sku": "DEMO-005-PLUS",
+                "variant": "18 В",
+                "price_minor": "460500",
+                "stock": "10",
+                "active": "1"
+            },
+            {
+                "id": "o6",
+                "product_id": "p6",
+                "sku": "DEMO-006",
+                "variant": "Стандарт",
+                "price_minor": "332800",
+                "stock": "21",
+                "active": "1"
+            },
+            {
+                "id": "o6-plus",
+                "product_id": "p6",
+                "sku": "DEMO-006-PLUS",
+                "variant": "18 В",
+                "price_minor": "472800",
+                "stock": "10",
+                "active": "1"
+            },
+            {
+                "id": "o7",
+                "product_id": "p7",
+                "sku": "DEMO-007",
+                "variant": "Стандарт",
+                "price_minor": "300000",
+                "stock": "22",
+                "active": "1"
+            },
+            {
+                "id": "o8",
+                "product_id": "p8",
+                "sku": "DEMO-008",
+                "variant": "Стандарт",
+                "price_minor": "357400",
+                "stock": "23",
+                "active": "1"
+            },
+            {
+                "id": "o9",
+                "product_id": "p9",
+                "sku": "DEMO-009",
+                "variant": "Стандарт",
+                "price_minor": "369700",
+                "stock": "24",
+                "active": "1"
+            },
+            {
+                "id": "o10",
+                "product_id": "p10",
+                "sku": "DEMO-010",
+                "variant": "Стандарт",
+                "price_minor": "382000",
+                "stock": "25",
+                "active": "1"
+            },
+            {
+                "id": "o11",
+                "product_id": "p11",
+                "sku": "DEMO-011",
+                "variant": "Стандарт",
+                "price_minor": "394300",
+                "stock": "26",
+                "active": "1"
+            },
+            {
+                "id": "o12",
+                "product_id": "p12",
+                "sku": "DEMO-012",
+                "variant": "Стандарт",
+                "price_minor": "406600",
+                "stock": "27",
+                "active": "1"
+            },
+            {
+                "id": "o13",
+                "product_id": "p13",
+                "sku": "DEMO-013",
+                "variant": "Стандарт",
+                "price_minor": "418900",
+                "stock": "28",
+                "active": "1"
+            },
+            {
+                "id": "o14",
+                "product_id": "p14",
+                "sku": "DEMO-014",
+                "variant": "Стандарт",
+                "price_minor": "431200",
+                "stock": "29",
+                "active": "1"
+            },
+            {
+                "id": "o15",
+                "product_id": "p15",
+                "sku": "DEMO-015",
+                "variant": "Стандарт",
+                "price_minor": "443500",
+                "stock": "30",
+                "active": "1"
+            },
+            {
+                "id": "o16",
+                "product_id": "p16",
+                "sku": "DEMO-016",
+                "variant": "Стандарт",
+                "price_minor": "455800",
+                "stock": "31",
+                "active": "1"
+            },
+            {
+                "id": "o17",
+                "product_id": "p17",
+                "sku": "DEMO-017",
+                "variant": "Стандарт",
+                "price_minor": "468100",
+                "stock": "32",
+                "active": "1"
+            },
+            {
+                "id": "o18",
+                "product_id": "p18",
+                "sku": "DEMO-018",
+                "variant": "Стандарт",
+                "price_minor": "480400",
+                "stock": "33",
+                "active": "1"
+            },
+            {
+                "id": "o19",
+                "product_id": "p19",
+                "sku": "DEMO-019",
+                "variant": "Стандарт",
+                "price_minor": "492700",
+                "stock": "34",
+                "active": "1"
+            },
+            {
+                "id": "o20",
+                "product_id": "p20",
+                "sku": "DEMO-020",
+                "variant": "Стандарт",
+                "price_minor": "505000",
+                "stock": "35",
+                "active": "1"
+            },
+            {
+                "id": "o21",
+                "product_id": "p21",
+                "sku": "DEMO-021",
+                "variant": "Стандарт",
+                "price_minor": "517300",
+                "stock": "36",
+                "active": "1"
+            },
+            {
+                "id": "o22",
+                "product_id": "p22",
+                "sku": "DEMO-022",
+                "variant": "Стандарт",
+                "price_minor": "529600",
+                "stock": "37",
+                "active": "1"
+            },
+            {
+                "id": "o23",
+                "product_id": "p23",
+                "sku": "DEMO-023",
+                "variant": "Стандарт",
+                "price_minor": "541900",
+                "stock": "38",
+                "active": "1"
+            },
+            {
+                "id": "o24",
+                "product_id": "p24",
+                "sku": "DEMO-024",
+                "variant": "Стандарт",
+                "price_minor": "554200",
+                "stock": "39",
+                "active": "1"
+            },
+            {
+                "id": "o25",
+                "product_id": "p25",
+                "sku": "DEMO-025",
+                "variant": "Стандарт",
+                "price_minor": "566500",
+                "stock": "40",
+                "active": "1"
+            },
+            {
+                "id": "o26",
+                "product_id": "p26",
+                "sku": "DEMO-026",
+                "variant": "Стандарт",
+                "price_minor": "578800",
+                "stock": "41",
+                "active": "1"
+            },
+            {
+                "id": "o27",
+                "product_id": "p27",
+                "sku": "DEMO-027",
+                "variant": "Стандарт",
+                "price_minor": "591100",
+                "stock": "42",
+                "active": "1"
+            },
+            {
+                "id": "o28",
+                "product_id": "p28",
+                "sku": "DEMO-028",
+                "variant": "Стандарт",
+                "price_minor": "603400",
+                "stock": "43",
+                "active": "1"
+            },
+            {
+                "id": "o29",
+                "product_id": "p29",
+                "sku": "DEMO-029",
+                "variant": "Стандарт",
+                "price_minor": "615700",
+                "stock": "44",
+                "active": "1"
+            },
+            {
+                "id": "o30",
+                "product_id": "p30",
+                "sku": "DEMO-030",
+                "variant": "Стандарт",
+                "price_minor": "628000",
+                "stock": "45",
+                "active": "1"
+            },
+            {
+                "id": "o31",
+                "product_id": "p31",
+                "sku": "DEMO-031",
+                "variant": "Стандарт",
+                "price_minor": "640300",
+                "stock": "46",
+                "active": "1"
+            },
+            {
+                "id": "o32",
+                "product_id": "p32",
+                "sku": "DEMO-032",
+                "variant": "Стандарт",
+                "price_minor": "652600",
+                "stock": "47",
+                "active": "1"
+            },
+            {
+                "id": "o33",
+                "product_id": "p33",
+                "sku": "DEMO-033",
+                "variant": "Стандарт",
+                "price_minor": "664900",
+                "stock": "48",
+                "active": "1"
+            },
+            {
+                "id": "o34",
+                "product_id": "p34",
+                "sku": "DEMO-034",
+                "variant": "Стандарт",
+                "price_minor": "677200",
+                "stock": "49",
+                "active": "1"
+            },
+            {
+                "id": "o35",
+                "product_id": "p35",
+                "sku": "DEMO-035",
+                "variant": "Стандарт",
+                "price_minor": "689500",
+                "stock": "50",
+                "active": "1"
+            },
+            {
+                "id": "o36",
+                "product_id": "p36",
+                "sku": "DEMO-036",
+                "variant": "Стандарт",
+                "price_minor": "701800",
+                "stock": "51",
+                "active": "1"
+            },
+            {
+                "id": "o37",
+                "product_id": "p37",
+                "sku": "DEMO-037",
+                "variant": "Стандарт",
+                "price_minor": "714100",
+                "stock": "52",
+                "active": "1"
+            },
+            {
+                "id": "o38",
+                "product_id": "p38",
+                "sku": "DEMO-038",
+                "variant": "Стандарт",
+                "price_minor": "726400",
+                "stock": "53",
+                "active": "1"
+            },
+            {
+                "id": "o39",
+                "product_id": "p39",
+                "sku": "DEMO-039",
+                "variant": "Стандарт",
+                "price_minor": "738700",
+                "stock": "54",
+                "active": "1"
+            },
+            {
+                "id": "o40",
+                "product_id": "p40",
+                "sku": "DEMO-040",
+                "variant": "Стандарт",
+                "price_minor": "751000",
+                "stock": "55",
+                "active": "1"
+            },
+            {
+                "id": "o41",
+                "product_id": "p41",
+                "sku": "DEMO-041",
+                "variant": "Стандарт",
+                "price_minor": "763300",
+                "stock": "56",
+                "active": "1"
+            },
+            {
+                "id": "o42",
+                "product_id": "p42",
+                "sku": "DEMO-042",
+                "variant": "Стандарт",
+                "price_minor": "775600",
+                "stock": "57",
+                "active": "1"
+            },
+            {
+                "id": "o43",
+                "product_id": "p43",
+                "sku": "DEMO-043",
+                "variant": "Комплект",
+                "price_minor": "787900",
+                "stock": "58",
+                "active": "1"
+            }
+        ],
+        "fields": [
+            {
+                "id": "brand",
+                "category_id": "",
+                "name": "Бренд",
+                "type": "list",
+                "target": "product",
+                "filter": "1",
+                "sort": "0",
+                "unit": ""
+            },
+            {
+                "id": "rating",
+                "category_id": "",
+                "name": "Рейтинг",
+                "type": "number",
+                "target": "product",
+                "filter": "1",
+                "sort": "1",
+                "unit": ""
+            },
+            {
+                "id": "popularity",
+                "category_id": "",
+                "name": "Популярность",
+                "type": "number",
+                "target": "product",
+                "filter": "0",
+                "sort": "1",
+                "unit": ""
+            },
+            {
+                "id": "voltage",
+                "category_id": "drills",
+                "name": "Напряжение, В",
+                "type": "number",
+                "target": "offer",
+                "filter": "1",
+                "sort": "1",
+                "unit": ""
+            },
+            {
+                "id": "battery",
+                "category_id": "cordless",
+                "name": "Аккумулятор в комплекте",
+                "type": "boolean",
+                "target": "offer",
+                "filter": "1",
+                "sort": "0",
+                "unit": ""
+            }
+        ],
+        "placements": [
+            {
+                "product_id": "p1",
+                "category_id": "sale"
+            },
+            {
+                "product_id": "p2",
+                "category_id": "sale"
+            },
+            {
+                "product_id": "p3",
+                "category_id": "sale"
+            },
+            {
+                "product_id": "p4",
+                "category_id": "sale"
+            },
+            {
+                "product_id": "p5",
+                "category_id": "sale"
+            },
+            {
+                "product_id": "p6",
+                "category_id": "sale"
+            }
+        ],
+        "images": [
+            {
+                "product_id": "p1",
+                "image": "demo-5.jpg",
+                "alt": "Второе фото товара"
+            },
+            {
+                "product_id": "p2",
+                "image": "demo-5.jpg",
+                "alt": "Второе фото товара"
+            },
+            {
+                "product_id": "p3",
+                "image": "demo-5.jpg",
+                "alt": "Второе фото товара"
+            },
+            {
+                "product_id": "p4",
+                "image": "demo-5.jpg",
+                "alt": "Второе фото товара"
+            },
+            {
+                "product_id": "p5",
+                "image": "demo-5.jpg",
+                "alt": "Второе фото товара"
+            },
+            {
+                "product_id": "p6",
+                "image": "demo-5.jpg",
+                "alt": "Второе фото товара"
+            }
+        ],
+        "prices": [
+            {
+                "offer_id": "o1",
+                "type": "old",
+                "price_minor": "301300"
+            },
+            {
+                "offer_id": "o2",
+                "type": "old",
+                "price_minor": "313600"
+            },
+            {
+                "offer_id": "o3",
+                "type": "old",
+                "price_minor": "325900"
+            },
+            {
+                "offer_id": "o4",
+                "type": "old",
+                "price_minor": "338200"
+            },
+            {
+                "offer_id": "o5",
+                "type": "old",
+                "price_minor": "350500"
+            },
+            {
+                "offer_id": "o6",
+                "type": "old",
+                "price_minor": "362800"
+            },
+            {
+                "offer_id": "o7",
+                "type": "old",
+                "price_minor": "375100"
+            },
+            {
+                "offer_id": "o8",
+                "type": "old",
+                "price_minor": "387400"
+            },
+            {
+                "offer_id": "o9",
+                "type": "old",
+                "price_minor": "399700"
+            },
+            {
+                "offer_id": "o10",
+                "type": "old",
+                "price_minor": "412000"
+            },
+            {
+                "offer_id": "o11",
+                "type": "old",
+                "price_minor": "424300"
+            },
+            {
+                "offer_id": "o12",
+                "type": "old",
+                "price_minor": "436600"
+            },
+            {
+                "offer_id": "o13",
+                "type": "old",
+                "price_minor": "448900"
+            },
+            {
+                "offer_id": "o14",
+                "type": "old",
+                "price_minor": "461200"
+            },
+            {
+                "offer_id": "o15",
+                "type": "old",
+                "price_minor": "473500"
+            },
+            {
+                "offer_id": "o16",
+                "type": "old",
+                "price_minor": "485800"
+            },
+            {
+                "offer_id": "o17",
+                "type": "old",
+                "price_minor": "498100"
+            },
+            {
+                "offer_id": "o18",
+                "type": "old",
+                "price_minor": "510400"
+            },
+            {
+                "offer_id": "o19",
+                "type": "old",
+                "price_minor": "522700"
+            },
+            {
+                "offer_id": "o20",
+                "type": "old",
+                "price_minor": "535000"
+            },
+            {
+                "offer_id": "o21",
+                "type": "old",
+                "price_minor": "547300"
+            },
+            {
+                "offer_id": "o22",
+                "type": "old",
+                "price_minor": "559600"
+            },
+            {
+                "offer_id": "o23",
+                "type": "old",
+                "price_minor": "571900"
+            },
+            {
+                "offer_id": "o24",
+                "type": "old",
+                "price_minor": "584200"
+            },
+            {
+                "offer_id": "o25",
+                "type": "old",
+                "price_minor": "596500"
+            },
+            {
+                "offer_id": "o26",
+                "type": "old",
+                "price_minor": "608800"
+            },
+            {
+                "offer_id": "o27",
+                "type": "old",
+                "price_minor": "621100"
+            },
+            {
+                "offer_id": "o28",
+                "type": "old",
+                "price_minor": "633400"
+            },
+            {
+                "offer_id": "o29",
+                "type": "old",
+                "price_minor": "645700"
+            },
+            {
+                "offer_id": "o30",
+                "type": "old",
+                "price_minor": "658000"
+            },
+            {
+                "offer_id": "o31",
+                "type": "old",
+                "price_minor": "670300"
+            },
+            {
+                "offer_id": "o32",
+                "type": "old",
+                "price_minor": "682600"
+            },
+            {
+                "offer_id": "o33",
+                "type": "old",
+                "price_minor": "694900"
+            },
+            {
+                "offer_id": "o34",
+                "type": "old",
+                "price_minor": "707200"
+            },
+            {
+                "offer_id": "o35",
+                "type": "old",
+                "price_minor": "719500"
+            },
+            {
+                "offer_id": "o36",
+                "type": "old",
+                "price_minor": "731800"
+            },
+            {
+                "offer_id": "o37",
+                "type": "old",
+                "price_minor": "744100"
+            },
+            {
+                "offer_id": "o38",
+                "type": "old",
+                "price_minor": "756400"
+            },
+            {
+                "offer_id": "o39",
+                "type": "old",
+                "price_minor": "768700"
+            },
+            {
+                "offer_id": "o40",
+                "type": "old",
+                "price_minor": "781000"
+            },
+            {
+                "offer_id": "o41",
+                "type": "old",
+                "price_minor": "793300"
+            },
+            {
+                "offer_id": "o42",
+                "type": "old",
+                "price_minor": "805600"
+            },
+            {
+                "offer_id": "o43",
+                "type": "old",
+                "price_minor": "817900"
+            }
+        ],
+        "kits": [
+            {
+                "offer_id": "o43",
+                "component_id": "o1",
+                "quantity": "1"
+            },
+            {
+                "offer_id": "o43",
+                "component_id": "o2",
+                "quantity": "2"
+            }
+        ],
+        "aliases": [],
+        "values": [
+            {
+                "field_id": "brand",
+                "target_id": "p1",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p1",
+                "value": "3.6"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p1",
+                "value": "99"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o1",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o1",
+                "value": "1"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o1-plus",
+                "value": "18"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o1-plus",
+                "value": "0"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p2",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p2",
+                "value": "3.7"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p2",
+                "value": "98"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o2",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o2",
+                "value": "1"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o2-plus",
+                "value": "18"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o2-plus",
+                "value": "0"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p3",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p3",
+                "value": "3.8"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p3",
+                "value": "97"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o3",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o3",
+                "value": "1"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o3-plus",
+                "value": "18"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o3-plus",
+                "value": "0"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p4",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p4",
+                "value": "3.9"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p4",
+                "value": "96"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o4",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o4",
+                "value": "1"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o4-plus",
+                "value": "18"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o4-plus",
+                "value": "0"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p5",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p5",
+                "value": "4"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p5",
+                "value": "95"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o5",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o5",
+                "value": "1"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o5-plus",
+                "value": "18"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o5-plus",
+                "value": "0"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p6",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p6",
+                "value": "4.1"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p6",
+                "value": "94"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o6",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o6",
+                "value": "1"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o6-plus",
+                "value": "18"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o6-plus",
+                "value": "0"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p7",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p7",
+                "value": "4.2"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p7",
+                "value": "93"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o7",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o7",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p8",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p8",
+                "value": "4.3"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p8",
+                "value": "92"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o8",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o8",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p9",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p9",
+                "value": "4.4"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p9",
+                "value": "91"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o9",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o9",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p10",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p10",
+                "value": "4.5"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p10",
+                "value": "90"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o10",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o10",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p11",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p11",
+                "value": "4.6"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p11",
+                "value": "89"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o11",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o11",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p12",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p12",
+                "value": "4.7"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p12",
+                "value": "88"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o12",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o12",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p13",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p13",
+                "value": "4.8"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p13",
+                "value": "87"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o13",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o13",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p14",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p14",
+                "value": "4.9"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p14",
+                "value": "86"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o14",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o14",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p15",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p15",
+                "value": "5"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p15",
+                "value": "85"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o15",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o15",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p16",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p16",
+                "value": "3.5"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p16",
+                "value": "84"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o16",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o16",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p17",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p17",
+                "value": "3.6"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p17",
+                "value": "83"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o17",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o17",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p18",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p18",
+                "value": "3.7"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p18",
+                "value": "82"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o18",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o18",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p19",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p19",
+                "value": "3.8"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p19",
+                "value": "81"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o19",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o19",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p20",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p20",
+                "value": "3.9"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p20",
+                "value": "80"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o20",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o20",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p21",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p21",
+                "value": "4"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p21",
+                "value": "79"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o21",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o21",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p22",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p22",
+                "value": "4.1"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p22",
+                "value": "78"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o22",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o22",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p23",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p23",
+                "value": "4.2"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p23",
+                "value": "77"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o23",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o23",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p24",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p24",
+                "value": "4.3"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p24",
+                "value": "76"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o24",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o24",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p25",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p25",
+                "value": "4.4"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p25",
+                "value": "75"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o25",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o25",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p26",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p26",
+                "value": "4.5"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p26",
+                "value": "74"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o26",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o26",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p27",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p27",
+                "value": "4.6"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p27",
+                "value": "73"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o27",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o27",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p28",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p28",
+                "value": "4.7"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p28",
+                "value": "72"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o28",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o28",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p29",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p29",
+                "value": "4.8"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p29",
+                "value": "71"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o29",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o29",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p30",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p30",
+                "value": "4.9"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p30",
+                "value": "70"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o30",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o30",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p31",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p31",
+                "value": "5"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p31",
+                "value": "69"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o31",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o31",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p32",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p32",
+                "value": "3.5"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p32",
+                "value": "68"
+            },
+            {
+                "field_id": "voltage",
+                "target_id": "o32",
+                "value": "12"
+            },
+            {
+                "field_id": "battery",
+                "target_id": "o32",
+                "value": "1"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p33",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p33",
+                "value": "3.6"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p33",
+                "value": "67"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p34",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p34",
+                "value": "3.7"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p34",
+                "value": "66"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p35",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p35",
+                "value": "3.8"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p35",
+                "value": "65"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p36",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p36",
+                "value": "3.9"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p36",
+                "value": "64"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p37",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p37",
+                "value": "4"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p37",
+                "value": "63"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p38",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p38",
+                "value": "4.1"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p38",
+                "value": "62"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p39",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p39",
+                "value": "4.2"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p39",
+                "value": "61"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p40",
+                "value": "DeWalt"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p40",
+                "value": "4.3"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p40",
+                "value": "60"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p41",
+                "value": "Bosch"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p41",
+                "value": "4.4"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p41",
+                "value": "59"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p42",
+                "value": "Makita"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p42",
+                "value": "4.5"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p42",
+                "value": "58"
+            },
+            {
+                "field_id": "brand",
+                "target_id": "p43",
+                "value": "Интерскол"
+            },
+            {
+                "field_id": "rating",
+                "target_id": "p43",
+                "value": "4.6"
+            },
+            {
+                "field_id": "popularity",
+                "target_id": "p43",
+                "value": "57"
+            }
+        ],
+        "warehouses": [],
+        "inventory": [],
+        "barcodes": []
+    }
+}
