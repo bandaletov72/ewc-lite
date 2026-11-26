@@ -438,3 +438,7 @@ O botão Deixar uma avaliação abre o formulário.
 ## Progresso da atualização · Progresso da indexação
 
 Baixando o arquivo de atualização. Baixando a assinatura. Verificando a assinatura e as somas de verificação do arquivo. As páginas, as configurações e os arquivos do usuário serão mantidos. Preparando os arquivos e as cópias temporárias para restauração. Usando modelos, estilos e scripts incluídos no CMS. As páginas e configurações atuais serão mantidas. Usando o design e as páginas incluídos no tema. As configurações e as demais páginas serão mantidas. Fazendo backup das páginas, configurações e mídias. Verificando o backup. Backup salvo em Manutenção. Coletando a lista de páginas. Processando as páginas e suas traduções. Salvando o índice de pesquisa.
+
+**Design e adição das páginas em falta**
+
+O design é aplicado e as páginas de navegação em falta são adicionadas. As páginas e configurações existentes são mantidas.

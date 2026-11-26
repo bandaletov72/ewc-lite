@@ -438,3 +438,7 @@ Nút Viết đánh giá mở biểu mẫu.
 ## Tiến độ cập nhật · Tiến độ lập chỉ mục
 
 Đang tải gói cập nhật. Đang tải chữ ký. Đang xác minh chữ ký và mã kiểm tra của gói. Giữ lại các trang, cài đặt và tệp người dùng. Đang chuẩn bị tệp thay thế và bản sao tạm để khôi phục. Dùng mẫu, kiểu và tập lệnh đi kèm CMS. Giữ lại các trang và cài đặt hiện tại. Dùng thiết kế và các trang đi kèm chủ đề. Giữ lại cài đặt và các trang ngoài gói. Đang sao lưu các trang, cài đặt và tệp đa phương tiện. Đang xác minh bản sao lưu. Đã lưu bản sao lưu trong mục Bảo trì. Đang thu thập danh sách trang. Đang xử lý các trang và bản dịch. Đang lưu chỉ mục tìm kiếm.
+
+**Thiết kế và thêm trang còn thiếu**
+
+Áp dụng thiết kế và thêm các trang điều hướng còn thiếu. Giữ lại các trang và cài đặt hiện có.

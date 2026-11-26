@@ -442,3 +442,7 @@ Under Settings → Updates, the progress bar tracks the update ZIP and signature
 Under Design Themes → Update theme, the log shows the selected mode. When replacing bundled pages, the CMS creates and verifies a backup of pages, settings, and media. Find the archive named in the log under Maintenance.
 
 Under Maintenance, Rebuild index reports the number of processed pages and shows when the search index is being saved.
+
+**Design and add missing pages**
+
+Applying the design and adding missing navigation pages. Existing pages and settings are kept.

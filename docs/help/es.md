@@ -438,3 +438,7 @@ El botón Dejar una reseña abre el formulario.
 ## Progreso de la actualización · Progreso de la indexación
 
 Descargando el archivo de actualización. Descargando la firma. Verificando la firma y las sumas de comprobación del archivo. Se conservan las páginas, los ajustes y los archivos de usuario. Preparando los archivos y las copias temporales de restauración. Se usan las plantillas, estilos y scripts incluidos en el CMS. Se conservan las páginas y los ajustes actuales. Se usan el diseño y las páginas incluidos en el tema. Se conservan los ajustes y las demás páginas. Creando una copia de las páginas, los ajustes y los archivos multimedia. Verificando la copia de seguridad. Copia de seguridad guardada en Mantenimiento. Recopilando la lista de páginas. Procesando las páginas y sus traducciones. Guardando el índice de búsqueda.
+
+**Diseño y adición de páginas faltantes**
+
+Se aplica el diseño y se añaden las páginas de navegación faltantes. Se conservan las páginas y los ajustes existentes.

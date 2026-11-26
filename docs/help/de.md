@@ -438,3 +438,7 @@ Die Schaltfläche Bewertung schreiben öffnet das Formular.
 ## Updatefortschritt · Fortschritt der Indexierung
 
 Updatearchiv wird heruntergeladen. Signatur wird heruntergeladen. Signatur und Prüfsummen des Archivs werden geprüft. Seiten, Einstellungen und Benutzerdateien bleiben erhalten. Dateien und temporäre Kopien für die Wiederherstellung werden vorbereitet. Vorlagen, Stile und Skripte aus dem CMS-Paket werden übernommen. Seiten und Einstellungen bleiben erhalten. Design und Seiten aus dem CMS-Paket werden übernommen. Einstellungen und Seiten außerhalb des Pakets bleiben erhalten. Seiten, Einstellungen und Medien werden gesichert. Sicherung wird geprüft. Sicherung ist unter Wartung gespeichert. Seitenliste wird erstellt. Seiten und Übersetzungen werden verarbeitet. Suchindex wird gespeichert.
+
+**Design und fehlende Seiten hinzufügen**
+
+Design wird angewendet und fehlende Menüseiten werden ergänzt. Bestehende Seiten und Einstellungen bleiben erhalten.
