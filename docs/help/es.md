@@ -464,3 +464,7 @@ Versión instalada del tema · Versión del tema incluida en el CMS
 Elige Diseño y adición de páginas faltantes para actualizar los códigos de reseñas.
 
 Al buscar actualizaciones, se carga la descripción de la versión desde GitHub.
+
+Aprobar reseñas automáticamente
+
+Las reseñas con enlaces o términos bloqueados quedan pendientes. Edita la lista en «Antispam». Las actualizaciones de GitHub añaden reglas nuevas y conservan tus cambios. Las máscaras IPv4 admiten * y rangos inclusivos como 189.10-17.*.*. Se admiten direcciones IPv4 e IPv6 exactas.

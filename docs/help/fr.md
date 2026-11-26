@@ -464,3 +464,7 @@ Version du thème installée · Version du thème incluse avec le CMS
 Choisissez Design et ajout des pages manquantes pour mettre à jour les codes des avis.
 
 La vérification des mises à jour charge la description de la version depuis GitHub.
+
+Approuver automatiquement les avis
+
+Les avis avec des liens ou des mots bloqués restent en modération. La liste se modifie dans «Antispam». Les mises à jour GitHub ajoutent les nouvelles règles et conservent vos modifications. Les masques IPv4 acceptent * et les plages inclusives comme 189.10-17.*.*. Les adresses IPv4 et IPv6 exactes sont acceptées.

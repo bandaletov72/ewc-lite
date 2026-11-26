@@ -464,3 +464,7 @@ Phiên bản chủ đề đã cài · Phiên bản chủ đề đi kèm CMS
 Chọn Thiết kế và thêm trang còn thiếu để cập nhật mã đánh giá.
 
 Khi kiểm tra cập nhật, mô tả bản phát hành được tải từ GitHub.
+
+Tự động duyệt đánh giá
+
+Đánh giá có liên kết hoặc từ bị chặn vẫn chờ duyệt. Chỉnh sửa danh sách từ tại «Chống spam». Bản cập nhật GitHub bổ sung quy tắc mới và giữ các thay đổi đã lưu. Mặt nạ IPv4 hỗ trợ * và khoảng bao gồm hai đầu, ví dụ 189.10-17.*.*. Hỗ trợ địa chỉ IPv4 và IPv6 chính xác.
