@@ -1,0 +1,14 @@
+.shop-container { max-width: 76rem; margin: 2rem auto; padding: 0 1rem; }
+.shop-container > nav, .shop-controls, .shop-pagination, .shop-form { display: flex; flex-wrap: wrap; align-items:-end; gap: .6rem; margin-block: .7rem; }
+.shop-container input:not([type=checkbox]), .shop-controls input:not([type=checkbox]) { max-width: 100%; }
+.shop-controls fieldset { padding: .4rem; max-width: 100%; }
+.shop-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%, 15rem),1fr)); gap: 1rem; }
+.shop-item,.shop-product { border:1px solid var(--line, #ccc); background:var(--surface,#fff); padding:1rem; border-radius:.5rem; }
+.shop-item img { width:100%; max-height:14rem; object-fit: contain; }
+.shop-gallery { display:flex; flex-wrap:wrap; gap:1rem; }
+.shop-gallery img { width:min(100%,18rem); height:14rem; object-fit:contain; }
+.shop-alt-price { display:block; }
+.shop-offer + .shop-offer { border-top:1px solid var(--line, #ddd); padding-top:.5rem; }
+.shop-cart-items { padding-left:1.2rem; }
+.shop-pagination [aria-current=page] { background:var(--ink,#14263a); color:var(--surface,#fff); }
+.shop-container textarea { width:100%; }
