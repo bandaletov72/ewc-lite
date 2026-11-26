@@ -457,7 +457,7 @@ Den Editor für [iblock] öffnen Sie über „Daten“. Bei anderen Komponenten 
 
 Wenn der Editor im Dialog nicht lädt, wählen Sie „Erneut versuchen“ oder öffnen Sie ihn über „Vollbild“.
 
-Fügen Sie [reviews page=current] in eine Seite ein, um Bewertungen zu dieser Seite anzuzeigen.
+Mit [reviews page=current] erscheinen zuerst die Bewertungen zur aktuellen Seite, danach die Bewertungen anderer Seiten, neueste zuerst.
 
 Installierte Theme-Version · Mitgelieferte CMS-Version des Themes
 

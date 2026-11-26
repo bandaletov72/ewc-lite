@@ -457,7 +457,7 @@ Nút «Dữ liệu» mở trình chỉnh sửa [iblock]. Các thành phần khá
 
 Nếu trình chỉnh sửa trong hộp thoại không tải được, hãy chọn «Thử lại» hoặc mở toàn màn hình.
 
-Chèn [reviews page=current] vào nội dung trang để hiển thị các đánh giá của trang đó.
+Chèn [reviews page=current] để hiển thị đánh giá của trang hiện tại trước, sau đó là đánh giá của các trang khác theo thứ tự mới nhất.
 
 Phiên bản chủ đề đã cài · Phiên bản chủ đề đi kèm CMS
 

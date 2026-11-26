@@ -457,7 +457,7 @@ Le bouton « Données » ouvre l’éditeur de [iblock]. Pour les autres composa
 
 Si l’éditeur ne se charge pas dans la fenêtre, cliquez sur « Réessayer » ou ouvrez-le en plein écran.
 
-Insérez [reviews page=current] dans une page pour afficher les avis associés à cette page.
+Insérez [reviews page=current] pour afficher d’abord les avis de la page ouverte, puis ceux des autres pages, du plus récent au plus ancien.
 
 Version du thème installée · Version du thème incluse avec le CMS
 

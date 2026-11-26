@@ -461,7 +461,7 @@ Use Data to open the [iblock] editor. Other components use Settings.
 
 If the editor fails to load in the dialog, select Retry or use Full screen to open it separately.
 
-Insert [reviews page=current] in a page to show reviews submitted for that page.
+Insert [reviews page=current] to show reviews for the current page first, followed by reviews from other pages, newest first.
 
 Installed theme version · Version bundled with the CMS
 

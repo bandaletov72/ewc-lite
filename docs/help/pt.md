@@ -457,7 +457,7 @@ O botão «Dados» abre o editor de [iblock]. Nos restantes componentes, utilize
 
 Se o editor não carregar na janela, selecione «Tentar novamente» ou abra-o em ecrã inteiro.
 
-Insira [reviews page=current] numa página para mostrar as avaliações dessa página.
+Insira [reviews page=current] para apresentar primeiro as avaliações da página atual e depois as das restantes páginas, das mais recentes para as mais antigas.
 
 Versão instalada do tema · Versão do tema incluída no CMS
 

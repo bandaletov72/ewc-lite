@@ -457,7 +457,7 @@ El botón «Datos» abre el editor de [iblock]. Para los demás componentes, usa
 
 Si el editor no carga en el cuadro de diálogo, pulsa «Reintentar» o ábrelo a pantalla completa.
 
-Inserta [reviews page=current] en una página para mostrar las reseñas de esa página.
+Inserta [reviews page=current] para mostrar primero las reseñas de la página actual y luego las de las demás páginas, de la más reciente a la más antigua.
 
 Versión instalada del tema · Versión del tema incluida en el CMS
 
