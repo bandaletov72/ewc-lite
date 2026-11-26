@@ -444,3 +444,7 @@ Nút Viết đánh giá mở biểu mẫu.
 Áp dụng thiết kế và thêm các trang điều hướng còn thiếu. Giữ lại các trang và cài đặt hiện có.
 
 **100% · Hoàn tất**
+
+Trong chế độ chỉnh sửa, di chuột qua giá trị của mẫu con rồi mở trình chỉnh sửa. Lưu và đóng hộp thoại để xem trang đã cập nhật.
+
+Nút chỉnh sửa [reviews] mở phần cài đặt và kiểm duyệt đánh giá trong hộp thoại.

@@ -444,3 +444,7 @@ Téléchargement de l’archive de mise à jour. Téléchargement de la signatur
 Application du design et ajout des pages de navigation manquantes. Les pages et réglages existants sont conservés.
 
 **100% · Terminé**
+
+En mode édition, survolez la valeur du sous-modèle et ouvrez son éditeur. Enregistrez et fermez la fenêtre pour voir la page mise à jour.
+
+Le bouton de modification de [reviews] ouvre les réglages et la modération des avis dans une fenêtre.

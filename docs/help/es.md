@@ -444,3 +444,7 @@ Descargando el archivo de actualización. Descargando la firma. Verificando la f
 Se aplica el diseño y se añaden las páginas de navegación faltantes. Se conservan las páginas y los ajustes existentes.
 
 **100% · Listo**
+
+En el modo de edición, pasa el cursor sobre el valor de un fragmento y abre su editor. Guarda y cierra el cuadro de diálogo para ver los cambios en la página.
+
+El botón de edición de [reviews] abre los ajustes y la moderación de reseñas en un cuadro de diálogo.

@@ -444,3 +444,7 @@ Baixando o arquivo de atualização. Baixando a assinatura. Verificando a assina
 O design é aplicado e as páginas de navegação em falta são adicionadas. As páginas e configurações existentes são mantidas.
 
 **100% · Concluído**
+
+No modo de edição, passe o cursor sobre o valor de um submodelo e abra o editor. Guarde e feche a janela para ver a página atualizada.
+
+O botão de edição de [reviews] abre as configurações e a moderação de avaliações numa janela.

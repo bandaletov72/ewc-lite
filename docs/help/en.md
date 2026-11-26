@@ -448,3 +448,7 @@ Under Maintenance, Rebuild index reports the number of processed pages and shows
 Applying the design and adding missing navigation pages. Existing pages and settings are kept.
 
 **100% · Done**
+
+In edit mode, hover over a snippet value and select Edit subtemplate. Save and close the dialog to see the updated page.
+
+Edit component on [reviews] opens review settings and moderation in a dialog.

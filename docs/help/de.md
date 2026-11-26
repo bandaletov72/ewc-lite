@@ -444,3 +444,7 @@ Updatearchiv wird heruntergeladen. Signatur wird heruntergeladen. Signatur und P
 Design wird angewendet und fehlende Menüseiten werden ergänzt. Bestehende Seiten und Einstellungen bleiben erhalten.
 
 **100% · Fertig**
+
+Zeigen Sie im Bearbeitungsmodus auf den Wert einer Untervorlage und klicken Sie auf „Untervorlage bearbeiten“. Speichern und schließen Sie den Dialog, um die Änderung auf der Seite zu sehen.
+
+Bei [reviews] öffnet die Bearbeitungsschaltfläche die Einstellungen und Moderation der Bewertungen in einem Dialog.
