@@ -403,6 +403,8 @@ O tema Dezinfektori inclui 32 serviços, pedidos [form86] e o formulário de ava
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
 ```
 
+A página inicial mostra avaliações aprovadas de todas as páginas quando o filtro está vazio.
+
 Cada página do catálogo tem um formulário de avaliação. Após aprovação em Avaliações, ela aparece na página de origem.
 
 ### Cores do site · Fontes

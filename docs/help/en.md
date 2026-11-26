@@ -403,6 +403,8 @@ The Dezinfektori theme includes 32 services, the inquiry form [form86], and the 
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
 ```
 
+The home page lists approved reviews from every page when the review filter is empty.
+
 Every catalog page has a Leave a review form. After approval in Reviews, the review appears on the page it was submitted from.
 
 ### Site colors · Fonts

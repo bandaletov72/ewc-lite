@@ -403,6 +403,8 @@ Giao diện Dezinfektori có 32 dịch vụ, biểu mẫu yêu cầu [form86] v�
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
 ```
 
+Trang chủ hiển thị các đánh giá đã duyệt từ mọi trang khi bộ lọc đánh giá để trống.
+
 Mỗi trang danh mục có biểu mẫu đánh giá. Sau khi duyệt trong mục Đánh giá, nội dung sẽ xuất hiện trên trang gửi đánh giá.
 
 ### Màu trang web · Phông chữ

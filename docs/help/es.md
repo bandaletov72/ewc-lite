@@ -403,6 +403,8 @@ El tema Dezinfektori incluye 32 servicios, solicitudes [form86] y un formulario 
 [iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
 ```
 
+La página de inicio muestra reseñas aprobadas de todas las páginas si el filtro está vacío.
+
 Cada página del catálogo tiene un formulario de reseñas. Tras aprobarla en Reseñas, aparece en la página desde la que se envió.
 
 ### Colores del sitio · Fuentes
