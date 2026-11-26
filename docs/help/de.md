@@ -468,3 +468,7 @@ Bei der Updateprüfung wird die Release-Beschreibung von GitHub geladen.
 Bewertungen automatisch freigeben
 
 Bewertungen mit Links oder Sperrwörtern bleiben in der Moderation. Die Wortliste lässt sich hier bearbeiten: «Spamschutz». GitHub-Updates ergänzen neue Regeln und behalten Ihre Änderungen bei. IPv4-Masken erlauben * und inklusive Bereiche wie 189.10-17.*.*. Genaue IPv4- und IPv6-Adressen werden unterstützt.
+
+Adresse `[address]` · Öffentliche E-Mail `[email]` · Öffnungszeiten `[hours]`
+
+Die Kontaktdaten der Stadt erscheinen im Kopfbereich. Leere Felder verwenden gemeinsame Vorlagenwerte.

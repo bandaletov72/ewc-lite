@@ -468,3 +468,7 @@ Khi kiểm tra cập nhật, mô tả bản phát hành được tải từ GitH
 Tự động duyệt đánh giá
 
 Đánh giá có liên kết hoặc từ bị chặn vẫn chờ duyệt. Chỉnh sửa danh sách từ tại «Chống spam». Bản cập nhật GitHub bổ sung quy tắc mới và giữ các thay đổi đã lưu. Mặt nạ IPv4 hỗ trợ * và khoảng bao gồm hai đầu, ví dụ 189.10-17.*.*. Hỗ trợ địa chỉ IPv4 và IPv6 chính xác.
+
+Địa chỉ `[address]` · Email công khai `[email]` · Giờ làm việc `[hours]`
+
+Thông tin liên hệ của thành phố hiển thị ở đầu trang. Các ô trống dùng giá trị mẫu con dùng chung.

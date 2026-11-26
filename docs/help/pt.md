@@ -468,3 +468,7 @@ A verificação de atualizações carrega a descrição da versão a partir do G
 Aprovar avaliações automaticamente
 
 As avaliações com ligações ou palavras bloqueadas ficam em moderação. Edite a lista em «Antispam». As atualizações do GitHub acrescentam regras e preservam as suas alterações. Máscaras IPv4 aceitam * e intervalos inclusivos como 189.10-17.*.*. Endereços IPv4 e IPv6 exatos são aceites.
+
+Morada `[address]` · E-mail público `[email]` · Horário de funcionamento `[hours]`
+
+Os contactos da cidade aparecem no cabeçalho. Campos vazios usam os valores dos submodelos partilhados.

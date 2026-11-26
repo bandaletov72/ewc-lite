@@ -472,3 +472,7 @@ Checking for updates loads the release description from GitHub.
 Automatically approve reviews
 
 Reviews containing links or blocked terms stay in moderation. Edit the word list in «Antispam». CMS and spam-filter updates from GitHub add new rules to your list and preserve your saved additions and removals. IPv4 masks allow * for any octet and inclusive ranges, such as 189.10-17.*.*. Exact IPv4 and IPv6 addresses are supported.
+
+Address `[address]` · Public email `[email]` · Opening hours `[hours]`
+
+City contact details appear in the header. Empty fields use the shared snippet values.

@@ -468,3 +468,7 @@ Al buscar actualizaciones, se carga la descripción de la versión desde GitHub.
 Aprobar reseñas automáticamente
 
 Las reseñas con enlaces o términos bloqueados quedan pendientes. Edita la lista en «Antispam». Las actualizaciones de GitHub añaden reglas nuevas y conservan tus cambios. Las máscaras IPv4 admiten * y rangos inclusivos como 189.10-17.*.*. Se admiten direcciones IPv4 e IPv6 exactas.
+
+Dirección `[address]` · Correo público `[email]` · Horario `[hours]`
+
+Los datos de la ciudad se muestran en la cabecera. Los campos vacíos usan los valores compartidos.
