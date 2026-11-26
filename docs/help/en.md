@@ -476,3 +476,5 @@ Reviews containing links or blocked terms stay in moderation. Edit the word list
 Address `[address]` · Public email `[email]` · Opening hours `[hours]`
 
 City contact details appear in the header. Empty fields use the shared snippet values.
+
+The installed and GitHub filter versions appear beside the update button.

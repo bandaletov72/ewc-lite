@@ -472,3 +472,5 @@ Bewertungen mit Links oder Sperrwörtern bleiben in der Moderation. Die Wortlist
 Adresse `[address]` · Öffentliche E-Mail `[email]` · Öffnungszeiten `[hours]`
 
 Die Kontaktdaten der Stadt erscheinen im Kopfbereich. Leere Felder verwenden gemeinsame Vorlagenwerte.
+
+Neben der Schaltfläche stehen die installierte Filterversion und die GitHub-Version.

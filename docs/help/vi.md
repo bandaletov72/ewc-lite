@@ -472,3 +472,5 @@ Tự động duyệt đánh giá
 Địa chỉ `[address]` · Email công khai `[email]` · Giờ làm việc `[hours]`
 
 Thông tin liên hệ của thành phố hiển thị ở đầu trang. Các ô trống dùng giá trị mẫu con dùng chung.
+
+Phiên bản đã cài đặt và phiên bản GitHub hiển thị cạnh nút cập nhật.

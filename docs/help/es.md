@@ -472,3 +472,5 @@ Las reseñas con enlaces o términos bloqueados quedan pendientes. Edita la list
 Dirección `[address]` · Correo público `[email]` · Horario `[hours]`
 
 Los datos de la ciudad se muestran en la cabecera. Los campos vacíos usan los valores compartidos.
+
+Junto al botón se muestran la versión instalada y la de GitHub.

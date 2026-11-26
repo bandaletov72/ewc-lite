@@ -472,3 +472,5 @@ Les avis avec des liens ou des mots bloqués restent en modération. La liste se
 Adresse `[address]` · E-mail public `[email]` · Horaires `[hours]`
 
 Les coordonnées de la ville apparaissent dans l’en-tête. Les champs vides utilisent les valeurs communes.
+
+Les versions installée et GitHub des filtres figurent près du bouton de mise à jour.

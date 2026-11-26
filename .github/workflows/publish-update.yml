@@ -80,7 +80,12 @@ jobs:
           tag=v$CMS_RELEASE_VERSION
           signature="updates/$tag/php-site-update.zip.sig"
           cp "$assets/php-site-update.zip.sig" "$signature"
-          jq -c '{version} + (if (.notes | type) == "string" then {notes} else {} end)' updates/release.json > updates/latest.json
+          spam_version=""
+          if unzip -Z1 "$assets/php-site-update.zip" app/spam-defaults.php >/dev/null 2>&1; then
+            spam_version=$(unzip -p "$assets/php-site-update.zip" app/spam-defaults.php | tail -n +2 | jq -r '.version // empty')
+          fi
+          jq -c --arg spamVersion "$spam_version" '{version} + (if (.notes | type) == "string" then {notes} else {} end)
+            + (if $spamVersion != "" then {$spamVersion} else {} end)' updates/release.json > updates/latest.json
           jq -r '.notes // "Full package, update archive and signature."' updates/release.json > "$assets/release-notes.txt"
           git add -- "$signature" updates/latest.json
           if ! git diff --cached --quiet; then

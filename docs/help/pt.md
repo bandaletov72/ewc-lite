@@ -472,3 +472,5 @@ As avaliações com ligações ou palavras bloqueadas ficam em moderação. Edit
 Morada `[address]` · E-mail público `[email]` · Horário de funcionamento `[hours]`
 
 Os contactos da cidade aparecem no cabeçalho. Campos vazios usam os valores dos submodelos partilhados.
+
+As versões instalada e do GitHub aparecem ao lado do botão de atualização.
