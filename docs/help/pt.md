@@ -456,3 +456,11 @@ O tamanho do lote aplica-se ao primeiro carregamento e a cada clique. Deixe o te
 O botão «Dados» abre o editor de [iblock]. Nos restantes componentes, utilize «Definições».
 
 Se o editor não carregar na janela, selecione «Tentar novamente» ou abra-o em ecrã inteiro.
+
+Insira [reviews page=current] numa página para mostrar as avaliações dessa página.
+
+Versão instalada do tema · Versão do tema incluída no CMS
+
+Escolha Design e adição das páginas em falta para atualizar os códigos de avaliações.
+
+A verificação de atualizações carrega a descrição da versão a partir do GitHub.

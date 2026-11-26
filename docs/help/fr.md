@@ -456,3 +456,11 @@ La taille du lot vaut pour le premier chargement et pour chaque clic. Laissez le
 Le bouton « Données » ouvre l’éditeur de [iblock]. Pour les autres composants, utilisez « Paramètres ».
 
 Si l’éditeur ne se charge pas dans la fenêtre, cliquez sur « Réessayer » ou ouvrez-le en plein écran.
+
+Insérez [reviews page=current] dans une page pour afficher les avis associés à cette page.
+
+Version du thème installée · Version du thème incluse avec le CMS
+
+Choisissez Design et ajout des pages manquantes pour mettre à jour les codes des avis.
+
+La vérification des mises à jour charge la description de la version depuis GitHub.

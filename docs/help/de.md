@@ -456,3 +456,11 @@ Die Anzahl gilt beim ersten Laden und bei jedem Klick. Lassen Sie den Text leer,
 Den Editor für [iblock] öffnen Sie über „Daten“. Bei anderen Komponenten heißt die Schaltfläche „Einstellungen“.
 
 Wenn der Editor im Dialog nicht lädt, wählen Sie „Erneut versuchen“ oder öffnen Sie ihn über „Vollbild“.
+
+Fügen Sie [reviews page=current] in eine Seite ein, um Bewertungen zu dieser Seite anzuzeigen.
+
+Installierte Theme-Version · Mitgelieferte CMS-Version des Themes
+
+Wählen Sie Design und fehlende Seiten hinzufügen, um die Bewertungscodes zu aktualisieren.
+
+Bei der Updateprüfung wird die Release-Beschreibung von GitHub geladen.

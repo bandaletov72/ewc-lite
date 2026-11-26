@@ -456,3 +456,11 @@ Số lượng này áp dụng khi tải lần đầu và mỗi lần bấm nút.
 Nút «Dữ liệu» mở trình chỉnh sửa [iblock]. Các thành phần khác dùng nút «Cài đặt».
 
 Nếu trình chỉnh sửa trong hộp thoại không tải được, hãy chọn «Thử lại» hoặc mở toàn màn hình.
+
+Chèn [reviews page=current] vào nội dung trang để hiển thị các đánh giá của trang đó.
+
+Phiên bản chủ đề đã cài · Phiên bản chủ đề đi kèm CMS
+
+Chọn Thiết kế và thêm trang còn thiếu để cập nhật mã đánh giá.
+
+Khi kiểm tra cập nhật, mô tả bản phát hành được tải từ GitHub.

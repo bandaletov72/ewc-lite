@@ -456,3 +456,11 @@ El tamaño del lote se aplica a la primera carga y a cada clic. Deja el texto va
 El botón «Datos» abre el editor de [iblock]. Para los demás componentes, usa «Configuración».
 
 Si el editor no carga en el cuadro de diálogo, pulsa «Reintentar» o ábrelo a pantalla completa.
+
+Inserta [reviews page=current] en una página para mostrar las reseñas de esa página.
+
+Versión instalada del tema · Versión del tema incluida en el CMS
+
+Elige Diseño y adición de páginas faltantes para actualizar los códigos de reseñas.
+
+Al buscar actualizaciones, se carga la descripción de la versión desde GitHub.

@@ -460,3 +460,11 @@ The batch size applies to the first load and to each button press. Leave the tex
 Use Data to open the [iblock] editor. Other components use Settings.
 
 If the editor fails to load in the dialog, select Retry or use Full screen to open it separately.
+
+Insert [reviews page=current] in a page to show reviews submitted for that page.
+
+Installed theme version · Version bundled with the CMS
+
+Select Design and add missing pages to apply changes to the review shortcodes.
+
+Checking for updates loads the release description from GitHub.

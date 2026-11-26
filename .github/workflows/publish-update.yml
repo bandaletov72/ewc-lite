@@ -80,7 +80,8 @@ jobs:
           tag=v$CMS_RELEASE_VERSION
           signature="updates/$tag/php-site-update.zip.sig"
           cp "$assets/php-site-update.zip.sig" "$signature"
-          printf '{"version":"%s"}\n' "$CMS_RELEASE_VERSION" > updates/latest.json
+          jq -c '{version} + (if (.notes | type) == "string" then {notes} else {} end)' updates/release.json > updates/latest.json
+          jq -r '.notes // "Full package, update archive and signature."' updates/release.json > "$assets/release-notes.txt"
           git add -- "$signature" updates/latest.json
           if ! git diff --cached --quiet; then
             git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
@@ -90,6 +91,6 @@ jobs:
           fi
           if ! gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$(git rev-parse HEAD)" --latest \
-              --title "Eurowebcart CMS Lite $CMS_RELEASE_VERSION" --notes 'Full package, update archive and signature.' \
+              --title "Eurowebcart CMS Lite $CMS_RELEASE_VERSION" --notes-file "$assets/release-notes.txt" \
               "$assets/php-site.zip" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig"
           fi
