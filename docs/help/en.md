@@ -485,3 +485,13 @@ The red badge counts available engine, active theme, and spam filter updates. Ch
 
 - Layout templates → Snippets
 - Cities and domains
+
+## Marketplace
+
+Marketplace is disabled on installation. Open Marketplace in the admin to enable it, edit storefront templates and import CSV or YML.
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+In **Marketplace → Catalog → Products**, filter by name, SKU, barcode, category, or status. Use **Columns** to show more fields. Open a product in the editor to change its visibility, price, SKU, barcode, and stock. Add warehouses on the **Warehouses** tab.
+
+[Marketplace](../marketplace.md)

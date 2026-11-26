@@ -481,3 +481,13 @@ El indicador rojo cuenta las actualizaciones del CMS, el tema activo y los filtr
 
 - Plantillas de diseño → Fragmentos
 - Ciudades y dominios
+
+## Marketplace
+
+El marketplace está desactivado al instalar. Abre su sección en la administración para habilitarlo, editar la tienda e importar CSV o YML.
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+En **Marketplace → Catálogo → Productos**, filtra por nombre, SKU, código de barras, categoría o estado. Usa **Columnas** para mostrar más campos. Edita el estado, el precio, el SKU, el código de barras y las existencias en la ficha. Añade almacenes en **Almacenes**.
+
+[Marketplace](../marketplace.md)

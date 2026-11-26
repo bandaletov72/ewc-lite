@@ -481,3 +481,13 @@ Dezinfektori テーマには 32 のサービス、依頼フォーム [form86]、
 
 - レイアウトテンプレート → スニペット
 - 都市とドメイン
+
+## Marketplace
+
+インストール直後はマーケットプレイスが無効です。管理画面で有効化し、店舗テンプレートの編集や CSV／YML のインポートを行えます。
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+**マーケットプレイス → カタログ → 商品** では、商品名、SKU、バーコード、カテゴリ、状態で絞り込めます。**表示列** で項目を追加できます。商品編集画面で状態、価格、SKU、バーコード、在庫を変更し、**倉庫** タブで倉庫を追加します。
+
+[Marketplace](../marketplace.md)

@@ -481,3 +481,13 @@ Die rote Zahl zählt verfügbare Updates für das CMS, das aktive Theme und die 
 
 - Layoutvorlagen → Textbausteine
 - Städte und Domains
+
+## Marketplace
+
+Der Marktplatz ist nach der Installation deaktiviert. Im Bereich Marktplatz können Sie ihn aktivieren, Vorlagen ändern und CSV oder YML importieren.
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+Unter **Marketplace → Katalog → Produkte** können Sie nach Name, Artikelnummer, Barcode, Kategorie und Status filtern. Über **Spalten** blenden Sie weitere Felder ein. Im Produktdialog bearbeiten Sie Status, Preis, Artikelnummer, Barcode und Bestände. Neue Lager legen Sie unter **Lager** an.
+
+[Marketplace](../marketplace.md)

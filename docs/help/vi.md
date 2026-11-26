@@ -481,3 +481,13 @@ Số màu đỏ đếm các bản cập nhật CMS, giao diện đang dùng và 
 
 - Mẫu bố cục → Đoạn mẫu
 - Thành phố và tên miền
+
+## Marketplace
+
+Marketplace tắt mặc định. Mở mục Marketplace trong quản trị để bật, sửa mẫu cửa hàng và nhập CSV hoặc YML.
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+Trong **Marketplace → Danh mục → Sản phẩm**, lọc theo tên, SKU, mã vạch, danh mục hoặc trạng thái. Dùng **Cột** để hiển thị thêm trường. Sửa trạng thái, giá, SKU, mã vạch và tồn kho trong phiếu sản phẩm. Thêm kho tại thẻ **Kho hàng**.
+
+[Marketplace](../marketplace.md)

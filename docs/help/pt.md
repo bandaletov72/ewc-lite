@@ -481,3 +481,13 @@ O número vermelho exibe as atualizações disponíveis para o CMS, o tema ativo
 
 - Modelos de apresentação → Fragmentos
 - Cidades e domínios
+
+## Marketplace
+
+O marketplace vem desativado. Abra sua seção na administração para ativá-lo, editar a vitrine e importar CSV ou YML.
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+Em **Marketplace → Catálogo → Produtos**, filtre por nome, SKU, código de barras, categoria ou estado. Use **Colunas** para mostrar mais campos. Edite o estado, o preço, o SKU, o código de barras e o estoque na ficha. Adicione depósitos em **Depósitos**.
+
+[Marketplace](../marketplace.md)

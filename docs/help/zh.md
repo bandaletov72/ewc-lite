@@ -481,3 +481,13 @@ Dezinfektori 主题提供 32 项服务、咨询表单 [form86] 与评价表单 [
 
 - 布局模板 → 片段
 - 城市和域名
+
+## Marketplace
+
+商城安装后默认关闭。在管理后台的商城标签可启用、编辑店铺模板并导入 CSV 或 YML。
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+在 **商城 → 目录 → 商品** 中，可按名称、SKU、条形码、分类或状态筛选。使用 **显示列** 添加字段。在商品窗口中修改状态、价格、SKU、条形码和库存。在 **仓库** 标签页添加仓库。
+
+[Marketplace](../marketplace.md)

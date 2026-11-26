@@ -481,3 +481,13 @@ Dezinfektori 테마에는 32개 서비스, 문의 양식 [form86], 후기 양식
 
 - 레이아웃 템플릿 → 스니펫
 - 도시 및 도메인
+
+## Marketplace
+
+설치 직후 마켓플레이스는 비활성화되어 있습니다. 관리자에서 활성화하고 템플릿을 편집하거나 CSV 및 YML을 가져올 수 있습니다.
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+**마켓플레이스 → 카탈로그 → 상품**에서 이름, SKU, 바코드, 카테고리, 상태로 필터링합니다. **표시 열**에서 추가 항목을 표시합니다. 상품 편집 창에서 상태, 가격, SKU, 바코드와 재고를 변경하고 **창고** 탭에서 창고를 추가합니다.
+
+[Marketplace](../marketplace.md)

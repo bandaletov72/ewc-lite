@@ -481,3 +481,13 @@ Le badge rouge compte les mises à jour du CMS, du thème actif et des filtres a
 
 - Modèles de mise en page → Fragments
 - Villes et domaines
+
+## Marketplace
+
+La place de marché est désactivée à l’installation. Ouvrez sa rubrique dans l’administration pour configurer la vitrine et importer du CSV ou du YML.
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+Dans **Marketplace → Catalogue → Produits**, filtrez par nom, référence, code-barres, catégorie ou statut. Affichez d’autres champs avec **Colonnes**. Modifiez le statut, le prix, la référence, le code-barres et les stocks dans la fiche produit. Ajoutez des entrepôts dans **Entrepôts**.
+
+[Marketplace](../marketplace.md)

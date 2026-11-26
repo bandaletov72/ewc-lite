@@ -36,7 +36,17 @@ jobs:
           [[ $version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && $latest =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
           [[ $(printf '%s\n' "$latest" "$version" | sort -V | tail -n 1) == "$version" ]]
           tag=v$version
-          cp "full/$tag/php-site.zip" "updates/$tag/php-site-update.zip" "$assets/"
+          shop_version=$(jq -r '.shopVersion // empty' updates/release.json)
+          if [[ -n "$shop_version" ]]; then
+            base=$(jq -er '.baseVersion | strings' updates/release.json)
+            [[ $base =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && $shop_version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+            python3 .github/build-marketplace-release.py . "full/v$base/php-site.zip" \
+              "updates/v$base/php-site-update.zip" "updates/overlays/$tag" "$assets"
+            unzip -tq "$assets/marketplace.zip"
+            [[ $(unzip -p "$assets/marketplace.zip" manifest.json | jq -er '.version') == "$shop_version" ]]
+          else
+            cp "full/$tag/php-site.zip" "updates/$tag/php-site-update.zip" "$assets/"
+          fi
           signature="updates/$tag/php-site-update.zip.sig"
           if [[ -f "$signature" ]]; then
             cp "$signature" "$assets/"
@@ -55,7 +65,7 @@ jobs:
         run: |
           set -euo pipefail
           cd "$RUNNER_TEMP/cms-assets"
-          if [[ ! -f php-site-update.zip.sig ]]; then
+          if [[ ! -f php-site-update.zip.sig || -f marketplace.zip ]]; then
             if [[ -z "$RELEASE_SIGNING_KEY" ]]; then
               echo "::error::Missing repository secret RELEASE_SIGNING_KEY"
               exit 1
@@ -65,9 +75,19 @@ jobs:
             trap 'rm -f "$key"' EXIT
             printf '%s\n' "$RELEASE_SIGNING_KEY" > "$key"
             unset RELEASE_SIGNING_KEY
-            openssl dgst -sha256 -sign "$key" -passin pass: -out php-site-update.zip.sig php-site-update.zip
+            if [[ ! -f php-site-update.zip.sig ]]; then
+              openssl dgst -sha256 -sign "$key" -passin pass: -out php-site-update.zip.sig php-site-update.zip
+            fi
+            if [[ -f marketplace.zip ]]; then
+              openssl dgst -sha256 -sign "$key" -passin pass: -out marketplace.zip.sig marketplace.zip
+              openssl dgst -sha256 -sign "$key" -passin pass: -out php-site.zip.sig php-site.zip
+            fi
           fi
           openssl dgst -sha256 -verify public.pem -signature php-site-update.zip.sig php-site-update.zip
+          if [[ -f marketplace.zip ]]; then
+            openssl dgst -sha256 -verify public.pem -signature marketplace.zip.sig marketplace.zip
+            openssl dgst -sha256 -verify public.pem -signature php-site.zip.sig php-site.zip
+          fi
 
       - name: Publish GitHub Release and the fallback update
         shell: bash
@@ -79,6 +99,12 @@ jobs:
           cd "$RUNNER_TEMP/cms-snapshot"
           tag=v$CMS_RELEASE_VERSION
           signature="updates/$tag/php-site-update.zip.sig"
+          if [[ -f "$assets/marketplace.zip" ]]; then
+            mkdir -p "full/$tag" "updates/$tag"
+            cp "$assets/php-site.zip" "$assets/php-site.zip.sig" "full/$tag/"
+            cp "$assets/php-site-update.zip" "$assets/marketplace.zip" "$assets/marketplace.zip.sig" "updates/$tag/"
+            git add -- "full/$tag" "updates/$tag"
+          fi
           cp "$assets/php-site-update.zip.sig" "$signature"
           python3 - "$assets/php-site-update.zip" <<'PYTHON'
           from base64 import b64decode
@@ -121,7 +147,10 @@ jobs:
             git push origin HEAD:refs/heads/main
           fi
           if ! gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            release_assets=("$assets/php-site.zip" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig")
+            if [[ -f "$assets/marketplace.zip" ]]; then
+              release_assets+=("$assets/php-site.zip.sig" "$assets/marketplace.zip" "$assets/marketplace.zip.sig")
+            fi
             gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$(git rev-parse HEAD)" --latest \
-              --title "Eurowebcart CMS Lite $CMS_RELEASE_VERSION" --notes-file "$assets/release-notes.txt" \
-              "$assets/php-site.zip" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig"
+              --title "Eurowebcart CMS Lite $CMS_RELEASE_VERSION" --notes-file "$assets/release-notes.txt" "${release_assets[@]}"
           fi
