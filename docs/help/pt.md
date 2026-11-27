@@ -233,6 +233,8 @@ Substituir conteúdo e configurações. Antes disso, será feita uma cópia do e
 
 A busca encontra mídias sem referências no conteúdo salvo. Revise a lista e selecione os arquivos. Antes é criada uma cópia de segurança. Remover o código de um componente preserva sua pasta e seus arquivos.
 
+A verificação inclui a biblioteca multimédia do Marketplace. As fotos de produtos e variantes, os logótipos e os ficheiros referenciados nas cópias do catálogo são protegidos. A caixa seleciona os ficheiros da página atual.
+
 ### Escolher um ponto no mapa
 
 Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a por referência HTTP. Na aba Mapas da página, escolha um ponto e aplique as coordenadas.
@@ -502,4 +504,9 @@ Em Marcas, adicione descrição, site e logotipo. Os cartões abrem os produtos 
 
 [Marketplace](../marketplace.md)
 
+No Catálogo, Variantes abre a opção correspondente. Características define campos para fichas e filtros. Mais inclui galeria, preços adicionais, conjuntos e redirecionamentos. Escolha produtos e categorias pelo nome e fotos no gestor de ficheiros. O painel CSV permite edição em massa.
+
 As encomendas são mostradas 20 por página. Adicione estados e use Imprimir / PDF para gerar uma guia com morada, destinatário e SKU. As estatísticas têm gráficos e uma tabela. Em Integrações, configure chaves e instale perfis assinados do GitHub. Confirme o pagamento no painel do prestador.
+
+Na loja de temas, selecione os produtos de demonstração e confirme a substituição. O índice é atualizado automaticamente. Restaure o catálogo anterior e as marcas em Cópias de segurança do catálogo. Os pedidos são mantidos. Nas cores do site, aplique a paleta ao site, ao painel de administração ou a ambos. Em Marketplace → Exportar → Verificar YML, abra um produto para corrigir os campos destacados.
+

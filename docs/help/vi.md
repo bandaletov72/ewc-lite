@@ -233,6 +233,8 @@ Thay thế nội dung và cài đặt. Hệ thống sao lưu trạng thái hiệ
 
 Quá trình quét tìm phương tiện chưa được tham chiếu trong nội dung đã lưu. Kiểm tra danh sách và chọn tệp cần xóa. Hệ thống sao lưu trước. Xóa mã thành phần vẫn giữ thư mục và các tệp của nó.
 
+Quá trình quét bao gồm thư viện phương tiện Marketplace. Ảnh sản phẩm và biến thể, logo và tệp được bản sao lưu danh mục tham chiếu được bảo vệ. Ô chọn áp dụng cho các tệp trên trang hiện tại.
+
 ### Chọn một điểm trên bản đồ
 
 Tạo khóa «JavaScript API» trong bảng điều khiển Yandex Maps và giới hạn theo HTTP Referer. Trong thẻ Bản đồ của trang, hãy chọn điểm và áp dụng tọa độ.
@@ -502,4 +504,9 @@ Trong Thương hiệu, thêm mô tả, trang web và logo. Thẻ dẫn đến c�
 
 [Marketplace](../marketplace.md)
 
+Trong Danh mục, Biến thể mở đúng lựa chọn sản phẩm. Đặc tính định nghĩa trường cho thẻ và bộ lọc. Mục Thêm có bộ ảnh, giá bổ sung, bộ sản phẩm và chuyển hướng. Chọn sản phẩm và danh mục theo tên, chọn ảnh trong trình quản lý tệp. Bảng CSV hỗ trợ chỉnh sửa hàng loạt.
+
 Đơn hàng được hiển thị 20 đơn mỗi trang. Thêm trạng thái và dùng In / PDF cho phiếu giao hàng có địa chỉ, người nhận và SKU. Thống kê có biểu đồ và bảng. Trong Tích hợp, cài khóa và hồ sơ GitHub đã ký. Kiểm tra thanh toán trong bảng điều khiển nhà cung cấp.
+
+Trong cửa hàng giao diện, chọn sản phẩm mẫu và xác nhận thay danh mục. Chỉ mục được cập nhật tự động. Khôi phục danh mục cũ và thương hiệu trong phần bản sao lưu. Đơn hàng vẫn được giữ. Trong màu trang web, áp dụng bảng màu cho trang web, bảng quản trị hoặc cả hai. Trong Marketplace → Xuất dữ liệu → Kiểm tra YML, mở sản phẩm để sửa các trường được đánh dấu.
+

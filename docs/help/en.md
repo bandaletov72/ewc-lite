@@ -233,6 +233,8 @@ Replace content and settings with this backup. A copy of the current site will b
 
 The scan finds media without references in saved content. Review the list and select the files to remove. A backup is created first. Removing a component code leaves its folder and files in place.
 
+The scan includes the Marketplace media library. Product and variant images, logos, and files referenced by saved catalog backups are protected. The checkbox selects files on the current page.
+
 ### Pick a point on a map
 
 In the Yandex Maps console create a key for the «JavaScript API» product and restrict it by HTTP Referer. With a provider enabled, open the page’s Maps tab, choose a point and apply its coordinates.
@@ -506,4 +508,9 @@ In Brands, add a description, website and logo. Brand cards link to their produc
 
 [Marketplace](../marketplace.md)
 
+Under Catalog, Variants opens the matching product option and Characteristics defines fields for cards and filters. More contains the gallery, additional prices, bundles, and redirects. Select products and categories by name when linking records. Choose photos in the file manager. Bulk editing is available in the CSV panel.
+
 Orders are listed 20 at a time. Add custom statuses and use Print / PDF for the delivery slip with address, recipient, and SKUs. Sales statistics includes charts and a daily table. Set up API keys and install signed GitHub profiles under Integrations. Verify payment in the provider dashboard.
+
+In the theme store, select demo products and confirm catalog replacement. The index updates automatically. Restore the previous catalog and brands under Catalog backups. Orders are kept. In Site colors, apply a palette to the website, admin panel, or both. In Marketplace → Export → Check YML feed, select a product to fix the highlighted fields.
+

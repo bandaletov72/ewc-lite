@@ -233,6 +233,8 @@ Remplacer le contenu et les réglages. Une copie de l’état actuel sera créé
 
 L’analyse cherche les médias sans référence dans le contenu enregistré. Vérifiez la liste et sélectionnez les fichiers. Une sauvegarde est créée au préalable. Supprimer un code de composant conserve son dossier et ses fichiers.
 
+L’analyse inclut la médiathèque Marketplace. Les photos de produits et de variantes, les logos et les fichiers référencés par les sauvegardes du catalogue sont protégés. La case sélectionne les fichiers de la page en cours.
+
 ### Choisir un point sur la carte
 
 Dans la console Yandex Maps, créez une clé pour « JavaScript API » et limitez-la par référent HTTP. Dans l’onglet Cartes de la page, choisissez un point puis appliquez ses coordonnées.
@@ -502,4 +504,9 @@ Dans Marques, ajoutez une description, un site et un logo. Les cartes ouvrent le
 
 [Marketplace](../marketplace.md)
 
+Dans le catalogue, Variantes ouvre l’option correspondante. Caractéristiques définit les champs des fiches et filtres. Plus contient la galerie, les prix supplémentaires, les lots et les redirections. Sélectionnez produits et catégories par nom, et photos dans le gestionnaire. Le panneau CSV permet l’édition en lot.
+
 Les commandes s’affichent par pages de 20. Ajoutez des statuts et utilisez Imprimer / PDF pour le bon de livraison avec adresse, destinataire et références. Les statistiques affichent graphiques et tableau. Configurez les clés et installez les profils GitHub signés sous Intégrations. Vérifiez le paiement chez le prestataire.
+
+Dans la boutique de thèmes, sélectionnez les produits de démo et confirmez le remplacement. L’index est mis à jour automatiquement. Restaurez le catalogue et les marques depuis les sauvegardes du catalogue. Les commandes sont conservées. Dans Couleurs du site, appliquez la palette au site, à l’administration ou aux deux. Dans Marketplace → Exporter → Vérifier le flux YML, ouvrez un produit pour corriger les champs signalés.
+

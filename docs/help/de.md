@@ -233,6 +233,8 @@ Inhalte und Einstellungen ersetzen. Zuerst wird der aktuelle Stand gesichert.
 
 Der Scan sucht Medien ohne Verweise in gespeicherten Inhalten. Prüfen Sie die Liste und wählen Sie Dateien aus. Zuvor wird eine Sicherung erstellt. Beim Entfernen eines Komponentencodes bleiben Ordner und Dateien erhalten.
 
+Die Suche prüft auch die Marketplace-Mediathek. Produkt- und Variantenbilder, Logos und Dateien aus Katalogsicherungen sind geschützt. Das Kontrollkästchen wählt die Dateien der aktuellen Seite aus.
+
 ### Punkt auf der Karte wählen
 
 Erstellen Sie in der Yandex-Konsole einen Schlüssel für „JavaScript API“ und begrenzen Sie ihn per HTTP-Referrer. Wählen Sie in der Karten-Registerkarte der Seite einen Punkt und übernehmen Sie seine Koordinaten.
@@ -502,4 +504,9 @@ Unter Marken können Sie Beschreibung, Website und Logo hinzufügen. Die Karten 
 
 [Marketplace](../marketplace.md)
 
+Unter Katalog öffnen Varianten die passende Ausführung. Merkmale definieren Felder für Karten und Filter. Unter Mehr finden Sie Galerie, Zusatzpreise, Sets und Weiterleitungen. Wählen Sie Artikel und Kategorien nach Namen und Fotos im Dateimanager. CSV-Sammelbearbeitung steht im ausklappbaren Bereich bereit.
+
 Bestellungen erscheinen zu je 20 pro Seite. Legen Sie eigene Status an und nutzen Sie Drucken / PDF für Lieferscheine mit Adresse, Empfänger und Artikelnummern. Die Verkaufsstatistik zeigt Diagramme und eine Tabelle. Unter Integrationen richten Sie API-Schlüssel und signierte GitHub-Profile ein. Prüfen Sie Zahlungen beim Anbieter.
+
+Wählen Sie im Theme-Shop Demoprodukte aus und bestätigen Sie den Katalogaustausch. Der Index wird automatisch aktualisiert. Stellen Sie den alten Katalog und die Marken unter Katalogsicherungen wieder her. Bestellungen bleiben erhalten. Wählen Sie unter Website-Farben Website, Adminbereich oder beides. Öffnen Sie zur Korrektur markierter Felder ein Produkt unter Marketplace → Export → YML prüfen.
+
