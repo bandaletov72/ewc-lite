@@ -40,15 +40,26 @@ jobs:
           if [[ -n "$shop_version" ]]; then
             base=$(jq -er '.baseVersion | strings' updates/release.json)
             [[ $base =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && $shop_version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+            if [[ -f "updates/overlays/$tag.zip" ]]; then
+              python3 -m zipfile -e "updates/overlays/$tag.zip" "$RUNNER_TEMP/cms-overlay"
+              mkdir -p "updates/overlays/$tag"
+              cp -Rn "$RUNNER_TEMP/cms-overlay/." "updates/overlays/$tag/"
+            fi
             python3 .github/build-marketplace-release.py . "full/v$base/php-site.zip" \
               "updates/v$base/php-site-update.zip" "updates/overlays/$tag" "$assets"
             unzip -tq "$assets/marketplace.zip"
             [[ $(unzip -p "$assets/marketplace.zip" manifest.json | jq -er '.version') == "$shop_version" ]]
           else
-            cp "full/$tag/php-site.zip" "updates/$tag/php-site-update.zip" "$assets/"
+            full="full/$tag/ewc-lite.zip"; [[ -f "$full" ]] || full="full/$tag/php-site.zip"
+            update="updates/$tag/ewc-lite-update.zip"; [[ -f "$update" ]] || update="updates/$tag/php-site-update.zip"
+            cp "$full" "$assets/php-site.zip"
+            cp "$update" "$assets/php-site-update.zip"
           fi
           signature="updates/$tag/php-site-update.zip.sig"
-          if [[ -f "$signature" ]]; then
+          canonical_signature="updates/$tag/ewc-lite-update.zip.sig"
+          if [[ -f "$canonical_signature" ]]; then
+            cp "$canonical_signature" "$assets/php-site-update.zip.sig"
+          elif [[ -f "$signature" ]]; then
             cp "$signature" "$assets/"
           fi
           unzip -tq "$assets/php-site.zip"
@@ -117,7 +128,18 @@ jobs:
             cp -R "$assets/integrations/." marketplace-integrations/
             git add -- marketplace-integrations
           fi
+          cp "$assets/php-site.zip" "$assets/ewc-lite.zip"
+          cp "$assets/php-site-update.zip" "$assets/ewc-lite-update.zip"
+          cp "$assets/php-site-update.zip.sig" "$assets/ewc-lite-update.zip.sig"
+          cp "$assets/ewc-lite.zip" "full/$tag/"
+          cp "$assets/ewc-lite-update.zip" "$assets/ewc-lite-update.zip.sig" "updates/$tag/"
+          if [[ -f "$assets/php-site.zip.sig" ]]; then
+            cp "$assets/php-site.zip.sig" "$assets/ewc-lite.zip.sig"
+            cp "$assets/ewc-lite.zip.sig" "full/$tag/"
+          fi
+          cp "$assets/php-site-update.zip" "updates/$tag/"
           cp "$assets/php-site-update.zip.sig" "$signature"
+          git add -- "full/$tag" "updates/$tag"
           python3 - "$assets/php-site-update.zip" <<'PYTHON'
           from base64 import b64decode
           import json
@@ -129,7 +151,7 @@ jobs:
           release = json.loads(Path("updates/release.json").read_text())
           notes = json.loads(Path("updates/component-notes.json").read_text())
           metadata = json.loads(Path("updates/latest.json").read_text())
-          metadata.update({"version": release["version"], "notes": release.get("notes", "")})
+          metadata.update({"version": release["version"], "notes": release.get("notes", ""), "updateAsset": "ewc-lite-update.zip"})
           with ZipFile(sys.argv[1]) as archive:
               if "app/spam-defaults.php" in archive.namelist():
                   spam = json.loads(archive.read("app/spam-defaults.php").split(b"\n", 1)[1])
@@ -148,6 +170,10 @@ jobs:
                   key = theme.group(1)
                   version["notes"] = notes["themes"].get(key, {}).get(version["version"], "")
                   themes[key] = version
+              if "app/theme-design.php" in archive.namelist():
+                  demo = re.search(rb"const SITE_DESIGN_DEMO_VERSION = '([0-9.]+)';", archive.read("app/theme-design.php"))
+                  if demo:
+                      themes["demo"] = {"version": demo.group(1).decode("ascii")}
               metadata["themes"] = themes
           Path("updates/latest.json").write_text(json.dumps(metadata, ensure_ascii=False) + "\n")
           PYTHON
@@ -160,9 +186,9 @@ jobs:
             git push origin HEAD:refs/heads/main
           fi
           if ! gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            release_assets=("$assets/php-site.zip" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig")
+            release_assets=("$assets/ewc-lite.zip" "$assets/ewc-lite-update.zip" "$assets/ewc-lite-update.zip.sig" "$assets/php-site-update.zip" "$assets/php-site-update.zip.sig")
             if [[ -f "$assets/marketplace.zip" ]]; then
-              release_assets+=("$assets/php-site.zip.sig" "$assets/marketplace.zip" "$assets/marketplace.zip.sig")
+              release_assets+=("$assets/ewc-lite.zip.sig" "$assets/marketplace.zip" "$assets/marketplace.zip.sig")
             fi
             gh release create "$tag" --repo "$GITHUB_REPOSITORY" --target "$(git rev-parse HEAD)" --latest \
               --title "Eurowebcart CMS Lite $CMS_RELEASE_VERSION" --notes-file "$assets/release-notes.txt" "${release_assets[@]}"
