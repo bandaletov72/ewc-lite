@@ -233,7 +233,7 @@ Thay thế nội dung và cài đặt. Hệ thống sao lưu trạng thái hiệ
 
 Quá trình quét tìm phương tiện chưa được tham chiếu trong nội dung đã lưu. Kiểm tra danh sách và chọn tệp cần xóa. Hệ thống sao lưu trước. Xóa mã thành phần vẫn giữ thư mục và các tệp của nó.
 
-Quá trình quét bao gồm thư viện phương tiện Marketplace. Ảnh sản phẩm và biến thể, logo và tệp được bản sao lưu danh mục tham chiếu được bảo vệ. Ô chọn áp dụng cho các tệp trên trang hiện tại.
+Quá trình quét bao gồm thư viện phương tiện Marketplace. Ảnh sản phẩm và biến thể, logo và tệp được bản sao lưu danh mục tham chiếu được bảo vệ. Ô chọn áp dụng cho các tệp trên trang hiện tại. Mỗi dòng hiển thị kích thước tệp. Bấm vào ảnh thu nhỏ để mở trình xem ảnh.
 
 ### Chọn một điểm trên bản đồ
 
@@ -510,3 +510,18 @@ Trong Danh mục, Biến thể mở đúng lựa chọn sản phẩm. Đặc tí
 
 Trong cửa hàng giao diện, chọn sản phẩm mẫu và xác nhận thay danh mục. Chỉ mục được cập nhật tự động. Khôi phục danh mục cũ và thương hiệu trong phần bản sao lưu. Đơn hàng vẫn được giữ. Trong màu trang web, áp dụng bảng màu cho trang web, bảng quản trị hoặc cả hai. Trong Marketplace → Xuất dữ liệu → Kiểm tra YML, mở sản phẩm để sửa các trường được đánh dấu.
 
+Trong trình chỉnh sửa HTML, chọn [items] hoặc [carousel] trong Thành phần. Chọn danh mục, từ khóa, thứ tự và bộ lọc. [items] hiển thị danh sách hoặc lưới. [carousel] có số cột riêng cho điện thoại và máy tính. Mỗi khối có phân trang riêng.
+
+Chọn thư mục danh mục trong cài đặt Marketplace. Khi cài ở /test/, danh mục mở tại /test/catalog/. Liên kết cố định /test/product/item/ giữ nguyên khi chuyển sản phẩm. Địa chỉ có danh mục nhận chuyển hướng 301. Mẫu cửa hàng mở trong hộp thoại và dùng mã trong ngoặc vuông. Dữ liệu có cấu trúc Product được thêm tự động. [categories] hiển thị danh mục con dưới dạng danh sách hoặc lưới và dùng ảnh sản phẩm mới khi thiếu ảnh danh mục. Lập chỉ mục trang web cũng cập nhật danh mục.
+
+### Mẫu Marketplace
+
+Sửa các trang cửa hàng và đoạn bố cục trong hộp thoại.
+
+### Danh mục cần nhập
+
+Thêm vào danh mục hiện tại. Cập nhật sản phẩm trùng và giữ lại các mục khác. Thay toàn bộ danh mục. Chỉ nhập các danh mục đã chọn sau khi sao lưu.
+
+Đặt giá cũ riêng cho từng biến thể. Thêm ảnh kèm chú thích. Trường video mở video ở chế độ toàn màn hình.
+
+Bật đặt nhanh để nhận tại cửa hàng trong trình chỉnh sửa sản phẩm. Nút Đặt hàng mở biểu mẫu chỉ có trường số điện thoại.

@@ -233,7 +233,7 @@ Remplacer le contenu et les réglages. Une copie de l’état actuel sera créé
 
 L’analyse cherche les médias sans référence dans le contenu enregistré. Vérifiez la liste et sélectionnez les fichiers. Une sauvegarde est créée au préalable. Supprimer un code de composant conserve son dossier et ses fichiers.
 
-L’analyse inclut la médiathèque Marketplace. Les photos de produits et de variantes, les logos et les fichiers référencés par les sauvegardes du catalogue sont protégés. La case sélectionne les fichiers de la page en cours.
+L’analyse inclut la médiathèque Marketplace. Les photos de produits et de variantes, les logos et les fichiers référencés par les sauvegardes du catalogue sont protégés. La case sélectionne les fichiers de la page en cours. Chaque ligne affiche la taille du fichier. Cliquez sur une vignette pour ouvrir la visionneuse.
 
 ### Choisir un point sur la carte
 
@@ -510,3 +510,18 @@ Les commandes s’affichent par pages de 20. Ajoutez des statuts et utilisez Imp
 
 Dans la boutique de thèmes, sélectionnez les produits de démo et confirmez le remplacement. L’index est mis à jour automatiquement. Restaurez le catalogue et les marques depuis les sauvegardes du catalogue. Les commandes sont conservées. Dans Couleurs du site, appliquez la palette au site, à l’administration ou aux deux. Dans Marketplace → Exporter → Vérifier le flux YML, ouvrez un produit pour corriger les champs signalés.
 
+Dans l’éditeur HTML, choisissez [items] ou [carousel] sous Composant. Sélectionnez une catégorie, un terme de recherche, un tri et des filtres. [items] affiche une liste ou une grille. [carousel] propose des colonnes distinctes pour mobile et ordinateur. Chaque bloc a sa propre pagination.
+
+Choisissez le dossier du catalogue dans les réglages de la marketplace. Sous /test/, le catalogue se trouve à /test/catalog/. Activez les URL permanentes pour conserver /test/product/article/ lors du déplacement du produit. Une URL de catégorie bénéficie d'une redirection 301 après le déplacement. Les modèles de la boutique s’ouvrent dans une fenêtre. Utilisez les codes entre crochets. Le balisage Product est ajouté automatiquement. [categories] affiche les sous-catégories en liste ou en grille. Une photo récente sert d’image de remplacement. L’indexation du site actualise aussi le catalogue.
+
+### Modèles de la marketplace
+
+Modifiez les pages de la boutique et les fragments de mise en page dans des fenêtres.
+
+### Sections à importer
+
+Ajouter au catalogue actuel. Les produits correspondants sont mis à jour. Le reste est conservé. Remplacer le catalogue. Seules les sections choisies sont importées après sauvegarde.
+
+Renseignez le prix précédent de chaque variante. Ajoutez des photos avec leurs légendes. Le champ video ouvre la vidéo en plein écran.
+
+Activez la commande rapide à retirer dans la fiche produit. Le bouton Commander ouvre un formulaire avec un seul champ pour le téléphone.

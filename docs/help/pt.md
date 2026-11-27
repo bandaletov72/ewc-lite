@@ -233,7 +233,7 @@ Substituir conteúdo e configurações. Antes disso, será feita uma cópia do e
 
 A busca encontra mídias sem referências no conteúdo salvo. Revise a lista e selecione os arquivos. Antes é criada uma cópia de segurança. Remover o código de um componente preserva sua pasta e seus arquivos.
 
-A verificação inclui a biblioteca multimédia do Marketplace. As fotos de produtos e variantes, os logótipos e os ficheiros referenciados nas cópias do catálogo são protegidos. A caixa seleciona os ficheiros da página atual.
+A verificação inclui a biblioteca multimédia do Marketplace. As fotos de produtos e variantes, os logótipos e os ficheiros referenciados nas cópias do catálogo são protegidos. A caixa seleciona os ficheiros da página atual. Cada linha mostra o tamanho do ficheiro. Clique na miniatura para abrir a imagem no visualizador.
 
 ### Escolher um ponto no mapa
 
@@ -510,3 +510,18 @@ As encomendas são mostradas 20 por página. Adicione estados e use Imprimir / P
 
 Na loja de temas, selecione os produtos de demonstração e confirme a substituição. O índice é atualizado automaticamente. Restaure o catálogo anterior e as marcas em Cópias de segurança do catálogo. Os pedidos são mantidos. Nas cores do site, aplique a paleta ao site, ao painel de administração ou a ambos. Em Marketplace → Exportar → Verificar YML, abra um produto para corrigir os campos destacados.
 
+No editor HTML, abra Componente e escolha [items] ou [carousel]. Defina categoria, pesquisa, ordenação e filtros. [items] mostra uma lista ou grelha. [carousel] permite ajustar as colunas para telemóvel e computador. Cada bloco tem a sua própria paginação.
+
+Escolha a pasta do catálogo nas configurações do Marketplace. Uma instalação em /test/ usa /test/catalog/. Os endereços permanentes /test/product/item/ são mantidos ao mover produtos. Os endereços com categoria recebem um redirecionamento 301. Os modelos da loja abrem numa janela. Use códigos entre colchetes. Os dados estruturados Product são adicionados automaticamente. [categories] mostra subcategorias em lista ou grelha. Uma foto recente pode ilustrar categorias sem imagem. A indexação do site também atualiza o catálogo.
+
+### Modelos do Marketplace
+
+Edite páginas da loja e fragmentos do layout em janelas de diálogo.
+
+### Seções para importar
+
+Adicionar ao catálogo atual. Produtos coincidentes são atualizados. Os demais dados são mantidos. Substituir o catálogo. Importa somente as seções selecionadas depois de criar uma cópia.
+
+Defina o preço anterior de cada variante. Adicione fotos com legendas. O campo video abre o vídeo em ecrã inteiro.
+
+Ative a encomenda rápida para recolha na ficha do produto. O botão Encomendar abre um formulário com um campo para o telefone.

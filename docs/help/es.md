@@ -233,7 +233,7 @@ Reemplazar contenido y ajustes. Primero se guardará una copia del sitio actual.
 
 El análisis busca medios sin referencias en el contenido guardado. Revisa la lista y elige los archivos. Primero se crea una copia de seguridad. Quitar el código del componente conserva su carpeta y archivos.
 
-El análisis incluye la biblioteca multimedia de Marketplace. Se protegen las fotos de productos y variantes, los logotipos y los archivos de las copias del catálogo. La casilla selecciona los archivos de la página actual.
+El análisis incluye la biblioteca multimedia de Marketplace. Se protegen las fotos de productos y variantes, los logotipos y los archivos de las copias del catálogo. La casilla selecciona los archivos de la página actual. Cada fila muestra el tamaño del archivo. Haz clic en la miniatura para abrir la imagen en el visor.
 
 ### Elegir un punto en el mapa
 
@@ -510,3 +510,18 @@ Los pedidos se muestran de 20 en 20. Añade estados y usa Imprimir / PDF para el
 
 En la tienda de temas, elige los productos de ejemplo y confirma la sustitución. El índice se actualiza automáticamente. Recupera el catálogo anterior y las marcas en Copias de seguridad del catálogo. Se conservan los pedidos. En Colores del sitio, aplica la paleta al sitio, a la administración o a ambos. En Marketplace → Exportar → Revisar YML, abre un producto para corregir los campos destacados.
 
+En el editor HTML, abre Componente y elige [items] o [carousel]. Elige una categoría, búsqueda, orden y filtros. [items] muestra una lista o cuadrícula. [carousel] admite columnas distintas en móvil y ordenador. Cada bloque tiene su propia paginación.
+
+Elija la carpeta del catálogo en los ajustes del marketplace. Una instalación en /test/ usa /test/catalog/. Los enlaces permanentes /test/product/articulo/ se conservan al mover productos. Las rutas con categoría reciben una redirección 301. Las plantillas de la tienda se abren en una ventana modal. Use códigos entre corchetes. Los datos estructurados Product se añaden automáticamente. [categories] muestra las subcategorías en lista o cuadrícula y puede usar una foto reciente como imagen de respaldo. La indexación del sitio actualiza el catálogo.
+
+### Plantillas del marketplace
+
+Edita las páginas de la tienda y los fragmentos de diseño en ventanas modales.
+
+### Secciones que importar
+
+Añadir al catálogo actual. Se actualizan los productos coincidentes y se conserva el resto. Reemplazar el catálogo. Se importan las secciones elegidas después de crear una copia de seguridad.
+
+Indique el precio anterior de cada variante. Añada fotos con pie de foto. El campo video abre el vídeo a pantalla completa.
+
+Activa el pedido rápido para recogida en la ficha del producto. El botón Pedir abre un formulario con un solo campo para el teléfono.

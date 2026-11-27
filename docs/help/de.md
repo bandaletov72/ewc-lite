@@ -233,7 +233,7 @@ Inhalte und Einstellungen ersetzen. Zuerst wird der aktuelle Stand gesichert.
 
 Der Scan sucht Medien ohne Verweise in gespeicherten Inhalten. Prüfen Sie die Liste und wählen Sie Dateien aus. Zuvor wird eine Sicherung erstellt. Beim Entfernen eines Komponentencodes bleiben Ordner und Dateien erhalten.
 
-Die Suche prüft auch die Marketplace-Mediathek. Produkt- und Variantenbilder, Logos und Dateien aus Katalogsicherungen sind geschützt. Das Kontrollkästchen wählt die Dateien der aktuellen Seite aus.
+Die Suche prüft auch die Marketplace-Mediathek. Produkt- und Variantenbilder, Logos und Dateien aus Katalogsicherungen sind geschützt. Das Kontrollkästchen wählt die Dateien der aktuellen Seite aus. Jede Zeile zeigt die Dateigröße. Klicken Sie auf das Vorschaubild, um es in der Lightbox zu öffnen.
 
 ### Punkt auf der Karte wählen
 
@@ -510,3 +510,18 @@ Bestellungen erscheinen zu je 20 pro Seite. Legen Sie eigene Status an und nutze
 
 Wählen Sie im Theme-Shop Demoprodukte aus und bestätigen Sie den Katalogaustausch. Der Index wird automatisch aktualisiert. Stellen Sie den alten Katalog und die Marken unter Katalogsicherungen wieder her. Bestellungen bleiben erhalten. Wählen Sie unter Website-Farben Website, Adminbereich oder beides. Öffnen Sie zur Korrektur markierter Felder ein Produkt unter Marketplace → Export → YML prüfen.
 
+Wählen Sie im HTML-Editor unter Komponente [items] oder [carousel]. Legen Sie Kategorie, Suchbegriff, Sortierung und Filter fest. [items] zeigt Liste oder Raster, [carousel] getrennte Spaltenzahlen für Mobilgerät und Desktop. Jeder Block hat eine eigene Seitennavigation.
+
+Legen Sie den Katalogordner in den Marketplace-Einstellungen fest. Unter /test/ ist der Katalog unter /test/catalog/ erreichbar. Permanente Adressen wie /test/product/artikel/ bleiben bei einem Wechsel der Kategorie gleich. Kategorieabhängige URLs erhalten eine 301-Weiterleitung. Shopvorlagen öffnen sich im Dialog. Verwenden Sie Shortcodes in eckigen Klammern. Product-Strukturdaten werden automatisch ergänzt. [categories] zeigt Unterkategorien als Liste oder Raster. Ein aktuelles Produktfoto dient als Ersatzbild. Die Website-Indexierung aktualisiert auch den Katalog.
+
+### Marketplace-Vorlagen
+
+Bearbeiten Sie Shopseiten und Layout-Fragmente in Dialogen.
+
+### Zu importierende Bereiche
+
+Zum aktuellen Katalog hinzufügen. Passende Produkte werden aktualisiert. Andere bleiben erhalten. Katalog vollständig ersetzen. Nur ausgewählte Bereiche werden importiert. Zuerst wird eine Sicherung erstellt.
+
+Legen Sie den alten Preis für jede Variante fest. Fügen Sie Fotos mit Beschriftungen hinzu. Das Feld video öffnet das Video im Vollbild.
+
+Aktivieren Sie im Produkteditor die schnelle Abholbestellung. Die Schaltfläche Bestellen öffnet ein Formular mit einem Feld für die Telefonnummer.

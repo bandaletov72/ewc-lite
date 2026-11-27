@@ -233,7 +233,7 @@ Replace content and settings with this backup. A copy of the current site will b
 
 The scan finds media without references in saved content. Review the list and select the files to remove. A backup is created first. Removing a component code leaves its folder and files in place.
 
-The scan includes the Marketplace media library. Product and variant images, logos, and files referenced by saved catalog backups are protected. The checkbox selects files on the current page.
+The scan includes the Marketplace media library. Product and variant images, logos, and files referenced by saved catalog backups are protected. The checkbox selects files on the current page. Each row shows the file size. Open an image in the lightbox by selecting its thumbnail.
 
 ### Pick a point on a map
 
@@ -514,3 +514,18 @@ Orders are listed 20 at a time. Add custom statuses and use Print / PDF for the 
 
 In the theme store, select demo products and confirm catalog replacement. The index updates automatically. Restore the previous catalog and brands under Catalog backups. Orders are kept. In Site colors, apply a palette to the website, admin panel, or both. In Marketplace → Export → Check YML feed, select a product to fix the highlighted fields.
 
+In the HTML editor, open Component and select [items] or [carousel]. Choose a category, search term, sort order, and filter values. [items] displays a list or grid. [carousel] displays product cards with separate column counts for mobile and desktop. Each block has its own pagination.
+
+Set the catalog folder in Marketplace settings. An EWC installation under /test/ uses /test/catalog/. Enable permanent product URLs to keep /test/product/item/ when moving products. Category-based addresses get a 301 redirect after a move. Storefront templates open in a dialog from Marketplace or storefront edit mode. Use square-bracket shortcodes for product details. Product structured data is added automatically. Use [categories] for a list or grid under a selected category. A recent product photo fills in for a missing category image and icon. Site indexing also rebuilds the marketplace catalog.
+
+### Marketplace templates
+
+Edit storefront pages and layout fragments in dialogs.
+
+### Sections to import
+
+Add to current catalog. Matching products are updated. Other products and sections are kept. Replace catalog. Only the selected sections are imported. A backup is created first.
+
+Set an old price for each variant in the product editor. Add photos with captions. The video field opens the video full screen.
+
+Enable Quick pickup order by phone in the product editor. The Order button opens a form with one phone field.
