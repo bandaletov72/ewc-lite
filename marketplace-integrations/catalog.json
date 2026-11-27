@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "modules": {
+    "yandex-market": {
+      "driver": "yandex-market",
+      "version": "1.0.1"
+    },
+    "cdek-secondary": {
+      "driver": "cdek",
+      "version": "1.0.0"
+    }
+  }
+}
