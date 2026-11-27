@@ -490,4 +490,16 @@ La place de marché est désactivée à l’installation. Ouvrez sa rubrique dan
 
 Dans **Marketplace → Catalogue → Produits**, filtrez par nom, référence, code-barres, catégorie ou statut. Affichez d’autres champs avec **Colonnes**. Modifiez le statut, le prix, la référence, le code-barres et les stocks dans la fiche produit. Ajoutez des entrepôts dans **Entrepôts**.
 
+Triez avec les flèches des en-têtes et enregistrez les prix dans la liste. Pour les produits avec variantes, ouvrez la fourchette de prix.
+
+Insérez `[shop]` dans une page pour afficher la boutique avec le thème du site. Dans **Marketplace → Filtres**, réglez la position, le prix, les attributs et le filtrage en direct. Gérez les courriels dans **Modèles de design → Modèles de courriel**. Utilisez les icônes Grille et Liste pour changer la vue. Le tri s’applique immédiatement.
+
+Les prix, codes-barres, stocks et attributs numériques sont enregistrés en quittant le champ. Utilisez Colonnes pour choisir les champs visibles et déplacez les en-têtes ou leurs bords pour ajuster leur ordre ou leur largeur. Sélectionnez les produits pour les actions groupées. Réglez l’arrondi des prix dans les paramètres de la boutique. La boutique de thèmes GitHub propose des pages et des produits de démonstration à sélectionner.
+
+Ajouter au panier ouvre une fenêtre. Les quantités et les suppressions sont mises à jour sans rechargement.
+
+Dans Marques, ajoutez une description, un site et un logo. Les cartes ouvrent les produits de la marque.
+
 [Marketplace](../marketplace.md)
+
+Les commandes s’affichent par pages de 20. Ajoutez des statuts et utilisez Imprimer / PDF pour le bon de livraison avec adresse, destinataire et références. Les statistiques affichent graphiques et tableau. Configurez les clés et installez les profils GitHub signés sous Intégrations. Vérifiez le paiement chez le prestataire.

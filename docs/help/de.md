@@ -490,4 +490,16 @@ Der Marktplatz ist nach der Installation deaktiviert. Im Bereich Marktplatz kön
 
 Unter **Marketplace → Katalog → Produkte** können Sie nach Name, Artikelnummer, Barcode, Kategorie und Status filtern. Über **Spalten** blenden Sie weitere Felder ein. Im Produktdialog bearbeiten Sie Status, Preis, Artikelnummer, Barcode und Bestände. Neue Lager legen Sie unter **Lager** an.
 
+Sortieren Sie mit den Pfeilen in den Spaltenüberschriften. Speichern Sie Preise direkt in der Liste. Bei Varianten öffnen Sie die Preisspanne.
+
+Fügen Sie `[shop]` in eine normale Seite ein, um den Shop im Seitendesign anzuzeigen. Unter **Marketplace → Filter** stehen Position, Preis, Merkmale und Live-Filter zur Verfügung. E-Mails werden unter **Designvorlagen → E-Mail-Vorlagen** verwaltet. Wechseln Sie mit den Symbolen Raster und Liste die Ansicht. Die Sortierung wird sofort angewendet.
+
+Preise, Barcodes, Bestände und numerische Merkmale werden beim Verlassen des Felds gespeichert. Unter Spalten steuern Sie die Sichtbarkeit. Ziehen Sie Spaltenköpfe und ihre Ränder, um Reihenfolge und Breite zu ändern. Wählen Sie Produkte für Sammelaktionen aus. Die Preisrundung steht in den Shop-Einstellungen. Der GitHub-Theme-Shop bietet Demoseiten und auswählbare Demoprodukte.
+
+In den Warenkorb öffnet einen Dialog. Mengen und Löschungen werden ohne Neuladen aktualisiert.
+
+Unter Marken können Sie Beschreibung, Website und Logo hinzufügen. Die Karten führen zu den Produkten der Marke.
+
 [Marketplace](../marketplace.md)
+
+Bestellungen erscheinen zu je 20 pro Seite. Legen Sie eigene Status an und nutzen Sie Drucken / PDF für Lieferscheine mit Adresse, Empfänger und Artikelnummern. Die Verkaufsstatistik zeigt Diagramme und eine Tabelle. Unter Integrationen richten Sie API-Schlüssel und signierte GitHub-Profile ein. Prüfen Sie Zahlungen beim Anbieter.

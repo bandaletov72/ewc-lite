@@ -490,4 +490,16 @@ O marketplace vem desativado. Abra sua seção na administração para ativá-lo
 
 Em **Marketplace → Catálogo → Produtos**, filtre por nome, SKU, código de barras, categoria ou estado. Use **Colunas** para mostrar mais campos. Edite o estado, o preço, o SKU, o código de barras e o estoque na ficha. Adicione depósitos em **Depósitos**.
 
+Ordene pelas setas dos cabeçalhos e salve preços na lista. Para produtos com variantes, abra a faixa de preços.
+
+Insira `[shop]` em uma página comum para mostrar a loja com o tema do site. Em **Marketplace → Filtros**, defina posição, preço, atributos e filtros ao vivo. Gerencie e-mails em **Modelos de design → Modelos de e-mail**. Use os ícones Grelha e Lista para mudar a vista. A ordenação é aplicada imediatamente.
+
+Preços, códigos de barras, estoque e atributos numéricos são guardados ao sair do campo. Use Colunas para escolher a visibilidade e arraste os cabeçalhos ou os seus limites para mudar a ordem e a largura. Selecione produtos para ações em massa. Configure o arredondamento nas opções da loja. A loja de temas no GitHub oferece páginas de demonstração e importação seletiva de produtos.
+
+Adicionar ao carrinho abre uma janela. Alterações de quantidade e remoções são atualizadas sem recarregar.
+
+Em Marcas, adicione descrição, site e logotipo. Os cartões abrem os produtos da marca.
+
 [Marketplace](../marketplace.md)
+
+As encomendas são mostradas 20 por página. Adicione estados e use Imprimir / PDF para gerar uma guia com morada, destinatário e SKU. As estatísticas têm gráficos e uma tabela. Em Integrações, configure chaves e instale perfis assinados do GitHub. Confirme o pagamento no painel do prestador.

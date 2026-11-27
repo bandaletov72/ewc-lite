@@ -494,4 +494,16 @@ Marketplace is disabled on installation. Open Marketplace in the admin to enable
 
 In **Marketplace → Catalog → Products**, filter by name, SKU, barcode, category, or status. Use **Columns** to show more fields. Open a product in the editor to change its visibility, price, SKU, barcode, and stock. Add warehouses on the **Warehouses** tab.
 
+Use the arrows next to column headings to sort the list. Save prices directly in the list. For products with variants, expand the price range to edit each offer.
+
+Insert `[shop]` on a regular page to show the full storefront in the site theme. Under **Marketplace → Filters**, choose top or left placement and toggle price, attributes, and live filtering. **Design templates → Email templates** contains site, shop, and form emails. Use the Grid and List icons to change the storefront layout. Sorting applies immediately.
+
+Prices, barcodes, stock and numeric attributes save when you leave a field. Use Columns to show fields, and drag the headers or their edges to change order and width. Select products to apply bulk actions. Set price rounding in shop settings. The GitHub theme store offers themes with demo pages and lets you choose which demo products to import.
+
+Add to basket opens a dialog. Quantity changes and removals update without reloading.
+
+In Brands, add a description, website and logo. Brand cards link to their products.
+
 [Marketplace](../marketplace.md)
+
+Orders are listed 20 at a time. Add custom statuses and use Print / PDF for the delivery slip with address, recipient, and SKUs. Sales statistics includes charts and a daily table. Set up API keys and install signed GitHub profiles under Integrations. Verify payment in the provider dashboard.

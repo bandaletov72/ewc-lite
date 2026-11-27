@@ -1,0 +1,4 @@
+{
+  "yandex-market": {"driver": "yandex-market", "version": "1.0.1", "name": "Яндекс Маркет"},
+  "cdek-secondary": {"driver": "cdek", "version": "1.0.0", "name": "СДЭК · дополнительный кабинет"}
+}

@@ -81,6 +81,12 @@ jobs:
             if [[ -f marketplace.zip ]]; then
               openssl dgst -sha256 -sign "$key" -passin pass: -out marketplace.zip.sig marketplace.zip
               openssl dgst -sha256 -sign "$key" -passin pass: -out php-site.zip.sig php-site.zip
+              if [[ -d integrations ]]; then
+                while IFS= read -r -d '' package; do
+                  openssl dgst -sha256 -sign "$key" -passin pass: -out "$package.sig" "$package"
+                  openssl dgst -sha256 -verify public.pem -signature "$package.sig" "$package"
+                done < <(find integrations -type f -name '*.zip' -print0)
+              fi
             fi
           fi
           openssl dgst -sha256 -verify public.pem -signature php-site-update.zip.sig php-site-update.zip
@@ -106,6 +112,11 @@ jobs:
             jq '{version: .shopVersion, tag: ("v" + .version), notes: (.notes // "")}' updates/release.json > updates/shop-latest.json
             git add -- "full/$tag" "updates/$tag" updates/shop-latest.json
           fi
+          if [[ -d "$assets/integrations" ]]; then
+            mkdir -p marketplace-integrations
+            cp -R "$assets/integrations/." marketplace-integrations/
+            git add -- marketplace-integrations
+          fi
           cp "$assets/php-site-update.zip.sig" "$signature"
           python3 - "$assets/php-site-update.zip" <<'PYTHON'
           from base64 import b64decode
@@ -117,7 +128,8 @@ jobs:
 
           release = json.loads(Path("updates/release.json").read_text())
           notes = json.loads(Path("updates/component-notes.json").read_text())
-          metadata = {"version": release["version"], "notes": release.get("notes", "")}
+          metadata = json.loads(Path("updates/latest.json").read_text())
+          metadata.update({"version": release["version"], "notes": release.get("notes", "")})
           with ZipFile(sys.argv[1]) as archive:
               if "app/spam-defaults.php" in archive.namelist():
                   spam = json.loads(archive.read("app/spam-defaults.php").split(b"\n", 1)[1])

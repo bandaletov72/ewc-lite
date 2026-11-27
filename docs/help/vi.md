@@ -490,4 +490,16 @@ Marketplace tắt mặc định. Mở mục Marketplace trong quản trị để
 
 Trong **Marketplace → Danh mục → Sản phẩm**, lọc theo tên, SKU, mã vạch, danh mục hoặc trạng thái. Dùng **Cột** để hiển thị thêm trường. Sửa trạng thái, giá, SKU, mã vạch và tồn kho trong phiếu sản phẩm. Thêm kho tại thẻ **Kho hàng**.
 
+Sắp xếp bằng mũi tên ở tiêu đề cột và lưu giá trong danh sách. Với sản phẩm có biến thể, hãy mở khoảng giá.
+
+Chèn `[shop]` vào trang thường để hiển thị cửa hàng theo giao diện trang web. Trong **Marketplace → Bộ lọc**, đặt vị trí, giá, thuộc tính và lọc trực tiếp. Quản lý email trong **Mẫu thiết kế → Mẫu email**. Dùng biểu tượng Lưới và Danh sách để đổi bố cục. Thứ tự sắp xếp được áp dụng ngay.
+
+Giá, mã vạch, tồn kho và thuộc tính số được lưu khi rời ô nhập. Dùng Cột để chọn mục hiển thị và kéo tiêu đề hoặc mép cột để đổi thứ tự hay độ rộng. Chọn sản phẩm để thao tác hàng loạt. Đặt mức làm tròn giá trong cài đặt cửa hàng. Cửa hàng giao diện GitHub có trang mẫu và cho phép chọn sản phẩm cần nhập.
+
+Thêm vào giỏ sẽ mở hộp thoại. Thay đổi số lượng và xóa hàng không cần tải lại.
+
+Trong Thương hiệu, thêm mô tả, trang web và logo. Thẻ dẫn đến các sản phẩm của thương hiệu.
+
 [Marketplace](../marketplace.md)
+
+Đơn hàng được hiển thị 20 đơn mỗi trang. Thêm trạng thái và dùng In / PDF cho phiếu giao hàng có địa chỉ, người nhận và SKU. Thống kê có biểu đồ và bảng. Trong Tích hợp, cài khóa và hồ sơ GitHub đã ký. Kiểm tra thanh toán trong bảng điều khiển nhà cung cấp.
