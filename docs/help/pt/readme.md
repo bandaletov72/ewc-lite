@@ -12,7 +12,7 @@ Para manutenção programada adicione o comando `php update.php --scheduled` ao 
 
 ## Lançamento local
 
-Vá para o diretório `php-site` e inicie o servidor PHP integrado.
+Abra a pasta extraída do EWC Lite que contém `router.php` e inicie o servidor PHP integrado.
 
 ```sh
 php -S 127.0.0.1:8000 router.php
@@ -181,7 +181,7 @@ O motor monta uma página completa de `[header]`, `[mobile-menu]`, `[menu]` e `[
 
 ## Atualização do motor
 
-O arquivo completo é necessário para uma nova instalação. Para um site ativo, use `php-site-update.zip`. Ele contém apenas o mecanismo e os modelos padrão. Páginas salvas, blocos de informações, configurações, senhas, mensagens e extensões de usuário não são incluídos no arquivo.
+O arquivo completo é necessário para uma nova instalação. Para um site ativo, use `ewc-lite-update.zip`. Ele contém apenas o mecanismo e os modelos padrão. Páginas salvas, blocos de informações, configurações, senhas, mensagens e extensões de usuário não são incluídos no arquivo.
 
 Clique em “Atualizar mecanismo” em “Configurações → Atualizações” ou execute a mesma verificação no agendador de hospedagem.
 
@@ -194,12 +194,12 @@ A fonte padrão é `bandaletov72/ewc-lite`. Para seu próprio repositório, conf
 Para instalação manual, use ZIP.
 
 ```sh
-php update.php /path/to/php-site-update.zip
+php update.php /path/to/ewc-lite-update.zip
 ```
 
 Na versão antiga sem `update.php`, primeiro descompacte o pacote em cima do projeto, mantendo o `.htaccess` existente e os arquivos do `maintenance/`, se houver. Se você editou modelos padrão, transfira as edições para `templates/local/` antes de atualizar. O instalador verifica a lista e as somas de verificação dos arquivos e, para GitHub, também verifica a assinatura com a chave pública confiável `maintenance/release-public.pem`.
 
-Para a próxima versão, altere a versão para `app/version.php` e construa o pacote via `php update.php --build php-site-update.zip`. Assine o ZIP com sua chave privada RSA com SHA‑256 e armazene a chave privada separadamente do site. Em seguida, envie o ZIP e `.sig` para o GitHub Release com a tag `vX.Y.Z` ou para `updates/vX.Y.Z/` e atualize `updates/latest.json` para `{"version":"X.Y.Z"}`.
+Para a próxima versão, altere a versão para `app/version.php` e construa o pacote via `php update.php --build ewc-lite-update.zip`. Assine o ZIP com sua chave privada RSA com SHA‑256 e armazene a chave privada separadamente do site. Em seguida, envie o ZIP e `.sig` para o GitHub Release com a tag `vX.Y.Z` ou para `updates/vX.Y.Z/` e atualize `updates/latest.json` para `{"version":"X.Y.Z"}`.
 
 ## Extensões
 
@@ -518,3 +518,5 @@ Marque as fontes a ativar e atribua-as ao texto, aos títulos ou aos controlos. 
 Bibliotecas → Hospedar localmente
 
 Modelos de página → Criar página
+
+Na loja de temas, use as setas para alternar entre as imagens da página inicial e da loja. Em Flor Atelier, a segunda imagem mostra a coleção de ramos. Para importar o saldo de portas STAL, escolha carregar os produtos de demonstração.

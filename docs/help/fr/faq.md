@@ -94,7 +94,7 @@ Le fragment de page nécessite une session publique valide et un jeton sur le m�
 
 ### Comment mettre à jour le moteur d'un site installé ?
 
-Dans Paramètres → Mises à jour, comparez la version installée avec la dernière version de GitHub, puis cliquez sur Mettre à jour le moteur. Si GitHub n'est pas disponible, le panneau d'administration affiche la version qui a été vérifiée pour la dernière fois. Pour mettre à jour manuellement, transmettez l'archive php-site-update.zip à la commande php update.php. Le package de mise à jour remplace les fichiers du moteur et les modèles standard. Stockez vos modèles PHP dans templates/local/.
+Dans Paramètres → Mises à jour, comparez la version installée avec la dernière version de GitHub, puis cliquez sur Mettre à jour le moteur. Si GitHub n'est pas disponible, le panneau d'administration affiche la version qui a été vérifiée pour la dernière fois. Pour mettre à jour manuellement, transmettez l'archive ewc-lite-update.zip à la commande php update.php. Le package de mise à jour remplace les fichiers du moteur et les modèles standard. Stockez vos modèles PHP dans templates/local/.
 
 ### Que dois-je copier avant de procéder à une mise à niveau ou à une migration ?
 

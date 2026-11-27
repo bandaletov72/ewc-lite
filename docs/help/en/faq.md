@@ -94,7 +94,7 @@ Page fragments require a public session and a token from the same site. Use wind
 
 ### How do I update the engine?
 
-Open Settings → Updates and choose Update engine. To apply a local archive, run php update.php php-site-update.zip. Put custom PHP layouts in templates/local/. Scheduled updates are available under Maintenance when your host runs php update.php --scheduled.
+Open Settings → Updates and choose Update engine. To apply a local archive, run php update.php ewc-lite-update.zip. Put custom PHP layouts in templates/local/. Scheduled updates are available under Maintenance when your host runs php update.php --scheduled.
 
 ### What should I back up before moving or updating?
 

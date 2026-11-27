@@ -94,7 +94,7 @@ Kiểm tra đường dẫn trong mã thành phần với thư mục trên máy c
 
 ### Làm cách nào để cập nhật công cụ của một trang web đã cài đặt?
 
-Trong Cài đặt → Cập nhật, so sánh phiên bản đã cài đặt với phiên bản mới nhất từ ​​GitHub, sau đó nhấp vào Cập nhật công cụ. Nếu GitHub không khả dụng, bảng quản trị sẽ hiển thị phiên bản được kiểm tra lần cuối. Để cập nhật thủ công, hãy chuyển kho lưu trữ php-site-update.zip sang lệnh php update.php. Gói cập nhật thay thế các tệp công cụ và mẫu tiêu chuẩn. Lưu trữ các mẫu PHP của bạn trong templates/local/.
+Trong Cài đặt → Cập nhật, so sánh phiên bản đã cài đặt với phiên bản mới nhất từ ​​GitHub, sau đó nhấp vào Cập nhật công cụ. Nếu GitHub không khả dụng, bảng quản trị sẽ hiển thị phiên bản được kiểm tra lần cuối. Để cập nhật thủ công, hãy chuyển kho lưu trữ ewc-lite-update.zip sang lệnh php update.php. Gói cập nhật thay thế các tệp công cụ và mẫu tiêu chuẩn. Lưu trữ các mẫu PHP của bạn trong templates/local/.
 
 ### Tôi nên sao chép những gì trước khi nâng cấp hoặc di chuyển?
 

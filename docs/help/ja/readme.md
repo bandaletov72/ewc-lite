@@ -12,7 +12,7 @@ PHP の最低バージョンは 7.2 です。サイトと管理画面は PHP 8.6
 
 ## ローカルでの起動
 
-`php-site` ディレクトリに移動し、組み込みの PHP サーバーを起動します。
+展開した EWC Lite フォルダーで `router.php` を確認し、組み込みの PHP サーバーを起動します。
 
 ```sh
 php -S 127.0.0.1:8000 router.php
@@ -181,7 +181,7 @@ document.getElementById('content').outerHTML = html;
 
 ## エンジンのアップデート
 
-新規インストールには完全なアーカイブが必要です。ライブ サイトの場合は、`php-site-update.zip` を使用します。エンジンと標準テンプレートのみが含まれています。保存されたページ、情報ブロック、設定、パスワード、メッセージ、およびユーザー拡張子はアーカイブには含まれません。
+新規インストールには完全なアーカイブが必要です。ライブ サイトの場合は、`ewc-lite-update.zip` を使用します。エンジンと標準テンプレートのみが含まれています。保存されたページ、情報ブロック、設定、パスワード、メッセージ、およびユーザー拡張子はアーカイブには含まれません。
 
 「設定 → アップデート」の「アップデート エンジン」をクリックするか、ホスティング スケジューラから同じチェックを実行します。
 
@@ -194,12 +194,12 @@ php update.php --github
 手動インストールの場合は、ZIP を使用します。
 
 ```sh
-php update.php /path/to/php-site-update.zip
+php update.php /path/to/ewc-lite-update.zip
 ```
 
 `update.php` のない古いバージョンでは、まずプロジェクトの上でパッケージを解凍し、既存の `.htaccess` と `maintenance/` のファイル (存在する場合) を保持します。標準テンプレートを編集した場合は、更新する前に編集内容を `templates/local/` に転送します。インストーラーはファイルのリストとチェックサムを検証し、GitHub の場合は信頼された公開キー `maintenance/release-public.pem` による署名も検証します。
 
-次のリリースでは、バージョンを `app/version.php` に変更し、`php update.php --build php-site-update.zip` 経由でパッケージをビルドします。 SHA‑256 を使用して RSA 秘密キーを使用して ZIP に署名し、秘密キーをサイトとは別に保管します。次に、ZIP と `.sig` をタグ `vX.Y.Z` で GitHub リリースまたは `updates/vX.Y.Z/` にプッシュし、`updates/latest.json` を `{"version":"X.Y.Z"}` に更新します。
+次のリリースでは、バージョンを `app/version.php` に変更し、`php update.php --build ewc-lite-update.zip` 経由でパッケージをビルドします。 SHA‑256 を使用して RSA 秘密キーを使用して ZIP に署名し、秘密キーをサイトとは別に保管します。次に、ZIP と `.sig` をタグ `vX.Y.Z` で GitHub リリースまたは `updates/vX.Y.Z/` にプッシュし、`updates/latest.json` を `{"version":"X.Y.Z"}` に更新します。
 
 ## 拡張機能
 
@@ -518,3 +518,5 @@ Yandex Maps のコンソールで「JavaScript API」のキーを作成し、HTT
 ライブラリ → ローカルに保存
 
 ページテンプレート → ページを作成
+
+テーマストアでは矢印でホームとショップの画像を切り替えられます。Flor Atelier の2枚目は花束のコレクションです。STAL のセール商品はデモ商品の読み込みからインポートできます。

@@ -12,7 +12,7 @@
 
 ## 현지 출시
 
-`php-site` 디렉토리로 이동하여 내장 PHP 서버를 시작하십시오.
+압축을 푼 EWC Lite 폴더에서 `router.php`를 확인하고 내장 PHP 서버를 시작하세요.
 
 ```sh
 php -S 127.0.0.1:8000 router.php
@@ -181,7 +181,7 @@ document.getElementById('content').outerHTML = html;
 
 ## 엔진 업데이트
 
-새로 설치하려면 전체 아카이브가 필요합니다. 라이브 사이트의 경우 `php-site-update.zip`를 사용하세요. 여기에는 엔진과 표준 템플릿만 포함되어 있습니다. 저장된 페이지, 정보 블록, 설정, 비밀번호, 메시지 및 사용자 확장은 아카이브에 포함되지 않습니다.
+새로 설치하려면 전체 아카이브가 필요합니다. 라이브 사이트의 경우 `ewc-lite-update.zip`를 사용하세요. 여기에는 엔진과 표준 템플릿만 포함되어 있습니다. 저장된 페이지, 정보 블록, 설정, 비밀번호, 메시지 및 사용자 확장은 아카이브에 포함되지 않습니다.
 
 "설정 → 업데이트"에서 "엔진 업데이트"를 클릭하거나 호스팅 스케줄러에서 동일한 검사를 실행하세요.
 
@@ -194,12 +194,12 @@ php update.php --github
 수동 설치의 경우 ZIP을 사용하세요.
 
 ```sh
-php update.php /path/to/php-site-update.zip
+php update.php /path/to/ewc-lite-update.zip
 ```
 
 `update.php`가 없는 이전 버전에서는 먼저 프로젝트 위에서 패키지의 압축을 풀고 기존 `.htaccess`와 `maintenance/`의 파일(있는 경우)을 유지합니다. 표준 템플릿을 편집한 경우 업데이트하기 전에 편집 내용을 `templates/local/`로 전송하세요. 설치 프로그램은 파일의 목록과 체크섬을 확인하고, GitHub의 경우 신뢰할 수 있는 공개 키 `maintenance/release-public.pem`를 사용하여 서명도 확인합니다.
 
-다음 릴리스에서는 버전을 `app/version.php`로 변경하고 `php update.php --build php-site-update.zip`를 통해 패키지를 빌드합니다. SHA-256을 사용하는 RSA 개인 키로 ZIP에 서명하고 개인 키를 사이트와 별도로 저장하세요. 그런 다음 ZIP 및 `.sig`를 `vX.Y.Z` 태그가 있는 GitHub 릴리스 또는 `updates/vX.Y.Z/`로 푸시하고 `updates/latest.json`를 `{"version":"X.Y.Z"}`로 업데이트합니다.
+다음 릴리스에서는 버전을 `app/version.php`로 변경하고 `php update.php --build ewc-lite-update.zip`를 통해 패키지를 빌드합니다. SHA-256을 사용하는 RSA 개인 키로 ZIP에 서명하고 개인 키를 사이트와 별도로 저장하세요. 그런 다음 ZIP 및 `.sig`를 `vX.Y.Z` 태그가 있는 GitHub 릴리스 또는 `updates/vX.Y.Z/`로 푸시하고 `updates/latest.json`를 `{"version":"X.Y.Z"}`로 업데이트합니다.
 
 ## 확장
 
@@ -518,3 +518,5 @@ Yandex Maps 콘솔에서 «JavaScript API» 키를 만들고 HTTP Referer로 제
 라이브러리 → 로컬에 저장
 
 페이지 템플릿 → 페이지 만들기
+
+테마 스토어의 화살표로 홈과 매장 화면을 전환합니다. Flor Atelier의 두 번째 화면은 꽃다발 컬렉션입니다. STAL 문 할인 상품은 데모 상품 불러오기로 가져올 수 있습니다.

@@ -12,7 +12,7 @@ For scheduled maintenance, add the command `php update.php --scheduled` to the h
 
 ## Local launch
 
-Go to the `php-site` directory and launch the built-in PHP server.
+Open the extracted EWC Lite folder containing `router.php` and launch the built-in PHP server.
 
 ```sh
 php -S 127.0.0.1:8000 router.php
@@ -181,7 +181,7 @@ The engine assembles a complete page from `[header]`, `[mobile-menu]`, `[menu]` 
 
 ## Engine update
 
-The full archive is needed for a new installation. For a live site, use `php-site-update.zip`. It only contains the engine and standard templates. Saved pages, information blocks, settings, passwords, messages and user extensions are not included in the archive.
+The full archive is needed for a new installation. For a live site, use `ewc-lite-update.zip`. It only contains the engine and standard templates. Saved pages, information blocks, settings, passwords, messages and user extensions are not included in the archive.
 
 Click "Update Engine" in "Settings → Updates" or run the same check from the hosting scheduler.
 
@@ -194,12 +194,12 @@ The default source is `bandaletov72/ewc-lite`. For your own repository, set it t
 For manual installation, use ZIP.
 
 ```sh
-php update.php /path/to/php-site-update.zip
+php update.php /path/to/ewc-lite-update.zip
 ```
 
 On the old version without `update.php`, first unzip the package on top of the project, keeping the existing `.htaccess` and the files from `maintenance/`, if any. If you edited standard templates, transfer the edits to `templates/local/` before updating. The installer verifies the list and checksums of the files, and for GitHub it also verifies the signature with the trusted public key `maintenance/release-public.pem`.
 
-For the next release, change the version to `app/version.php` and build the package via `php update.php --build php-site-update.zip`. Sign the ZIP with your RSA private key with SHA‑256, and store the private key separately from the site. Then push the ZIP and `.sig` to GitHub Release with the tag `vX.Y.Z` or to `updates/vX.Y.Z/` and update `updates/latest.json` to `{"version":"X.Y.Z"}`.
+For the next release, change the version to `app/version.php` and build the package via `php update.php --build ewc-lite-update.zip`. Sign the ZIP with your RSA private key with SHA‑256, and store the private key separately from the site. Then push the ZIP and `.sig` to GitHub Release with the tag `vX.Y.Z` or to `updates/vX.Y.Z/` and update `updates/latest.json` to `{"version":"X.Y.Z"}`.
 
 ## Extensions
 
@@ -518,3 +518,5 @@ Enable fonts with checkboxes and assign them to body text, headings or controls.
 Libraries → Make local
 
 Page templates → Create page
+
+In the Theme Store, use the arrows to switch between the home and store screenshots. For Flor Atelier, the second image shows its bouquet collection. To import the Stal Doors clearance section, choose Load demo products.

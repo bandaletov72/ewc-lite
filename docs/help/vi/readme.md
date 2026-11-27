@@ -12,7 +12,7 @@ Phiên bản PHP tối thiểu là 7.2. Trang web và khu vực quản trị h�
 
 ## Ra mắt cục bộ
 
-Chuyển đến thư mục `php-site` và khởi chạy máy chủ PHP tích hợp.
+Mở thư mục EWC Lite đã giải nén chứa `router.php` và khởi chạy máy chủ PHP tích hợp.
 
 ```sh
 php -S 127.0.0.1:8000 router.php
@@ -181,7 +181,7 @@ Công cụ này tập hợp một trang hoàn chỉnh từ `[header]`, `[mobile-
 
 ## Cập nhật động cơ
 
-Cần có kho lưu trữ đầy đủ để cài đặt mới. Đối với trang web trực tiếp, hãy sử dụng `php-site-update.zip`. Nó chỉ chứa động cơ và các mẫu tiêu chuẩn. Các trang đã lưu, khối thông tin, cài đặt, mật khẩu, tin nhắn và tiện ích mở rộng người dùng không được đưa vào kho lưu trữ.
+Cần có kho lưu trữ đầy đủ để cài đặt mới. Đối với trang web trực tiếp, hãy sử dụng `ewc-lite-update.zip`. Nó chỉ chứa động cơ và các mẫu tiêu chuẩn. Các trang đã lưu, khối thông tin, cài đặt, mật khẩu, tin nhắn và tiện ích mở rộng người dùng không được đưa vào kho lưu trữ.
 
 Nhấp vào "Cập nhật công cụ" trong "Cài đặt → Cập nhật" hoặc chạy kiểm tra tương tự từ bộ lập lịch lưu trữ.
 
@@ -194,12 +194,12 @@ Nguồn mặc định là `bandaletov72/ewc-lite`. Đối với kho lưu trữ c
 Để cài đặt thủ công, hãy sử dụng ZIP.
 
 ```sh
-php update.php /path/to/php-site-update.zip
+php update.php /path/to/ewc-lite-update.zip
 ```
 
 Trên phiên bản cũ không có `update.php`, trước tiên hãy giải nén gói phía trên dự án, giữ lại `.htaccess` hiện có và các tệp từ `maintenance/`, nếu có. Nếu bạn đã chỉnh sửa các mẫu tiêu chuẩn, hãy chuyển các chỉnh sửa sang `templates/local/` trước khi cập nhật. Trình cài đặt xác minh danh sách và tổng kiểm tra các tệp và đối với GitHub, nó cũng xác minh chữ ký bằng khóa chung đáng tin cậy `maintenance/release-public.pem`.
 
-Đối với bản phát hành tiếp theo, hãy thay đổi phiên bản thành `app/version.php` và xây dựng gói thông qua `php update.php --build php-site-update.zip`. Ký ZIP bằng khóa riêng RSA của bạn với SHA‑256 và lưu trữ khóa riêng tư này khỏi trang web. Sau đó đẩy ZIP và `.sig` lên GitHub Release với thẻ `vX.Y.Z` hoặc `updates/vX.Y.Z/` và cập nhật `updates/latest.json` thành `{"version":"X.Y.Z"}`.
+Đối với bản phát hành tiếp theo, hãy thay đổi phiên bản thành `app/version.php` và xây dựng gói thông qua `php update.php --build ewc-lite-update.zip`. Ký ZIP bằng khóa riêng RSA của bạn với SHA‑256 và lưu trữ khóa riêng tư này khỏi trang web. Sau đó đẩy ZIP và `.sig` lên GitHub Release với thẻ `vX.Y.Z` hoặc `updates/vX.Y.Z/` và cập nhật `updates/latest.json` thành `{"version":"X.Y.Z"}`.
 
 ## Tiện ích mở rộng
 
@@ -518,3 +518,5 @@ Tích chọn phông chữ rồi gán cho văn bản, tiêu đề hoặc nút. T�
 Thư viện → Lưu cục bộ
 
 Mẫu trang → Tạo trang
+
+Trong cửa hàng giao diện, dùng các mũi tên để chuyển giữa ảnh trang chủ và cửa hàng. Ảnh thứ hai của Flor Atelier hiển thị bộ sưu tập bó hoa. Để nhập mục giảm giá cửa STAL, hãy chọn tải sản phẩm mẫu.

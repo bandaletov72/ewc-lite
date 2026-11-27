@@ -19,8 +19,8 @@
 ## Тестирование
 
 Требуется чистая распакованная установка EWC-lite 1.6.93 или новее. Сами файлы CMS в ZIP не включены.
-- `python3 test/verify-http.py /absolute/path/to/php /absolute/path/to/php-site`: сопоставляет 14 схем через stdio и HTTP, проверяет авторизацию и изоляцию двух временных копий, черновик, предпросмотр и публикацию только в копии A.
-- `node test/smoke.cjs /absolute/path/to/php /absolute/path/to/php-site /absolute/path/to/scratch`: штатный тест stdio, включая страницы, магазин и темы. Для HTTP-теста магазина каталог PHP-сессий должен быть доступен на запись.
+- `python3 test/verify-http.py /absolute/path/to/php /absolute/path/to/ewc-lite`: сопоставляет 14 схем через stdio и HTTP, проверяет авторизацию и изоляцию двух временных копий, черновик, предпросмотр и публикацию только в копии A.
+- `node test/smoke.cjs /absolute/path/to/php /absolute/path/to/ewc-lite /absolute/path/to/scratch`: штатный тест stdio, включая страницы, магазин и темы. Для HTTP-теста магазина каталог PHP-сессий должен быть доступен на запись.
 
 Локальный HTTP-вход: задайте переменные установки из таблицы и случайный тестовый `EWC_MCP_HTTP_TOKEN`, затем запустите `php -S 127.0.0.1:18081 http.php`. Обращайтесь к `POST /mcp` с заголовками `Authorization: Bearer …` и `Content-Type: application/json`. Это тестовый сервер только на loopback, не OAuth и не конечная версия для публичного каталога. Никакого публичного HTTP-развёртывания не выполнено.
 

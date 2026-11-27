@@ -12,7 +12,7 @@ Pour une maintenance planifiée, ajoutez la commande `php update.php --scheduled
 
 ## Lancement local
 
-Accédez au répertoire `php-site` et lancez le serveur PHP intégré.
+Ouvrez le dossier EWC Lite extrait contenant `router.php`, puis lancez le serveur PHP intégré.
 
 ```sh
 php -S 127.0.0.1:8000 router.php
@@ -181,7 +181,7 @@ Le moteur assemble une page complète de `[header]`, `[mobile-menu]`, `[menu]` e
 
 ## Mise à jour du moteur
 
-L'archive complète est nécessaire pour une nouvelle installation. Pour un site en direct, utilisez `php-site-update.zip`. Il contient uniquement le moteur et les modèles standards. Les pages enregistrées, les blocs d'informations, les paramètres, les mots de passe, les messages et les extensions utilisateur ne sont pas inclus dans l'archive.
+L'archive complète est nécessaire pour une nouvelle installation. Pour un site en direct, utilisez `ewc-lite-update.zip`. Il contient uniquement le moteur et les modèles standards. Les pages enregistrées, les blocs d'informations, les paramètres, les mots de passe, les messages et les extensions utilisateur ne sont pas inclus dans l'archive.
 
 Cliquez sur « Moteur de mise à jour » dans « Paramètres → Mises à jour » ou exécutez la même vérification depuis le planificateur d'hébergement.
 
@@ -194,12 +194,12 @@ La source par défaut est `bandaletov72/ewc-lite`. Pour votre propre référenti
 Pour une installation manuelle, utilisez ZIP.
 
 ```sh
-php update.php /path/to/php-site-update.zip
+php update.php /path/to/ewc-lite-update.zip
 ```
 
 Sur l'ancienne version sans `update.php`, décompressez d'abord le package au-dessus du projet, en conservant le `.htaccess` existant et les fichiers de `maintenance/`, le cas échéant. Si vous avez modifié des modèles standard, transférez les modifications vers `templates/local/` avant la mise à jour. Le programme d'installation vérifie la liste et les sommes de contrôle des fichiers, et pour GitHub, il vérifie également la signature avec la clé publique de confiance `maintenance/release-public.pem`.
 
-Pour la prochaine version, remplacez la version par `app/version.php` et créez le package via `php update.php --build php-site-update.zip`. Signez le ZIP avec votre clé privée RSA avec SHA‑256 et stockez la clé privée séparément du site. Ensuite, poussez le ZIP et `.sig` vers GitHub Release avec la balise `vX.Y.Z` ou vers `updates/vX.Y.Z/` et mettez à jour `updates/latest.json` vers `{"version":"X.Y.Z"}`.
+Pour la prochaine version, remplacez la version par `app/version.php` et créez le package via `php update.php --build ewc-lite-update.zip`. Signez le ZIP avec votre clé privée RSA avec SHA‑256 et stockez la clé privée séparément du site. Ensuite, poussez le ZIP et `.sig` vers GitHub Release avec la balise `vX.Y.Z` ou vers `updates/vX.Y.Z/` et mettez à jour `updates/latest.json` vers `{"version":"X.Y.Z"}`.
 
 ## Rallonges
 
@@ -518,3 +518,5 @@ Cochez les polices à activer, puis attribuez-les au texte, aux titres ou aux co
 Bibliothèques → Héberger localement
 
 Modèles de page → Créer une page
+
+Dans la boutique de thèmes, les flèches alternent entre les captures de l’accueil et de la boutique. Pour Flor Atelier, la seconde montre la collection de bouquets. Pour importer le déstockage de portes STAL, choisissez le chargement des produits de démonstration.

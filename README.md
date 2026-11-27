@@ -20,7 +20,7 @@
 
 ## Локальный запуск
 
-Перейдите в каталог `php-site` и запустите встроенный сервер PHP.
+Перейдите в распакованный каталог EWC Lite с файлом `router.php` и запустите встроенный сервер PHP.
 
 ```sh
 php -S 127.0.0.1:8000 router.php
@@ -179,6 +179,8 @@ document.getElementById('content').outerHTML = html;
 При установке в подкаталог передавайте URL с префиксом сайта. Скрипт и стили берутся со страницы, которая вставляет фрагмент. Публичные страницы остаются доступны по обычным адресам.
 
 ## Шаблоны и ресурсы
+
+[Посмотреть главные страницы и магазины тем](https://github.com/bandaletov72/ewc-lite/tree/main/theme-store).
 
 В «Настройки → Библиотеки и шрифты» по отдельности подключаются jQuery, Bootstrap, Font Awesome, Material UI, Alpine.js, htmx, Chart.js и GLightbox. Font Awesome хранится локально. Остальные библиотеки загружаются браузером с CDN при включении. Material UI доступен в скриптах `type="module"` через `import { Button } from '@mui/material'`. Для иконок подойдёт `[fa-icon=house]` или обычная разметка `<i class="fa-solid fa-house"></i>`.
 

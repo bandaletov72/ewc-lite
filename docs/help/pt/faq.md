@@ -94,7 +94,7 @@ O fragmento de página requer uma sessão pública válida e um token no mesmo s
 
 ### Como atualizar o motor de um site instalado?
 
-Em Configurações → Atualizações, compare a versão instalada com a versão mais recente do GitHub e clique em Mecanismo de atualização. Se o GitHub não estiver disponível, o painel de administração mostrará a última versão verificada. Para atualizar manualmente, passe o arquivo php-site-update.zip para o comando php update.php. O pacote de atualização substitui os arquivos do mecanismo e os modelos padrão. Armazene seus modelos PHP em templates/local/.
+Em Configurações → Atualizações, compare a versão instalada com a versão mais recente do GitHub e clique em Mecanismo de atualização. Se o GitHub não estiver disponível, o painel de administração mostrará a última versão verificada. Para atualizar manualmente, passe o arquivo ewc-lite-update.zip para o comando php update.php. O pacote de atualização substitui os arquivos do mecanismo e os modelos padrão. Armazene seus modelos PHP em templates/local/.
 
 ### O que devo copiar antes de atualizar ou migrar?
 

@@ -21,14 +21,14 @@
 Создайте отдельные каталоги для плагина и черновиков вне веб-корня. Для черновиков дайте доступ только учётной записи, под которой работает плагин. Укажите адрес сайта с префиксом, если CMS установлена в подпапку.
 
 ~~~powershell
-php C:/ewc/ewc-lite-plugin/server.php C:/ewc/php-site C:/ewc/private-drafts http://127.0.0.1:8000
+php C:/ewc/ewc-lite-plugin/server.php C:/ewc/ewc-lite C:/ewc/private-drafts http://127.0.0.1:8000
 ~~~
 
 Процесс принимает MCP-запросы через стандартный ввод и вывод. Для проверки в PowerShell отправьте запрос `initialize` по каналу ввода.
 
 ~~~powershell
 '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-11-25"}}' |
-  php C:/ewc/ewc-lite-plugin/server.php C:/ewc/php-site C:/ewc/private-drafts http://127.0.0.1:8000
+  php C:/ewc/ewc-lite-plugin/server.php C:/ewc/ewc-lite C:/ewc/private-drafts http://127.0.0.1:8000
 ~~~
 
 Ожидаемый ответ сообщит имя `ewc-lite` и возможность `tools`.
@@ -39,7 +39,7 @@ php C:/ewc/ewc-lite-plugin/server.php C:/ewc/php-site C:/ewc/private-drafts http
 2. Укажите команду PHP как stdio-сервер. Замените пример `tunnel_…` и пути своими значениями. Если PHP не добавлен в `PATH`, укажите полный путь к `php.exe`.
 
    ~~~powershell
-   tunnel-client init --sample sample_mcp_stdio_local --profile ewc-lite --tunnel-id tunnel_0123456789abcdef0123456789abcdef --mcp-command 'php C:/ewc/ewc-lite-plugin/server.php C:/ewc/php-site C:/ewc/private-drafts http://127.0.0.1:8000'
+   tunnel-client init --sample sample_mcp_stdio_local --profile ewc-lite --tunnel-id tunnel_0123456789abcdef0123456789abcdef --mcp-command 'php C:/ewc/ewc-lite-plugin/server.php C:/ewc/ewc-lite C:/ewc/private-drafts http://127.0.0.1:8000'
    tunnel-client doctor --profile ewc-lite --explain
    tunnel-client run --profile ewc-lite
    ~~~
@@ -69,7 +69,7 @@ php C:/ewc/ewc-lite-plugin/server.php C:/ewc/php-site C:/ewc/private-drafts http
 Сквозной тест запускает отдельную копию CMS и проверяет MCP, страницы, магазин, конфликты правок и переключение тем. Для него нужен Node.js 18 или новее и чистая распакованная копия EWC-lite.
 
 ~~~powershell
-node test/smoke.cjs C:/php/php.exe C:/ewc/clean-php-site C:/ewc/test-work
+node test/smoke.cjs C:/php/php.exe C:/ewc/clean-ewc-lite C:/ewc/test-work
 ~~~
 
 Пакет проверен на EWC-lite 1.6.93 с PHP 7.2.34 и 8.5.13. [Eurowebcart CMS Lite](https://github.com/bandaletov72/ewc-lite)

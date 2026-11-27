@@ -94,7 +94,7 @@ Das Seitenfragment erfordert eine gültige öffentliche Sitzung und ein gültige
 
 ### Wie aktualisiere ich die Engine einer installierten Site?
 
-Vergleichen Sie unter Einstellungen → Updates die installierte Version mit der neuesten Version von GitHub und klicken Sie dann auf Update Engine. Wenn GitHub nicht verfügbar ist, zeigt das Admin-Panel die zuletzt überprüfte Version an. Um manuell zu aktualisieren, übergeben Sie das Archiv php-site-update.zip an den PHP-Befehl update.php. Das Update-Paket ersetzt die Engine-Dateien und Standardvorlagen. Speichern Sie Ihre PHP-Vorlagen in templates/local/.
+Vergleichen Sie unter Einstellungen → Updates die installierte Version mit der neuesten Version von GitHub und klicken Sie dann auf Update Engine. Wenn GitHub nicht verfügbar ist, zeigt das Admin-Panel die zuletzt überprüfte Version an. Um manuell zu aktualisieren, übergeben Sie das Archiv ewc-lite-update.zip an den PHP-Befehl update.php. Das Update-Paket ersetzt die Engine-Dateien und Standardvorlagen. Speichern Sie Ihre PHP-Vorlagen in templates/local/.
 
 ### Was sollte ich vor dem Upgrade oder der Migration kopieren?
 

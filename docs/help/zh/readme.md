@@ -12,7 +12,7 @@
 
 ## 本地发布
 
-转到 `php-site` 目录并启动内置 PHP 服务器。
+进入解压后的 EWC Lite 文件夹，找到 `router.php`，然后启动内置 PHP 服务器。
 
 ```sh
 php -S 127.0.0.1:8000 router.php
@@ -181,7 +181,7 @@ document.getElementById('content').outerHTML = html;
 
 ## 引擎更新
 
-新安装需要完整的存档。对于实时站点，请使用 `php-site-update.zip`。它仅包含引擎和标准模板。保存的页面、信息块、设置、密码、消息和用户扩展不包含在存档中。
+新安装需要完整的存档。对于实时站点，请使用 `ewc-lite-update.zip`。它仅包含引擎和标准模板。保存的页面、信息块、设置、密码、消息和用户扩展不包含在存档中。
 
 单击“设置→更新”中的“更新引擎”或从托管调度程序运行相同的检查。
 
@@ -194,12 +194,12 @@ php update.php --github
 对于手动安装，请使用 ZIP。
 
 ```sh
-php update.php /path/to/php-site-update.zip
+php update.php /path/to/ewc-lite-update.zip
 ```
 
 在没有 `update.php` 的旧版本上，首先将包解压到项目顶部，保留现有的 `.htaccess` 和 `maintenance/` 中的文件（如果有）。如果您编辑了标准模板，请在更新之前将编辑内容传输到 `templates/local/`。安装程序会验证文件的列表和校验和，对于 GitHub，它还会使用可信公钥 `maintenance/release-public.pem` 验证签名。
 
-对于下一个版本，将版本更改为 `app/version.php` 并通过 `php update.php --build php-site-update.zip` 构建包。使用 SHA-256 的 RSA 私钥对 ZIP 进行签名，并将私钥与站点分开存储。然后将 ZIP 和 `.sig` 推送到带有标签 `vX.Y.Z` 的 GitHub Release 或 `updates/vX.Y.Z/` 并将 `updates/latest.json` 更新为 `{"version":"X.Y.Z"}`。
+对于下一个版本，将版本更改为 `app/version.php` 并通过 `php update.php --build ewc-lite-update.zip` 构建包。使用 SHA-256 的 RSA 私钥对 ZIP 进行签名，并将私钥与站点分开存储。然后将 ZIP 和 `.sig` 推送到带有标签 `vX.Y.Z` 的 GitHub Release 或 `updates/vX.Y.Z/` 并将 `updates/latest.json` 更新为 `{"version":"X.Y.Z"}`。
 
 ## 扩展
 
@@ -518,3 +518,5 @@ HTML 和可视化编辑器模式通过选项卡切换。 SUP、SUB 和段落插�
 库 → 保存到本地
 
 页面模板 → 创建页面
+
+在主题商店中，使用箭头切换首页和商城截图。Flor Atelier 的第二张截图为花束系列。要导入 STAL 的清仓门商品，请选择加载示例商品。
