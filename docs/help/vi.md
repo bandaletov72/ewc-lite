@@ -529,3 +529,5 @@ Bật đặt nhanh để nhận tại cửa hàng trong trình chỉnh sửa s�
 - [REST API](../content-api.md) · Trong AI → REST API, hãy tạo khóa để đọc hoặc chỉnh sửa trang qua HTTPS.
 - Trong mục Sao lưu, mở tệp lưu trữ, chọn Xóa bản sao lưu và xác nhận.
 
+
+- Cấu hình GPT riêng tư trong AI → REST API. Thư viện hỗ trợ thư mục và tải hàng loạt. Mục Người dùng quản lý đăng ký và đăng nhập.

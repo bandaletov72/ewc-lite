@@ -529,3 +529,5 @@ Activa el pedido rápido para recogida en la ficha del producto. El botón Pedir
 - [REST API](../content-api.md) · Abre IA → REST API para generar una clave de lectura o edición de páginas por HTTPS.
 - En Copias de seguridad, abre un archivo, elige Eliminar copia de seguridad y confirma.
 
+
+- Configura un GPT privado en IA → REST API. La biblioteca multimedia gestiona carpetas y cargas múltiples. Usuarios controla el registro y el inicio de sesión.

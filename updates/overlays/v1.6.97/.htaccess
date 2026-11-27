@@ -1,0 +1,22 @@
+DirectoryIndex index.php
+ErrorDocument 403 /error/403.html
+ErrorDocument 404 /error/404/
+ErrorDocument 410 /error/410.html
+ErrorDocument 429 /error/429.html
+ErrorDocument 500 /error/500.html
+ErrorDocument 502 /error/502.html
+ErrorDocument 503 /error/503.html
+ErrorDocument 504 /error/504.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(?:app/extensions|extensions|admin/languages)(?:/|$) - [F,L,NC]
+    RewriteRule ^admin/shop(?:/|$) - [F,L,NC]
+    RewriteRule ^functions\.php$ - [F,L,NC]
+    RewriteRule ^api/v1/(?:pages|shop)(?:/|$) - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    RewriteRule ^api/v1/(?:pages|shop)(?:/|$) app/page-route.php [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(?:[A-Za-z0-9_-]+/)*index_[a-z]{2}\.php$ app/page-language.php [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(?:[A-Za-z0-9_-]+/)*[A-Za-z0-9_-]+(?:/|\.php)?$ app/page-route.php [L]
+</IfModule>

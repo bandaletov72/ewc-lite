@@ -1,0 +1,533 @@
+# Português · Eurowebcart CMS Lite
+
+## Primeiros passos no 1.6.58
+
+- Ative um site completo em Modelos de design → Temas. Cores e fontes têm abas próprias. É possível ativar várias famílias e salvá-las localmente.
+- Ative bibliotecas em Configurações → Bibliotecas e salve localmente os recursos necessários. Font Awesome já vem incluído.
+- No modo de edição, clique duas vezes no conteúdo para abrir o editor em um modal. Clique duas vezes no H1 padrão para abrir seu campo na aba SEO.
+- As definições são compartilhadas e os valores são por página. Ao criar um campo, você pode definir o valor da página aberta. O controle de entrada acompanha o tipo.
+- Para um domínio novo, gere um ZIP completo com o tema ativo e teste uma instalação limpa. Em um site existente, faça backup e use uma atualização assinada.
+
+- [Gerenciamento](pt/readme.md)
+- [Perguntas frequentes sobre administração](pt/faq.md)
+- [Modelos e componentes](pt/templates.md)
+
+## Menu móvel · 1.6.7
+
+- Mostrar no menu principal
+- Mostrar no menu móvel
+- Ocultar no menu móvel
+
+
+## Editar dados na própria página · 1.6.6
+
+No modo de edição, os blocos, formulários [formX], fragmentos [tel] e outros componentes com editor oferecem Dados e Ecrã inteiro. A lista de vistas contém os modelos registados. Escolha Pasta raiz para mover a secção para o nível superior. Use [list-pages] para listar as páginas publicadas na secção e nas subpastas. Feche o menu de idiomas clicando fora ou premindo Escape.
+
+
+## Ficheiros de configuração, mapas e modelos · 1.6.5
+
+Abra Manutenção → Ficheiros de configuração para editar .htaccess, robots.txt e sitemap.xml. O gerador usa as páginas publicadas assinaladas para inclusão. A versão anterior de .htaccess pode ser recuperada.
+
+Indique a latitude e a longitude. [map] mostra o ponto da página e [maps] reúne os pontos das páginas publicadas. center e zoom definem o enquadramento. O fornecedor de mapas é escolhido em Integrações.
+
+[main-menu] é o menu sob o cabeçalho, com secções expansíveis. Crie modelos próprios e configure a visibilidade por dispositivo. Nos fragmentos, o botão de adicionar domínio abre o formulário. Use [privacy] para ligar à política.
+
+Em Integrações, introduza os ID do JivoSite, Microsoft Clarity e Umami Cloud, o código Botfaqtor ou o webhook do Slack. As instruções estão junto aos campos. No Zadarma, consulte o saldo ou teste SMS e chamadas. Os testes podem ter custos. Para [payment], indique os links YooMoney, PayPal e SBP. Confirme o estado no painel do prestador.
+
+Os editores HTML e visual têm ícones para formatação, títulos H1–H5 e listas. Coloque o cursor e selecione um modelo, componente, imagem ou ícone. Pode escolher formulários e opções dos componentes. Font Awesome fica disponível com a biblioteca ativa.
+
+Clique no nome da pasta para gerir a secção à direita. Escolha a secção superior, configure os menus ou indique um URL de redirecionamento. Uma secção vazia lista as subsecções. Em Manutenção, acrescente regras como /contact.html => /contacts/ e edite as páginas em /error/. O idioma e a pesquisa têm ícones no telemóvel.
+
+```text
+[map]
+[map center="55.7558,37.6173" zoom=14]
+[maps center="55.7558,37.6173" zoom=11]
+[main-menu]
+[lang]
+[privacy]
+[payment]
+```
+
+```php
+$var = translit("Москва"); // Moskva
+```
+
+
+## Botões no cabeçalho da administração · 1.6.4
+
+O globo abre o site e a seta termina a sessão. No telemóvel, só aparecem os ícones. Passe o cursor ou utilize o teclado para ver os respetivos rótulos.
+
+Conteúdo, Formulários e pedidos, e Site e serviços abrem diretamente. Os separadores da secção escolhida aparecem abaixo do menu principal.
+
+Insira [bread-crumbs] ou [search] no HTML da página inicial (index.php) ou de um modelo. Cada bloco aparece uma vez na posição escolhida. As definições do caminho de navegação e da pesquisa continuam ativas. [privacy] liga a /privacy/. Edite a política em Páginas.
+
+```text
+[bread-crumbs]
+[search]
+[privacy]
+```
+
+
+## Novo na versão 1.6.3
+
+### Política de casa e privacidade
+
+Abra “Modelos de Design” para editar a página inicial e a página /privacy.php. O código [page-content] exibe o conteúdo da página principal. Na política [site-name] e [site-url] levam o nome e endereço público de “Configurações → Geral”. Complete o texto inicial com informações sobre seu site e tratamento de dados.
+
+### Cookie e voltar ao topo
+
+No rodapé, [conf-policy] fornece um link para a política, [cookies] abre as configurações e [top] rola para o topo da página. Análises e mapas CMS integrados aguardam acordo. Os scripts adicionados manualmente a modelos ou cabeçalhos de serviço requerem configuração própria.
+
+### Editor functions.php
+
+Abra “Modelos de Design → Funções” após a guia “Cabeçalhos de Serviço”. Adicione fechamentos ao array retornado. No seu modelo PHP, chame `translit("Москва")` ou `ew_call("translit", "München")`. Em HTML insira [func=translit value="Москва и München"]. O exemplo produz `Moskva i Muenchen`.
+
+### Editando modelos padrão
+
+No campo “Design Templates” já contém o código fonte PHP e HTML com destaque. Ao editar um modelo padrão, selecione “PHP personalizado”. Salvar cria uma versão personalizada. Usando os botões próximos ao modelo, você pode desfazer a última edição ou restaurar o original.
+
+### Verificação do PHP antes de salvar
+
+Modelo de design, módulo e editores functions.php verificam a sintaxe com o comando `php -l`. Se houver um erro, a versão anterior permanece. Para selecionar a CLI do PHP no servidor, utilize a variável `SITE_PHP_LINT_BINARY`.
+
+### Luz de fundo e pesquisa compacta
+
+CodeMirror é habilitado por padrão em novas instalações. A configuração está localizada em “Bibliotecas e Fontes”. Na pesquisa compacta, o campo se expande para a esquerda, a cruz limpa a linha e a tecla Enter inicia a pesquisa.
+
+### Menu de administração e painel de edição
+
+O menu sob o cabeçalho do painel de administração e o painel de edição do site mostram ícones com legendas. Os ícones permanecem na tela estreita. As dicas de ferramentas são abertas ao passar o mouse e o teclado foca em uma tela estreita. “Ocultar” está localizado próximo ao restante das ações da página. O botão Edit Mode está localizado à direita.
+
+### Descrição e código do módulo PHP
+
+Em "Módulos PHP" a breve descrição é para texto simples. Cole o corpo da função em um campo separado “Código fonte · PHP”.
+
+## Novo na versão 1.6.2
+
+### Idioma de administração e ajuda
+
+Nas configurações regionais, habilite os idiomas desejados. O menu de seleção de idioma no cabeçalho altera a interface e a ajuda, mantendo a seção atual. Os textos das páginas e os valores das suas configurações são armazenados em sua forma original.
+
+### Decoração de porão
+
+O código [author] exibe a assinatura Eurowebcart CMS Lite, o nome do autor Бандалетов Павел e um link para GitHub. Para escolher onde colocar sua assinatura no rodapé HTML personalizado, cole [author] na linha apropriada.
+
+### Luz de fundo no modo de edição
+
+Passe o mouse sobre o link Editar componente ou defina o foco do teclado para ele. O quadro destacará a saída desta inserção específica.
+
+### Onde alterar a pesquisa
+
+Em “Configurações → Geral” selecione o tipo de pesquisa. Em “Manutenção” você pode reindexar páginas, e o campo no cabeçalho do administrador pesquisa por configurações.
+
+### Resultados e sugestões
+
+A pesquisa mostra 20 resultados numerados por página. O campo compacto se expande à esquerda da lupa e contém um ícone Enter. As sugestões da administração levam diretamente às configurações.
+
+## Novidades da versão 1.6.1
+
+### Pesquisa
+
+Em Geral, escolha desativada, lupa ou campo expandido. O cabeçalho da administração pesquisa configurações. O índice é atualizado após alterações; use o agendamento para FTP. Páginas incluídas e blocos de dados entram no índice sem executar módulos PHP.
+
+### Módulos PHP
+
+Expanda um módulo para ver configurações e páginas que o utilizam. Crie um módulo com identificador, nome de arquivo e corpo da função PHP. Renomear o arquivo mantém [php]id[/php]. Ative CodeMirror para destacar a sintaxe.
+
+### Modelos e traduções
+
+Desfaça até oito alterações por modelo ou restaure o PHP original. Cada domínio tem histórico separado. Use HTML personalizado no painel e templates/local/ para PHP. O seletor de idioma aparece ao criar uma tradução e as traduções acompanham a página movida.
+
+### Integrações e manutenção
+
+CAPTCHA, mapas, telefonia e métricas contêm links oficiais. Informe URL e token HTTP do retorno de chamada. As configurações do subdomínio cadastrado permanecem ao passar para o domínio principal. Agende php update.php --scheduled a cada 15 minutos.
+
+## Novidades da versão 1.6.0
+
+### Pesquisa e cache
+
+Reconstrua o índice de texto em Manutenção após publicar ou editar páginas pelo painel ou via FTP. As sugestões usam páginas públicas no idioma do visitante. O cache vem desativado e pode ser ligado ou limpo ali. Formulários e componentes dinâmicos são processados a cada solicitação.
+
+### Edição no site
+
+Após o login, o controle à direita da barra ativa os links de edição de componentes em todo o site. CSS e JS da página abrem em uma janela modal. No painel, use HTML, edição visual, inserção de códigos e envio em lote e ordenação de arquivos por AJAX.
+
+### Componentes e navegação
+
+Parâmetros ausentes usam a configuração global. width aceita 100, 50, 33 ou 25, com ou sem %. Em celulares os blocos ficam em uma coluna. numbers=off oculta o contador. Deslize para mudar de foto. O menu móvel abre pela direita e as trilhas de navegação podem ser desativadas nos ajustes gerais.
+
+```text
+[gal width=50 numbers=off arrows=on fit=cover]/images/myfotos/[/gal]
+[fotos width=50% columns=3 captions=on]/images/myfotos/[/fotos]
+[files width=33 icons=off size=on download=on]/files/myfiles/[/files]
+```
+
+### Idiomas, aparência e preços
+
+Nas opções regionais, escolha idiomas, moeda, formatos e fuso horário. Coloque index_en.php ao lado de index.php para adicionar uma tradução; sem o arquivo, o conteúdo original aparece. O campo Preço usa a moeda escolhida. Veja as paletas, altere o modo em tempo real, envie os logotipos claro e escuro e teste Roboto Condensed com uma frase própria.
+
+```text
+/contacts/index.php → /contacts/index_en.php
+```
+
+### Formulários, solicitações e integrações
+
+Defina chaves do Google reCAPTCHA v2 globais ou por formulário. Mensagens e retornos têm 20 itens por página, com os não lidos no topo. Integrações inclui Zadarma, Telegram, métricas e mapas Google ou Yandex com agrupamento opcional. A janela das bibliotecas testa a versão ativa e traz o código. CodeMirror tem Auto, HTML, CSS, JS, PHP e RAW.
+
+```text
+[map lat=55.7558 lng=37.6173 title="Office" zoom=13 provider=yandex url="/contacts/" button="Open"]
+```
+
+```text
+[callback button="Call me" title="Callback" submit="Send" placeholder="+7(900)123-45-67"]
+```
+
+### Módulos PHP
+
+Em Módulos PHP, defina o nome, a descrição e a disponibilidade. server-date usa a data em formato regional. Os desenvolvedores instalam os arquivos executáveis em uma pasta protegida.
+
+```text
+[php]server-date[/php]
+```
+
+## Configurações da página · 1.6.8
+
+Escreva o conteúdo em Edição. Configure endereço, menu e calendário de publicação nas configurações da página. SEO reúne títulos, descrição, palavras-chave e inclusão no sitemap. Em Mapas estão as coordenadas e os exemplos.
+
+Deixe as datas em branco para retirar os limites. Vale o fuso horário do site. Uma página oculta deve ser publicada separadamente.
+
+- `[map]` — mapa com o ponto da página atual.
+- `[maps]` — mapa com os pontos de todas as páginas publicadas.
+
+## Banners e editor de imagens · 1.6.8
+
+Gerencie conjuntos e slides em Componentes. Use fotos de uma pasta, adicione texto e botões para links, formulários ou chamadas de retorno e programe a exibição. O modo de edição mostra as ações do slide. O seletor permite navegar pelas pastas, enviar, excluir e criar cópias giradas ou redimensionadas com GD. Pesquise ícones do Font Awesome pelo nome.
+
+```text
+[banners]
+[banners set=summer arrows=on numbers=off]
+[banners]/images/myfotos/[/banners]
+```
+
+## Idiomas · 1.6.9
+
+A aba Idiomas lista os idiomas da página. Abrir leva à versão salva. Criar tradução abre um editor vazio.
+
+Uma subseção fica dentro da seção atual, uma seção no mesmo nível fica ao lado e uma seção na raiz fica no nível superior do site.
+
+## Compatibilidade com PHP e navegação · 1.6.10
+
+A versão mínima do PHP é 7.2. O site e a administração suportam PHP 8.6. Use nos seus módulos e modelos a sintaxe da versão instalada no servidor.
+
+O item atual de [bread-crumbs] abre as seções publicadas do mesmo nível que aparecem no menu principal. A URL configurada é usada em menus, listas de seções, trilhas de navegação, resultados e sugestões de pesquisa.
+
+A lixeira remove uma linha do editor de infoblocos. Remover uma coluna apaga todos os seus valores. As alterações são gravadas ao salvar, inclusive automaticamente após a reordenação.
+
+### Cópias de segurança
+
+O ZIP privado contém páginas, mídias, blocos, configurações, modelos e módulos PHP. A conta e as solicitações ficam separadas. É necessário PHP Zip.
+
+Substituir conteúdo e configurações. Antes disso, será feita uma cópia do estado atual.
+
+### Limpar arquivos sem uso
+
+A busca encontra mídias sem referências no conteúdo salvo. Revise a lista e selecione os arquivos. Antes é criada uma cópia de segurança. Remover o código de um componente preserva sua pasta e seus arquivos.
+
+A verificação inclui a biblioteca multimédia do Marketplace. As fotos de produtos e variantes, os logótipos e os ficheiros referenciados nas cópias do catálogo são protegidos. A caixa seleciona os ficheiros da página atual. Cada linha mostra o tamanho do ficheiro. Clique na miniatura para abrir a imagem no visualizador.
+
+### Escolher um ponto no mapa
+
+Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a por referência HTTP. Na aba Mapas da página, escolha um ponto e aplique as coordenadas.
+
+Selecione texto para alinhar ou limpar a formatação. Clique na imagem para editá-la e arraste a imagem ou seu canto para mover ou redimensionar. Links aceitam URL, e-mail, telefone e âncora. Botões abrem URLs, formulários, retornos de chamada ou links de pagamento do fornecedor.
+
+As abas HTML e Editor visual alternam o modo. SUP, SUB e Parágrafo inserem os elementos correspondentes. Os componentes mostram seus códigos. As pastas são criadas na inserção. Os nomes aceitam letras latinas, dígitos, hífens e sublinhados. A aba Idiomas leva às configurações de idioma. Os painéis de inserção abrem acima da área de edição. Clique em «Fechar» no topo ou pressione Esc para fechar o painel e desativar o botão. As setas da barra de ferramentas desfazem e refazem até dez edições de texto através do servidor. O ícone do relógio carrega o último texto salvo. Ao sair com alterações pendentes, é preciso confirmar. O ícone Salvar, antes das setas, fica destacado quando há alterações não salvas. Selecione um trecho e abra Estilo do texto. Defina o tamanho, a cor do texto ou do fundo, ou escolha uma fonte ativada nas configurações do site.
+
+```text
+[button action="url" label="Contacts" url="/contacts/"]
+[button action="form" label="Write to us" form="form1"]
+[button action="callback" label="Call me"]
+[button action="payment" label="Pay" amount="1250.00" currency="RUB" yoomoney="410010000000000"]
+[map]
+[maps]
+```
+
+## Venda · 1.6.11
+
+Defina preço e pagamento na aba Venda, com valores opcionais por idioma. Insira [item-price] e [item-buy-button]. O pedido é registrado antes do pagamento. Os status podem ser enviados por email e SMS Zadarma.
+
+Pedido recebido · Pagamento aceito · Enviado · Encerrado · Cancelado
+
+```text
+[item-price]
+[item-buy-button]
+```
+
+Selecione um arquivo ou URL para inserir uma imagem. Clique na imagem para ajustar tamanho, alinhamento, quatro margens e CSS. O alinhamento da imagem é independente do texto. Em HTML, os blocos ficam em linhas separadas. [list-pages] está em Componentes. O logotipo usa as cores do tema.
+
+## Gráfico do bloco de dados
+
+No editor da página, abra a inserção de componentes e escolha uma tabela ou um gráfico. Para gráficos, ative o Chart.js, escolha a coluna de rótulos e colunas do tipo Número ou Preço. Pizza, rosca e área polar usam uma série não negativa. Com a biblioteca desativada, a tabela é exibida.
+
+Formulários, modelos, trechos salvos e componentes registrados aparecem ao reabrir o editor. O ID de um novo conjunto aceita A–Z, a–z, hífens e sublinhados. Após enviar imagens para uma pasta [banners], aparece um link para editar o slide ao lado de cada arquivo. No modo de edição, a janela exibe o slide escolhido e oferece um link para as configurações padrão. Ao lado de Salvar, o gerenciador de carrosséis, galerias e listas permite enviar, excluir, ordenar e criar subpastas (A–Z, a–z, 0–9, - e _). As cores aparecem em quadrados.
+
+```text
+[iblock=table]/data/myiblock.txt[/iblock]
+[iblock=charts type=line labels=month values=sales,orders]/data/myiblock.txt[/iblock]
+[banners set=summer-promo]
+```
+
+A coluna Botão de formulário exibe um botão Pedir em cada linha configurada. Escolha o formulário pelo nome. Em CSV, use o código do formulário, como form86.
+
+O tipo «Etiqueta oculta» adiciona filtros acima da tabela. Insira uma ou mais etiquetas separadas por vírgulas numa célula. «TODOS» mostra todas as linhas.
+
+## Cabeçalho e rodapé da administração · 1.6.12
+
+No computador, Eurowebcart CMS e Light com a versão instalada aparecem junto do logotipo. No celular, o símbolo fica na mesma linha que os botões. O rodapé contém o endereço do repositório. Verifique atualizações cumulativas nas configurações.
+
+## Cabeçalho e rodapé da administração · 1.6.13
+
+No computador, Eurowebcart CMS e Light com a versão instalada aparecem junto do logotipo. No celular, o símbolo fica na mesma linha que os botões. O rodapé contém o endereço do repositório. Verifique atualizações cumulativas nas configurações. O nome padrão Página inicial na lista segue o idioma da administração. O logotipo do rodapé mostra Eurowebcart CMS e LIGHT em duas linhas.
+
+## Informações do PHP
+
+Em Manutenção, phpinfo() mostra a versão, os módulos e a configuração do PHP a administradores autenticados. As variáveis de ambiente e de requisição são ocultadas. Ajuste error_reporting nas configurações gerais. O padrão é o nível do servidor.
+
+## Ocultar a árvore de páginas · 1.6.14
+
+No computador, a seta recolhe a árvore de páginas e amplia o editor. O botão acima do editor restaura a árvore. O navegador guarda a escolha.
+
+## Ocultar a árvore de páginas · 1.6.15
+
+No computador, a seta recolhe a árvore de páginas e amplia o editor. O botão acima do editor restaura a árvore. O navegador guarda a escolha.
+
+## Escolher um ponto no mapa
+
+Crie uma chave para «JavaScript API» no console do Yandex Maps e restrinja-a por referência HTTP. Na aba Mapas da página, escolha um ponto e aplique as coordenadas. Para testes locais, indique localhost sem porta como referência HTTP, aguarde a ativação e abra a administração usando localhost.
+
+## Pesquisa no menu · 1.6.16
+
+[search] apresenta a pesquisa junto às ligações de [main-menu] no computador e dentro de [mobile-menu] no telemóvel. Selecione o modo nas configurações gerais. [search] no conteúdo tem prioridade.
+
+`[search]`
+
+## Pesquisa no menu · 1.6.17
+
+[search] apresenta a pesquisa junto às ligações de [main-menu] no computador e dentro de [mobile-menu] no telemóvel. Selecione o modo nas configurações gerais. [search] no conteúdo tem prioridade. O campo de pesquisa aparece ao abrir o menu móvel. [lang] mostra a seleção de idioma nesse menu e no cabeçalho no computador.
+
+`[search]` · `[lang]`
+
+O fundo do menu móvel mostra os contactos e as redes sociais configurados.
+
+## Subtítulo do site
+
+O subtítulo das configurações gerais aparece em tamanho menor abaixo do nome no cabeçalho. No celular, o nome também é menor.
+
+## Cidades
+
+Em Cidades, associe um domínio registado e configure até cinco números. O campo de telefone aceita códigos como [tel]. [cities] mostra o seletor, [phones] lista os números configurados e [tel], [tel2]–[tel5] mostram os números individuais. O navegador memoriza a escolha e atualiza os números sem recarregar a página.
+
+`[cities]` · `[phones]` · `[tel]`
+
+## Animação ao deslocar
+
+Nas definições gerais, escolha o efeito de entrada dos blocos ao deslocar a página. Está desativado por predefinição e respeita a opção de movimento reduzido do dispositivo.
+
+## Modelos de página
+
+Escolha um modelo ao criar uma página. O conteúdo e os campos SEO são preenchidos e podem ser editados. Adicione os seus modelos em Modelos de página. Mapas, formulários e compras utilizam as definições de cada componente.
+
+O CSS e o JavaScript do modelo são copiados para os campos da página. Adicione classes próprias em HTML e defina-as no CSS do modelo.
+
+### Classes reutilizáveis
+
+Contentor, grelha adaptável, secção em destaque, cartão e preço realçado.
+
+`.page-preset` · `.page-preset-grid` · `.page-preset-hero` · `.page-preset-card` · `.page-preset-price`
+
+Use «Editar» para alterar um modelo. «Salvar modelo» aplica as alterações às novas páginas. «Duplicar» cria um modelo separado. No editor, você pode abrir o modelo selecionado ou criar outro a partir da página salva. No formulário do modelo, escolha «Inserir ícone» e pesquise pelo nome. Você também pode inserir um código como `[fa-icon=house]`.
+
+Os modelos de layout começam recolhidos. Abra um modelo pelo título ou escolha Expandir tudo. Prima novamente para recolher a lista.
+
+Para alterar a largura do carrossel, ative o modo de edição, abra Editar componente junto dos banners e selecione a largura do bloco.
+
+## Cidades · Telefone · 1.6.18
+
+Só o nome da cidade é obrigatório. O domínio e os telefones são opcionais. Use + e o indicativo do país, por exemplo +7 (900) 000-00-00. Pode usar um código como [tel] como alternativa.
+
+É usada a cidade memorizada, depois a cidade do domínio e por fim a primeira da lista. Sem cidades, são apresentados os telefones gerais.
+
+Os formulários, pedidos de chamada e novas encomendas usam o e-mail da cidade ou o do site se estiver vazio. Se ambos estiverem vazios, os formulários mantêm os seus destinatários. Os links sociais vazios são herdados.
+
+No modo de edição, passe o cursor sobre um modelo para o editar. Para qualquer componente [php] instalado, Editar módulo abre o código e as definições numa janela. O editor de diapositivos mostra o nome e o código do formulário. [banners width=100] ocupa toda a janela como bloco autónomo sem barra lateral. O editor de modelos abre numa janela modal do site. No modo de edição, faça duplo clique numa zona livre do modelo. A dica aparece sob o botão ao passar o cursor. Quando os blocos se sobrepõem, o modelo seguinte tem prioridade. Editar slide abre o slide selecionado. A barra do site mostra os componentes, modelos e submodelos da página atual. Na administração, abra Componentes da página junto a Idiomas para editar os parâmetros e dados disponíveis. Clique duas vezes no conteúdo para abrir o editor da página atual. O editor abre em uma janela sobre o site. Depois de salvar, feche a janela para ver as alterações na página. Clique duas vezes no título H1 para ir diretamente ao campo na aba SEO.
+
+O gestor verifica referências antes de eliminar e faz uma cópia de segurança de pastas não vazias. Cada banner pode ter título e subtítulo.
+
+O telefone é verificado durante a introdução. Nos números russos, o 8 inicial passa a +7. Após o envio, o formulário é ocultado e a confirmação surge ao reabrir a janela.
+
+O indicativo escolhido é acrescentado a números sem +. Os números com + mantêm o indicativo introduzido.
+
+## Temas de design
+
+Copie o ficheiro para o tema e guarde. Ficheiros em falta usam a versão fornecida. Alterações, novos códigos, histórico e definições de domínio ficam no tema ativo. Use css/theme.css e js/theme.js para estilos e scripts adicionais.
+
+`templates/themes/demo/header.php` · `templates/themes/demo/components/banners.php`
+
+Os idiomas ficam no fundo do menu móvel. No computador, o globo fica junto à pesquisa no menu abaixo do cabeçalho.
+
+Galerias, banners e listas procuram primeiro no tema ativo e, se faltar a pasta, nos ficheiros comuns. Pastas novas, carregamentos, logótipos e favicons ficam no tema. A cópia de segurança inclui a pasta e as definições do tema.
+
+Escolha a largura da janela (width=page), do conteúdo (width=content) ou do bloco principal (width=parent). height define a altura no computador e mobile-height no telemóvel. auto mantém o tamanho natural.
+
+`[banners width=page height=520 mobile-height=240]` · `[form1 width=parent]`
+
+O último item do percurso mostra as secções publicadas do mesmo nível, incluindo as ocultas no menu principal. Os links usam o URL configurado.
+
+## Temas de design · КОНТУР · 1.6.19
+
+Um tema de site completo muda o design, as páginas, os blocos de dados e as configurações. Os demais temas usam as páginas compartilhadas.
+
+Uma marca indica que o ficheiro do tema tem prioridade sobre o ficheiro padrão do CMS. Pode editá-lo ou restaurá-lo.
+
+**Restaurar a versão de fábrica**
+
+### Portfólio
+
+Abra kontur-works em Conteúdo → Blocos de dados. Indique título, categoria, descrição, fotos separadas por vírgulas e um link opcional. A primeira foto será a capa. Use as mesmas colunas para outras coleções.
+
+```text
+[portfolio]
+[iblock=portfolio limit=2]/data/kontur-works.txt[/iblock]
+[maps source=kontur-map]
+```
+
+«Тихий сад» é um site completo para um estúdio de paisagismo. Selecione-o em Modelos de design → Temas de design e clique em Aplicar. Edite os blocos garden-projects e garden-prices e o conjunto de banners garden-cover. Adicione os contactos e o destinatário de [form85].
+
+O tema Dezinfektori inclui 32 serviços, pedidos [form86] e o formulário de avaliação [form87]. Abra a mensagem recebida. Com a autorização do autor, copie o nome, o texto e a avaliação para dez-reviews e ative a publicação. As páginas de serviços incluem explicações de riscos, ilustrações de antes e depois e histórias de ficção. Edite estes blocos em Páginas.
+
+```text
+[iblock=reviews limit=6]/data/dez-reviews.txt[/iblock]
+```
+
+A página inicial mostra avaliações aprovadas de todas as páginas quando o filtro está vazio.
+
+Cada página do catálogo tem um formulário de avaliação. Após aprovação em Avaliações, ela aparece na página de origem.
+
+### Cores do site · Fontes
+
+Marque as fontes a ativar e atribua-as ao texto, aos títulos ou aos controlos. O seu site aloja os ficheiros locais.
+
+Bibliotecas → Hospedar localmente
+
+Modelos de página → Criar página
+
+## Campos personalizados
+
+Informe o valor da página atual na nova linha e salve-o com os ajustes do campo.
+
+## Avaliações
+
+Insira o código no editor da página. Os visitantes indicam o nome, escrevem a avaliação e atribuem de 1 a 5 estrelas. Na seção Avaliações, você pode aprovar, rejeitar, editar ou excluir avaliações. Carregar mais adiciona as dez seguintes.
+
+Digite um caminho como /contacts/ ou deixe o campo vazio para mostrar todas as avaliações. O formulário registra a página de origem. Apenas avaliações aprovadas aparecem no site. O CAPTCHA usa as configurações gerais do CMS.
+
+```text
+[reviews]
+```
+
+O botão Deixar uma avaliação abre o formulário.
+
+## Progresso da atualização · Progresso da indexação
+
+Baixando o arquivo de atualização. Baixando a assinatura. Verificando a assinatura e as somas de verificação do arquivo. As páginas, as configurações e os arquivos do usuário serão mantidos. Preparando os arquivos e as cópias temporárias para restauração. Usando modelos, estilos e scripts incluídos no CMS. As páginas e configurações atuais serão mantidas. Usando o design e as páginas incluídos no tema. As configurações e as demais páginas serão mantidas. Fazendo backup das páginas, configurações e mídias. Verificando o backup. Backup salvo em Manutenção. Coletando a lista de páginas. Processando as páginas e suas traduções. Salvando o índice de pesquisa.
+
+**Design e adição das páginas em falta**
+
+O design é aplicado e as páginas de navegação em falta são adicionadas. As páginas e configurações existentes são mantidas.
+
+**100% · Concluído**
+
+No modo de edição, passe o cursor sobre o valor de um submodelo e abra o editor. Guarde e feche a janela para ver a página atualizada.
+
+O botão de edição de [reviews] abre as configurações e a moderação de avaliações numa janela.
+
+**Avaliações por lote · Texto do botão «Carregar mais»**
+
+O tamanho do lote aplica-se ao primeiro carregamento e a cada clique. Deixe o texto em branco para usar o rótulo padrão no idioma da página.
+
+O botão «Dados» abre o editor de [iblock]. Nos restantes componentes, utilize «Definições».
+
+Se o editor não carregar na janela, selecione «Tentar novamente» ou abra-o em ecrã inteiro.
+
+Insira [reviews page=current] para apresentar primeiro as avaliações da página atual e depois as das restantes páginas, das mais recentes para as mais antigas.
+
+Versão instalada do tema · Versão do tema incluída no CMS
+
+Escolha Design e adição das páginas em falta para atualizar os códigos de avaliações.
+
+A verificação de atualizações carrega a descrição da versão a partir do GitHub.
+
+Aprovar avaliações automaticamente
+
+As avaliações com ligações ou palavras bloqueadas ficam em moderação. Edite a lista em «Antispam». As atualizações do GitHub acrescentam regras e preservam as suas alterações. Máscaras IPv4 aceitam * e intervalos inclusivos como 189.10-17.*.*. Endereços IPv4 e IPv6 exatos são aceites.
+
+Morada `[address]` · E-mail público `[email]` · Horário de funcionamento `[hours]`
+
+Os contactos da cidade aparecem no cabeçalho. Campos vazios usam os valores dos submodelos partilhados.
+
+As versões instalada e do GitHub aparecem ao lado do botão de atualização.
+
+## Atualizações · Cópias de segurança
+
+O número vermelho exibe as atualizações disponíveis para o CMS, o tema ativo e os filtros antispam. Selecione os dias e horários das atualizações automáticas. O tema atualiza automaticamente apenas o design. A exclamação indica que não há cópia com menos de um mês. Execute o comando a cada 15 minutos. `php update.php --scheduled`
+
+- Modelos de apresentação → Fragmentos
+- Cidades e domínios
+
+## Marketplace
+
+O marketplace vem desativado. Abra sua seção na administração para ativá-lo, editar a vitrine e importar CSV ou YML.
+
+`[shop-categories]` · `[shop-items category=drills]` · `[shop-basket]` · `[register]` · `[account]`
+
+Em **Marketplace → Catálogo → Produtos**, filtre por nome, SKU, código de barras, categoria ou estado. Use **Colunas** para mostrar mais campos. Edite o estado, o preço, o SKU, o código de barras e o estoque na ficha. Adicione depósitos em **Depósitos**.
+
+Ordene pelas setas dos cabeçalhos e salve preços na lista. Para produtos com variantes, abra a faixa de preços.
+
+Insira `[shop]` em uma página comum para mostrar a loja com o tema do site. Em **Marketplace → Filtros**, defina posição, preço, atributos e filtros ao vivo. Gerencie e-mails em **Modelos de design → Modelos de e-mail**. Use os ícones Grelha e Lista para mudar a vista. A ordenação é aplicada imediatamente.
+
+Preços, códigos de barras, estoque e atributos numéricos são guardados ao sair do campo. Use Colunas para escolher a visibilidade e arraste os cabeçalhos ou os seus limites para mudar a ordem e a largura. Selecione produtos para ações em massa. Configure o arredondamento nas opções da loja. A loja de temas no GitHub oferece páginas de demonstração e importação seletiva de produtos.
+
+Adicionar ao carrinho abre uma janela. Alterações de quantidade e remoções são atualizadas sem recarregar.
+
+Em Marcas, adicione descrição, site e logotipo. Os cartões abrem os produtos da marca.
+
+[Marketplace](../marketplace.md)
+
+No Catálogo, Variantes abre a opção correspondente. Características define campos para fichas e filtros. Mais inclui galeria, preços adicionais, conjuntos e redirecionamentos. Escolha produtos e categorias pelo nome e fotos no gestor de ficheiros. O painel CSV permite edição em massa.
+
+As encomendas são mostradas 20 por página. Adicione estados e use Imprimir / PDF para gerar uma guia com morada, destinatário e SKU. As estatísticas têm gráficos e uma tabela. Em Integrações, configure chaves e instale perfis assinados do GitHub. Confirme o pagamento no painel do prestador.
+
+Na loja de temas, selecione os produtos de demonstração e confirme a substituição. O índice é atualizado automaticamente. Restaure o catálogo anterior e as marcas em Cópias de segurança do catálogo. Os pedidos são mantidos. Nas cores do site, aplique a paleta ao site, ao painel de administração ou a ambos. Em Marketplace → Exportar → Verificar YML, abra um produto para corrigir os campos destacados.
+
+No editor HTML, abra Componente e escolha [items] ou [carousel]. Defina categoria, pesquisa, ordenação e filtros. [items] mostra uma lista ou grelha. [carousel] permite ajustar as colunas para telemóvel e computador. Cada bloco tem a sua própria paginação.
+
+Escolha a pasta do catálogo nas configurações do Marketplace. Uma instalação em /test/ usa /test/catalog/. Os endereços permanentes /test/product/item/ são mantidos ao mover produtos. Os endereços com categoria recebem um redirecionamento 301. Os modelos da loja abrem numa janela. Use códigos entre colchetes. Os dados estruturados Product são adicionados automaticamente. [categories] mostra subcategorias em lista ou grelha. Uma foto recente pode ilustrar categorias sem imagem. A indexação do site também atualiza o catálogo.
+
+### Modelos do Marketplace
+
+Edite páginas da loja e fragmentos do layout em janelas de diálogo.
+
+### Seções para importar
+
+Adicionar ao catálogo atual. Produtos coincidentes são atualizados. Os demais dados são mantidos. Substituir o catálogo. Importa somente as seções selecionadas depois de criar uma cópia.
+
+Defina o preço anterior de cada variante. Adicione fotos com legendas. O campo video abre o vídeo em ecrã inteiro.
+
+Ative a encomenda rápida para recolha na ficha do produto. O botão Encomendar abre um formulário com um campo para o telefone.
+
+- [REST API](../content-api.md) · Em IA → REST API, gere uma chave para ler ou editar páginas por HTTPS.
+- Nas cópias de segurança, expanda um arquivo, escolha Eliminar cópia de segurança e confirme.
+
+
+- Configure um GPT privado em IA → REST API. A biblioteca multimédia gere pastas e envios em lote. Utilizadores controla o registo e a entrada.

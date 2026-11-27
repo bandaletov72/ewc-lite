@@ -529,3 +529,5 @@ Activez la commande rapide à retirer dans la fiche produit. Le bouton Commander
 - [REST API](../content-api.md) · Ouvrez IA → REST API pour générer une clé de lecture ou de modification des pages via HTTPS.
 - Dans les sauvegardes, développez une archive, choisissez « Supprimer la sauvegarde » et confirmez.
 
+
+- Configurez un GPT privé dans IA → REST API. La médiathèque gère les dossiers et les envois groupés. Utilisateurs gère l’inscription et la connexion.

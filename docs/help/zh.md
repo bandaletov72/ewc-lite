@@ -529,3 +529,5 @@ Dezinfektori 主题提供 32 项服务、咨询表单 [form86] 与评价表单 [
 - [REST API](../content-api.md) · 在「AI → REST API」中生成密钥，通过 HTTPS 读取或编辑页面。
 - 在备份列表中展开存档，选择“删除备份”并确认。
 
+
+- 在 AI → REST API 中配置私人 GPT。媒体库支持文件夹和批量上传，用户区负责注册与登录设置。

@@ -529,3 +529,5 @@ Ative a encomenda rápida para recolha na ficha do produto. O botão Encomendar 
 - [REST API](../content-api.md) · Em IA → REST API, gere uma chave para ler ou editar páginas por HTTPS.
 - Nas cópias de segurança, expanda um arquivo, escolha Eliminar cópia de segurança e confirme.
 
+
+- Configure um GPT privado em IA → REST API. A biblioteca multimédia gere pastas e envios em lote. Utilizadores controla o registo e a entrada.

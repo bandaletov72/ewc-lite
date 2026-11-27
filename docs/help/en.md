@@ -533,3 +533,5 @@ Enable Quick pickup order by phone in the product editor. The Order button opens
 - [REST API](../content-api.md) · Open AI → REST API to create a key for reading or editing pages over HTTPS.
 - In Backups, expand an archive, select Delete backup, and confirm deletion.
 
+
+- Configure a private GPT in AI → REST API. The Media library handles folders and batch uploads, and Users handles registration and sign-in.

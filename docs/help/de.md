@@ -529,3 +529,5 @@ Aktivieren Sie im Produkteditor die schnelle Abholbestellung. Die Schaltfläche 
 - [REST API](../content-api.md) · Unter KI → REST API lässt sich ein Schlüssel zum Lesen oder Bearbeiten von Seiten über HTTPS erzeugen.
 - Öffnen Sie in den Sicherungen ein Archiv, wählen Sie „Sicherung löschen“ und bestätigen Sie den Vorgang.
 
+
+- Richten Sie den privaten GPT unter KI → REST API ein. Die Mediathek verwaltet Ordner und Mehrfach-Uploads, der Bereich Benutzer Registrierung und Anmeldung.
