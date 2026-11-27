@@ -525,3 +525,7 @@ Adicionar ao catálogo atual. Produtos coincidentes são atualizados. Os demais 
 Defina o preço anterior de cada variante. Adicione fotos com legendas. O campo video abre o vídeo em ecrã inteiro.
 
 Ative a encomenda rápida para recolha na ficha do produto. O botão Encomendar abre um formulário com um campo para o telefone.
+
+- [REST API](../content-api.md) · Em IA → REST API, gere uma chave para ler ou editar páginas por HTTPS.
+- Nas cópias de segurança, expanda um arquivo, escolha Eliminar cópia de segurança e confirme.
+

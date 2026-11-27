@@ -525,3 +525,7 @@ Thêm vào danh mục hiện tại. Cập nhật sản phẩm trùng và giữ l
 Đặt giá cũ riêng cho từng biến thể. Thêm ảnh kèm chú thích. Trường video mở video ở chế độ toàn màn hình.
 
 Bật đặt nhanh để nhận tại cửa hàng trong trình chỉnh sửa sản phẩm. Nút Đặt hàng mở biểu mẫu chỉ có trường số điện thoại.
+
+- [REST API](../content-api.md) · Trong AI → REST API, hãy tạo khóa để đọc hoặc chỉnh sửa trang qua HTTPS.
+- Trong mục Sao lưu, mở tệp lưu trữ, chọn Xóa bản sao lưu và xác nhận.
+

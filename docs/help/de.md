@@ -525,3 +525,7 @@ Zum aktuellen Katalog hinzufügen. Passende Produkte werden aktualisiert. Andere
 Legen Sie den alten Preis für jede Variante fest. Fügen Sie Fotos mit Beschriftungen hinzu. Das Feld video öffnet das Video im Vollbild.
 
 Aktivieren Sie im Produkteditor die schnelle Abholbestellung. Die Schaltfläche Bestellen öffnet ein Formular mit einem Feld für die Telefonnummer.
+
+- [REST API](../content-api.md) · Unter KI → REST API lässt sich ein Schlüssel zum Lesen oder Bearbeiten von Seiten über HTTPS erzeugen.
+- Öffnen Sie in den Sicherungen ein Archiv, wählen Sie „Sicherung löschen“ und bestätigen Sie den Vorgang.
+

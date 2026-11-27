@@ -525,3 +525,7 @@ Añadir al catálogo actual. Se actualizan los productos coincidentes y se conse
 Indique el precio anterior de cada variante. Añada fotos con pie de foto. El campo video abre el vídeo a pantalla completa.
 
 Activa el pedido rápido para recogida en la ficha del producto. El botón Pedir abre un formulario con un solo campo para el teléfono.
+
+- [REST API](../content-api.md) · Abre IA → REST API para generar una clave de lectura o edición de páginas por HTTPS.
+- En Copias de seguridad, abre un archivo, elige Eliminar copia de seguridad y confirma.
+

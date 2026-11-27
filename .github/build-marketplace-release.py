@@ -42,7 +42,7 @@ engine_pattern = re.compile(
     r'(?:app|admin)/[a-z][a-z0-9_-]*\.php|templates/[a-z][a-z0-9_-]*\.php'
     r'|templates/(?:css/site\.css|js/(?:site|admin)\.js)|router\.php|update\.php|\.htaccess'
 )
-docs_pattern = re.compile(r'docs/(?:marketplace\.md|admin-faq(?:\.en)?\.md|help/(?:[a-z]{2}/)?[A-Za-z0-9-]+\.md)|admin/languages/zh\.php|README\.md')
+docs_pattern = re.compile(r'docs/(?:content-api\.md|dezinfektori\.md|marketplace\.md|admin-faq(?:\.en)?\.md|help/(?:[a-z]{2}/)?[A-Za-z0-9-]+\.md)|admin/languages/zh\.php|README\.md')
 files = {file.relative_to(overlay).as_posix(): file.read_bytes() for file in overlay.rglob('*') if file.is_file()}
 if not all(path == 'shop/index.php' or any(regex.fullmatch(path)
            for regex in [module_pattern, engine_pattern, docs_pattern]) for path in files):

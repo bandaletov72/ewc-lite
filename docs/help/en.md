@@ -529,3 +529,7 @@ Add to current catalog. Matching products are updated. Other products and sectio
 Set an old price for each variant in the product editor. Add photos with captions. The video field opens the video full screen.
 
 Enable Quick pickup order by phone in the product editor. The Order button opens a form with one phone field.
+
+- [REST API](../content-api.md) · Open AI → REST API to create a key for reading or editing pages over HTTPS.
+- In Backups, expand an archive, select Delete backup, and confirm deletion.
+

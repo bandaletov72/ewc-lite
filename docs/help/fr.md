@@ -525,3 +525,7 @@ Ajouter au catalogue actuel. Les produits correspondants sont mis à jour. Le re
 Renseignez le prix précédent de chaque variante. Ajoutez des photos avec leurs légendes. Le champ video ouvre la vidéo en plein écran.
 
 Activez la commande rapide à retirer dans la fiche produit. Le bouton Commander ouvre un formulaire avec un seul champ pour le téléphone.
+
+- [REST API](../content-api.md) · Ouvrez IA → REST API pour générer une clé de lecture ou de modification des pages via HTTPS.
+- Dans les sauvegardes, développez une archive, choisissez « Supprimer la sauvegarde » et confirmez.
+
