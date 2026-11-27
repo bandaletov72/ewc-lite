@@ -40,6 +40,9 @@ jobs:
           if [[ -n "$shop_version" ]]; then
             base=$(jq -er '.baseVersion | strings' updates/release.json)
             [[ $base =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && $shop_version =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]
+            if compgen -G "updates/overlays/$tag.zip.part*" > /dev/null; then
+              cat "updates/overlays/$tag.zip.part"* > "updates/overlays/$tag.zip"
+            fi
             if [[ -f "updates/overlays/$tag.zip" ]]; then
               python3 -m zipfile -e "updates/overlays/$tag.zip" "$RUNNER_TEMP/cms-overlay"
               mkdir -p "updates/overlays/$tag"
